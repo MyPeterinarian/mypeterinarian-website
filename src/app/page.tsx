@@ -1,155 +1,139 @@
-import Link from 'next/link';
-
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section 
-        className="py-20 px-4"
-        style={{
-          background: 'linear-gradient(to right, #1d6896, #22c0b6)',
-          color: 'white'
-        }}
-      >
-        <div className="container-custom">
-          <div className="max-w-3xl">
-            <h1 style={{ color: 'white' }} className="mb-6">
-              Welcome to MyPeterinarian
+      <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Copenhagen&apos;s Premier
+              <span className="block text-blue-600">Pet Care & Veterinary Services</span>
             </h1>
-            <p className="text-xl mb-8" style={{ opacity: 0.9 }}>
-              The Pet Care Experts in Copenhagen
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              Professional veterinary care, grooming, and pet services in the heart of Copenhagen. 
+              Your pet&apos;s health and happiness is our priority.
             </p>
-            <p className="text-lg mb-8" style={{ opacity: 0.8 }}>
-              Professional veterinary services, grooming, and pet care solutions for your beloved companions. 
-              Run by experienced veterinarians dedicated to your pet's health and happiness.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/booking" 
-                className="text-center"
-                style={{
-                  backgroundColor: '#1d6896',
-                  color: 'white',
-                  padding: '12px 24px',
-                  borderRadius: '8px',
-                  fontWeight: '700',
-                  display: 'inline-block'
-                }}
-              >
-                Book an Appointment
-              </Link>
-              <Link 
-                href="/services" 
-                className="text-center"
-                style={{
-                  backgroundColor: 'white',
-                  color: '#1d6896',
-                  padding: '12px 24px',
-                  borderRadius: '8px',
-                  fontWeight: '700',
-                  display: 'inline-block'
-                }}
-              >
-                Our Services
-              </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">
+                Book Appointment
+              </button>
+              <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors">
+                View Services
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-16" style={{ backgroundColor: 'white' }}>
-        <div className="container-custom">
-          <h2 className="text-center mb-12">Our Services</h2>
+      {/* Services Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
+            Our Services
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Comprehensive pet care services tailored to your furry family members
+          </p>
+          
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Veterinary Services */}
-            <div 
-              className="p-6 rounded-lg transition-shadow hover:shadow-lg"
-              style={{ border: '1px solid #e5e7eb' }}
-            >
-              <h3 className="mb-4">Veterinary Services</h3>
-              <p className="mb-4" style={{ color: '#555555' }}>
-                Comprehensive veterinary care from experienced professionals. 
-                Health checks, vaccinations, treatments, and more.
+            {/* Veterinary Care */}
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Veterinary Care</h3>
+              <p className="text-gray-600 mb-4">
+                Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.
               </p>
-              <Link 
-                href="/services/veterinary" 
-                style={{ color: '#1d6896', fontWeight: '700' }}
-                className="hover:underline"
-              >
-                Learn More →
-              </Link>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Health Examinations
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Vaccinations
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Emergency Care
+                </li>
+              </ul>
             </div>
 
-            {/* Grooming */}
-            <div 
-              className="p-6 rounded-lg transition-shadow hover:shadow-lg"
-              style={{ border: '1px solid #e5e7eb' }}
-            >
-              <h3 className="mb-4">Grooming Services</h3>
-              <p className="mb-4" style={{ color: '#555555' }}>
-                Professional grooming for dogs and cats. Keep your pet looking 
-                and feeling their best with our expert groomers.
+            {/* Grooming Services */}
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Grooming</h3>
+              <p className="text-gray-600 mb-4">
+                Professional grooming services to keep your pet looking and feeling their best.
               </p>
-              <Link 
-                href="/services/grooming" 
-                style={{ color: '#1d6896', fontWeight: '700' }}
-                className="hover:underline"
-              >
-                Learn More →
-              </Link>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Full Grooming
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Nail Trimming
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Spa Treatments
+                </li>
+              </ul>
             </div>
 
-            {/* Pet Passport & Travel */}
-            <div 
-              className="p-6 rounded-lg transition-shadow hover:shadow-lg"
-              style={{ border: '1px solid #e5e7eb' }}
-            >
-              <h3 className="mb-4">Pet Passport & Travel</h3>
-              <p className="mb-4" style={{ color: '#555555' }}>
-                Get your pet ready for international travel. Pet passports, 
-                health certificates, and travel packages available.
+            {/* Pet Sitting */}
+            <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Pet Sitting</h3>
+              <p className="text-gray-600 mb-4">
+                Trusted pet sitting services while you&apos;re away. Your pet stays happy and cared for.
               </p>
-              <Link 
-                href="/services/travel" 
-                style={{ color: '#1d6896', fontWeight: '700' }}
-                className="hover:underline"
-              >
-                Learn More →
-              </Link>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Daily Visits
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Overnight Care
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-500 mr-2">✓</span>
+                  Activity Updates
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section 
-        className="py-16 px-4"
-        style={{ backgroundColor: '#1d6896', color: 'white' }}
-      >
-        <div className="container-custom text-center">
-          <h2 className="mb-6" style={{ color: 'white' }}>
-            Ready to Care for Your Pet?
+      <section className="bg-gradient-to-r from-blue-600 to-green-500 py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Give Your Pet the Best Care?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ opacity: 0.9 }}>
-            Book an appointment today and experience professional pet care from Copenhagen's trusted veterinarians.
+          <p className="text-xl text-white mb-8 opacity-90">
+            Book an appointment today and experience professional pet care in Copenhagen
           </p>
-          <Link 
-            href="/booking"
-            style={{
-              backgroundColor: 'white',
-              color: '#1d6896',
-              padding: '16px 32px',
-              borderRadius: '8px',
-              fontWeight: '700',
-              fontSize: '1.125rem',
-              display: 'inline-block'
-            }}
-          >
-            Book Now
-          </Link>
+          <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+            Schedule Appointment
+          </button>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
