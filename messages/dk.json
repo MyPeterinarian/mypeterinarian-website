@@ -709,5 +709,48 @@
       "relatedServices": "Relaterede Tjenester",
       "contactUs": "Kontakt Os for Mere Information"
     }
+  },
+  "contact": {
+    "title": "Kontakt Os",
+    "subtitle": "Vi er her for at hjælpe med alle dine kæledyrs behov",
+    "description": "Har du spørgsmål om vores tjenester? Skal du booke en aftale? Udfyld formularen nedenfor, og vi vender tilbage til dig hurtigst muligt.",
+    "form": {
+      "name": "Dit Navn",
+      "namePlaceholder": "Indtast dit navn",
+      "email": "Email Adresse",
+      "emailPlaceholder": "din.email@eksempel.dk",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+45 12 34 56 78",
+      "subject": "Emne",
+      "subjectPlaceholder": "Hvordan kan vi hjælpe dig?",
+      "message": "Besked",
+      "messagePlaceholder": "Fortæl os om dit kæledyr og hvordan vi kan hjælpe...",
+      "submit": "Send Besked",
+      "sending": "Sender...",
+      "success": "Tak! Vi vender tilbage til dig snart.",
+      "error": "Noget gik galt. Prøv igen eller ring til os direkte."
+    },
+    "info": {
+      "title": "Kontaktinformation",
+      "phone": "Telefon",
+      "email": "Email",
+      "hours": "Åbningstider",
+      "location": "Serviceområde",
+      "locationText": "København og omegn"
+    },
+    "cta": {
+      "urgent": "For hastesager, ring venligst direkte til os",
+      "book": "Klar til at booke? Brug vores online bookingsystem"
+    }
+  },
+  "newsletter": {
+    "title": "Hold Dig Opdateret",
+    "description": "Modtag kæledyrspleje tips, særlige tilbud og nyheder direkte i din indbakke",
+    "placeholder": "Indtast din email",
+    "button": "Tilmeld",
+    "subscribing": "Tilmelder...",
+    "success": "Tak for tilmeldingen!",
+    "error": "Noget gik galt. Prøv igen.",
+    "alreadySubscribed": "Du er allerede tilmeldt!"
   }
 }

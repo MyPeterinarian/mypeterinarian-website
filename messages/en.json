@@ -705,5 +705,48 @@
       "relatedServices": "Related Services",
       "contactUs": "Contact Us for More Information"
     }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help with all your pet care needs",
+    "description": "Have questions about our services? Need to book an appointment? Fill out the form below and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+45 12 34 56 78",
+      "subject": "Subject",
+      "subjectPlaceholder": "What can we help you with?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your pet and how we can help...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again or call us directly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours",
+      "location": "Service Area",
+      "locationText": "Copenhagen and surrounding areas"
+    },
+    "cta": {
+      "urgent": "For urgent matters, please call us directly",
+      "book": "Ready to book? Use our online booking system"
+    }
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Get pet care tips, special offers, and news delivered to your inbox",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": "Thanks for subscribing!",
+    "error": "Something went wrong. Please try again.",
+    "alreadySubscribed": "You're already subscribed!"
   }
 }

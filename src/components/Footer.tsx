@@ -1,7 +1,46 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 
 export default function Footer() {
+  const t = useTranslations('newsletter');
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'already_subscribed'>('idle');
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setEmail('');
+        setTimeout(() => setStatus('idle'), 5000);
+      } else if (data.error === 'already_subscribed') {
+        setStatus('already_subscribed');
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      console.error('Newsletter error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -98,6 +137,40 @@ export default function Footer() {
                 <span>Hours: 10:00-16:00</span>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="max-w-md mx-auto text-center">
+            <h3 className="text-white font-bold text-lg mb-2">{t('title')}</h3>
+            <p className="text-sm mb-4">{t('description')}</p>
+            <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={t('placeholder')}
+                required
+                className="flex-1 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+              />
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="px-6 py-2 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+              >
+                {status === 'loading' ? t('subscribing') : t('button')}
+              </button>
+            </form>
+            {status === 'success' && (
+              <p className="mt-3 text-sm text-green-400">{t('success')}</p>
+            )}
+            {status === 'error' && (
+              <p className="mt-3 text-sm text-red-400">{t('error')}</p>
+            )}
+            {status === 'already_subscribed' && (
+              <p className="mt-3 text-sm text-yellow-400">{t('alreadySubscribed')}</p>
+            )}
           </div>
         </div>
 
