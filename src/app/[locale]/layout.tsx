@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       'cat veterinarian',
       'pet sitting Copenhagen',
       'animal clinic',
-      'emergency vet',
+      'pet relocation',
       'pet health',
       'vaccination services',
       'pet passport'

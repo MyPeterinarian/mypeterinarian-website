@@ -59,7 +59,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
             description:
               locale === 'dk'
                 ? 'Komplet dyrlægehjælp inklusive undersøgelser, vaccinationer og akutbehandling'
-                : 'Complete veterinary care including examinations, vaccinations, and emergency care',
+                : 'Complete veterinary care including examinations, vaccinations, and relocation services',
           },
         },
         {

@@ -40,7 +40,7 @@
         "items": {
           "exams": "Health Examinations",
           "vaccinations": "Vaccinations",
-          "emergency": "Emergency Care"
+          "emergency": "Relocation Services"
         }
       },
       "grooming": {
@@ -98,7 +98,7 @@
         },
         "q2": {
           "question": "Do you handle emergencies?",
-          "answer": "Yes, we provide emergency veterinary care. Call us immediately if your pet needs urgent attention."
+          "answer": "We provide comprehensive relocation and travel services for your pet. Contact us to discuss your pet's travel needs."
         },
         "q3": {
           "question": "What are your prices?",
@@ -120,7 +120,7 @@
         "highlights": {
           "0": "Comprehensive health examinations",
           "1": "Vaccinations and preventive care",
-          "2": "Emergency and surgical services"
+          "2": "Relocation and travel services"
         }
       },
       "grooming": {

@@ -40,7 +40,7 @@
         "items": {
           "exams": "Sundhedsundersøgelser",
           "vaccinations": "Vaccinationer",
-          "emergency": "Akut Pleje"
+          "emergency": "Flytning Tjenester"
         }
       },
       "grooming": {
@@ -120,7 +120,7 @@
         "highlights": {
           "0": "Omfattende sundhedsundersøgelser",
           "1": "Vaccinationer og forebyggende pleje",
-          "2": "Akut- og kirurgiske tjenester"
+          "2": "Flytning og rejsetjenester"
         }
       },
       "grooming": {
