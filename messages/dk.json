@@ -15,7 +15,7 @@
       "contact": "Kontakt"
     },
     "servicesDropdown": {
-      "veterinary": "Veterinære Tjenester",
+      "veterinary": "Dyrlæge Tjenester",
       "grooming": "Pleje",
       "petSitting": "Kæledyrspassning",
       "petPassport": "Kæledyrspas"
@@ -115,7 +115,7 @@
     },
     "services": {
       "veterinary": {
-        "title": "Veterinære Tjenester",
+        "title": "Dyrlæge Tjenester",
         "description": "Ekspertmedicinsk pleje fra erfarne dyrlæger. Fra rutinetjek til avancerede behandlinger.",
         "highlights": {
           "0": "Omfattende sundhedsundersøgelser",
@@ -179,17 +179,17 @@
   },
   "services": {
     "veterinary": {
-      "title": "Professionelle Veterinære Tjenester i København",
+      "title": "Professionelle Dyrlæge Tjenester i København",
       "subtitle": "Medfølende og omfattende veterinære tjenester",
       "description": "Alle vores teammedlemmer har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
       "hero": {
         "cta": "Book Dyrlægetid"
       },
       "features": {
-        "title": "Vores Veterinære Tjenester",
+        "title": "Vores Dyrlæge Tjenester",
         "items": {
           "exams": {
-            "title": "Veterinære Konsultationer",
+            "title": "Dyrlæge Konsultationer",
             "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1814 Kr), Hos Pet Quarters (938 Kr), Walk-in (1109 Kr), eller Virtuel (567 Kr).",
             "cta": "Book Konsultation",
             "prices": {
@@ -249,7 +249,7 @@
           },
           "emergency": {
             "title": "Livets Afslutningspleje",
-            "description": "Medfølende aflivning og kremering. \"Veterinære tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
+            "description": "Medfølende aflivning og kremering. \"Dyrlæge tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
             "cta": "Diskuter Muligheder",
             "prices": {
               "0": "Aflivning og Kremering (Hjem): 5103 Kr",
