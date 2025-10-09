@@ -180,7 +180,7 @@
   "services": {
     "veterinary": {
       "title": "Professionelle Dyrlæge Tjenester i København",
-      "subtitle": "Medfølende og omfattende veterinære tjenester",
+      "subtitle": "Medfølende og omfattende dyrlæge tjenester",
       "description": "Alle vores teammedlemmer har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
       "hero": {
         "cta": "Book Dyrlægetid"
@@ -262,7 +262,7 @@
           },
           "other": {
             "title": "Andre Tjenester",
-            "description": "Yderligere \"veterinære tjenester\" fra din \"dyrlæge i København\": inklusive negleklipning og kæledyrsregistrering.",
+            "description": "Yderligere \"dyrlæge tjenester\" fra din \"dyrlæge i København\": inklusive negleklipning og kæledyrsregistrering.",
             "cta": "Forespørg Nu",
             "prices": {
               "0": "Negleklipning (Separat Besøg): 374 Kr",
@@ -278,9 +278,9 @@
         }
       },
       "banner": {
-        "title": "Har du brug for veterinære tjenester i København?",
-        "description": "Kontakt vores København dyrlæger i dag for at planlægge en tid eller diskutere dit kæledyrs specifikke veterinære behov.",
-        "additionalInfo": "Vi tilbyder veterinære tjenester både på Pet Quarters og via hjemmebesøg i København. Vores dyrlæger er her for at hjælpe!",
+        "title": "Har du brug for dyrlæge tjenester i København?",
+        "description": "Kontakt vores København dyrlæger i dag for at planlægge en tid eller diskutere dit kæledyrs specifikke dyrlæge behov.",
+        "additionalInfo": "Vi tilbyder dyrlæge tjenester både på Pet Quarters og via hjemmebesøg i København. Vores dyrlæger er her for at hjælpe!",
         "cta1": "BOOK ONLINE",
         "cta2": "KONTAKT OS"
       },
