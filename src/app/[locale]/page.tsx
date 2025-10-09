@@ -195,6 +195,8 @@ export default function Home() {
                 author: t('testimonials.reviews.review1.author'),
                 pet: t('testimonials.reviews.review1.pet'),
                 rating: 5,
+                source: 'google' as const,
+                date: t('testimonials.reviews.review1.date'),
               },
               {
                 text: t('testimonials.reviews.review2.text'),

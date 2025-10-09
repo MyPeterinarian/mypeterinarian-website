@@ -72,9 +72,10 @@
       "description": "Trusted by hundreds of pet owners in Copenhagen",
       "reviews": {
         "review1": {
-          "text": "MyPeterinarian has been amazing! The staff is so caring and professional. My dog Max loves going there!",
-          "author": "Sarah Jensen",
-          "pet": "Dog owner"
+          "text": "Took my 9-month old puppy, Nora, to her first grooming session. Although she was a bit anxious to start with, the staff at MyPeterinarian quickly tried to bring her some comfort (in the form of treats). They took care of all the grooming (nails, bath, trim, etc.) having Nora all ready for spring. A couple days have passed and she still smells amazing, and more importantly seems to have had a good experience with grooming.",
+          "author": "Alejandra Jiménez",
+          "pet": "Puppy owner (Nora)",
+          "date": "October 2024"
         },
         "review2": {
           "text": "Best veterinary service in Copenhagen. They took such good care of my cat during her surgery. Highly recommended!",
