@@ -84,5 +84,6 @@ export interface Database {
     Views: Record<string, never>
     Functions: Record<string, never>
     Enums: Record<string, never>
+    Relationships: Record<string, never>
   }
 }
