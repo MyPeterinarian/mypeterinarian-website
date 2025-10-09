@@ -1,0 +1,709 @@
+{
+  "header": {
+    "phone": "+45 61 66 76 11",
+    "email": "hej@mypeterinarian.com",
+    "hours": "Hours: 10:00-16:00",
+    "hoursShort": "10:00-16:00",
+    "call": "Call",
+    "navigation": {
+      "home": "Home",
+      "services": "Services",
+      "subscriptions": "Subscriptions",
+      "booking": "Booking",
+      "about": "About Us",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "servicesDropdown": {
+      "veterinary": "Veterinary Services",
+      "grooming": "Grooming",
+      "petSitting": "Pet Sitting",
+      "petPassport": "Pet Passport"
+    },
+    "bookNow": "Book Now",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "Copenhagen's Premier",
+      "subtitle": "Pet Care & Veterinary Services",
+      "description": "Professional veterinary care, grooming, and pet services in the heart of Copenhagen. Your pet's health and happiness is our priority.",
+      "bookAppointment": "Book Appointment",
+      "viewServices": "View Services"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Comprehensive pet care services tailored to your furry family members",
+      "veterinary": {
+        "title": "Veterinary Care",
+        "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
+        "items": {
+          "exams": "Health Examinations",
+          "vaccinations": "Vaccinations",
+          "emergency": "Emergency Care"
+        }
+      },
+      "grooming": {
+        "title": "Grooming",
+        "description": "Professional grooming services to keep your pet looking and feeling their best.",
+        "items": {
+          "full": "Full Grooming",
+          "nails": "Nail Trimming",
+          "spa": "Spa Treatments"
+        }
+      },
+      "petSitting": {
+        "title": "Pet Sitting",
+        "description": "Trusted pet sitting services while you're away. Your pet stays happy and cared for.",
+        "items": {
+          "daily": "Daily Visits",
+          "overnight": "Overnight Care",
+          "updates": "Activity Updates"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Give Your Pet the Best Care?",
+      "description": "Book an appointment today and experience professional pet care in Copenhagen",
+      "button": "Schedule Appointment"
+    },
+    "testimonials": {
+      "title": "What Pet Parents Say",
+      "description": "Trusted by hundreds of pet owners in Copenhagen",
+      "reviews": {
+        "review1": {
+          "text": "MyPeterinarian has been amazing! The staff is so caring and professional. My dog Max loves going there!",
+          "author": "Sarah Jensen",
+          "pet": "Dog owner"
+        },
+        "review2": {
+          "text": "Best veterinary service in Copenhagen. They took such good care of my cat during her surgery. Highly recommended!",
+          "author": "Michael Andersen",
+          "pet": "Cat owner"
+        },
+        "review3": {
+          "text": "The grooming service is fantastic! My poodle always looks amazing. Great attention to detail and very gentle.",
+          "author": "Emma Larsen",
+          "pet": "Poodle owner"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about our services",
+      "questions": {
+        "q1": {
+          "question": "How do I book an appointment?",
+          "answer": "You can book online through our booking system, call us, or send us an email. We typically respond within a few hours."
+        },
+        "q2": {
+          "question": "Do you handle emergencies?",
+          "answer": "Yes, we provide emergency veterinary care. Call us immediately if your pet needs urgent attention."
+        },
+        "q3": {
+          "question": "What are your prices?",
+          "answer": "Prices vary by service. We offer transparent pricing and will always provide a quote before treatment."
+        }
+      },
+      "viewAll": "View All FAQs"
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "title": "Our Pet Care Services",
+      "description": "Professional veterinary care, grooming, and pet services in Copenhagen. Choose the service that best fits your pet's needs."
+    },
+    "services": {
+      "veterinary": {
+        "title": "Veterinary Services",
+        "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
+        "highlights": {
+          "0": "Comprehensive health examinations",
+          "1": "Vaccinations and preventive care",
+          "2": "Emergency and surgical services"
+        }
+      },
+      "grooming": {
+        "title": "Grooming Services",
+        "description": "Professional grooming to keep your pet looking and feeling their best.",
+        "highlights": {
+          "0": "Full grooming packages for all sizes",
+          "1": "Spa treatments and specialized care",
+          "2": "Experienced groomers with gentle approach"
+        }
+      },
+      "petSitting": {
+        "title": "Pet Sitting & Care",
+        "description": "Trusted pet sitting and care services while you're away. Your pet stays happy and cared for.",
+        "highlights": {
+          "0": "Daily visits and overnight stays",
+          "1": "Dog walking and daycare services",
+          "2": "Medication administration available"
+        }
+      },
+      "petPassport": {
+        "title": "Pet Passport & Travel",
+        "description": "Complete pet passport services for EU and international travel requirements.",
+        "highlights": {
+          "0": "EU pet passport preparation",
+          "1": "Microchipping and vaccinations",
+          "2": "Travel health certificates"
+        }
+      }
+    },
+    "learnMore": "Learn More",
+    "whyChoose": {
+      "title": "Why Choose MyPeterinarian?",
+      "reasons": {
+        "0": {
+          "icon": "🏥",
+          "title": "Veterinary Expertise",
+          "description": "All team members have veterinary education and provide professional, compassionate care"
+        },
+        "1": {
+          "icon": "📍",
+          "title": "Central Copenhagen",
+          "description": "Conveniently located in the heart of Copenhagen, serving all neighborhoods"
+        },
+        "2": {
+          "icon": "💚",
+          "title": "Personalized Care",
+          "description": "Every pet receives individualized attention and care tailored to their specific needs"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Book Your Pet's Service?",
+      "description": "Contact us today to schedule your appointment or ask any questions"
+    }
+  },
+  "services": {
+    "veterinary": {
+      "title": "Professional Veterinary Services in Copenhagen",
+      "subtitle": "Compassionate and comprehensive veterinary services",
+      "description": "All our team members have veterinary education and provide professional, compassionate care for your pets. From routine checkups to specialized treatments, we're here for your pet's health and wellbeing.",
+      "hero": {
+        "cta": "Book Veterinary Appointment"
+      },
+      "features": {
+        "title": "Our Veterinary Services",
+        "items": {
+          "exams": {
+            "title": "Veterinary Consultations",
+            "description": "Flexible consultation options: Home visits (1814 DKK), At Clinic (938 DKK), Walk-in (1109 DKK), or Virtual (567 DKK)."
+          },
+          "vaccinations": {
+            "title": "Preventive Care & Packages",
+            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1858 DKK), anti-parasite treatment, and comprehensive health checks."
+          },
+          "surgery": {
+            "title": "Chemical Castration (Dogs/Cats)",
+            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2266 DKK at Clinic) and 6-month options."
+          },
+          "dental": {
+            "title": "Pet Travel Services",
+            "description": "EU Pet Passport appointments, rabies vaccine packages, and complete travel documentation assistance."
+          },
+          "diagnostics": {
+            "title": "Prescriptions & Chronic Care",
+            "description": "Diet consultations, medication prescriptions, and ongoing management of chronic diseases."
+          },
+          "emergency": {
+            "title": "End-of-Life Care",
+            "description": "Compassionate euthanasia and cremation. \"Veterinary services\" available at home in \"Copenhagen\" or at Clinic."
+          },
+          "other": {
+            "title": "Other Services",
+            "description": "Additional \"veterinary services\" from your \"vet in Copenhagen\": including nail clipping and pet registration."
+          },
+          "subscription": {
+            "title": "Subscription Plans",
+            "description": "Coming soon!"
+          }
+        }
+      },
+      "banner": {
+        "title": "Need Veterinary Services in Copenhagen?",
+        "description": "Contact our Copenhagen vets today to schedule an appointment or discuss your pet's specific veterinary needs.",
+        "additionalInfo": "We offer veterinary services both at Clinic and via home visits in Copenhagen. Our vets are here to help!",
+        "cta1": "BOOK ONLINE",
+        "cta2": "CONTACT US"
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "All our services have clear pricing. From basic consultations to specialized care, we provide upfront costs with no hidden fees. Contact us for specific quotes.",
+        "cta": "Get a Quote"
+      },
+      "faq": {
+        "title": "FAQs",
+        "q1": {
+          "question": "What consultation options do you offer?",
+          "answer": "We offer flexible consultation options to suit your needs: home visits, consultations at Clinic in Copenhagen, walk-in appointments, and virtual consultations. All our Veterinarians are licensed in Denmark."
+        },
+        "q2": {
+          "question": "Do you offer preventive care packages?",
+          "answer": "Yes! We offer kitten and puppy packages, whole litter vaccinations, anti-parasite treatments, and comprehensive health check packages. These packages provide excellent value for your pet's preventive care needs."
+        },
+        "q3": {
+          "question": "How do I book an appointment?",
+          "answer": "You can book online, call us at +45 61 66 76 11, or email hej@mypeterinarian.com. We serve all areas of Copenhagen and offer both home visits and clinic appointments."
+        }
+      }
+    },
+    "grooming": {
+      "title": "Professional Dog and Cat Grooming in Copenhagen",
+      "subtitle": "Expert grooming for all breeds and sizes",
+      "description": "Our experienced groomers provide professional grooming services for dogs and cats of all sizes. From full grooming to specialized treatments, we ensure your pet looks and feels their best. We serve Indre By, Vesterbro, Østerbro, Nørrebro, and Amager.",
+      "hero": {
+        "cta": "Book Grooming Appointment"
+      },
+      "sizeCategories": {
+        "title": "Size Categories",
+        "description": "We accommodate all sizes with specialized care for each category",
+        "categories": {
+          "xs": {
+            "size": "XS",
+            "weight": "< 3kg",
+            "longHaired": "Chihuahua, Yorkshire Terrier, Maltese",
+            "shortHaired": "Chihuahua, Miniature Pinscher"
+          },
+          "s": {
+            "size": "S",
+            "weight": "3-10kg",
+            "longHaired": "Shih Tzu, Bichon Frisé, Cocker Spaniel",
+            "shortHaired": "Jack Russell, French Bulldog, Pug"
+          },
+          "m": {
+            "size": "M",
+            "weight": "11-17kg",
+            "longHaired": "Cocker Spaniel, Shetland Sheepdog",
+            "shortHaired": "Border Collie, Beagle, Bulldog"
+          },
+          "l": {
+            "size": "L",
+            "weight": "18-31kg",
+            "longHaired": "Golden Retriever, Australian Shepherd",
+            "shortHaired": "Labrador, Boxer, Dalmatian"
+          },
+          "xl": {
+            "size": "XL",
+            "weight": "> 31kg",
+            "longHaired": "Bernese Mountain Dog, Old English Sheepdog",
+            "shortHaired": "Great Dane, Rottweiler, Mastiff"
+          }
+        }
+      },
+      "features": {
+        "title": "What Our Dog and Cat Groomer Offers",
+        "items": {
+          "full": {
+            "title": "Full Grooming Service",
+            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1000-1500 DKK (based on size).",
+            "bullets": [
+              "XS (< 3kg): 750-850 DKK",
+              "S (3-10kg): 850-1150 DKK",
+              "M (11-17kg): 950-1350 DKK",
+              "L (18-31kg): 1350-1650 DKK",
+              "XL (> 31kg): 1650-1950 DKK",
+              "Cat Grooming: 1000-1500 DKK"
+            ],
+            "button": "Book Full Grooming"
+          },
+          "bath": {
+            "title": "Bath & Blow Dry",
+            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing for a clean, fresh coat.",
+            "bullets": [
+              "Premium bathing service",
+              "Professional shampoos",
+              "Thorough blow drying",
+              "Basic brushing",
+              "Size-based pricing"
+            ],
+            "button": "Book Bath Service"
+          },
+          "haircut": {
+            "title": "Breed-Specific Styling",
+            "description": "Professional haircuts and styling tailored to your pet's breed standards, including specialized techniques like hand-stripping for terriers.",
+            "bullets": [
+              "Breed-specific styling",
+              "Professional cuts & trims",
+              "Hand-stripping for terriers",
+              "Specialized techniques",
+              "All breeds & sizes"
+            ],
+            "button": "Schedule Haircut"
+          },
+          "nails": {
+            "title": "Nail Clipping & Paw Care",
+            "description": "Safe nail trimming and paw care services. Available as standalone service or included in full grooming packages.",
+            "bullets": [
+              "Safe nail trimming",
+              "Paw care services",
+              "Standalone service available",
+              "Included in full grooming",
+              "Professional handling"
+            ],
+            "button": "Book Nail Care"
+          },
+          "spa": {
+            "title": "Specialized Treatments",
+            "description": "De-matting, de-shedding treatments, medicated baths, and tick removal. Special packages available including Perfect Coat and Tangle-Free Life packages.",
+            "bullets": [
+              "De-matting treatments",
+              "De-shedding packages",
+              "Medicated baths",
+              "Tick removal",
+              "Perfect Coat Package",
+              "Tangle-Free Life Package"
+            ],
+            "button": "Book Spa Treatment"
+          },
+          "teeth": {
+            "title": "Teeth Brushing & Extra Care",
+            "description": "Gentle teeth brushing and additional services including puppy grooming introduction and cat brushing packages.",
+            "bullets": [
+              "Gentle teeth brushing",
+              "Puppy grooming introduction",
+              "Cat brushing packages",
+              "Essential Pet Care Package",
+              "Additional care services"
+            ],
+            "button": "Book Dental Care"
+          }
+        }
+      },
+      "packages": {
+        "title": "Grooming Packages",
+        "description": "Special packages designed for your pet's specific needs",
+        "items": {
+          "perfectCoat": {
+            "title": "Perfect Coat Package",
+            "price": "1499 DKK",
+            "description": "For dogs with matted or tangled coats",
+            "features": [
+              "De-matting treatment",
+              "Full grooming service",
+              "Deep conditioning",
+              "Coat health assessment",
+              "Professional brushing techniques"
+            ]
+          },
+          "tangleFree": {
+            "title": "Tangle-Free Life Package",
+            "price": "1299 DKK",
+            "description": "Ongoing coat maintenance program",
+            "features": [
+              "De-shedding treatment",
+              "Full grooming",
+              "Coat maintenance tips",
+              "Product recommendations",
+              "Follow-up care guide"
+            ]
+          },
+          "essentialCare": {
+            "title": "Essential Pet Care Package",
+            "price": "899 DKK",
+            "description": "Complete wellness grooming",
+            "features": [
+              "Bath and blow dry",
+              "Nail clipping",
+              "Ear cleaning",
+              "Teeth brushing",
+              "Health check"
+            ]
+          },
+          "catBrushing": {
+            "title": "Cat Brushing Package",
+            "price": "749 DKK",
+            "description": "Gentle grooming for felines",
+            "features": [
+              "Professional brushing",
+              "De-shedding treatment",
+              "Mat removal",
+              "Stress-free handling",
+              "Cat-specific techniques"
+            ]
+          }
+        }
+      },
+      "detailedPricing": {
+        "title": "Detailed Price List",
+        "description": "Transparent pricing for all our grooming services",
+        "categories": {
+          "fullGrooming": {
+            "title": "Full Grooming Service",
+            "items": [
+              { "name": "XS (< 3kg)", "price": "750-850 DKK" },
+              { "name": "S (3-10kg)", "price": "850-1150 DKK" },
+              { "name": "M (11-17kg)", "price": "950-1350 DKK" },
+              { "name": "L (18-31kg)", "price": "1350-1650 DKK" },
+              { "name": "XL (> 31kg)", "price": "1650-1950 DKK" },
+              { "name": "Cat Grooming", "price": "1000-1500 DKK" }
+            ]
+          },
+          "handStripping": {
+            "title": "Hand-Stripping (Terriers)",
+            "items": [
+              { "name": "Small Terrier", "price": "1200 DKK" },
+              { "name": "Medium Terrier", "price": "1400 DKK" },
+              { "name": "Large Terrier", "price": "1600 DKK" }
+            ]
+          },
+          "bathing": {
+            "title": "Bath & Blow Dry Only",
+            "items": [
+              { "name": "XS-S", "price": "400-550 DKK" },
+              { "name": "M", "price": "550-750 DKK" },
+              { "name": "L-XL", "price": "750-1050 DKK" }
+            ]
+          },
+          "addOns": {
+            "title": "Add-On Services",
+            "items": [
+              { "name": "Teeth Brushing", "price": "100 DKK" },
+              { "name": "De-shedding Treatment", "price": "200-400 DKK" },
+              { "name": "De-matting (per 30 min)", "price": "250 DKK" },
+              { "name": "Medicated Bath", "price": "150 DKK" },
+              { "name": "Nail Clipping Only", "price": "150 DKK" },
+              { "name": "Tick Removal", "price": "100 DKK" }
+            ]
+          }
+        }
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "description": "Trusted by pet owners across Copenhagen",
+        "reviews": {
+          "0": {
+            "name": "Maria H.",
+            "pet": "Golden Retriever owner",
+            "text": "The best grooming service in Copenhagen! My Golden Retriever always looks amazing and the staff is so gentle and professional."
+          },
+          "1": {
+            "name": "Thomas K.",
+            "pet": "Poodle owner",
+            "text": "Excellent breed-specific styling. They really understand poodle grooming and always deliver perfect results."
+          },
+          "2": {
+            "name": "Sophie L.",
+            "pet": "Persian Cat owner",
+            "text": "Finally found a groomer who can handle my Persian cat's long coat. They're patient and skilled. Highly recommend!"
+          }
+        }
+      },
+      "whyChoose": {
+        "title": "Why Choose Our Dog Groomer in Copenhagen",
+        "reasons": [
+          "On-site veterinary support for pets with special needs",
+          "Experienced groomers trained in all breed standards",
+          "Stress-free environment with gentle handling techniques",
+          "Premium products safe for all skin types",
+          "Flexible scheduling including home visits",
+          "Serving all Copenhagen areas: Indre By, Vesterbro, Østerbro, Nørrebro, Amager",
+          "Specialized in both dogs and cats",
+          "Transparent pricing with no hidden fees"
+        ]
+      },
+      "specialOffers": {
+        "title": "Special Grooming Offers",
+        "offers": [
+          {
+            "title": "First-Time Client Discount",
+            "description": "10% off your first full grooming service",
+            "code": "NEWFRIEND10"
+          },
+          {
+            "title": "Puppy Introduction Package",
+            "description": "Special gentle grooming for puppies under 6 months - 650 DKK",
+            "code": "PUPPY650"
+          },
+          {
+            "title": "Senior Pet Care",
+            "description": "15% discount for pets over 10 years old",
+            "code": "SENIOR15"
+          }
+        ]
+      },
+      "pricing": {
+        "title": "Size-Based Pricing",
+        "description": "Pricing based on pet size: XS (<3kg), S (3-10kg), M (11-17kg), L (18-31kg), XL (>31kg). We offer special packages and add-on services. Contact us for detailed pricing for your pet.",
+        "cta": "View Pricing"
+      },
+      "faq": {
+        "title": "Grooming FAQs",
+        "q1": {
+          "question": "What sizes do you accommodate?",
+          "answer": "We groom all sizes from XS (under 3kg) to XL (over 31kg). Pricing varies by size and coat length. We serve all areas of Copenhagen including Indre By, Vesterbro, Østerbro, Nørrebro, and Amager."
+        },
+        "q2": {
+          "question": "Do you have veterinary support on-site?",
+          "answer": "Yes! We have on-site veterinary support available during grooming sessions. This is especially beneficial for pets with special needs or medical conditions."
+        },
+        "q3": {
+          "question": "What special packages do you offer?",
+          "answer": "We offer specialized packages including Perfect Coat Package, Tangle-Free Life Package, Essential Pet Care Package, and Cat Brushing Package. Each package is designed for specific grooming needs."
+        }
+      },
+      "banner": {
+        "cta1": "BOOK GROOMING",
+        "cta2": "ASK QUESTIONS"
+      }
+    },
+    "petSitting": {
+      "title": "Pet Care Services",
+      "subtitle": "Professional pet care with a lot of love and attention",
+      "description": "Do you need help with pet care? Our veterinary-educated team provides excellent professional services with personalized attention for your pet. From daily visits to overnight stays, we ensure your pet receives the best care while you're away.",
+      "hero": {
+        "cta": "Book Pet Care Service"
+      },
+      "features": {
+        "title": "Pet Care Services",
+        "items": {
+          "daily": {
+            "title": "Pet Sitting",
+            "description": "Once daily: 471 DKK. Twice daily: 737 DKK (save 165 DKK on 2nd visit). 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime."
+          },
+          "overnight": {
+            "title": "Overnight Stay",
+            "description": "1360 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home."
+          },
+          "boarding": {
+            "title": "Dog Boarding at Our Sitters' Home",
+            "description": "At Veterinarian Home: 749 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs."
+          },
+          "walking": {
+            "title": "Dog Walking",
+            "description": "Once Daily (60 min): 465 DKK. Twice Daily: 740 DKK (save 190 DKK on 2nd visit). Includes pick-up, drop-off, playtime, and poop pickup."
+          },
+          "medication": {
+            "title": "Medication Administration",
+            "description": "Professional medication administration (45 DKK/day) for pets with special health needs. Our veterinary-educated team ensures proper care."
+          },
+          "updates": {
+            "title": "Dog Daycare",
+            "description": "Full Day (8 Hours): 680 DKK at Peder Hvitfeldts Stræde 16, 1173 København. Socialization, playtime, and supervised throughout the day."
+          }
+        }
+      },
+      "banner": {
+        "title": "Professional Pet Care in Copenhagen",
+        "description": "Our veterinary-educated team provides personalized attention for your pet while you're away.",
+        "additionalInfo": "From daily visits to overnight stays, we ensure your pet receives the best care.",
+        "cta1": "BOOK PET CARE",
+        "cta2": "REQUEST QUOTE"
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Clear pricing for all services. Introductory meeting: 408 DKK, Virtual meeting: 249 DKK, Pet pick-up/drop-off: 272 DKK. Contact us for a personalized care plan.",
+        "cta": "Request Quote"
+      },
+      "faq": {
+        "title": "Pet Care FAQs",
+        "q1": {
+          "question": "What's included in pet sitting visits?",
+          "answer": "Our 60-minute visits include feeding, fresh water, litter box cleaning, short walks, and quality playtime. Choose once daily (471 DKK) or twice daily (737 DKK, save 165 DKK on 2nd visit) based on your pet's needs."
+        },
+        "q2": {
+          "question": "Can you care for multiple pets?",
+          "answer": "Yes! Our overnight stay service is 1360 DKK per night. We're experienced with multi-pet households and provide individualized attention for each pet."
+        },
+        "q3": {
+          "question": "Where is the dog daycare located?",
+          "answer": "Our dog daycare is located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care (8 hours) is 680 DKK and includes supervised play, socialization, and rest periods."
+        }
+      }
+    },
+    "petPassport": {
+      "title": "EU Pet Passport: Travel With Your Furry Friend",
+      "subtitle": "Official EU pet passport for dogs, cats, and ferrets",
+      "description": "The EU Pet Passport is required for non-commercial travel within the EU and certain other countries. It serves as official identification and proof of rabies vaccination. Only authorized veterinarians can issue passports. Complete service: 1474 DKK.",
+      "hero": {
+        "cta": "Book Passport Appointment"
+      },
+      "features": {
+        "title": "What's Included",
+        "items": {
+          "consultation": {
+            "title": "Professional Consultation",
+            "description": "Expert guidance on EU pet passport requirements, travel regulations, and destination-specific rules for smooth international travel."
+          },
+          "health": {
+            "title": "Health Verification",
+            "description": "Complete health check and verification that your pet meets all requirements for EU travel. Your pet must be present for ID verification."
+          },
+          "vaccinations": {
+            "title": "Rabies Vaccination",
+            "description": "Required rabies vaccination administered at least 21 days before travel. Prevents spread of serious viral disease. Vaccination details recorded in passport."
+          },
+          "microchip": {
+            "title": "Microchip Identification",
+            "description": "Mandatory microchipping for dogs in Denmark. Must be done before or simultaneously with rabies vaccination. Provides unique identification number."
+          },
+          "documentation": {
+            "title": "Official Documentation",
+            "description": "Complete handling of all technical details and official documentation. Owner signs the document, and authorized veterinarian processes everything."
+          },
+          "eu": {
+            "title": "EU Pet Passport",
+            "description": "Official EU pet passport valid for travel within EU member states. Passport remains valid as long as rabies vaccination is current."
+          }
+        }
+      },
+      "process": {
+        "title": "Simple 4-Step Process",
+        "steps": {
+          "step1": {
+            "title": "Book Appointment",
+            "description": "Schedule your pet passport appointment online or by phone. Home visit options available for your convenience."
+          },
+          "step2": {
+            "title": "Microchipping",
+            "description": "If not already microchipped, we implant an ISO-compliant microchip for unique identification. Mandatory for dogs in Denmark."
+          },
+          "step3": {
+            "title": "Rabies Vaccination",
+            "description": "Administer rabies vaccination (must be at least 21 days before travel). Vaccination details are recorded in the passport."
+          },
+          "step4": {
+            "title": "Passport Issuance",
+            "description": "Authorized veterinarian issues official EU pet passport. Valid while rabies vaccination is current. No new passport needed unless damaged or full."
+          }
+        }
+      },
+      "banner": {
+        "title": "Ready to Travel with Your Pet?",
+        "pricing": "Complete passport service: 1474 {currency} includes EU pet passport and rabies vaccination.",
+        "note": "Remember: Rabies vaccination must be at least 21 days before travel.",
+        "cta1": "BOOK PASSPORT",
+        "cta2": "ASK QUESTIONS"
+      },
+      "pricing": {
+        "title": "Complete Passport Service",
+        "description": "1474 DKK includes EU pet passport and rabies vaccination. Home visit option available. Older format passports (pre-2014) remain valid if rabies vaccination is current.",
+        "cta": "Book Appointment"
+      },
+      "faq": {
+        "title": "Passport FAQs",
+        "q1": {
+          "question": "How long before travel should I get the passport?",
+          "answer": "The rabies vaccination must be administered at least 21 days before travel. We recommend scheduling your appointment well in advance to ensure all requirements are met on time."
+        },
+        "q2": {
+          "question": "Which animals need an EU pet passport?",
+          "answer": "EU pet passports apply to dogs, cats, and ferrets for non-commercial travel within EU and certain other countries. The passport serves as official identification and proof of rabies vaccination."
+        },
+        "q3": {
+          "question": "How long is the passport valid?",
+          "answer": "The passport remains valid as long as your pet's rabies vaccination is current. You don't need a new passport unless it's damaged or full. Older format passports (pre-2014) are still valid."
+        }
+      }
+    },
+    "common": {
+      "bookNow": "Book Now",
+      "learnMore": "Learn More",
+      "backToServices": "← Back to All Services",
+      "relatedServices": "Related Services",
+      "contactUs": "Contact Us for More Information"
+    }
+  }
+}
