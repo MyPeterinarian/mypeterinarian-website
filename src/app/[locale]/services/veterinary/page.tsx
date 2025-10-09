@@ -136,13 +136,7 @@ export default function VeterinaryPage() {
                       )}
                       <div className="mt-6 pt-4 border-t border-gray-100">
                         <button className="w-full text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
-                          {service.key === "exams" ? "Book Consultation" :
-                           service.key === "vaccinations" ? "Learn More" :
-                           service.key === "surgery" ? "Request Service" :
-                           service.key === "dental" ? "Get Travel Ready" :
-                           service.key === "diagnostics" ? "Manage Prescriptions" :
-                           service.key === "emergency" ? "Discuss Options" :
-                           "Inquire Now"}
+                          {t(`features.items.${service.key}.cta`)}
                         </button>
                       </div>
                     </>

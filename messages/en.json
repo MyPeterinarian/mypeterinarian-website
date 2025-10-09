@@ -191,6 +191,7 @@
           "exams": {
             "title": "Veterinary Consultations",
             "description": "Flexible consultation options: Home visits (1814 DKK), At Clinic (938 DKK), Walk-in (1109 DKK), or Virtual (567 DKK).",
+            "cta": "Book Consultation",
             "prices": {
               "0": "Consultation-Home Visits: 1814 DKK",
               "1": "Consultation-At Clinic: 938 DKK",
@@ -202,6 +203,7 @@
           "vaccinations": {
             "title": "Preventive Care & Packages",
             "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1858 DKK), anti-parasite treatment, and comprehensive health checks.",
+            "cta": "Learn More",
             "prices": {
               "0": "Kitten/Puppy Package (At Clinic): 2494 DKK",
               "1": "Whole Litter Vaccination & Microchipping-Per (At Clinic): 1858 DKK",
@@ -214,6 +216,7 @@
           "surgery": {
             "title": "Chemical Castration (Dogs/Cats)",
             "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2266 DKK at Clinic) and 6-month options.",
+            "cta": "Request Service",
             "prices": {
               "0": "1-Yr (Homes): 3402 DKK",
               "1": "1-Yr (At Clinic): 2266 DKK",
@@ -224,6 +227,7 @@
           "dental": {
             "title": "Pet Travel Services",
             "description": "EU Pet Passport appointments, rabies vaccine packages, and complete travel documentation assistance.",
+            "cta": "Get Travel Ready",
             "prices": {
               "0": "EU Pet Passport Appointment (Home): 1584 DKK",
               "1": "EU Pet Passport Appointment (At Clinic): 608 DKK",
@@ -234,6 +238,7 @@
           "diagnostics": {
             "title": "Prescriptions & Chronic Care",
             "description": "Diet consultations, medication prescriptions, and ongoing management of chronic diseases.",
+            "cta": "Manage Prescriptions",
             "prices": {
               "0": "Chronic Diseases Package (At Clinic): Contact for Price",
               "1": "Diet Consultations (At Clinic): 2752 DKK",
@@ -245,6 +250,7 @@
           "emergency": {
             "title": "End-of-Life Care",
             "description": "Compassionate euthanasia and cremation. \"Veterinary services\" available at home in \"Copenhagen\" or at Clinic.",
+            "cta": "Discuss Options",
             "prices": {
               "0": "Euthanasia and Cremation (Home): 5103 DKK",
               "1": "Euthanasia and Cremation (At Clinic): 2979 DKK",
@@ -257,6 +263,7 @@
           "other": {
             "title": "Other Services",
             "description": "Additional \"veterinary services\" from your \"vet in Copenhagen\": including nail clipping and pet registration.",
+            "cta": "Inquire Now",
             "prices": {
               "0": "Nail Clipping (Separate Visit): 374 DKK",
               "1": "Pet Registration: 545 DKK",
@@ -610,6 +617,7 @@
           "daily": {
             "title": "Pet Sitting",
             "description": "Once daily: 471 DKK. Twice daily: 737 DKK (save 165 DKK on 2nd visit). 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
+            "cta": "Book Visits",
             "prices": {
               "0": "Once Daily Visit: 471 DKK",
               "1": "Twice Daily Visits: 737 DKK (save 165 DKK on 2nd visit)",
@@ -622,6 +630,7 @@
           "overnight": {
             "title": "Overnight Stay",
             "description": "1360 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
+            "cta": "Book Overnight",
             "prices": {
               "0": "Overnight Stay: 1360 DKK per night",
               "1": "Complete evening & morning routines",
@@ -634,6 +643,7 @@
           "boarding": {
             "title": "Dog Boarding at Our Sitters' Home",
             "description": "At Veterinarian Home: 749 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
+            "cta": "Book Boarding",
             "prices": {
               "0": "At Veterinarian Home: 749 DKK/night",
               "1": "At PQ: 1150 DKK/night",
@@ -646,6 +656,7 @@
           "walking": {
             "title": "Dog Walking",
             "description": "Once Daily (60 min): 465 DKK. Twice Daily: 740 DKK (save 190 DKK on 2nd visit). Includes pick-up, drop-off, playtime, and poop pickup.",
+            "cta": "Schedule Walks",
             "prices": {
               "0": "Once Daily (60 min): 465 DKK",
               "1": "Twice Daily: 740 DKK (save 190 DKK on 2nd visit)",
@@ -658,6 +669,7 @@
           "medication": {
             "title": "Medication Administration",
             "description": "Professional medication administration (45 DKK/day) for pets with special health needs. Our veterinary-educated team ensures proper care.",
+            "cta": "Medication Care",
             "prices": {
               "0": "Medication Administration: 45 DKK/day",
               "1": "Veterinary-educated team",
@@ -670,6 +682,7 @@
           "updates": {
             "title": "Dog Daycare",
             "description": "Full Day (8 Hours): 680 DKK at Peder Hvitfeldts Stræde 16, 1173 København. Socialization, playtime, and supervised throughout the day.",
+            "cta": "Book Daycare",
             "prices": {
               "0": "Full Day (8 Hours): 680 DKK",
               "1": "Location: Peder Hvitfeldts Stræde 16",

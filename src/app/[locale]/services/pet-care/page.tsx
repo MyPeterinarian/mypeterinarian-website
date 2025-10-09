@@ -113,12 +113,7 @@ export default function PetSittingPage() {
                   )}
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <button className="w-full text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
-                      {service.key === "daily" ? "Book Visits" :
-                       service.key === "overnight" ? "Book Overnight" :
-                       service.key === "boarding" ? "Book Boarding" :
-                       service.key === "walking" ? "Schedule Walks" :
-                       service.key === "medication" ? "Medication Care" :
-                       "Book Daycare"}
+                      {t(`features.items.${service.key}.cta`)}
                     </button>
                   </div>
                 </motion.div>
