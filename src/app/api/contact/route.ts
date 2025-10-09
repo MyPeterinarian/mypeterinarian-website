@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
-import { resend } from '@/lib/resend';
+import { getResend } from '@/lib/resend';
 import { render } from '@react-email/render';
 import ContactFormEmail from '@/emails/ContactFormEmail';
 import ContactFormConfirmationEmail from '@/emails/ContactFormConfirmationEmail';
@@ -81,6 +81,7 @@ export async function POST(request: NextRequest) {
 
       // 1. Send notification to business owner
       console.log('📤 Sending email to business owner...');
+      const resend = getResend();
       const ownerEmailResult = await resend.emails.send({
         from: 'MyPeterinarian <noreply@mypeterinarian.com>',
         to: 'hej@mypeterinarian.com',

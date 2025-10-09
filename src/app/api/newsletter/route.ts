@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
-import { resend } from '@/lib/resend';
+import { getResend } from '@/lib/resend';
 import { render } from '@react-email/render';
 import NewsletterConfirmationEmail from '@/emails/NewsletterConfirmationEmail';
 import React from 'react';
@@ -60,6 +60,7 @@ export async function POST(request: NextRequest) {
             React.createElement(NewsletterConfirmationEmail, { email, locale })
           );
 
+          const resend = getResend();
           await resend.emails.send({
             from: 'MyPeterinarian <noreply@mypeterinarian.com>',
             to: email,
@@ -115,6 +116,7 @@ export async function POST(request: NextRequest) {
 
       console.log('✅ Email template rendered');
 
+      const resend = getResend();
       const emailResult = await resend.emails.send({
         from: 'MyPeterinarian <noreply@mypeterinarian.com>',
         to: email,
