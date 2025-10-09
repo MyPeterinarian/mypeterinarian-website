@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { supabaseServer } from '@/lib/supabase-server';
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     const locale = request.headers.get('accept-language')?.split(',')[0].split('-')[0] || 'en';
 
     // Check if email already exists
-    const { data: existing } = await (supabase
+    const { data: existing } = await (supabaseServer
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .from('newsletter_subscribers') as any)
       .select('id, status')
@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         );
       } else {
         // Reactivate subscription
-        const { data, error } = await (supabase
+        const { data, error } = await (supabaseServer
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           .from('newsletter_subscribers') as any)
           .update({ status: 'active', unsubscribed_at: null })
@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Insert new subscription
-    const { data, error } = await (supabase
+    const { data, error } = await (supabaseServer
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .from('newsletter_subscribers') as any)
       .insert([

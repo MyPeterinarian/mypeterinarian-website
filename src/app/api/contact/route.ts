@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { supabaseServer } from '@/lib/supabase-server';
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     const locale = request.headers.get('accept-language')?.split(',')[0].split('-')[0] || 'en';
 
     // Insert into Supabase
-    const { data, error } = await (supabase
+    const { data, error } = await (supabaseServer
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       .from('contact_submissions') as any)
       .insert([
