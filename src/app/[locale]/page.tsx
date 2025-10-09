@@ -146,7 +146,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4 italic">"{t('testimonials.reviews.review1.text')}"</p>
+              <p className="text-gray-600 mb-4 italic">&quot;{t('testimonials.reviews.review1.text')}&quot;</p>
               <div>
                 <p className="font-semibold text-gray-900">{t('testimonials.reviews.review1.author')}</p>
                 <p className="text-sm text-gray-500">{t('testimonials.reviews.review1.pet')}</p>
@@ -164,7 +164,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4 italic">"{t('testimonials.reviews.review2.text')}"</p>
+              <p className="text-gray-600 mb-4 italic">&quot;{t('testimonials.reviews.review2.text')}&quot;</p>
               <div>
                 <p className="font-semibold text-gray-900">{t('testimonials.reviews.review2.author')}</p>
                 <p className="text-sm text-gray-500">{t('testimonials.reviews.review2.pet')}</p>
@@ -182,7 +182,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <p className="text-gray-600 mb-4 italic">"{t('testimonials.reviews.review3.text')}"</p>
+              <p className="text-gray-600 mb-4 italic">&quot;{t('testimonials.reviews.review3.text')}&quot;</p>
               <div>
                 <p className="font-semibold text-gray-900">{t('testimonials.reviews.review3.author')}</p>
                 <p className="text-sm text-gray-500">{t('testimonials.reviews.review3.pet')}</p>

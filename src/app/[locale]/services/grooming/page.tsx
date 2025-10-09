@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations, useLocale } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Scissors, Droplets, Sparkles, Footprints, Flower2, Smile, Star, Package } from 'lucide-react'
 import Link from 'next/link'
@@ -9,8 +9,6 @@ export default function GroomingPage() {
   const t = useTranslations('services.grooming')
   const common = useTranslations('services.common')
   const header = useTranslations('header')
-  const locale = useLocale()
-  const currency = locale === 'dk' ? 'Kr' : 'DKK'
 
   const sizeCategories = ['xs', 's', 'm', 'l', 'xl']
 
@@ -269,7 +267,7 @@ export default function GroomingPage() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 italic">"{t(`testimonials.reviews.${index}.text`)}"</p>
+                <p className="text-gray-700 mb-4 italic">&quot;{t(`testimonials.reviews.${index}.text`)}&quot;</p>
                 <div>
                   <p className="font-semibold text-gray-900">{t(`testimonials.reviews.${index}.name`)}</p>
                   <p className="text-sm text-gray-600">{t(`testimonials.reviews.${index}.pet`)}</p>
@@ -337,7 +335,7 @@ export default function GroomingPage() {
                         </div>
                       )
                     }
-                  } catch (e) {
+                  } catch {
                     // Code doesn't exist, don't render anything
                   }
                   return null
