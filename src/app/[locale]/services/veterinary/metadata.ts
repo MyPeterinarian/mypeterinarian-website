@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   }> = {
     en: {
       title: 'Veterinary Care - Professional Pet Health Services | MyPeterinarian',
-      description: 'Expert veterinary services in Copenhagen: health examinations, vaccinations, emergency care, and preventive medicine. Professional care for dogs, cats, and small pets.'
+      description: 'Expert veterinary services in Copenhagen: health examinations, vaccinations, relocation services, and preventive medicine. Professional care for dogs, cats, and small pets.'
     },
     dk: {
       title: 'Dyrlægehjælp - Professionelle Kæledyrssundhedstjenester | MyPeterinarian',
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: localeData.title,
     description: localeData.description,
-    keywords: ['veterinarian Copenhagen', 'pet health', 'vaccinations', 'emergency vet', 'animal clinic', 'dog vet', 'cat vet'],
+    keywords: ['veterinarian Copenhagen', 'pet health', 'vaccinations', 'pet relocation', 'animal clinic', 'dog vet', 'cat vet'],
     alternates: {
       canonical: `${baseUrl}/${locale}/services/veterinary`,
       languages: {
