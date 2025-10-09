@@ -6,6 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StructuredData from '@/components/StructuredData';
 import { Metadata } from 'next';
 import '../globals.css';
 
@@ -137,6 +138,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <StructuredData locale={locale} />
           <Header />
           {children}
           <Footer />
