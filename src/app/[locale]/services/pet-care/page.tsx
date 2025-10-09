@@ -16,74 +16,32 @@ export default function PetSittingPage() {
     {
       key: 'daily',
       icon: Home,
-      items: [
-        `Once Daily Visit: 471 ${currency}`,
-        `Twice Daily Visits: 737 ${currency} (save 165 ${currency} on 2nd visit)`,
-        '60-minute visits',
-        'Feeding & water change',
-        'Litter cleaning',
-        'Short walk & playtime'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.daily.prices.${i}`))
     },
     {
       key: 'overnight',
       icon: Moon,
-      items: [
-        `1360 ${currency} per night`,
-        'Evening & morning routines',
-        'Feeding & walks',
-        'Companionship at home',
-        'Your pet stays comfortable',
-        'TLC included'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.overnight.prices.${i}`))
     },
     {
       key: 'boarding',
       icon: Building2,
-      items: [
-        `At Veterinarian Home: 749 ${currency}/night`,
-        `At PQ: 1150 ${currency}/night`,
-        'Personalized TLC',
-        'Two long walks',
-        'Company of one or two other dogs',
-        'Feeding, water, treats & playtime'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.boarding.prices.${i}`))
     },
     {
       key: 'walking',
       icon: Dog,
-      items: [
-        `Once Daily (60 min): 465 ${currency}`,
-        `Twice Daily: 740 ${currency} (save 190 ${currency} on 2nd visit)`,
-        'Pick-up & drop-off',
-        'Playtime included',
-        'Poop pickup',
-        'Each walk lasts 60 minutes'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.walking.prices.${i}`))
     },
     {
       key: 'medication',
       icon: Pill,
-      items: [
-        `45 ${currency} per day`,
-        'Professional administration',
-        'Veterinary-educated team',
-        'Special health needs',
-        'Proper care ensured',
-        'Peace of mind'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.medication.prices.${i}`))
     },
     {
       key: 'updates',
       icon: Sun,
-      items: [
-        `Full Day Care: 680 ${currency} (8 hours)`,
-        'At Peder Hvitfeldts Stræde 16',
-        '1173 København',
-        'Socialization & playtime',
-        'Supervised throughout day',
-        'Safe indoor environment'
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.updates.prices.${i}`))
     }
   ]
 

@@ -25,78 +25,37 @@ export default function VeterinaryPage() {
     {
       key: 'exams',
       icon: Stethoscope,
-      items: [
-        `Consultation-Home Visits: 1814 ${currency}`,
-        `Consultation-At Clinic: 938 ${currency}`,
-        `Consultation-Walk-In: 1109 ${currency}`,
-        `Follow Up (At Clinic): 661 ${currency}`,
-        `Virtual Consultation (2.5 hrs): 567 ${currency}`
-      ]
+      items: Array.from({ length: 5 }, (_, i) => t(`features.items.exams.prices.${i}`))
     },
     {
       key: 'vaccinations',
       icon: Syringe,
-      items: [
-        `Kitten/Puppy Package (At Clinic): 2494 ${currency}`,
-        `Whole Litter Vaccination & Microchipping-Per (At Clinic): 1858 ${currency}`,
-        `Anti-parasite Treatment-Grant-Abov Appn: 540 ${currency}`,
-        `Anti-parasite Treatment-Clinic: 193.5 ${currency}`,
-        `Pet Health Check: 800 ${currency}`,
-        `Pet Health Check (Rabies): 1065 ${currency}`
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.vaccinations.prices.${i}`))
     },
     {
       key: 'surgery',
       icon: Activity,
-      items: [
-        `1-Yr (Homes): 3402 ${currency}`,
-        `1-Yr (At Clinic): 2266 ${currency}`,
-        `6 Months (Home): 2579 ${currency}`,
-        `6 Months (At Clinic): 1301 ${currency}`
-      ]
+      items: Array.from({ length: 4 }, (_, i) => t(`features.items.surgery.prices.${i}`))
     },
     {
       key: 'dental',
       icon: Plane,
-      items: [
-        `EU Pet Passport Appointment (Home): 1584 ${currency}`,
-        `EU Pet Passport Appointment (At Clinic): 608 ${currency}`,
-        `Rabies Vaccine + EU Passport Package (Home): 2214 ${currency}`,
-        'Travel Package: Bx (AUS/US/UAE) (Home): Contact for Price'
-      ]
+      items: Array.from({ length: 4 }, (_, i) => t(`features.items.dental.prices.${i}`))
     },
     {
       key: 'diagnostics',
       icon: Pill,
-      items: [
-        'Chronic Diseases Package (At Clinic): Contact for Price',
-        `Diet Consultations (At Clinic): 2752 ${currency}`,
-        `Medication Prescription: 147 ${currency}`,
-        `Prescription Packages (Bi-annual/ Home): 1879 ${currency}`,
-        `Prescription Package (Bi-annual/ At Clinic): 1816 ${currency}`
-      ]
+      items: Array.from({ length: 5 }, (_, i) => t(`features.items.diagnostics.prices.${i}`))
     },
     {
       key: 'emergency',
       icon: Heart,
-      items: [
-        `Euthanasia and Cremation (Home): 5103 ${currency}`,
-        `Euthanasia and Cremation (At Clinic): 2979 ${currency}`,
-        `No Euthanasia Private Cremation (Pet Pick-Up): 4422 ${currency}`,
-        `No Euthanasia Private Cremation (via Pick-Up): 3422 ${currency}`,
-        `Private Cremation (Per Pick Up): 4212 ${currency}`,
-        `Private Cremation (via Per Pick Up): 3425 ${currency}`
-      ]
+      items: Array.from({ length: 6 }, (_, i) => t(`features.items.emergency.prices.${i}`))
     },
     {
       key: 'other',
       icon: CheckCircle,
-      items: [
-        `Nail Clipping (Separate Visit): 374 ${currency}`,
-        `Pet Registration: 545 ${currency}`,
-        'Welcome To Denmark Package (Home): Contact for Price',
-        'Welcome To Denmark Package (At Clinic): Contact for Price'
-      ]
+      items: Array.from({ length: 4 }, (_, i) => t(`features.items.other.prices.${i}`))
     },
     {
       key: 'subscription',

@@ -190,31 +190,79 @@
         "items": {
           "exams": {
             "title": "Veterinære Konsultationer",
-            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1814 Kr), Hos Pet Quarters (938 Kr), Walk-in (1109 Kr), eller Virtuel (567 Kr)."
+            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1814 Kr), Hos Pet Quarters (938 Kr), Walk-in (1109 Kr), eller Virtuel (567 Kr).",
+            "prices": {
+              "0": "Konsultation-Hjemmebesøg: 1814 Kr",
+              "1": "Konsultation-Hos Pet Quarters: 938 Kr",
+              "2": "Konsultation-Walk-In: 1109 Kr",
+              "3": "Opfølgning (Hos Pet Quarters): 661 Kr",
+              "4": "Virtuel Konsultation (2,5 timer): 567 Kr"
+            }
           },
           "vaccinations": {
             "title": "Forebyggende Pleje & Pakker",
-            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1858 Kr), anti-parasit behandling og omfattende sundhedstjek."
+            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1858 Kr), anti-parasit behandling og omfattende sundhedstjek.",
+            "prices": {
+              "0": "Killing/Hvalpe Pakke (Hos Pet Quarters): 2494 Kr",
+              "1": "Hele Kuld Vaccination & Mikrochipning-Per (Hos Pet Quarters): 1858 Kr",
+              "2": "Anti-parasit Behandling-Grant-Abov Appn: 540 Kr",
+              "3": "Anti-parasit Behandling-Pet Quarters: 193,5 Kr",
+              "4": "Kæledyrs Sundhedstjek: 800 Kr",
+              "5": "Kæledyrs Sundhedstjek (Rabies): 1065 Kr"
+            }
           },
           "surgery": {
             "title": "Kemisk Kastration (Hunde/Katte)",
-            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2266 Kr hos Pet Quarters) og 6 måneders muligheder."
+            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2266 Kr hos Pet Quarters) og 6 måneders muligheder.",
+            "prices": {
+              "0": "1-År (Hjem): 3402 Kr",
+              "1": "1-År (Hos Pet Quarters): 2266 Kr",
+              "2": "6 Måneder (Hjem): 2579 Kr",
+              "3": "6 Måneder (Hos Pet Quarters): 1301 Kr"
+            }
           },
           "dental": {
             "title": "Kæledyrs Rejsetjenester",
-            "description": "EU Kæledyrspas aftaler, rabiesvaccine pakker og komplet rejsedokumentation assistance."
+            "description": "EU Kæledyrspas aftaler, rabiesvaccine pakker og komplet rejsedokumentation assistance.",
+            "prices": {
+              "0": "EU Kæledyrspas Aftale (Hjem): 1584 Kr",
+              "1": "EU Kæledyrspas Aftale (Hos Pet Quarters): 608 Kr",
+              "2": "Rabiesvaccine + EU Pas Pakke (Hjem): 2214 Kr",
+              "3": "Rejsepakke: Bx (AUS/US/UAE) (Hjem): Kontakt for Pris"
+            }
           },
           "diagnostics": {
             "title": "Recepter & Kronisk Pleje",
-            "description": "Diætkonsultationer, medicin recepter og løbende håndtering af kroniske sygdomme."
+            "description": "Diætkonsultationer, medicin recepter og løbende håndtering af kroniske sygdomme.",
+            "prices": {
+              "0": "Kroniske Sygdomme Pakke (Hos Pet Quarters): Kontakt for Pris",
+              "1": "Diætkonsultationer (Hos Pet Quarters): 2752 Kr",
+              "2": "Medicin Recept: 147 Kr",
+              "3": "Recept Pakker (Halvårlig/ Hjem): 1879 Kr",
+              "4": "Recept Pakke (Halvårlig/ Hos Pet Quarters): 1816 Kr"
+            }
           },
           "emergency": {
             "title": "Livets Afslutningspleje",
-            "description": "Medfølende aflivning og kremering. \"Veterinære tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters."
+            "description": "Medfølende aflivning og kremering. \"Veterinære tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
+            "prices": {
+              "0": "Aflivning og Kremering (Hjem): 5103 Kr",
+              "1": "Aflivning og Kremering (Hos Pet Quarters): 2979 Kr",
+              "2": "Ingen Aflivning Privat Kremering (Kæledyrs Afhentning): 4422 Kr",
+              "3": "Ingen Aflivning Privat Kremering (via Afhentning): 3422 Kr",
+              "4": "Privat Kremering (Per Afhentning): 4212 Kr",
+              "5": "Privat Kremering (via Per Afhentning): 3425 Kr"
+            }
           },
           "other": {
             "title": "Andre Tjenester",
-            "description": "Yderligere \"veterinære tjenester\" fra din \"dyrlæge i København\": inklusive negleklipning og kæledyrsregistrering."
+            "description": "Yderligere \"veterinære tjenester\" fra din \"dyrlæge i København\": inklusive negleklipning og kæledyrsregistrering.",
+            "prices": {
+              "0": "Negleklipning (Separat Besøg): 374 Kr",
+              "1": "Kæledyrsregistrering: 545 Kr",
+              "2": "Velkommen til Danmark Pakke (Hjem): Kontakt for Pris",
+              "3": "Velkommen til Danmark Pakke (Hos Pet Quarters): Kontakt for Pris"
+            }
           },
           "subscription": {
             "title": "Abonnementsplaner",
@@ -565,27 +613,75 @@
         "items": {
           "daily": {
             "title": "Kæledyrspassning",
-            "description": "Én daglig: 471 Kr. To daglige: 737 Kr (spar 165 Kr på 2. besøg). 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid."
+            "description": "Én daglig: 471 Kr. To daglige: 737 Kr (spar 165 Kr på 2. besøg). 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid.",
+            "prices": {
+              "0": "Én Daglig Besøg: 471 Kr",
+              "1": "To Daglige Besøg: 737 Kr (spar 165 Kr på 2. besøg)",
+              "2": "60-minutters besøg",
+              "3": "Fodring & vandskift",
+              "4": "Katterensning",
+              "5": "Kort gåtur & legetid"
+            }
           },
           "overnight": {
             "title": "Overnatning",
-            "description": "1360 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem."
+            "description": "1360 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem.",
+            "prices": {
+              "0": "Overnatning: 1360 Kr pr. nat",
+              "1": "Komplet aften- & morgenrutiner",
+              "2": "Fodring og frisk vand",
+              "3": "Gåture og motion",
+              "4": "Selskab i kæledyrs eget hjem",
+              "5": "Sindsro mens du er væk"
+            }
           },
           "boarding": {
             "title": "Hundepension hos Vores Passere",
-            "description": "Hos Dyrlægens Hjem: 749 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde."
+            "description": "Hos Dyrlægens Hjem: 749 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
+            "prices": {
+              "0": "Hos Dyrlægens Hjem: 749 Kr/nat",
+              "1": "Hos PQ: 1150 Kr/nat",
+              "2": "Personlig TLC",
+              "3": "To lange gåture dagligt",
+              "4": "Selskab med en eller to andre hunde",
+              "5": "Sikkert og komfortabelt miljø"
+            }
           },
           "walking": {
             "title": "Hundegåtur",
-            "description": "Én Daglig (60 min): 465 Kr. To Daglige: 740 Kr (spar 190 Kr på 2. besøg). Inkluderer afhentning, aflevering, legetid og lorti opsamling."
+            "description": "Én Daglig (60 min): 465 Kr. To Daglige: 740 Kr (spar 190 Kr på 2. besøg). Inkluderer afhentning, aflevering, legetid og lorti opsamling.",
+            "prices": {
+              "0": "Én Daglig (60 min): 465 Kr",
+              "1": "To Daglige: 740 Kr (spar 190 Kr på 2. besøg)",
+              "2": "Afhentning og aflevering inkluderet",
+              "3": "Legetid og motion",
+              "4": "Lorti opsamling",
+              "5": "GPS sporings opdateringer"
+            }
           },
           "medication": {
             "title": "Medicin Administration",
-            "description": "Professionel medicin administration (45 Kr/dag) for kæledyr med særlige sundhedsbehov. Vores veterinær-uddannede team sikrer korrekt pleje."
+            "description": "Professionel medicin administration (45 Kr/dag) for kæledyr med særlige sundhedsbehov. Vores veterinær-uddannede team sikrer korrekt pleje.",
+            "prices": {
+              "0": "Medicin Administration: 45 Kr/dag",
+              "1": "Veterinær-uddannet team",
+              "2": "Professionel pleje til særlige behov",
+              "3": "Korrekt dosering og timing",
+              "4": "Medicin sporing",
+              "5": "Sundhedsopdateringer til ejere"
+            }
           },
           "updates": {
             "title": "Hundedagpleje",
-            "description": "Fuld Dag (8 Timer): 680 Kr på Peder Hvitfeldts Stræde 16, 1173 København. Socialisering, legetid og overvåget hele dagen."
+            "description": "Fuld Dag (8 Timer): 680 Kr på Peder Hvitfeldts Stræde 16, 1173 København. Socialisering, legetid og overvåget hele dagen.",
+            "prices": {
+              "0": "Fuld Dag (8 Timer): 680 Kr",
+              "1": "Placering: Peder Hvitfeldts Stræde 16",
+              "2": "Socialisering med andre hunde",
+              "3": "Overvåget legetid",
+              "4": "Hvileperioder inkluderet",
+              "5": "Foto og video opdateringer"
+            }
           }
         }
       },
