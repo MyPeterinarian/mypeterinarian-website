@@ -53,8 +53,8 @@
         }
       },
       "petSitting": {
-        "title": "Kæledyrspassning",
-        "description": "Pålidelige kæledyrspasningstjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
+        "title": "Kæledyrsplejetjenester",
+        "description": "Pålidelige kæledyrsplejetjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
         "items": {
           "daily": "Daglige Besøg",
           "overnight": "Overnatningspleje",

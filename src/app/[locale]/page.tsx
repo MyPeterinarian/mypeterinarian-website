@@ -1,13 +1,66 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 export default function Home() {
   const t = useTranslations('home');
+  const tContact = useTranslations('contact');
+  const params = useParams();
+  const locale = params.locale as string;
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+
+    try {
+      const payload = { ...formData, locale };
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch (error) {
+      console.error('Contact form error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-green-50 py-12 sm:py-20 px-4">
+      <section id="home" className="relative bg-gradient-to-br from-blue-50 to-green-50 py-12 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -21,16 +74,16 @@ export default function Home() {
               <Link href="/booking" className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg text-center">
                 {t('hero.bookAppointment')}
               </Link>
-              <Link href="/services" className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors text-center">
+              <a href="#services" className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors text-center">
                 {t('hero.viewServices')}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-20 px-4">
+      <section id="services" className="py-12 sm:py-20 px-4 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
             {t('services.title')}
@@ -41,7 +94,7 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Veterinary Care */}
-            <Link href="/services/veterinary" className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            <Link href={`/${locale}/services/veterinary`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -68,7 +121,7 @@ export default function Home() {
             </Link>
 
             {/* Grooming Services */}
-            <Link href="/services/grooming" className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            <Link href={`/${locale}/services/grooming`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -94,8 +147,8 @@ export default function Home() {
               </ul>
             </Link>
 
-            {/* Pet Sitting */}
-            <Link href="/services/pet-sitting" className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            {/* Pet Care Services */}
+            <Link href={`/${locale}/services/pet-care`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -125,7 +178,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-12 sm:py-20 px-4 bg-gray-50">
+      <section id="testimonials" className="py-12 sm:py-20 px-4 bg-gray-50 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
             {t('testimonials.title')}
@@ -192,8 +245,223 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-12 sm:py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50 scroll-mt-20">
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            {tContact('title')}
+          </motion.h2>
+          <motion.p
+            className="text-xl text-gray-600 mb-2"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            {tContact('subtitle')}
+          </motion.p>
+          <motion.p
+            className="text-gray-600"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {tContact('description')}
+          </motion.p>
+        </div>
+
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Contact Form */}
+            <motion.div
+              className="bg-white rounded-2xl shadow-xl p-8"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    {tContact('form.name')}
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder={tContact('form.namePlaceholder')}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    {tContact('form.email')}
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder={tContact('form.emailPlaceholder')}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    {tContact('form.phone')}
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder={tContact('form.phonePlaceholder')}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                    {tContact('form.subject')}
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder={tContact('form.subjectPlaceholder')}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    {tContact('form.message')}
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder={tContact('form.messagePlaceholder')}
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={status === 'loading'}
+                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {status === 'loading' ? tContact('form.sending') : tContact('form.submit')}
+                </button>
+
+                {status === 'success' && (
+                  <div className="p-4 bg-green-50 text-green-800 rounded-lg">
+                    {tContact('form.success')}
+                  </div>
+                )}
+
+                {status === 'error' && (
+                  <div className="p-4 bg-red-50 text-red-800 rounded-lg">
+                    {tContact('form.error')}
+                  </div>
+                )}
+              </form>
+            </motion.div>
+
+            {/* Contact Info */}
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">{tContact('info.title')}</h2>
+
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <Phone className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">{tContact('info.phone')}</h3>
+                      <a href="tel:+4561667611" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        +45 61 66 76 11
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <Mail className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">{tContact('info.email')}</h3>
+                      <a href="mailto:hej@mypeterinarian.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        hej@mypeterinarian.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <Clock className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">{tContact('info.hours')}</h3>
+                      <p className="text-gray-600">{locale === 'dk' ? 'Man-Fre: 10:00-16:00' : 'Mon-Fri: 10:00-16:00'}</p>
+                      <p className="text-gray-600">{locale === 'dk' ? 'Lør-Søn: Lukket' : 'Sat-Sun: Closed'}</p>
+                      <p className="text-gray-500 text-sm mt-2 italic">
+                        {locale === 'dk' ? 'Nogle lørdage har vi åbent, kontakt os venligst for at forespørge' : 'Some Saturdays we are open, please contact us to inquire'}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <MapPin className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">{tContact('info.location')}</h3>
+                      <p className="text-gray-600">Peder Hvitfeldts Straede 16</p>
+                      <p className="text-gray-600">1173 Copenhagen, Denmark</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 rounded-2xl p-6 border border-blue-100">
+                <h3 className="font-semibold text-gray-900 mb-2">{tContact('cta.urgent')}</h3>
+                <p className="text-gray-600 text-sm mb-4">{tContact('cta.book')}</p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Preview Section */}
-      <section className="py-12 sm:py-20 px-4">
+      <section id="faq" className="py-12 sm:py-20 px-4 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
             {t('faq.title')}
@@ -232,12 +500,6 @@ export default function Home() {
                 {t('faq.questions.q3.answer')}
               </p>
             </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/faq" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-              {t('faq.viewAll')} →
-            </Link>
           </div>
         </div>
       </section>

@@ -4,9 +4,13 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
+import { useParams } from 'next/navigation';
 
 export default function ContactPage() {
   const t = useTranslations('contact');
+  const params = useParams();
+  const locale = params.locale as string;
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,23 +24,36 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus('loading');
 
+    console.log('🚀 [CLIENT] Form submission started');
+    console.log('📝 [CLIENT] Form data:', formData);
+    console.log('🌍 [CLIENT] Locale:', locale);
+
     try {
+      const payload = { ...formData, locale };
+      console.log('📤 [CLIENT] Sending to API:', payload);
+      
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(payload)
       });
 
+      console.log('📥 [CLIENT] Response status:', response.status);
+      const responseData = await response.json();
+      console.log('📥 [CLIENT] Response data:', responseData);
+
       if (response.ok) {
+        console.log('✅ [CLIENT] Form submitted successfully');
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
         setTimeout(() => setStatus('idle'), 5000);
       } else {
+        console.error('❌ [CLIENT] Form submission failed:', responseData);
         setStatus('error');
         setTimeout(() => setStatus('idle'), 5000);
       }
     } catch (error) {
-      console.error('Contact form error:', error);
+      console.error('❌ [CLIENT] Contact form error:', error);
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
     }
@@ -210,7 +227,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">{t('info.phone')}</h3>
-                      <p className="text-gray-600">+45 12 34 56 78</p>
+                      <a href="tel:+4561667611" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        +45 61 66 76 11
+                      </a>
                     </div>
                   </div>
 
@@ -220,7 +239,9 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">{t('info.email')}</h3>
-                      <p className="text-gray-600">info@mypeterinarian.com</p>
+                      <a href="mailto:hej@mypeterinarian.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        hej@mypeterinarian.com
+                      </a>
                     </div>
                   </div>
 
@@ -230,9 +251,11 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">{t('info.hours')}</h3>
-                      <p className="text-gray-600">Mon-Fri: 8AM - 6PM</p>
-                      <p className="text-gray-600">Sat: 9AM - 2PM</p>
-                      <p className="text-gray-600">Sun: Closed</p>
+                      <p className="text-gray-600">{locale === 'dk' ? 'Man-Fre: 10:00-16:00' : 'Mon-Fri: 10:00-16:00'}</p>
+                      <p className="text-gray-600">{locale === 'dk' ? 'Lør-Søn: Lukket' : 'Sat-Sun: Closed'}</p>
+                      <p className="text-gray-500 text-sm mt-2 italic">
+                        {locale === 'dk' ? 'Nogle lørdage har vi åbent, kontakt os venligst for at forespørge' : 'Some Saturdays we are open, please contact us to inquire'}
+                      </p>
                     </div>
                   </div>
 
@@ -242,7 +265,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">{t('info.location')}</h3>
-                      <p className="text-gray-600">{t('info.locationText')}</p>
+                      <p className="text-gray-600">Peder Hvitfeldts Straede 16</p>
+                      <p className="text-gray-600">1173 Copenhagen, Denmark</p>
                     </div>
                   </div>
                 </div>

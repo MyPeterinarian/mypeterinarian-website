@@ -53,8 +53,8 @@
         }
       },
       "petSitting": {
-        "title": "Pet Sitting",
-        "description": "Trusted pet sitting services while you're away. Your pet stays happy and cared for.",
+        "title": "Pet Care Services",
+        "description": "Trusted pet care services while you're away. Your pet stays happy and cared for.",
         "items": {
           "daily": "Daily Visits",
           "overnight": "Overnight Care",

@@ -83,39 +83,13 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-              <Link href={`/${locale}`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.home')}
-              </Link>
+              </a>
 
-              {/* Services Dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
-              >
-                <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors flex items-center gap-1 text-sm xl:text-base">
-                  {t('navigation.services')}
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </button>
-                {servicesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-2 border border-gray-100">
-                    <Link href={`/${locale}/services/veterinary`} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                      {t('servicesDropdown.veterinary')}
-                    </Link>
-                    <Link href={`/${locale}/services/grooming`} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                      {t('servicesDropdown.grooming')}
-                    </Link>
-                    <Link href={`/${locale}/services/pet-sitting`} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                      {t('servicesDropdown.petSitting')}
-                    </Link>
-                    <Link href={`/${locale}/services/pet-passport`} className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                      {t('servicesDropdown.petPassport')}
-                    </Link>
-                  </div>
-                )}
-              </div>
+              <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
+                {t('navigation.services')}
+              </a>
 
               <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
                 {t('navigation.subscriptions')}
@@ -123,15 +97,12 @@ export default function Header() {
               <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
                 {t('navigation.booking')}
               </Link>
-              <Link href={`/${locale}/about`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
-                {t('navigation.about')}
-              </Link>
               <Link href={`/${locale}/blog`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
                 {t('navigation.blog')}
               </Link>
-              <Link href={`/${locale}/contact`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <a href={`/${locale}#contact`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.contact')}
-              </Link>
+              </a>
             </nav>
 
             {/* CTA Button & Language Switcher - Desktop */}
@@ -164,22 +135,14 @@ export default function Header() {
           {mobileMenuOpen && (
             <div className="lg:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col gap-3">
-                <Link href={`/${locale}`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.home')}</Link>
+                <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
 
-                {/* Mobile Services Submenu */}
-                <div className="pl-2 border-l-2 border-gray-200">
-                  <div className="text-gray-500 text-sm font-semibold mb-1">{t('navigation.services')}</div>
-                  <Link href={`/${locale}/services/veterinary`} className="block text-gray-600 hover:text-blue-600 py-1 text-sm">{t('servicesDropdown.veterinary')}</Link>
-                  <Link href={`/${locale}/services/grooming`} className="block text-gray-600 hover:text-blue-600 py-1 text-sm">{t('servicesDropdown.grooming')}</Link>
-                  <Link href={`/${locale}/services/pet-sitting`} className="block text-gray-600 hover:text-blue-600 py-1 text-sm">{t('servicesDropdown.petSitting')}</Link>
-                  <Link href={`/${locale}/services/pet-passport`} className="block text-gray-600 hover:text-blue-600 py-1 text-sm">{t('servicesDropdown.petPassport')}</Link>
-                </div>
+                <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.services')}</a>
 
-                <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.subscriptions')}</Link>
-                <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.booking')}</Link>
-                <Link href={`/${locale}/about`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.about')}</Link>
-                <Link href={`/${locale}/blog`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.blog')}</Link>
-                <Link href={`/${locale}/contact`} className="text-gray-700 hover:text-blue-600 font-medium py-1">{t('navigation.contact')}</Link>
+                <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
+                <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</Link>
+                <Link href={`/${locale}/blog`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.blog')}</Link>
+                <a href={`/${locale}#contact`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.contact')}</a>
 
                 {/* Language Switcher - Mobile */}
                 <LanguageSwitcher isMobile />
@@ -187,6 +150,7 @@ export default function Header() {
                 <Link
                   href={`/${locale}/booking`}
                   className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-2.5 rounded-lg font-semibold text-center mt-2"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   {t('bookNow')}
                 </Link>

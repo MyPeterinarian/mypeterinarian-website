@@ -4,9 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { useParams } from 'next/navigation';
 
 export default function Footer() {
   const t = useTranslations('newsletter');
+  const params = useParams();
+  const locale = params.locale as string;
+  
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'already_subscribed'>('idle');
 
@@ -14,28 +18,40 @@ export default function Footer() {
     e.preventDefault();
     setStatus('loading');
 
+    console.log('📧 [CLIENT] Newsletter submission started');
+    console.log('📝 [CLIENT] Email:', email);
+    console.log('🌍 [CLIENT] Locale:', locale);
+
     try {
+      const payload = { email, locale };
+      console.log('📤 [CLIENT] Sending to API:', payload);
+
       const response = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+        body: JSON.stringify(payload)
       });
 
+      console.log('📥 [CLIENT] Response status:', response.status);
       const data = await response.json();
+      console.log('📥 [CLIENT] Response data:', data);
 
       if (response.ok) {
+        console.log('✅ [CLIENT] Newsletter subscription successful');
         setStatus('success');
         setEmail('');
         setTimeout(() => setStatus('idle'), 5000);
       } else if (data.error === 'already_subscribed') {
+        console.log('⚠️ [CLIENT] Already subscribed');
         setStatus('already_subscribed');
         setTimeout(() => setStatus('idle'), 5000);
       } else {
+        console.error('❌ [CLIENT] Newsletter subscription failed:', data);
         setStatus('error');
         setTimeout(() => setStatus('idle'), 5000);
       }
     } catch (error) {
-      console.error('Newsletter error:', error);
+      console.error('❌ [CLIENT] Newsletter error:', error);
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
     }
