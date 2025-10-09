@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
+import { resend } from '@/lib/resend';
+import { render } from '@react-email/render';
+import ContactFormEmail from '@/emails/ContactFormEmail';
+import ContactFormConfirmationEmail from '@/emails/ContactFormConfirmationEmail';
+import React from 'react';
 
 export async function POST(request: NextRequest) {
   try {
@@ -40,6 +45,65 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { error: 'Failed to submit contact form', details: error.message },
         { status: 500 }
+      );
+    }
+
+    // Send email notifications
+    try {
+      // Render email templates to HTML
+      const ownerEmailHtml = await render(
+        React.createElement(ContactFormEmail, {
+          name,
+          email,
+          phone,
+          subject,
+          message,
+          locale,
+        })
+      );
+
+      const customerEmailHtml = await render(
+        React.createElement(ContactFormConfirmationEmail, {
+          name,
+          locale,
+        })
+      );
+
+      // 1. Send notification to business owner
+      await resend.emails.send({
+        from: 'MyPeterinarian <noreply@mypeterinarian.com>',
+        to: 'hej@mypeterinarian.com',
+        replyTo: email,
+        subject: locale === 'en' 
+          ? `New Contact Form Submission from ${name}`
+          : `Ny Kontaktformular Indsendelse fra ${name}`,
+        html: ownerEmailHtml,
+      });
+
+      // 2. Send confirmation to customer
+      await resend.emails.send({
+        from: 'MyPeterinarian <noreply@mypeterinarian.com>',
+        to: email,
+        subject: locale === 'en'
+          ? 'Thank you for contacting MyPeterinarian'
+          : 'Tak fordi du kontaktede MyPeterinarian',
+        html: customerEmailHtml,
+      });
+
+      console.log('Contact form emails sent successfully');
+    } catch (emailError) {
+      // Log email error but don't fail the request since data is already saved
+      console.error('Failed to send email notifications:', emailError);
+      console.error('Email error details:', emailError instanceof Error ? emailError.message : 'Unknown email error');
+      
+      // Return success with warning about email
+      return NextResponse.json(
+        { 
+          success: true, 
+          data,
+          warning: 'Form submitted successfully but email notifications failed to send'
+        },
+        { status: 200 }
       );
     }
 
