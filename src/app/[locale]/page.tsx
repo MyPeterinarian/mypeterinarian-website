@@ -133,7 +133,7 @@ export default function Home() {
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <img 
-                  src="/icons/brush.svg" 
+                  src="/icons/grooming.svg" 
                   alt="Grooming" 
                   className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
                 />
