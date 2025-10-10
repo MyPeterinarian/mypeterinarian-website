@@ -100,7 +100,7 @@ export default function Home() {
                 <img 
                   src="/icons/stethoscope.svg" 
                   alt="Veterinary Care" 
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
                 />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.veterinary.title')}</h3>
@@ -170,7 +170,7 @@ export default function Home() {
                 <img 
                   src="/icons/heart-hands.svg" 
                   alt="Pet Care Services" 
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                  className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
                 />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.petSitting.title')}</h3>
