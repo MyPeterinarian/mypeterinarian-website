@@ -214,6 +214,14 @@ export default function Home() {
                 source: 'trustpilot' as const,
                 date: t('testimonials.reviews.review3.date'),
               },
+              {
+                text: t('testimonials.reviews.review4.text'),
+                author: t('testimonials.reviews.review4.author'),
+                pet: t('testimonials.reviews.review4.pet'),
+                rating: 5,
+                source: 'trustpilot' as const,
+                date: t('testimonials.reviews.review4.date'),
+              },
             ]}
             autoRotateInterval={5000}
           />
