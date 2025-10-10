@@ -95,17 +95,19 @@ export default function Home() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {/* Veterinary Care */}
-            <Link href={`/${locale}/services/veterinary`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+                <img 
+                  src="/icons/stethoscope.svg" 
+                  alt="Veterinary Care" 
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.veterinary.title')}</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {t('services.veterinary.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   {t('services.veterinary.items.exams')}
@@ -119,20 +121,28 @@ export default function Home() {
                   {t('services.veterinary.items.emergency')}
                 </li>
               </ul>
-            </Link>
+              <Link href={`/${locale}/services/veterinary`} className="w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2">
+                {t('services.learnMore')}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
 
             {/* Grooming Services */}
-            <Link href={`/${locale}/services/grooming`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <img 
+                  src="/icons/brush.svg" 
+                  alt="Grooming" 
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.grooming.title')}</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {t('services.grooming.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   {t('services.grooming.items.full')}
@@ -146,20 +156,28 @@ export default function Home() {
                   {t('services.grooming.items.spa')}
                 </li>
               </ul>
-            </Link>
+              <Link href={`/${locale}/services/grooming`} className="w-full bg-green-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center gap-2">
+                {t('services.learnMore')}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
 
             {/* Pet Care Services */}
-            <Link href={`/${locale}/services/pet-care`} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer">
+            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+                <img 
+                  src="/icons/heart-hands.svg" 
+                  alt="Pet Care Services" 
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.petSitting.title')}</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {t('services.petSitting.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
                 <li className="flex items-center">
                   <span className="text-green-500 mr-2">✓</span>
                   {t('services.petSitting.items.daily')}
@@ -173,7 +191,13 @@ export default function Home() {
                   {t('services.petSitting.items.updates')}
                 </li>
               </ul>
-            </Link>
+              <Link href={`/${locale}/services/pet-care`} className="w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2">
+                {t('services.learnMore')}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -34,6 +34,7 @@
     "services": {
       "title": "Our Services",
       "description": "Comprehensive pet care services tailored to your furry family members",
+      "learnMore": "Learn More",
       "veterinary": {
         "title": "Veterinary Care",
         "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",

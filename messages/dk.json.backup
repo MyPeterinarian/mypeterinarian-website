@@ -60,8 +60,7 @@
           "overnight": "Overnatningspleje",
           "updates": "Aktivitetsopdateringer"
         }
-      },
-      "learnMore": "Læs Mere"
+      }
     },
     "cta": {
       "title": "Klar til at Give Dit Kæledyr Den Bedste Pleje?",
@@ -426,105 +425,42 @@
           "fullGrooming": {
             "title": "Fuld Pleje (Bad + Klipning)",
             "items": [
-              {
-                "name": "XS (< 3 kg)",
-                "price": "750 Kr"
-              },
-              {
-                "name": "S (3-10 kg)",
-                "price": "950 Kr"
-              },
-              {
-                "name": "M (11-17 kg)",
-                "price": "1250 Kr"
-              },
-              {
-                "name": "L (18-31 kg)",
-                "price": "1650 Kr"
-              },
-              {
-                "name": "XL (> 31 kg)",
-                "price": "1950 Kr"
-              },
-              {
-                "name": "Kattepleje",
-                "price": "1000-1500 Kr"
-              }
+              { "name": "XS (< 3 kg)", "price": "750 Kr" },
+              { "name": "S (3-10 kg)", "price": "950 Kr" },
+              { "name": "M (11-17 kg)", "price": "1250 Kr" },
+              { "name": "L (18-31 kg)", "price": "1650 Kr" },
+              { "name": "XL (> 31 kg)", "price": "1950 Kr" },
+              { "name": "Kattepleje", "price": "1000-1500 Kr" }
             ]
           },
           "handStripping": {
             "title": "Håndstrikning (Terrier)",
             "items": [
-              {
-                "name": "XS (< 3 kg)",
-                "price": "950 Kr"
-              },
-              {
-                "name": "S (3-10 kg)",
-                "price": "1150 Kr"
-              },
-              {
-                "name": "M (11-17 kg)",
-                "price": "1450 Kr"
-              },
-              {
-                "name": "L (18-31 kg)",
-                "price": "1850 Kr"
-              }
+              { "name": "XS (< 3 kg)", "price": "950 Kr" },
+              { "name": "S (3-10 kg)", "price": "1150 Kr" },
+              { "name": "M (11-17 kg)", "price": "1450 Kr" },
+              { "name": "L (18-31 kg)", "price": "1850 Kr" }
             ]
           },
           "bathing": {
             "title": "Kun Bad & Føntørring",
             "items": [
-              {
-                "name": "XS (< 3 kg)",
-                "price": "350 Kr"
-              },
-              {
-                "name": "S (3-10 kg)",
-                "price": "450 Kr"
-              },
-              {
-                "name": "M (11-17 kg)",
-                "price": "550 Kr"
-              },
-              {
-                "name": "L (18-31 kg)",
-                "price": "750 Kr"
-              },
-              {
-                "name": "XL (> 31 kg)",
-                "price": "950 Kr"
-              }
+              { "name": "XS (< 3 kg)", "price": "350 Kr" },
+              { "name": "S (3-10 kg)", "price": "450 Kr" },
+              { "name": "M (11-17 kg)", "price": "550 Kr" },
+              { "name": "L (18-31 kg)", "price": "750 Kr" },
+              { "name": "XL (> 31 kg)", "price": "950 Kr" }
             ]
           },
           "addOns": {
             "title": "Tillæg og Specielle Tjenester",
             "items": [
-              {
-                "name": "Negleklipning (Separat besøg)",
-                "price": "374 Kr"
-              },
-              {
-                "name": "Tandbørstning",
-                "price": "150 Kr"
-              },
-              {
-                "name": "Flåtfjernelse (pr. flåt)",
-                "price": "50 Kr"
-              },
-              {
-                "name": "Filtring (alvorlig)",
-                "price": "300-600 Kr"
-              },
-              {
-                "name": "Medicinsk bad",
-                "price": "250 Kr"
-              },
-              {
-                "name": "Flåtfjernelse",
-                "price": "100 Kr"
-              }
+              { "name": "Negleklipning (Separat besøg)", "price": "374 Kr" },
+              { "name": "Tandbørstning", "price": "150 Kr" },
+              { "name": "Flåtfjernelse (pr. flåt)", "price": "50 Kr" },
+              { "name": "Filtring (alvorlig)", "price": "300-600 Kr" },
+              { "name": "Medicinsk bad", "price": "250 Kr" },
+              { "name": "Flåtfjernelse", "price": "100 Kr" }
             ]
           }
         }
