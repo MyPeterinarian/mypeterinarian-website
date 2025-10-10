@@ -94,6 +94,12 @@
           "author": "Martine De Vriese",
           "pet": "Dog owner",
           "date": "September 2024"
+        },
+        "review5": {
+          "text": "My Peterinarian has been amazing with my dogs. They have a lovely veterinarian team and have always been very helpful in whatever I needed. Highly recommend them.",
+          "author": "Yaitza Alba",
+          "pet": "Dog owner",
+          "date": "March 2025"
         }
       }
     },
