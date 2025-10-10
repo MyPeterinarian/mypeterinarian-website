@@ -132,9 +132,11 @@ export default function Home() {
             {/* Grooming Services */}
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+                <img 
+                  src="/icons/brush.svg" 
+                  alt="Grooming" 
+                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                />
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.grooming.title')}</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
