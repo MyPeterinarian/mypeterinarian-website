@@ -60,7 +60,8 @@
           "overnight": "Overnatningspleje",
           "updates": "Aktivitetsopdateringer"
         }
-      }
+      },
+      "learnMore": "Læs Mere"
     },
     "cta": {
       "title": "Klar til at Give Dit Kæledyr Den Bedste Pleje?",
@@ -425,42 +426,105 @@
           "fullGrooming": {
             "title": "Fuld Pleje (Bad + Klipning)",
             "items": [
-              { "name": "XS (< 3 kg)", "price": "750 Kr" },
-              { "name": "S (3-10 kg)", "price": "950 Kr" },
-              { "name": "M (11-17 kg)", "price": "1250 Kr" },
-              { "name": "L (18-31 kg)", "price": "1650 Kr" },
-              { "name": "XL (> 31 kg)", "price": "1950 Kr" },
-              { "name": "Kattepleje", "price": "1000-1500 Kr" }
+              {
+                "name": "XS (< 3 kg)",
+                "price": "750 Kr"
+              },
+              {
+                "name": "S (3-10 kg)",
+                "price": "950 Kr"
+              },
+              {
+                "name": "M (11-17 kg)",
+                "price": "1250 Kr"
+              },
+              {
+                "name": "L (18-31 kg)",
+                "price": "1650 Kr"
+              },
+              {
+                "name": "XL (> 31 kg)",
+                "price": "1950 Kr"
+              },
+              {
+                "name": "Kattepleje",
+                "price": "1000-1500 Kr"
+              }
             ]
           },
           "handStripping": {
             "title": "Håndstrikning (Terrier)",
             "items": [
-              { "name": "XS (< 3 kg)", "price": "950 Kr" },
-              { "name": "S (3-10 kg)", "price": "1150 Kr" },
-              { "name": "M (11-17 kg)", "price": "1450 Kr" },
-              { "name": "L (18-31 kg)", "price": "1850 Kr" }
+              {
+                "name": "XS (< 3 kg)",
+                "price": "950 Kr"
+              },
+              {
+                "name": "S (3-10 kg)",
+                "price": "1150 Kr"
+              },
+              {
+                "name": "M (11-17 kg)",
+                "price": "1450 Kr"
+              },
+              {
+                "name": "L (18-31 kg)",
+                "price": "1850 Kr"
+              }
             ]
           },
           "bathing": {
             "title": "Kun Bad & Føntørring",
             "items": [
-              { "name": "XS (< 3 kg)", "price": "350 Kr" },
-              { "name": "S (3-10 kg)", "price": "450 Kr" },
-              { "name": "M (11-17 kg)", "price": "550 Kr" },
-              { "name": "L (18-31 kg)", "price": "750 Kr" },
-              { "name": "XL (> 31 kg)", "price": "950 Kr" }
+              {
+                "name": "XS (< 3 kg)",
+                "price": "350 Kr"
+              },
+              {
+                "name": "S (3-10 kg)",
+                "price": "450 Kr"
+              },
+              {
+                "name": "M (11-17 kg)",
+                "price": "550 Kr"
+              },
+              {
+                "name": "L (18-31 kg)",
+                "price": "750 Kr"
+              },
+              {
+                "name": "XL (> 31 kg)",
+                "price": "950 Kr"
+              }
             ]
           },
           "addOns": {
             "title": "Tillæg og Specielle Tjenester",
             "items": [
-              { "name": "Negleklipning (Separat besøg)", "price": "374 Kr" },
-              { "name": "Tandbørstning", "price": "150 Kr" },
-              { "name": "Flåtfjernelse (pr. flåt)", "price": "50 Kr" },
-              { "name": "Filtring (alvorlig)", "price": "300-600 Kr" },
-              { "name": "Medicinsk bad", "price": "250 Kr" },
-              { "name": "Flåtfjernelse", "price": "100 Kr" }
+              {
+                "name": "Negleklipning (Separat besøg)",
+                "price": "374 Kr"
+              },
+              {
+                "name": "Tandbørstning",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Flåtfjernelse (pr. flåt)",
+                "price": "50 Kr"
+              },
+              {
+                "name": "Filtring (alvorlig)",
+                "price": "300-600 Kr"
+              },
+              {
+                "name": "Medicinsk bad",
+                "price": "250 Kr"
+              },
+              {
+                "name": "Flåtfjernelse",
+                "price": "100 Kr"
+              }
             ]
           }
         }
@@ -876,5 +940,66 @@
     "success": "Tak for tilmeldingen!",
     "error": "Noget gik galt. Prøv igen.",
     "alreadySubscribed": "Du er allerede tilmeldt!"
+  },
+  "team": {
+    "title": "Mød Vores Team",
+    "subtitle": "Passionerede fagfolk dedikeret til dit kæledyrs sundhed og lykke",
+    "members": {
+      "tarek": {
+        "role": "Stifter & CEO",
+        "location": "København & Tokyo",
+        "bio": "Født i Jordan, studerede veterinærmedicin. Grundlagde MyPeterinarian for at levere kvalitetskæledyrsplejetjenester med endeløs kærlighed til dyr."
+      },
+      "irene": {
+        "role": "Manager & Dyrlæge",
+        "location": "København",
+        "bio": "Specialiseret i intern medicin med fokus på gastrointestinale og nyrelidelser. Erfaring fra Spanien og Storbritannien."
+      },
+      "dora": {
+        "role": "Assisterende Operationschef",
+        "location": "København",
+        "bio": "Dedikeret til at sikre problemfri drift og fremragende kundeservice til alle vores kæledyrskunder."
+      },
+      "martin": {
+        "role": "CFO",
+        "location": "København",
+        "bio": "Styrer økonomiske operationer for at sikre bæredygtig vækst samtidig med at opretholde kvalitetskæledyrsplejetjenester."
+      },
+      "misty": {
+        "role": "Kæledyrstrimmer",
+        "location": "København",
+        "bio": "Ekspert trimmer passioneret omkring at få hvert kæledyr til at se og føle sig bedst."
+      },
+      "veronika": {
+        "role": "Kæledyrsplejer",
+        "location": "København",
+        "bio": "Omsorgsfuld og opmærksom kæledyrsplejer der giver kærlig pleje og opmærksomhed til hvert dyr."
+      },
+      "quan": {
+        "role": "Kæledyrsplejer",
+        "location": "København",
+        "bio": "Erfaren kæledyrsplejer dedikeret til at yde eksceptionel pleje og selskab."
+      },
+      "nikhil": {
+        "role": "Kæledyrsplejer",
+        "location": "København",
+        "bio": "Passioneret omkring dyrevelfærd og leverer personlig pleje til hvert kæledyr."
+      },
+      "sarah": {
+        "role": "Kæledyrsplejer",
+        "location": "København",
+        "bio": "Forpligtet til at skabe positive oplevelser og sikre velbefindende for alle kæledyr."
+      },
+      "mariia": {
+        "role": "Kæledyrsplejer",
+        "location": "København",
+        "bio": "Hengivet kæledyrsplejer der bringer varme og professionel pleje til hver interaktion."
+      }
+    },
+    "cta": {
+      "title": "Vil Du Møde Vores Team?",
+      "description": "Book en tid og oplev vores passionerede pleje på første hånd",
+      "button": "Planlæg Tid"
+    }
   }
 }

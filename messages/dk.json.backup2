@@ -949,56 +949,52 @@
       "tarek": {
         "role": "Stifter & CEO",
         "location": "København & Tokyo",
-        "bio": "Tarek er født og opvokset i Jordan i en multikulturel familie. Han bor i øjeblikket i København efter at have boet i en række store byer rundt om i verden. Efter at have studeret veterinærmedicin grundlagde Tarek MyPeterinarian for at levere kvalitets- og professionel kæledyrspleje og veterinærservice til kæledyr og deres forældre. Hans kærlighed til dyr, store eller små, er ubeskrivelig."
+        "bio": "Født i Jordan, studerede veterinærmedicin. Grundlagde MyPeterinarian for at levere kvalitetskæledyrsplejetjenester med endeløs kærlighed til dyr."
       },
       "irene": {
         "role": "Manager & Dyrlæge",
         "location": "København",
-        "bio": "Irene har en stærk lidenskab for intern medicin med særlig fokus på mave-tarmsygdomme, nyre- og urinvejsproblemer. Hendes professionelle rejse har strakt sig over både Spanien, hendes hjemland, og Storbritannien, indtil hun har fundet hendes med omfattende erfaring i at skitsere forskellige internationale kæledyrs sjere. Hendes urokkelige engagement i at levere enestående service bliver gennem i hendes vedvarende søgning efter avancerede læringsmuligheder og kontinuerlig forbedring af færdigheder gennem hele hendes karriere."
+        "bio": "Specialiseret i intern medicin med fokus på gastrointestinale og nyrelidelser. Erfaring fra Spanien og Storbritannien."
       },
       "dora": {
-        "role": "Assistent Driftschef & Kæledyrspassser i København",
+        "role": "Assisterende Operationschef",
         "location": "København",
-        "bio": "Dora, kendt af alle som Dori eller en 28-års fra Ungarn, der bor boet i Danmark i næsten fire år. Efter at have boet i både Aarhus og Odense, bor hun nu i Københavns centrum med sin kæreste. Det nyder at holde øvet bro at strikke og løber. Hun har også to katte, Liszka og Nazani, med Liszka med over 4000 følgere på Instagram. Hun er begejstret for at skifte sig til MyPeterinarian-teamet og ser frem til at passe på din kæledyr, som om de var hendes egne."
+        "bio": "Dedikeret til at sikre problemfri drift og fremragende kundeservice til alle vores kæledyrskunder."
       },
       "martin": {
-        "role": "Fraktionel Chief Financial Officer",
+        "role": "CFO",
         "location": "København",
-        "bio": "Mød Martin, revisoren, der ikke er bange for at skifte fra seriøse tal til jojke i en søgen efter bæredygtige løsninger til iværksættere. Han specialiserer sig i at give scale-up virksomheder det strategiske kort og økonomiske struktur, de har brug for at vokse, samtidig med at sikre deres skat/regnskab er gjort korrekt - alt imens han balancerer med sin familie i Slagelse, bigeder, en hund og en kat!"
+        "bio": "Styrer økonomiske operationer for at sikre bæredygtig vækst samtidig med at opretholde kvalitetskæledyrsplejetjenester."
       },
       "misty": {
-        "role": "Groomer & Kæledyrspassser i København",
+        "role": "Kæledyrstrimmer",
         "location": "København",
-        "bio": "Misty, der oprindeligt kommer fra Sverige, tilbragte sin opvækst i Singapore, hvor hun udviklede en dyb forståelse for forskellige kulturer og en livsvarig kærlighed til kæledyr. Efter at være blevet adskilt fra sit kæledyr i fem år, forstår Misty, at enhver hund og kat er unik og kræver en tilpasset tilgang til at sikre deres behagelige oplevelse. Hun stiler efter at give hver kæledyr en sund og rar pleje dag. Med tidligere erfaring i ridepleje, holder hun en tillidsfuld relation med dig og dit elskede kæledyr!"
+        "bio": "Ekspert trimmer passioneret omkring at få hvert kæledyr til at se og føle sig bedst."
       },
       "veronika": {
-        "role": "Kæledyrspasser & Pensionat i København",
+        "role": "Kæledyrsplejer",
         "location": "København",
-        "bio": "Veronika er en 19-årig studerende fra Ukraine, som i øjeblikket er i sit andet år af studier af offentlig administration. Hun taler ukrainsk, russisk og engelsk, og har også studeret lidt grundlæggende dansk. Hun har en stor kærlighed til dyr og savner sin egen dyre i Ukraine. Hun er begejstret for at bringe sin passion til dyrepleje til vores team og se frem til at sikre, at dine kæledyr får opmærksomhed og kærlighed, de fortjener, mens du er væk. Veronika er glad for at hjælpe med alle dine behov for dyrepleje!"
+        "bio": "Omsorgsfuld og opmærksom kæledyrsplejer der giver kærlig pleje og opmærksomhed til hvert dyr."
       },
       "quan": {
-        "role": "Kæledyrspasser i København",
+        "role": "Kæledyrsplejer",
         "location": "København",
-        "bio": "Quan er født i Kina og flyttede til Danmark i 2022 for sin uddannelse. Hun har været en hundelsker i over 10 år og har udviklet en dyb hengivenhed til dyr. Efter at være flyttet til København, begyndte hun at lede efter en fast ven til daglig pasning af deres kæledyr, herunder hunde, katte og kaniner. Hun nyder forskellige aktiviteter i sin fritid, såsom at træne i fitnesscentret, svømme og vandre. Quan har en naturlig affinitet med dyr og opbygger hurtigt tillid til dem. Hun er begejstret for at bringe sin entusiasme, erfaring og kærlighed til dyr til MyPeterinarian."
+        "bio": "Erfaren kæledyrsplejer dedikeret til at yde eksceptionel pleje og selskab."
       },
       "nikhil": {
-        "role": "Kæledyrspasser i København",
+        "role": "Kæledyrsplejer",
         "location": "København",
-        "bio": "Nikhil er oprindeligt fra Indien og har boet i København i over seks år. Han arbejder som softwareudvikler og er meget engageret i natur og udendørs aktiviteter. Han brænder for bæredygtighed og elsker dyr af alle slags, især hunde, heste og delfiner. Nikhil er begejstret for at slutte sig til MyPeterinarian-teamet og ser frem til at passe dine kæledyr, som om de var hans egne."
+        "bio": "Passioneret omkring dyrevelfærd og leverer personlig pleje til hvert kæledyr."
       },
       "sarah": {
-        "role": "Kæledyrspasser i København",
+        "role": "Kæledyrsplejer",
         "location": "København",
-        "bio": "Sarah kommer fra USA og tager i øjeblikket en MSc i miljøteknik ved DTU med fokus på miljøledelse. Med en BA i ingeniørvidenskab fra Dartmouth med speciale i mekanik, har hun en alsidig erfaring inden for forskellige områder. Sarah har bygget et tilfredsstillende liv omkranset af elskede kæledyr - en Husky, en Malteser, en Burmansk kat og nogle hamstere og fisk - hvilket forstærker en livslang bånd med dyr af alle størrelser og temperamenter. Kendt for sin varme, organisering og ansvar, er Sarah også en ivrig løber og vandringsmand, der udforsker Danmarks smukke landskaber mens hun forbedrer sine danskkundskaber."
+        "bio": "Forpligtet til at skabe positive oplevelser og sikre velbefindende for alle kæledyr."
       },
       "mariia": {
-        "role": "Kæledyrspasser i København",
+        "role": "Kæledyrsplejer",
         "location": "København",
-        "bio": "Mariia har været en absolut katteelsker i 27 år, hvoraf to af dem har været i Danmark. Efter at være flyttet fra Kiev i Ukraine, begyndte hun at tage danskundervisning og studere engelsk på egen hånd. Hun forstår, at deres forbindelse er baseret på tillid og elsker dyr meget, og er for nylig blevet afhængig af store kinesiske romaner. Hun finder også tid til at spille moderne computerspil, især hvis der er en mulighed for at hæve pleje af dyr og udvikle deres evner. Hun er henrykt over at være blevet en del af MyPeterinarian, fordi hun nu kan nyde selskabet med kæledyr, så meget som de ønsker!"
-      },
-      "ionela": {
-        "role": "Pensionat i København",
-        "bio": "Mød Ionela, en af vores dedikerede dyrepassere fra Moldova, Rumænien. Hun har boet i Danmark siden 2016. Ionela er en scenemor med en fireårig søn, der deler hendes kærlighed til dyr. Deres familie inkluderer fire hamstere, og de har en lejlighed med en dejlig have og en indhegnet hundegård blot få øjeblikke væk. Ionela er begejstret for at passe dit dyr, så du kan slappe af og nyde din ferie."
+        "bio": "Hengivet kæledyrsplejer der bringer varme og professionel pleje til hver interaktion."
       }
     },
     "cta": {

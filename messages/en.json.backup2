@@ -935,47 +935,53 @@
     "members": {
       "tarek": {
         "role": "Founder & CEO",
-        "bio": "Born and raised in Jordan, Tarek comes from a multicultural family. He currently lives in Copenhagen after having lived in a number of major cities around the world. Having studied veterinary medicine, Tarek founded MyPeterinarian in 2016 with a mission to create a safe place where you can take your pets and their parents. His love for animals, big or small, is endless."
+        "location": "Copenhagen & Tokyo",
+        "bio": "Born in Jordan, studied veterinary medicine. Founded MyPeterinarian to provide quality pet care services with endless love for animals."
       },
       "irene": {
         "role": "Manager & Veterinarian",
-        "bio": "Irene holds a strong passion for internal medicine, with a primary focus on gastrointestinal disorders, kidney and urinary tract disorders. Her professional journey has spanned across Spain, her country of origin, and the United Kingdom before calling Denmark home. With over 5 years of experience in international vet centers, her unwavering commitment to excellence is evident through her consistent pursuit of advanced learning opportunities and continues skills enhancement throughout her career."
+        "location": "Copenhagen",
+        "bio": "Specializes in internal medicine, focusing on gastrointestinal and kidney disorders. Experience in Spain and United Kingdom."
       },
       "dora": {
-        "role": "Assistant Operational Manager & Pet Caretaker",
-        "bio": "Dora, known to everyone as Dori, is from Hungary and has been living in Denmark for nearly five years. Having lived in Aarhus and Odense, she now resides in Copenhagen's city center with her boyfriend. When she's not busy at MyPeterinarian, you can find her playing board games. She has two cats, Liszka and Nazani, with Liszka boasting over 4500 followers on Instagram. She is excited to join the MyPeterinarian team and looks forward to caring for your pets just as if they were her own."
+        "role": "Assistant Operational Manager",
+        "location": "Copenhagen",
+        "bio": "Dedicated to ensuring smooth operations and excellent customer service for all our pet care clients."
       },
       "martin": {
-        "role": "Fractional Chief Financial Officer",
-        "bio": "Meet Martin, the accountant who isn't afraid to switch from serious numbers to yodels in a quest for sustainable solutions for entrepreneurs. He specializes in giving scale-up companies the strategic map and economic structure they need to grow, ensuring their tax/accounting is done correctly - all while balancing with his family in Slagelse, bee gels, one dog, and a cat!"
+        "role": "CFO",
+        "location": "Copenhagen",
+        "bio": "Manages financial operations to ensure sustainable growth while maintaining quality pet care services."
       },
       "misty": {
-        "role": "Groomer & Caretaker",
-        "bio": "Misty, originally from Sweden, spent her upbringing in Singapore, developing a deep appreciation for diverse cultures and a lifelong love for pets. After being separated from her pet for five years, Misty understands that every dog and cat is unique, requiring her approach to ensure their own comfortable experience and aiming to give them the best and healthy grooming day. Previously involved in equestrian grooming and with experience at prestigious dog and puppy farms, Misty looks forward to building a trusting relationship with you and your beloved pet!"
+        "role": "Pet Groomer",
+        "location": "Copenhagen",
+        "bio": "Expert groomer passionate about making every pet look and feel their absolute best."
       },
       "veronika": {
-        "role": "Pet Caretaker & Boarder",
-        "bio": "Veronika is a 19-year-old student from Ukraine, currently in her second year of studying Public Management and Administration. She speaks Ukrainian, Russian, and English, and has also studied some basic Danish. Having a deep love for animals, Veronika is most excited to stay connected with pets in Ukraine. She is excited to bring her passion for animal care to our team and looks forward to fostering ensure your pets receive the attention and love they deserve while you're away. Veronika is happy to assist with any of your pet care needs."
+        "role": "Pet Caretaker",
+        "location": "Copenhagen",
+        "bio": "Caring and attentive pet caretaker providing loving care and attention to every animal."
       },
       "quan": {
         "role": "Pet Caretaker",
-        "bio": "Quan was born in China and moved to Denmark in 2022 for her education. She has been a dog lover for over 10 years and has developed a deep affection for animals. After moving to Copenhagen, she began looking for a steady friends for daily care of their pets, including dogs, cats, and rabbits. She enjoys various activities in her free time, such as working out in the gym, swimming, and hiking. Quan has a natural affinity with animals and quickly builds trust with them. She is excited to bring her enthusiasm, experience, and love for animals to MyPeterinarian, ensuring that every pet gets the care and devotion."
+        "location": "Copenhagen",
+        "bio": "Experienced pet caretaker dedicated to providing exceptional care and companionship."
       },
       "nikhil": {
         "role": "Pet Caretaker",
-        "bio": "Nikhil is originally from India and has been living in Copenhagen for over seven years. He works as a software developer and is passionate about nature and outdoor activities. He has a strong interest in sustainability and loves animals of all kinds, especially dogs, horses, and dolphins. Nikhil is excited to join the MyPeterinarian team and looks forward to caring for your pets and they seem his own."
+        "location": "Copenhagen",
+        "bio": "Passionate about animal welfare and providing personalized care for every pet."
       },
       "sarah": {
         "role": "Pet Caretaker",
-        "bio": "Sarah hails from the U.S. and is currently completing her MSc in Environmental Engineering at DTU, with a focus on Environmental Management. With a B.A. in Engineering Sciences from Dartmouth, specializing in Mechanical Engineering, she has a wealth of experience in diverse fields. Sarah has built a fulfilling life surrounded by beloved pets — a Husky, a Maltese, a Burmese cat, and a few hamsters and fish - fostering a lifelong bond with animals of all sizes and temperaments. Known for her warmth, organization, and responsibilities, Sarah is also an avid runner and hiker, exploring Denmark's scenic landscapes while relishing her Danish skills."
+        "location": "Copenhagen",
+        "bio": "Committed to creating positive experiences and ensuring the wellbeing of all pets."
       },
       "mariia": {
         "role": "Pet Caretaker",
-        "bio": "Mariia has been an absolute cat lover for 27 years, and 2 of those were in Denmark. After moving from Kyiv, Ukraine, she started attending a Danish language school and majoring in English on her own. She understands that their connection is based on trust and loves animals very much, and recently has become addicted to huge Chinese novels. She also finds time to play modern computer games, especially if there is an opportunity to raise care of animals and develop their skills. She is delighted to have joined MyPeterinarian, because now she can enjoy the company of pets as much as they want!"
-      },
-      "ionela": {
-        "role": "Pet Boarder",
-        "bio": "Meet Ionela, one of our dedicated pet sitters from Moldova, Romania. She has been living in Denmark since 2016. Ionela is a stage-mom with a four year old son who shares her love for animals. Their family includes four hamsters and they're welcoming to their apartment with a lovely garden and a fenced dog park just moments away. Ionela is excited to care for your pet, ensuring they feel right at home so you can relax and enjoy your vacation."
+        "location": "Copenhagen",
+        "bio": "Devoted pet caretaker bringing warmth and professional care to every interaction."
       }
     },
     "cta": {

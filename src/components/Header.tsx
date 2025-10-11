@@ -78,6 +78,7 @@ export default function Header() {
                 width={180}
                 height={60}
                 className="h-10 sm:h-14 w-auto"
+                priority
               />
             </Link>
 
@@ -90,6 +91,10 @@ export default function Header() {
               <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.services')}
               </a>
+
+              <Link href={`/${locale}/team`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+                {t('navigation.team')}
+              </Link>
 
               <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
                 {t('navigation.subscriptions')}
@@ -138,6 +143,8 @@ export default function Header() {
                 <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
 
                 <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.services')}</a>
+
+                <Link href={`/${locale}/team`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.team')}</Link>
 
                 <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
                 <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</Link>
