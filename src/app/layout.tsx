@@ -1,3 +1,5 @@
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+
 // Root layout with required html and body tags
 export default function RootLayout({
   children,
@@ -14,7 +16,10 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#22c0b6" />
       </head>
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
