@@ -983,5 +983,111 @@
       "description": "Book an appointment and experience our passionate care firsthand",
       "button": "Schedule Appointment"
     }
+  },
+  "subscriptions": {
+    "hero": {
+      "title": "Comprehensive Pet Care Plans",
+      "subtitle": "Choose the perfect subscription plan for your pet's health and wellbeing",
+      "benefits": [
+        "Preventive care included",
+        "Save up to 40% annually",
+        "Cancel anytime"
+      ]
+    },
+    "weightSelector": {
+      "title": "Select Your Pet's Weight Category",
+      "description": "Pricing varies based on your pet's weight to ensure appropriate care"
+    },
+    "weightCategories": {
+      "under_4_9kg": "Under 4.9 kg",
+      "5_9_9kg": "5-9.9 kg",
+      "10_24_9kg": "10-24.9 kg",
+      "25_39_9kg": "25-39.9 kg",
+      "over_40kg": "Over 40 kg"
+    },
+    "weightDescriptions": {
+      "under_4_9kg": "Small breeds",
+      "5_9_9kg": "Medium-small",
+      "10_24_9kg": "Medium",
+      "25_39_9kg": "Large",
+      "over_40kg": "Extra large"
+    },
+    "tiers": {
+      "mostPopular": "Most Popular",
+      "perMonth": "month",
+      "priceNote": "Prices vary by weight category",
+      "cta": "Get Started",
+      "essential": {
+        "name": "Essential Care",
+        "description": "Perfect for basic preventive care and routine health maintenance",
+        "features": [
+          "2 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "50% discount on parasite treatments",
+          "20% discount on nail clipping",
+          "20% discount on anal gland expression",
+          "10% discount on special vaccines",
+          "10% discount on other services"
+        ]
+      },
+      "advanced": {
+        "name": "Advanced Care",
+        "description": "Comprehensive care with additional benefits and savings",
+        "features": [
+          "3 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "All parasite treatments included",
+          "1 nail clipping included",
+          "50% discount on anal gland expression",
+          "2 virtual consultations included",
+          "1 daycare session included",
+          "20% discount on special vaccines",
+          "20% discount on other services"
+        ]
+      },
+      "professional": {
+        "name": "Professional Care",
+        "description": "Premium all-inclusive care for complete peace of mind",
+        "features": [
+          "4 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "All parasite treatments included",
+          "2 nail clippings included",
+          "1 anal gland expression included",
+          "4 virtual consultations included",
+          "2 daycare sessions included",
+          "30% discount on special vaccines",
+          "30% discount on other services",
+          "Priority booking",
+          "Dedicated care coordinator"
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Why Choose MyPeterinarian?",
+      "subtitle": "Compare our subscription plans with other veterinary services",
+      "feature": "Feature",
+      "rows": {
+        "price": "Monthly price range",
+        "healthChecks": "Health check-ups",
+        "prescriptions": "All prescriptions included",
+        "daycare": "Daycare sessions",
+        "virtualConsultations": "Virtual consultations"
+      }
+    },
+    "trust": {
+      "title": "Why Trust Us?",
+      "certified": "e-mærket certified",
+      "coolOff": "14-day cooling-off period",
+      "noCommitment": "No long-term commitment"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join hundreds of happy pet parents who trust MyPeterinarian for their pet's health",
+      "button": "Subscribe Now"
+    }
   }
 }

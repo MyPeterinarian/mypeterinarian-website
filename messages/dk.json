@@ -1006,5 +1006,111 @@
       "description": "Book en tid og oplev vores passionerede pleje på første hånd",
       "button": "Planlæg Tid"
     }
+  },
+  "subscriptions": {
+    "hero": {
+      "title": "Omfattende Plejeplaner til Kæledyr",
+      "subtitle": "Vælg den perfekte abonnementsplan for dit kæledyrs sundhed og trivsel",
+      "benefits": [
+        "Forebyggende pleje inkluderet",
+        "Spar op til 40% årligt",
+        "Opsig når som helst"
+      ]
+    },
+    "weightSelector": {
+      "title": "Vælg Dit Kæledyrs Vægtkategori",
+      "description": "Priserne varierer baseret på dit kæledyrs vægt for at sikre passende pleje"
+    },
+    "weightCategories": {
+      "under_4_9kg": "Under 4,9 kg",
+      "5_9_9kg": "5-9,9 kg",
+      "10_24_9kg": "10-24,9 kg",
+      "25_39_9kg": "25-39,9 kg",
+      "over_40kg": "Over 40 kg"
+    },
+    "weightDescriptions": {
+      "under_4_9kg": "Små racer",
+      "5_9_9kg": "Mellem-små",
+      "10_24_9kg": "Mellem",
+      "25_39_9kg": "Store",
+      "over_40kg": "Ekstra store"
+    },
+    "tiers": {
+      "mostPopular": "Mest Populære",
+      "perMonth": "måned",
+      "priceNote": "Priserne varierer efter vægtkategori",
+      "cta": "Kom I Gang",
+      "essential": {
+        "name": "Essentiel Pleje",
+        "description": "Perfekt til grundlæggende forebyggende pleje og rutinemæssig sundhedsvedligeholdelse",
+        "features": [
+          "2 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "50% rabat på parasitbehandlinger",
+          "20% rabat på negleklipning",
+          "20% rabat på analkirteltømning",
+          "10% rabat på specialvacciner",
+          "10% rabat på andre ydelser"
+        ]
+      },
+      "advanced": {
+        "name": "Avanceret Pleje",
+        "description": "Omfattende pleje med yderligere fordele og besparelser",
+        "features": [
+          "3 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "Alle parasitbehandlinger inkluderet",
+          "1 negleklipning inkluderet",
+          "50% rabat på analkirteltømning",
+          "2 virtuelle konsultationer inkluderet",
+          "1 dagplejesesson inkluderet",
+          "20% rabat på specialvacciner",
+          "20% rabat på andre ydelser"
+        ]
+      },
+      "professional": {
+        "name": "Professionel Pleje",
+        "description": "Premium alt-inklusiv pleje for fuldstændig tryghed",
+        "features": [
+          "4 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "Alle parasitbehandlinger inkluderet",
+          "2 negleklipninger inkluderet",
+          "1 analkirteltømning inkluderet",
+          "4 virtuelle konsultationer inkluderet",
+          "2 dagplejessessioner inkluderet",
+          "30% rabat på specialvacciner",
+          "30% rabat på andre ydelser",
+          "Prioriteret booking",
+          "Dedikeret plejekoordinator"
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Hvorfor Vælge MyPeterinarian?",
+      "subtitle": "Sammenlign vores abonnementsplaner med andre dyrlægetjenester",
+      "feature": "Funktion",
+      "rows": {
+        "price": "Månedligt prisinterval",
+        "healthChecks": "Helbredstjek",
+        "prescriptions": "Alle recepter inkluderet",
+        "daycare": "Dagplejesesessioner",
+        "virtualConsultations": "Virtuelle konsultationer"
+      }
+    },
+    "trust": {
+      "title": "Hvorfor Stole På Os?",
+      "certified": "e-mærket certificeret",
+      "coolOff": "14 dages fortrydelsesret",
+      "noCommitment": "Ingen langsigtet forpligtelse"
+    },
+    "cta": {
+      "title": "Klar Til At Komme I Gang?",
+      "description": "Bliv en del af hundredvis af glade kæledyrsejere, der stoler på MyPeterinarian for deres kæledyrs sundhed",
+      "button": "Abonner Nu"
+    }
   }
 }
