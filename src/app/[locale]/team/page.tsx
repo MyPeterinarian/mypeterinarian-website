@@ -1,12 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { MapPin, Heart } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function TeamPage() {
   const t = useTranslations('team');
+  const locale = useLocale();
 
   const teamMembers = [
     {
@@ -171,12 +173,12 @@ export default function TeamPage() {
           <p className="text-lg sm:text-xl mb-8 opacity-90">
             {t('cta.description')}
           </p>
-          <a
-            href="/booking"
+          <Link
+            href={`/${locale}/booking`}
             className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             {t('cta.button')}
-          </a>
+          </Link>
         </div>
       </section>
     </div>

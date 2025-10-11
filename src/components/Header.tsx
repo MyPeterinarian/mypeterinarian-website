@@ -8,7 +8,6 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const t = useTranslations('header');
   const locale = useLocale();
 
