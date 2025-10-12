@@ -4280,7 +4280,7 @@ Lad ikke dokumentationsforsinkelser afspore dine rejseplaner! Processen tager ti
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/puppy-training.jpg',
+    image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Essential guide for first-time dog owners covering puppy training, socialization, and building a strong foundation for a lifelong bond with your new companion.',
       dk: 'Vigtig guide til førstegangs hundeejere, der dækker hvalpetræning, socialisering og opbygning af et stærkt fundament for et livlangt bånd med din nye ledsager.'
@@ -4487,7 +4487,7 @@ Søg øjeblikkelig veterinærhjælp hvis din hvalp viser:
     author: 'MyPeterinarian Team',
     date: '2023-03-15',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2023/03/dog-walker.jpg',
+    image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Discover why professional dog walking services are essential for your pet\'s physical health, mental stimulation, and overall happiness, especially in busy Copenhagen life.',
       dk: 'Opdag hvorfor professionelle hundelufte-tjenester er essentielle for dit kæledyrs fysiske sundhed, mentale stimulation og overordnede lykke, især i det travle København-liv.'
@@ -4790,7 +4790,7 @@ Hos MyPeterinarian København anerkender vi den værdifulde rolle, professionell
     author: 'MyPeterinarian Team',
     date: '2023-06-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2023/06/summer-pets.jpg',
+    image: 'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Essential summer safety tips to keep your pets cool, comfortable, and healthy during warm weather in Copenhagen and beyond.',
       dk: 'Essentielle sommer sikkerhedstips for at holde dine kæledyr kølige, komfortable og sunde i varmt vejr i København og deromkring.'
@@ -5946,7 +5946,7 @@ Ud over økonomi forbedrer regelmæssig pleje betydeligt dit kæledyrs daglige k
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/travel-pets-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Comprehensive guide to traveling with your pet. Learn about preparation, documentation, health certificates, carriers, and international travel requirements for a safe journey.',
       dk: 'Omfattende guide til at rejse med dit kæledyr. Lær om forberedelse, dokumentation, sundhedscertifikater, transportkasser og internationale rejsekrav for en sikker rejse.'
@@ -6387,7 +6387,7 @@ At rejse med dit kæledyr kan være en givende oplevelse, når det er ordentligt
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/cat-communication-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn to understand cat communication through body language, vocalizations, and behavior. Discover what your cat is trying to tell you and strengthen your bond.',
       dk: 'Lær at forstå kattekommunikation gennem kropssprog, lyde og adfærd. Opdag hvad din kat forsøger at fortælle dig og styrk jeres bånd.'
@@ -7038,7 +7038,7 @@ At forstå kattekommunikation transformerer dit forhold fra simpelt at sameksist
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/cat-socialization-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1573865526739-10c1dd4540a1?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Complete guide to cat socialization from kittenhood through adulthood. Learn critical periods, exposure techniques, and how to raise a confident, well-adjusted feline companion.',
       dk: 'Komplet guide til kattens socialisering fra killingetid gennem voksenalderen. Lær kritiske perioder, eksponeringsteknikker og hvordan man opdrager en selvsikker, veladjusteret feline ledsager.'
@@ -7790,7 +7790,7 @@ Socialisering er en af de mest værdifulde investeringer du kan gøre i din kats
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/catify-home-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Creating a cat-friendly environment is essential for your feline\'s happiness and wellbeing. Learn how to transform your home into a cat paradise with vertical spaces, enrichment, and safety features.',
       dk: 'At skabe et kattevenligt miljø er essentielt for din kats lykke og trivsel. Lær hvordan du transformerer dit hjem til et katteparadis med vertikale rum, berigelse og sikkerhedsfunktioner.'
@@ -8271,7 +8271,7 @@ At catify dit hjem er en løbende proces, der udvikler sig med din kats skiftend
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/parainfluenza-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Canine parainfluenza is a highly contagious respiratory infection in dogs and one of the primary causes of kennel cough syndrome. Learn about symptoms, treatment, and prevention strategies.',
       dk: 'Canine parainfluenza er en meget smitsom luftvejsinfektion hos hunde og en af de primære årsager til kennelhostesyndrom. Lær om symptomer, behandling og forebyggelsesstrategier.'
@@ -9004,7 +9004,7 @@ Canine parainfluenza er en almindelig, men håndterbar luftvejsinfektion hos hun
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/new-pet-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Getting a new pet is a big decision and significant responsibility. Whether choosing a dog, cat, or other pet, learn everything you need to prepare for a successful and happy life together.',
       dk: 'At få et nyt kæledyr er en stor beslutning og et stort ansvar. Uanset om du vælger en hund, kat eller andet kæledyr, lær alt hvad du behøver at forberede dig på et succesfuldt og lykkeligt liv sammen.'
@@ -9917,7 +9917,7 @@ At byde et nyt kæledyr velkommen er en betydelig forpligtelse, der bringer enor
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/chocolate-dogs-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Chocolate is toxic to dogs due to theobromine and caffeine content. Learn about the dangers, toxic doses, symptoms of poisoning, and what to do in an emergency.',
       dk: 'Chokolade er giftig for hunde på grund af theobromin og koffeinindhold. Lær om farerne, toksiske doser, symptomer på forgiftning og hvad man skal gøre i en nødsituation.'
@@ -10352,7 +10352,7 @@ Chokoladeforgiftning kan helt undgås med ordentlige forholdsregler. Som hundeej
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/dog-scooting-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Dog scooting behavior usually indicates anal gland problems. Learn about causes, symptoms, treatment options, and prevention strategies for this common canine issue.',
       dk: 'Hundes slæbende adfærd indikerer normalt analkirtelproblemer. Lær om årsager, symptomer, behandlingsmuligheder og forebyggelsesstrategier for dette almindelige hundeproblem.'
@@ -11041,7 +11041,7 @@ Regelmæssig dyrlægebehandling, passende kost og opmærksom overvågning kan fo
     author: 'Dana Abu Sham',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/cat-vomiting-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Cat vomiting can indicate various health issues from simple hairballs to serious diseases. Learn to recognize when vomiting requires veterinary attention and understand treatment options.',
       dk: 'Katteopkastning kan indikere forskellige helbredsproblemer fra simple hårbold til alvorlige sygdomme. Lær at genkende hvornår opkastning kræver dyrlægebehandling og forstå behandlingsmuligheder.'
@@ -12104,7 +12104,7 @@ Vent ikke med at søge hjælp, hvis din kats opkastning synes unormal, eller hvi
     },
     category: "Cat Care",
     date: "2022-01-01",
-    image: "https://www.mypeterinarian.com/wp-content/uploads/2022/01/cat-socialization-english-1600x800.jpg",
+    image: "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=1600&h=900&fit=crop",
     content: {
       en: `# How to Socialize Your Cat - A Complete Guide
 
@@ -12651,7 +12651,7 @@ At socialisere din kat er en af de vigtigste investeringer du kan foretage i der
     },
     category: "Dog Care",
     date: "2022-01-01",
-    image: "https://www.mypeterinarian.com/wp-content/uploads/2022/01/kennel-cough-1600x800.jpg",
+    image: "https://images.unsplash.com/photo-1587764379873-97837921fd44?w=1600&h=900&fit=crop",
     content: {
       en: `# Kennel Cough in Dogs - Symptoms and Treatment
 
@@ -13440,7 +13440,7 @@ Restitution fra ukompliseret kennelhoste opstår typisk inden for få uger med p
     },
     category: "Dog Care",
     date: "2022-01-01",
-    image: "https://www.mypeterinarian.com/wp-content/uploads/2022/01/canine-distemper-1600x800.jpg",
+    image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1600&h=900&fit=crop",
     content: {
       en: `# Canine Distemper - A Serious Viral Disease
 
@@ -14425,7 +14425,7 @@ Vigtigst er forebyggelse gennem vaccination ligefrem, overkommelig og meget effe
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/leptospirosis-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn about leptospirosis, a serious bacterial disease that can affect both dogs and humans. Understand symptoms, treatment, and the importance of vaccination.',
       dk: 'Lær om leptospirose, en alvorlig bakteriel sygdom der kan påvirke både hunde og mennesker. Forstå symptomer, behandling og betydningen af vaccination.'
@@ -14850,7 +14850,7 @@ Hvis din hund viser tegn på leptospirose—især feber, sløvhed, appetittab el
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/travelling-international-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1529472119196-cb724127a98e?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Plan your international travel with pets using this comprehensive guide covering EU pet passports, health certificates, airline requirements, and country-specific regulations.',
       dk: 'Planlæg din internationale rejse med kæledyr ved hjælp af denne omfattende guide, der dækker EU kæledyrspas, sundhedscertifikater, flyselskabskrav og landespecifikke regler.'
@@ -15615,7 +15615,7 @@ De vigtigste faktorer for vellykket kæledyrsrejse er:
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/cat-food-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn how to choose the best food for your cat with this comprehensive guide covering nutritional requirements, ingredients, life stages, and feeding practices.',
       dk: 'Lær hvordan du vælger den bedste mad til din kat med denne omfattende guide, der dækker ernæringskrav, ingredienser, livsfaser og fodringspraksis.'
@@ -16386,7 +16386,7 @@ Husk at den "bedste" mad er en der holder din kat sund, vedligeholder ideel krop
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/dog-food-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Comprehensive guide to canine nutrition covering dog food types, ingredients, life stages, and feeding practices for optimal health.',
       dk: 'Omfattende guide til hundeernæring, der dækker hundemadtyper, ingredienser, livsfaser og fodringspraksis for optimal sundhed.'
@@ -17295,7 +17295,7 @@ Husk, den "bedste" mad er en der holder din hund sund, vedligeholder ideel krops
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2022/01/feline-herpesvirus-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn about feline herpesvirus (FHV-1), one of the most common causes of upper respiratory infections in cats. Understand symptoms, treatment, and management.',
       dk: 'Lær om feline herpesvirus (FHV-1), en af de mest almindelige årsager til øvre luftvejsinfektioner hos katte. Forstå symptomer, behandling og håndtering.'

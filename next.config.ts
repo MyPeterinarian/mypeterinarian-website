@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         hostname: 'www.mypeterinarian.com',
         pathname: '/wp-content/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
 };
