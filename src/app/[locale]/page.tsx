@@ -8,7 +8,6 @@ import Link from 'next/link';
 import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
-import CampaignBanner from '@/components/CampaignBanner';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -63,9 +62,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <LocalBusinessSchema />
-
-      {/* Campaign Banner */}
-      <CampaignBanner />
 
       {/* Hero Section */}
       <section id="home" className="relative bg-gradient-to-br from-blue-50 to-green-50 py-12 sm:py-20 px-4">

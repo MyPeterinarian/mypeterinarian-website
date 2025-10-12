@@ -87,11 +87,11 @@ export default function Header() {
                 {t('navigation.home')}
               </a>
 
-              <Link href={`/${locale}/preventive-testing`} className="relative text-green-600 hover:text-green-700 font-bold transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/preventive-testing`} className="relative text-[#6B8FA9] hover:text-[#5A7A94] font-medium transition-colors text-sm xl:text-base">
                 {t('navigation.campaign')}
                 <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8FA998] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8FA998]"></span>
                 </span>
               </Link>
 
@@ -149,11 +149,11 @@ export default function Header() {
               <div className="flex flex-col gap-3">
                 <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
 
-                <Link href={`/${locale}/preventive-testing`} className="text-green-600 hover:text-green-700 font-bold py-1 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                <Link href={`/${locale}/preventive-testing`} className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium py-1 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                   {t('navigation.campaign')}
                   <span className="flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#8FA998] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#8FA998]"></span>
                   </span>
                 </Link>
 
