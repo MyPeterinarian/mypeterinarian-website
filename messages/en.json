@@ -1,4 +1,15 @@
 {
+  "campaignBanner": {
+    "badge": "Limited Time",
+    "limited": "Limited Time Only",
+    "title": "🎉 Preventive Testing Campaign - Save up to 50%",
+    "description": "Protect your pet's health with comprehensive testing. Early detection saves lives!",
+    "cta": "View Campaign Tests",
+    "bookNow": "Book Now",
+    "feature1": "Save up to 50% on essential tests",
+    "feature2": "Expert veterinary care",
+    "feature3": "Quick & easy booking"
+  },
   "header": {
     "phone": "+45 61 66 76 11",
     "email": "hej@mypeterinarian.com",
@@ -7,6 +18,7 @@
     "call": "Call",
     "navigation": {
       "home": "Home",
+      "campaign": "🎉 Testing Campaign",
       "services": "Services",
       "subscriptions": "Subscriptions",
       "booking": "Booking",
@@ -1127,5 +1139,103 @@
     "blog": "Blog",
     "contact": "Contact",
     "team": "Our Team"
+  },
+  "preventiveTesting": {
+    "hero": {
+      "badge": "🎉 Limited Time Campaign",
+      "title": "Preventive Testing Campaign",
+      "subtitle": "Protect your pet's health with comprehensive testing at campaign prices. Save up to 50% on essential tests.",
+      "bookNow": "Book Testing Now",
+      "viewTests": "View Available Tests"
+    },
+    "why": {
+      "title": "Why Preventive Testing?",
+      "benefits": {
+        "0": {
+          "title": "Early Detection",
+          "description": "Catch health issues before they become serious problems. Early detection saves lives."
+        },
+        "1": {
+          "title": "Peace of Mind",
+          "description": "Know your pet is healthy and protected from common parasites and diseases."
+        },
+        "2": {
+          "title": "Cost Effective",
+          "description": "Prevention is always cheaper than treatment. Save money with our campaign prices."
+        },
+        "3": {
+          "title": "Expert Care",
+          "description": "Our veterinary team provides professional testing and detailed health reports."
+        }
+      }
+    },
+    "tests": {
+      "title": "Available Tests",
+      "subtitle": "Choose from our comprehensive range of preventive tests",
+      "zoonotic": "Zoonotic",
+      "bookTest": "Book This Test",
+      "items": {
+        "giardia": {
+          "name": "Giardia Test",
+          "description": "Detect Giardia parasites that can affect both pets and humans. Essential for household safety."
+        },
+        "lungworm": {
+          "name": "Lungworm Test",
+          "description": "Screen for lungworm infection, a serious respiratory parasite affecting dogs and cats."
+        },
+        "basicFecal": {
+          "name": "Basic Fecal Test",
+          "description": "Comprehensive stool analysis to detect common intestinal parasites and abnormalities."
+        },
+        "combinedFecal": {
+          "name": "Combined Fecal Test",
+          "description": "Advanced fecal testing including multiple parasite screens and bacterial analysis."
+        },
+        "comboTest": {
+          "name": "Combo Test Package",
+          "description": "Complete health screening combining multiple tests for comprehensive parasite detection."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Campaign Pricing Comparison",
+      "test": "Test Name",
+      "regular": "Regular Price",
+      "campaign": "Campaign Price",
+      "savings": "Save",
+      "off": "OFF"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": {
+        "0": {
+          "title": "Book Online",
+          "description": "Schedule your preventive testing appointment through our easy booking system."
+        },
+        "1": {
+          "title": "Sample Collection",
+          "description": "Our veterinary team collects samples during your visit or provides home collection kits."
+        },
+        "2": {
+          "title": "Laboratory Analysis",
+          "description": "Samples are analyzed in our certified laboratory using advanced diagnostic equipment."
+        },
+        "3": {
+          "title": "Results & Consultation",
+          "description": "Receive detailed results and expert recommendations from our veterinary team."
+        }
+      }
+    },
+    "forPets": {
+      "title": "For Dogs & Cats",
+      "description": "All our preventive tests are suitable for both dogs and cats. Regular testing ensures your pet stays healthy and parasite-free throughout the year.",
+      "bookNow": "Book Testing Now"
+    },
+    "cta": {
+      "title": "Don't Miss This Campaign!",
+      "description": "Limited time offer. Book your preventive testing today and save up to 50% on essential health screenings.",
+      "button": "Book Now",
+      "contact": "Contact Us"
+    }
   }
 }

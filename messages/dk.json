@@ -1,4 +1,15 @@
 {
+  "campaignBanner": {
+    "badge": "Begrænset Tid",
+    "limited": "Kun Begrænset Tid",
+    "title": "🎉 Forebyggende Test Kampagne - Spar op til 50%",
+    "description": "Beskyt dit kæledyrs sundhed med omfattende test. Tidlig opdagelse redder liv!",
+    "cta": "Se Kampagne Tests",
+    "bookNow": "Book Nu",
+    "feature1": "Spar op til 50% på essentielle test",
+    "feature2": "Ekspert dyrlægepleje",
+    "feature3": "Hurtig & nem booking"
+  },
   "header": {
     "phone": "+45 61 66 76 11",
     "email": "hej@mypeterinarian.com",
@@ -7,6 +18,7 @@
     "call": "Ring",
     "navigation": {
       "home": "Hjem",
+      "campaign": "🎉 Test Kampagne",
       "services": "Tjenester",
       "subscriptions": "Abonnementer",
       "booking": "Booking",
@@ -1150,5 +1162,103 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "team": "Vores Team"
+  },
+  "preventiveTesting": {
+    "hero": {
+      "badge": "🎉 Begrænset Kampagne",
+      "title": "Forebyggende Test Kampagne",
+      "subtitle": "Beskyt dit kæledyrs sundhed med omfattende test til kampagnepriser. Spar op til 50% på essentielle test.",
+      "bookNow": "Book Test Nu",
+      "viewTests": "Se Tilgængelige Test"
+    },
+    "why": {
+      "title": "Hvorfor Forebyggende Test?",
+      "benefits": {
+        "0": {
+          "title": "Tidlig Opdagelse",
+          "description": "Fang sundhedsproblemer før de bliver alvorlige. Tidlig opdagelse redder liv."
+        },
+        "1": {
+          "title": "Sindsro",
+          "description": "Vid at dit kæledyr er sundt og beskyttet mod almindelige parasitter og sygdomme."
+        },
+        "2": {
+          "title": "Omkostningseffektivt",
+          "description": "Forebyggelse er altid billigere end behandling. Spar penge med vores kampagnepriser."
+        },
+        "3": {
+          "title": "Ekspertpleje",
+          "description": "Vores dyrlægeteam leverer professionel testning og detaljerede sundhedsrapporter."
+        }
+      }
+    },
+    "tests": {
+      "title": "Tilgængelige Test",
+      "subtitle": "Vælg fra vores omfattende udvalg af forebyggende test",
+      "zoonotic": "Zoonotisk",
+      "bookTest": "Book Denne Test",
+      "items": {
+        "giardia": {
+          "name": "Giardia Test",
+          "description": "Påvis Giardia-parasitter der kan påvirke både kæledyr og mennesker. Essentiel for husstands sikkerhed."
+        },
+        "lungworm": {
+          "name": "Lungeorm Test",
+          "description": "Screen for lungeorminfektion, en alvorlig luftvejsparasit der påvirker hunde og katte."
+        },
+        "basicFecal": {
+          "name": "Basis Afføringstest",
+          "description": "Omfattende afføringsanalyse for at påvise almindelige tarmparasitter og abnormiteter."
+        },
+        "combinedFecal": {
+          "name": "Kombineret Afføringstest",
+          "description": "Avanceret afføringstest inklusiv flere parasitscreeninger og bakterieanalyse."
+        },
+        "comboTest": {
+          "name": "Kombinations Test Pakke",
+          "description": "Komplet sundhedsscreening der kombinerer flere test for omfattende parasitpåvisning."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Kampagne Prissammenligning",
+      "test": "Test Navn",
+      "regular": "Normal Pris",
+      "campaign": "Kampagnepris",
+      "savings": "Spar",
+      "off": "RABAT"
+    },
+    "howItWorks": {
+      "title": "Sådan Fungerer Det",
+      "steps": {
+        "0": {
+          "title": "Book Online",
+          "description": "Planlæg din forebyggende test aftale gennem vores nemme bookingsystem."
+        },
+        "1": {
+          "title": "Prøveindsamling",
+          "description": "Vores dyrlægeteam indsamler prøver under dit besøg eller leverer hjemmeindsamlingssæt."
+        },
+        "2": {
+          "title": "Laboratorieanalyse",
+          "description": "Prøver analyseres i vores certificerede laboratorium ved hjælp af avanceret diagnostisk udstyr."
+        },
+        "3": {
+          "title": "Resultater & Konsultation",
+          "description": "Modtag detaljerede resultater og ekspertanbefalinger fra vores dyrlægeteam."
+        }
+      }
+    },
+    "forPets": {
+      "title": "Til Hunde & Katte",
+      "description": "Alle vores forebyggende test er egnede til både hunde og katte. Regelmæssig testning sikrer at dit kæledyr forbliver sundt og parasitfrit hele året.",
+      "bookNow": "Book Test Nu"
+    },
+    "cta": {
+      "title": "Gå Ikke Glip Af Denne Kampagne!",
+      "description": "Begrænset tilbud. Book din forebyggende test i dag og spar op til 50% på essentielle sundhedsscreeninger.",
+      "button": "Book Nu",
+      "contact": "Kontakt Os"
+    }
   }
 }

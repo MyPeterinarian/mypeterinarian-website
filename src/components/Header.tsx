@@ -87,6 +87,14 @@ export default function Header() {
                 {t('navigation.home')}
               </a>
 
+              <Link href={`/${locale}/preventive-testing`} className="relative text-green-600 hover:text-green-700 font-bold transition-colors text-sm xl:text-base">
+                {t('navigation.campaign')}
+                <span className="absolute -top-1 -right-1 flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+              </Link>
+
               <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.services')}
               </a>
@@ -140,6 +148,14 @@ export default function Header() {
             <div className="lg:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col gap-3">
                 <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
+
+                <Link href={`/${locale}/preventive-testing`} className="text-green-600 hover:text-green-700 font-bold py-1 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                  {t('navigation.campaign')}
+                  <span className="flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                </Link>
 
                 <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.services')}</a>
 
