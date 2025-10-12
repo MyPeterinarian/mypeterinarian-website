@@ -36,21 +36,21 @@ export default function BlogPage() {
   }, [searchQuery, selectedCategory, locale]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-green-500 py-16 px-4">
+    <div className="min-h-screen bg-white">
+      {/* Hero Section - Scandinavian Style */}
+      <section className="bg-[#F5F7F9] py-20 px-4 border-b border-gray-200">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#2C3E50] mb-6 tracking-tight">
             {t('title')}
           </h1>
-          <p className="text-xl text-white opacity-90 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto font-light">
             {t('description')}
           </p>
         </div>
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-8 px-4 bg-white shadow-sm">
+      <section className="py-8 px-4 bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row gap-4">
             {/* Search Input */}
@@ -61,7 +61,7 @@ export default function BlogPage() {
                 placeholder={t('search')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8FA998] focus:border-transparent outline-none font-light"
               />
             </div>
 
@@ -70,7 +70,7 @@ export default function BlogPage() {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none appearance-none bg-white cursor-pointer"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#8FA998] focus:border-transparent outline-none appearance-none bg-white cursor-pointer font-light"
               >
                 {categories.map((category) => (
                   <option key={category} value={category}>
@@ -84,24 +84,24 @@ export default function BlogPage() {
           {/* Active Filters Display */}
           {(searchQuery || selectedCategory !== 'All Categories') && (
             <div className="mt-4 flex flex-wrap gap-2 items-center">
-              <span className="text-sm text-gray-600">Active filters:</span>
+              <span className="text-sm text-gray-600 font-light">Active filters:</span>
               {searchQuery && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#F5F7F9] text-[#6B8FA9] rounded-full text-sm font-light border border-gray-200">
                   Search: &quot;{searchQuery}&quot;
                   <button
                     onClick={() => setSearchQuery('')}
-                    className="hover:text-blue-900"
+                    className="hover:text-[#2C3E50] transition-colors"
                   >
                     ×
                   </button>
                 </span>
               )}
               {selectedCategory !== 'All Categories' && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
+                <span className="inline-flex items-center gap-1 px-3 py-1 bg-[#F5F7F9] text-[#8FA998] rounded-full text-sm font-light border border-gray-200">
                   {selectedCategory}
                   <button
                     onClick={() => setSelectedCategory('All Categories')}
-                    className="hover:text-green-900"
+                    className="hover:text-[#2C3E50] transition-colors"
                   >
                     ×
                   </button>
@@ -113,11 +113,11 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4 bg-[#F5F7F9]">
         <div className="max-w-6xl mx-auto">
           {filteredPosts.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-gray-600 text-lg mb-4">
+              <p className="text-gray-600 text-lg mb-4 font-light">
                 {searchQuery || selectedCategory !== 'All Categories' ? t('noResults') : t('noPosts')}
               </p>
               {(searchQuery || selectedCategory !== 'All Categories') && (
@@ -126,7 +126,7 @@ export default function BlogPage() {
                     setSearchQuery('');
                     setSelectedCategory('All Categories');
                   }}
-                  className="text-blue-600 hover:text-blue-700 font-medium"
+                  className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium transition-colors"
                 >
                   Clear all filters
                 </button>
@@ -134,14 +134,14 @@ export default function BlogPage() {
             </div>
           ) : (
             <>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 font-light">
                 Showing {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
               </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts.map((post) => (
                   <article
                     key={post.slug}
-                    className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                    className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-200"
                   >
                     {/* Featured Image */}
                     <div className="relative h-48 w-full">
@@ -152,7 +152,7 @@ export default function BlogPage() {
                         className="object-cover"
                       />
                       <div className="absolute top-4 left-4">
-                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        <span className="bg-[#8FA998] text-white px-3 py-1 rounded-full text-sm font-light">
                           {post.category}
                         </span>
                       </div>
@@ -160,15 +160,15 @@ export default function BlogPage() {
 
                     {/* Content */}
                     <div className="p-6">
-                      <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
+                      <h2 className="text-xl font-medium text-[#2C3E50] mb-3 line-clamp-2">
                         {post.title[locale]}
                       </h2>
-                      <p className="text-gray-600 mb-4 line-clamp-3">
+                      <p className="text-gray-600 mb-4 line-clamp-3 font-light">
                         {post.excerpt[locale]}
                       </p>
 
                       {/* Meta Info */}
-                      <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                      <div className="flex items-center justify-between text-sm text-gray-500 mb-4 font-light">
                         <div className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
                           <span>{new Date(post.date).toLocaleDateString(locale)}</span>
@@ -182,7 +182,7 @@ export default function BlogPage() {
                       {/* Read More Link */}
                       <Link
                         href={`/${locale}/blog/${post.slug}`}
-                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium"
+                        className="inline-flex items-center gap-2 text-[#6B8FA9] hover:text-[#5A7A94] font-medium transition-colors"
                       >
                         {t('readMore')}
                         <ArrowRight className="w-4 h-4" />
@@ -196,18 +196,18 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-green-500 py-16 px-4">
+      {/* CTA Section - Scandinavian Style */}
+      <section className="bg-[#6B8FA9] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-light text-white mb-4 tracking-tight">
             {t('cta.title')}
           </h2>
-          <p className="text-xl text-white opacity-90 mb-8">
+          <p className="text-xl text-white/90 mb-8 font-light">
             {t('cta.description')}
           </p>
           <Link
             href={`/${locale}/contact`}
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors shadow-sm"
           >
             {t('cta.button')}
           </Link>
