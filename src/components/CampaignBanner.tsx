@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { Sparkles, ArrowRight, Clock } from 'lucide-react';
+import { Sparkles, ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function CampaignBanner() {
   const t = useTranslations('campaignBanner');
@@ -11,39 +11,36 @@ export default function CampaignBanner() {
   const locale = params.locale as string;
 
   return (
-    <div className="bg-gradient-to-r from-green-600 via-green-500 to-blue-600 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
+    <div className="bg-gradient-to-br from-[#F5F7F9] to-white border-b border-gray-200 relative overflow-hidden">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#6B8FA9] rounded-full mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#8FA998] rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 py-6 sm:py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="relative max-w-6xl mx-auto px-4 py-8 sm:py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Left side - Campaign info */}
-          <div className="flex items-center gap-3 sm:gap-4 text-white">
-            <div className="flex-shrink-0">
-              <div className="relative">
-                <Sparkles className="w-10 h-10 sm:w-12 sm:h-12 animate-pulse" />
-                <div className="absolute inset-0 animate-ping">
-                  <Sparkles className="w-10 h-10 sm:w-12 sm:h-12 opacity-75" />
-                </div>
+          <div className="flex items-start gap-4 sm:gap-6 text-center md:text-left">
+            <div className="flex-shrink-0 hidden sm:block">
+              <div className="w-16 h-16 bg-[#A8BCAE] rounded-2xl flex items-center justify-center">
+                <Sparkles className="w-8 h-8 text-white" />
               </div>
             </div>
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="bg-white text-green-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 mb-3">
+                <span className="bg-[#6B8FA9] text-white px-4 py-1.5 rounded-full text-xs font-medium uppercase tracking-wide">
                   {t('badge')}
                 </span>
-                <div className="hidden sm:flex items-center gap-1.5 text-white/90">
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">{t('limited')}</span>
-                </div>
+                <span className="hidden sm:inline-flex items-center gap-1.5 text-gray-600 text-sm font-light">
+                  <CheckCircle className="w-4 h-4 text-[#8FA998]" />
+                  {t('limited')}
+                </span>
               </div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-1">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-[#2C3E50] mb-2 tracking-tight">
                 {t('title')}
               </h2>
-              <p className="text-sm sm:text-base text-white/90 max-w-2xl">
+              <p className="text-base sm:text-lg text-gray-600 max-w-2xl font-light">
                 {t('description')}
               </p>
             </div>
@@ -53,14 +50,14 @@ export default function CampaignBanner() {
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <Link
               href={`/${locale}/preventive-testing`}
-              className="group bg-white text-green-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-gray-100 transition-all hover:scale-105 shadow-xl flex items-center justify-center gap-2"
+              className="group bg-[#6B8FA9] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-base sm:text-lg hover:bg-[#5A7A94] transition-all shadow-sm flex items-center justify-center gap-2"
             >
               {t('cta')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href={`/${locale}/booking`}
-              className="bg-green-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-green-800 transition-colors border-2 border-white/30 text-center"
+              className="bg-white text-[#6B8FA9] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-base sm:text-lg hover:bg-gray-50 transition-colors border-2 border-[#6B8FA9] text-center"
             >
               {t('bookNow')}
             </Link>
@@ -68,24 +65,18 @@ export default function CampaignBanner() {
         </div>
 
         {/* Bottom strip - Key features */}
-        <div className="hidden lg:flex items-center justify-center gap-8 mt-6 pt-6 border-t border-white/20 text-white/90">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">{t('feature1')}</span>
+        <div className="hidden lg:flex items-center justify-center gap-8 mt-8 pt-8 border-t border-gray-200">
+          <div className="flex items-center gap-2 text-gray-600">
+            <CheckCircle className="w-5 h-5 text-[#8FA998]" />
+            <span className="text-sm font-light">{t('feature1')}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">{t('feature2')}</span>
+          <div className="flex items-center gap-2 text-gray-600">
+            <CheckCircle className="w-5 h-5 text-[#8FA998]" />
+            <span className="text-sm font-light">{t('feature2')}</span>
           </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">{t('feature3')}</span>
+          <div className="flex items-center gap-2 text-gray-600">
+            <CheckCircle className="w-5 h-5 text-[#8FA998]" />
+            <span className="text-sm font-light">{t('feature3')}</span>
           </div>
         </div>
       </div>
