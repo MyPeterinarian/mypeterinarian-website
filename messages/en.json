@@ -1098,6 +1098,15 @@
     "backToBlog": "Back to Blog",
     "share": "Share",
     "relatedPosts": "Related Articles",
+    "search": "Search articles...",
+    "allCategories": "All Categories",
+    "noResults": "No articles found matching your search.",
+    "categories": {
+      "all": "All Categories",
+      "petCare": "Pet Care",
+      "travel": "Travel",
+      "veterinaryCare": "Veterinary Care"
+    },
     "cta": {
       "title": "Need Professional Pet Care?",
       "description": "Our experienced team is here to help with all your pet care needs",

@@ -344,7 +344,7 @@ Vi specialiserer os i at hjælpe kæledyrsforældre med at forberede sig til int
     author: 'Dana Abu Sham',
     date: '2024-05-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/05/parasite-prevention.jpg',
+    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/05/A-Must-Read-Guide-on-Parasite-Prevention-for-Cat-and-Dog-Owners-1600x800.jpg',
     excerpt: {
       en: 'Beware of the lurking danger that parasites pose to the well-being and lifespan of your beloved pets. Learn essential prevention strategies to keep your furry friends safe.',
       dk: 'Vær opmærksom på den lurende fare, som parasitter udgør for dine kæledyrs velvære og levetid. Lær vigtige forebyggelsesstrategier for at holde dine pelede venner sikre.'

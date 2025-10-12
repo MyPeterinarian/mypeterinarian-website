@@ -1121,6 +1121,15 @@
     "backToBlog": "Tilbage til Blog",
     "share": "Del",
     "relatedPosts": "Relaterede Artikler",
+    "search": "Søg artikler...",
+    "allCategories": "Alle Kategorier",
+    "noResults": "Ingen artikler fundet, der matcher din søgning.",
+    "categories": {
+      "all": "Alle Kategorier",
+      "petCare": "Kæledyrspleje",
+      "travel": "Rejse",
+      "veterinaryCare": "Dyrlægebehandling"
+    },
     "cta": {
       "title": "Brug for Professionel Kæledyrspleje?",
       "description": "Vores erfarne team er her for at hjælpe med alle dine kæledyrsbehov",
