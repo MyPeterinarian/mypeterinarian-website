@@ -159,7 +159,7 @@ export default function BlogPostPage() {
           <div className="relative h-[400px] md:h-[500px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src={post.image}
-              alt={post.title[locale]}
+              alt={`Featured image for: ${post.title[locale]} - MyPeterinarian Copenhagen Veterinary Blog`}
               fill
               className="object-cover"
               priority
@@ -243,7 +243,7 @@ export default function BlogPostPage() {
                   <div className="relative h-48 w-full">
                     <Image
                       src={relatedPost.image}
-                      alt={relatedPost.title[locale]}
+                      alt={`Featured image for related post: ${relatedPost.title[locale]} - MyPeterinarian Blog`}
                       fill
                       className="object-cover"
                     />

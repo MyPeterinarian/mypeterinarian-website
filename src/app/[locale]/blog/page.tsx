@@ -147,7 +147,7 @@ export default function BlogPage() {
                     <div className="relative h-48 w-full">
                       <Image
                         src={post.image}
-                        alt={post.title[locale]}
+                        alt={`Featured image for blog post: ${post.title[locale]} - MyPeterinarian Copenhagen`}
                         fill
                         className="object-cover"
                       />

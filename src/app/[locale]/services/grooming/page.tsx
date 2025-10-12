@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Scissors, Droplets, Sparkles, Footprints, Flower2, Smile, Star, Package } from 'lucide-react'
 import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export default function GroomingPage() {
   const t = useTranslations('services.grooming')
@@ -27,6 +28,8 @@ export default function GroomingPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Breadcrumbs />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#22c0b6] to-[#1d6896] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

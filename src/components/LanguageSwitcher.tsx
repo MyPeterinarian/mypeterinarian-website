@@ -30,7 +30,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
                 : 'border-gray-300 hover:border-blue-600'
             }`}
           >
-            <Image src="/flags/en.png" alt="English" width={16} height={16} className="w-4 h-4 object-cover rounded-sm" />
+            <Image src="/flags/en.png" alt="Switch to English - UK Flag" width={16} height={16} className="w-4 h-4 object-cover rounded-sm" />
             <span className="text-xs font-medium text-gray-700">EN</span>
           </button>
           <button
@@ -41,7 +41,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
                 : 'border-gray-300 hover:border-blue-600'
             }`}
           >
-            <Image src="/flags/dk.png" alt="Dansk" width={16} height={16} className="w-4 h-4 object-cover rounded-sm" />
+            <Image src="/flags/dk.png" alt="Skift til Dansk - Danish Flag" width={16} height={16} className="w-4 h-4 object-cover rounded-sm" />
             <span className="text-xs font-medium text-gray-700">DK</span>
           </button>
         </div>
@@ -59,7 +59,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
             : 'border-gray-300 hover:border-blue-600'
         }`}
       >
-        <Image src="/flags/en.png" alt="English" width={28} height={28} className="w-full h-full object-cover" />
+        <Image src="/flags/en.png" alt="Switch to English - UK Flag" width={28} height={28} className="w-full h-full object-cover" />
       </button>
       <button
         onClick={() => switchLanguage('dk')}
@@ -69,7 +69,7 @@ export default function LanguageSwitcher({ isMobile = false }: { isMobile?: bool
             : 'border-gray-300 hover:border-blue-600'
         }`}
       >
-        <Image src="/flags/dk.png" alt="Dansk" width={28} height={28} className="w-full h-full object-cover" />
+        <Image src="/flags/dk.png" alt="Skift til Dansk - Danish Flag" width={28} height={28} className="w-full h-full object-cover" />
       </button>
     </div>
   );

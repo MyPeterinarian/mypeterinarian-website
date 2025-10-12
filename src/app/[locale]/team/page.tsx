@@ -130,7 +130,7 @@ export default function TeamPage() {
                   {member.image ? (
                     <Image
                       src={member.image}
-                      alt={member.name}
+                      alt={`${member.name} - ${member.role} at MyPeterinarian Copenhagen`}
                       width={128}
                       height={128}
                       className="rounded-full object-cover w-full h-full border-4 border-blue-100"

@@ -65,7 +65,7 @@ export default function Footer() {
           <div>
             <Image 
               src="/logo.png" 
-              alt="MyPeterinarian" 
+              alt="MyPeterinarian - Copenhagen Veterinary Services & Pet Care Logo" 
               width={150} 
               height={50}
               className="h-12 w-auto mb-4 brightness-0 invert"

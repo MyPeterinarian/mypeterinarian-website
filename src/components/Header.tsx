@@ -73,7 +73,7 @@ export default function Header() {
             <Link href={`/${locale}`} className="flex items-center">
               <Image
                 src="/logo.png"
-                alt="MyPeterinarian"
+                alt="MyPeterinarian - Copenhagen Veterinary Services & Pet Care Logo"
                 width={180}
                 height={60}
                 className="h-10 sm:h-14 w-auto"

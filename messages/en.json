@@ -28,7 +28,7 @@
     "hero": {
       "title": "Copenhagen's Premier",
       "subtitle": "Pet Care & Veterinary Services",
-      "description": "Professional veterinary care, grooming, and pet services in the heart of Copenhagen. Your pet's health and happiness is our priority.",
+      "description": "Professional veterinary care, dog and cat grooming, pet boarding, and comprehensive pet services in the heart of Copenhagen. Your pet's health and happiness is our priority.",
       "bookAppointment": "Book Appointment",
       "viewServices": "View Services"
     },
@@ -37,7 +37,7 @@
       "description": "Comprehensive pet care services tailored to your furry family members",
       "learnMore": "Learn More",
       "veterinary": {
-        "title": "Veterinary Care",
+        "title": "Veterinary Care in Copenhagen",
         "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
         "items": {
           "exams": "Health Examinations",
@@ -46,7 +46,7 @@
         }
       },
       "grooming": {
-        "title": "Grooming",
+        "title": "Pet Grooming Copenhagen",
         "description": "Professional grooming services to keep your pet looking and feeling their best.",
         "items": {
           "full": "Full Grooming",
@@ -55,7 +55,7 @@
         }
       },
       "petSitting": {
-        "title": "Pet Care Services",
+        "title": "Pet Care & Boarding Copenhagen",
         "description": "Trusted pet care services while you're away. Your pet stays happy and cared for.",
         "items": {
           "daily": "Daily Visits",
@@ -132,7 +132,7 @@
     },
     "services": {
       "veterinary": {
-        "title": "Veterinary Services",
+        "title": "Veterinary Services Copenhagen",
         "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
         "highlights": {
           "0": "Comprehensive health examinations",
@@ -141,7 +141,7 @@
         }
       },
       "grooming": {
-        "title": "Grooming Services",
+        "title": "Pet Grooming Services Copenhagen",
         "description": "Professional grooming to keep your pet looking and feeling their best.",
         "highlights": {
           "0": "Full grooming packages for all sizes",
@@ -150,7 +150,7 @@
         }
       },
       "petSitting": {
-        "title": "Pet Sitting & Care",
+        "title": "Pet Sitting & Boarding Copenhagen",
         "description": "Trusted pet sitting and care services while you're away. Your pet stays happy and cared for.",
         "highlights": {
           "0": "Daily visits and overnight stays",
@@ -159,7 +159,7 @@
         }
       },
       "petPassport": {
-        "title": "Pet Passport & Travel",
+        "title": "Pet Passport Copenhagen",
         "description": "Complete pet passport services for EU and international travel requirements.",
         "highlights": {
           "0": "EU pet passport preparation",
@@ -1112,5 +1112,20 @@
       "description": "Our experienced team is here to help with all your pet care needs",
       "button": "Contact Us"
     }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "services": "Services",
+    "veterinary": "Veterinary Services",
+    "grooming": "Grooming",
+    "petsitting": "Pet Sitting",
+    "petpassport": "Pet Passport",
+    "petcare": "Pet Care",
+    "subscriptions": "Subscriptions",
+    "booking": "Book Appointment",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "team": "Our Team"
   }
 }

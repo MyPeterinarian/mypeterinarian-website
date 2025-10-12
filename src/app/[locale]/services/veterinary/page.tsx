@@ -13,6 +13,7 @@ import {
   Calendar
 } from 'lucide-react'
 import Link from 'next/link'
+import Breadcrumbs from '@/components/Breadcrumbs'
 
 export default function VeterinaryPage() {
   const t = useTranslations('services.veterinary')
@@ -68,6 +69,8 @@ export default function VeterinaryPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Breadcrumbs />
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#22c0b6] to-[#1d6896] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

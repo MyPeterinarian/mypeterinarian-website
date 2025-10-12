@@ -28,7 +28,7 @@
     "hero": {
       "title": "Københavns Førende",
       "subtitle": "Kæledyrspleje & Dyrlægetjenester",
-      "description": "Professionel dyrlægepleje, pleje og kæledyrstjenester i hjertet af København. Din kæledyrs sundhed og lykke er vores prioritet.",
+      "description": "Professionel dyrlægepleje, hunde- og kattepleje, kæledyrsophold og omfattende kæledyrstjenester i hjertet af København. Din kæledyrs sundhed og lykke er vores prioritet.",
       "bookAppointment": "Book Tid",
       "viewServices": "Se Tjenester"
     },
@@ -36,7 +36,7 @@
       "title": "Vores Tjenester",
       "description": "Omfattende kæledyrsplejetjenester skræddersyet til dine pelskære familiemedlemmer",
       "veterinary": {
-        "title": "Dyrlægepleje",
+        "title": "Dyrlægepleje København",
         "description": "Ekspertmedicinsk pleje fra erfarne dyrlæger. Fra rutinetjek til avancerede behandlinger.",
         "items": {
           "exams": "Sundhedsundersøgelser",
@@ -45,7 +45,7 @@
         }
       },
       "grooming": {
-        "title": "Pleje",
+        "title": "Kæledyrspleje København",
         "description": "Professionelle plejetjenester for at holde dit kæledyr ser godt ud og føler sig bedst.",
         "items": {
           "full": "Fuld Pleje",
@@ -54,7 +54,7 @@
         }
       },
       "petSitting": {
-        "title": "Kæledyrsplejetjenester",
+        "title": "Kæledyrspleje & Ophold København",
         "description": "Pålidelige kæledyrsplejetjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
         "items": {
           "daily": "Daglige Besøg",
@@ -132,7 +132,7 @@
     },
     "services": {
       "veterinary": {
-        "title": "Dyrlæge Tjenester",
+        "title": "Dyrlæge Tjenester København",
         "description": "Ekspertmedicinsk pleje fra erfarne dyrlæger. Fra rutinetjek til avancerede behandlinger.",
         "highlights": {
           "0": "Omfattende sundhedsundersøgelser",
@@ -141,7 +141,7 @@
         }
       },
       "grooming": {
-        "title": "Plejetjenester",
+        "title": "Kæledyrs Plejetjenester København",
         "description": "Professionel pleje for at holde dit kæledyr ser godt ud og føler sig bedst.",
         "highlights": {
           "0": "Fulde plejepakker til alle størrelser",
@@ -150,7 +150,7 @@
         }
       },
       "petSitting": {
-        "title": "Kæledyrspassning & Pleje",
+        "title": "Kæledyrspassning & Ophold København",
         "description": "Pålidelige kæledyrspassnings- og plejetjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
         "highlights": {
           "0": "Daglige besøg og overnatninger",
@@ -159,7 +159,7 @@
         }
       },
       "petPassport": {
-        "title": "Kæledyrspas & Rejse",
+        "title": "Kæledyrspas København",
         "description": "Komplette kæledyrspasstjenester til EU og internationale rejsekrav.",
         "highlights": {
           "0": "EU kæledyrspas forberedelse",
@@ -1135,5 +1135,20 @@
       "description": "Vores erfarne team er her for at hjælpe med alle dine kæledyrsbehov",
       "button": "Kontakt Os"
     }
+  },
+  "breadcrumbs": {
+    "home": "Hjem",
+    "services": "Tjenester",
+    "veterinary": "Dyrlægetjenester",
+    "grooming": "Pleje",
+    "petsitting": "Kæledyrspassning",
+    "petpassport": "Kæledyrspas",
+    "petcare": "Kæledyrspleje",
+    "subscriptions": "Abonnementer",
+    "booking": "Book Tid",
+    "about": "Om Os",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "team": "Vores Team"
   }
 }
