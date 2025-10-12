@@ -1112,5 +1112,19 @@
       "description": "Bliv en del af hundredvis af glade kæledyrsejere, der stoler på MyPeterinarian for deres kæledyrs sundhed",
       "button": "Abonner Nu"
     }
+  },
+  "blog": {
+    "title": "Kæledyrspleje Blog & Tips",
+    "description": "Ekspertrådgivning, tips og indsigt for at holde dit kæledyr sundt og lykkeligt",
+    "readMore": "Læs Mere",
+    "noPosts": "Ingen blogindlæg tilgængelige endnu. Kom tilbage snart!",
+    "backToBlog": "Tilbage til Blog",
+    "share": "Del",
+    "relatedPosts": "Relaterede Artikler",
+    "cta": {
+      "title": "Brug for Professionel Kæledyrspleje?",
+      "description": "Vores erfarne team er her for at hjælpe med alle dine kæledyrsbehov",
+      "button": "Kontakt Os"
+    }
   }
 }

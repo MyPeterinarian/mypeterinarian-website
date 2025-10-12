@@ -1089,5 +1089,19 @@
       "description": "Join hundreds of happy pet parents who trust MyPeterinarian for their pet's health",
       "button": "Subscribe Now"
     }
+  },
+  "blog": {
+    "title": "Pet Care Blog & Tips",
+    "description": "Expert advice, tips, and insights for keeping your pet healthy and happy",
+    "readMore": "Read More",
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "relatedPosts": "Related Articles",
+    "cta": {
+      "title": "Need Professional Pet Care?",
+      "description": "Our experienced team is here to help with all your pet care needs",
+      "button": "Contact Us"
+    }
   }
 }
