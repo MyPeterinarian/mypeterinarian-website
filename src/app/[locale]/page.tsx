@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Phone, Mail, Clock, MapPin } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, CheckCircle, ArrowRight } from 'lucide-react';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import CampaignBanner from '@/components/CampaignBanner';
@@ -68,21 +68,21 @@ export default function Home() {
       <CampaignBanner />
 
       {/* Hero Section */}
-      <section id="home" className="relative bg-gradient-to-br from-blue-50 to-green-50 py-12 sm:py-20 px-4">
+      <section id="home" className="relative bg-[#F5F7F9] py-16 sm:py-24 px-4 border-b border-gray-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#2C3E50] mb-6 tracking-tight">
               {t('hero.title')}
-              <span className="block text-blue-600">{t('hero.subtitle')}</span>
+              <span className="block text-[#6B8FA9] mt-2">{t('hero.subtitle')}</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto font-light">
               {t('hero.description')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link href="/booking" className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/booking" className="bg-[#6B8FA9] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm">
                 {t('hero.bookAppointment')}
               </Link>
-              <a href="#services" className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold border-2 border-blue-600 hover:bg-blue-50 transition-colors text-center">
+              <a href="#services" className="bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium border-2 border-[#6B8FA9] hover:bg-[#F5F7F9] transition-colors">
                 {t('hero.viewServices')}
               </a>
             </div>
@@ -91,118 +91,112 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-20 px-4 scroll-mt-20">
+      <section id="services" className="py-20 px-4 scroll-mt-20 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
+          <h2 className="text-4xl sm:text-5xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
             {t('services.title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-8 sm:mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 text-center mb-16 max-w-2xl mx-auto font-light">
             {t('services.description')}
           </p>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Veterinary Care */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <img 
-                  src="/icons/stethoscope.svg" 
-                  alt="Veterinary Care" 
-                  className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
+            <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
+              <div className="w-16 h-16 bg-[#6B8FA9]/10 rounded-2xl flex items-center justify-center mb-6">
+                <img
+                  src="/icons/stethoscope.svg"
+                  alt="Veterinary Care"
+                  className="w-10 h-10"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.veterinary.title')}</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+              <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.veterinary.title')}</h3>
+              <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.veterinary.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.veterinary.items.exams')}
+              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.veterinary.items.exams')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.veterinary.items.vaccinations')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.veterinary.items.vaccinations')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.veterinary.items.emergency')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.veterinary.items.emergency')}</span>
                 </li>
               </ul>
-              <Link href={`/${locale}/services/veterinary`} className="w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2">
+              <Link href={`/${locale}/services/veterinary`} className="w-full bg-[#6B8FA9] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#5A7A94] transition-all inline-flex items-center justify-center gap-2">
                 {t('services.learnMore')}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Grooming Services */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <img 
-                  src="/icons/grooming.svg" 
-                  alt="Grooming" 
-                  className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+            <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
+              <div className="w-16 h-16 bg-[#8FA998]/10 rounded-2xl flex items-center justify-center mb-6">
+                <img
+                  src="/icons/grooming.svg"
+                  alt="Grooming"
+                  className="w-8 h-8"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.grooming.title')}</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+              <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.grooming.title')}</h3>
+              <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.grooming.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.grooming.items.full')}
+              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.grooming.items.full')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.grooming.items.nails')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.grooming.items.nails')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.grooming.items.spa')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.grooming.items.spa')}</span>
                 </li>
               </ul>
-              <Link href={`/${locale}/services/grooming`} className="w-full bg-green-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-flex items-center justify-center gap-2">
+              <Link href={`/${locale}/services/grooming`} className="w-full bg-[#8FA998] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#7A8F87] transition-all inline-flex items-center justify-center gap-2">
                 {t('services.learnMore')}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Pet Care Services */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow flex flex-col">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <img 
-                  src="/icons/heart-hands.svg" 
-                  alt="Pet Care Services" 
-                  className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
+            <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
+              <div className="w-16 h-16 bg-[#6B8FA9]/10 rounded-2xl flex items-center justify-center mb-6">
+                <img
+                  src="/icons/heart-hands.svg"
+                  alt="Pet Care Services"
+                  className="w-10 h-10"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{t('services.petSitting.title')}</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+              <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.petSitting.title')}</h3>
+              <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.petSitting.description')}
               </p>
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-600 mb-6 flex-grow">
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.petSitting.items.daily')}
+              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.petSitting.items.daily')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.petSitting.items.overnight')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.petSitting.items.overnight')}</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-green-500 mr-2">✓</span>
-                  {t('services.petSitting.items.updates')}
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <span className="font-light">{t('services.petSitting.items.updates')}</span>
                 </li>
               </ul>
-              <Link href={`/${locale}/services/pet-care`} className="w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-flex items-center justify-center gap-2">
+              <Link href={`/${locale}/services/pet-care`} className="w-full bg-[#6B8FA9] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#5A7A94] transition-all inline-flex items-center justify-center gap-2">
                 {t('services.learnMore')}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -210,12 +204,12 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-12 sm:py-20 px-4 bg-gray-50 scroll-mt-20">
+      <section id="testimonials" className="py-20 px-4 bg-[#F5F7F9] scroll-mt-20 border-y border-gray-200">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
+          <h2 className="text-4xl sm:text-5xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
             {t('testimonials.title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-8 sm:mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 text-center mb-16 max-w-2xl mx-auto font-light">
             {t('testimonials.description')}
           </p>
 
@@ -268,10 +262,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 sm:py-20 px-4 bg-gradient-to-br from-blue-50 via-white to-purple-50 scroll-mt-20">
-        <div className="max-w-4xl mx-auto text-center mb-12">
+      <section id="contact" className="py-20 px-4 bg-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto text-center mb-16">
           <motion.h2
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+            className="text-4xl md:text-5xl font-light text-[#2C3E50] mb-4 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -280,7 +274,7 @@ export default function Home() {
             {tContact('title')}
           </motion.h2>
           <motion.p
-            className="text-xl text-gray-600 mb-2"
+            className="text-xl text-gray-600 mb-2 font-light"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -289,7 +283,7 @@ export default function Home() {
             {tContact('subtitle')}
           </motion.p>
           <motion.p
-            className="text-gray-600"
+            className="text-gray-600 font-light"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -303,7 +297,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Form */}
             <motion.div
-              className="bg-white rounded-2xl shadow-xl p-8"
+              className="bg-[#F5F7F9] rounded-lg border border-gray-200 p-8"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -311,7 +305,7 @@ export default function Home() {
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-[#2C3E50] mb-2">
                     {tContact('form.name')}
                   </label>
                   <input
@@ -321,13 +315,13 @@ export default function Home() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent bg-white"
                     placeholder={tContact('form.namePlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-[#2C3E50] mb-2">
                     {tContact('form.email')}
                   </label>
                   <input
@@ -337,13 +331,13 @@ export default function Home() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent bg-white"
                     placeholder={tContact('form.emailPlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-[#2C3E50] mb-2">
                     {tContact('form.phone')}
                   </label>
                   <input
@@ -352,13 +346,13 @@ export default function Home() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent bg-white"
                     placeholder={tContact('form.phonePlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="subject" className="block text-sm font-medium text-[#2C3E50] mb-2">
                     {tContact('form.subject')}
                   </label>
                   <input
@@ -367,13 +361,13 @@ export default function Home() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent bg-white"
                     placeholder={tContact('form.subjectPlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-[#2C3E50] mb-2">
                     {tContact('form.message')}
                   </label>
                   <textarea
@@ -383,7 +377,7 @@ export default function Home() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent bg-white"
                     placeholder={tContact('form.messagePlaceholder')}
                   />
                 </div>
@@ -391,19 +385,19 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#6B8FA9] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#5A7A94] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {status === 'loading' ? tContact('form.sending') : tContact('form.submit')}
                 </button>
 
                 {status === 'success' && (
-                  <div className="p-4 bg-green-50 text-green-800 rounded-lg">
+                  <div className="p-4 bg-[#8FA998]/10 text-[#5A8072] rounded-lg border border-[#8FA998]/20">
                     {tContact('form.success')}
                   </div>
                 )}
 
                 {status === 'error' && (
-                  <div className="p-4 bg-red-50 text-red-800 rounded-lg">
+                  <div className="p-4 bg-red-50 text-red-800 rounded-lg border border-red-100">
                     {tContact('form.error')}
                   </div>
                 )}
@@ -418,64 +412,64 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <div className="bg-white rounded-2xl shadow-xl p-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">{tContact('info.title')}</h2>
+              <div className="bg-[#F5F7F9] rounded-lg border border-gray-200 p-8">
+                <h2 className="text-2xl font-medium text-[#2C3E50] mb-6">{tContact('info.title')}</h2>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <Phone className="w-6 h-6 text-blue-600" />
+                    <div className="bg-[#6B8FA9]/10 p-3 rounded-lg">
+                      <Phone className="w-6 h-6 text-[#6B8FA9]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{tContact('info.phone')}</h3>
-                      <a href="tel:+4561667611" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      <h3 className="font-medium text-[#2C3E50] mb-1">{tContact('info.phone')}</h3>
+                      <a href="tel:+4561667611" className="text-gray-600 hover:text-[#6B8FA9] transition-colors">
                         +45 61 66 76 11
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <Mail className="w-6 h-6 text-blue-600" />
+                    <div className="bg-[#6B8FA9]/10 p-3 rounded-lg">
+                      <Mail className="w-6 h-6 text-[#6B8FA9]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{tContact('info.email')}</h3>
-                      <a href="mailto:hej@mypeterinarian.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                      <h3 className="font-medium text-[#2C3E50] mb-1">{tContact('info.email')}</h3>
+                      <a href="mailto:hej@mypeterinarian.com" className="text-gray-600 hover:text-[#6B8FA9] transition-colors">
                         hej@mypeterinarian.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <Clock className="w-6 h-6 text-blue-600" />
+                    <div className="bg-[#6B8FA9]/10 p-3 rounded-lg">
+                      <Clock className="w-6 h-6 text-[#6B8FA9]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{tContact('info.hours')}</h3>
-                      <p className="text-gray-600">{locale === 'dk' ? 'Man-Fre: 10:00-16:00' : 'Mon-Fri: 10:00-16:00'}</p>
-                      <p className="text-gray-600">{locale === 'dk' ? 'Lør-Søn: Lukket' : 'Sat-Sun: Closed'}</p>
-                      <p className="text-gray-500 text-sm mt-2 italic">
+                      <h3 className="font-medium text-[#2C3E50] mb-1">{tContact('info.hours')}</h3>
+                      <p className="text-gray-600 font-light">{locale === 'dk' ? 'Man-Fre: 10:00-16:00' : 'Mon-Fri: 10:00-16:00'}</p>
+                      <p className="text-gray-600 font-light">{locale === 'dk' ? 'Lør-Søn: Lukket' : 'Sat-Sun: Closed'}</p>
+                      <p className="text-gray-500 text-sm mt-2 italic font-light">
                         {locale === 'dk' ? 'Nogle lørdage har vi åbent, kontakt os venligst for at forespørge' : 'Some Saturdays we are open, please contact us to inquire'}
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-lg">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="bg-[#6B8FA9]/10 p-3 rounded-lg">
+                      <MapPin className="w-6 h-6 text-[#6B8FA9]" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">{tContact('info.location')}</h3>
-                      <p className="text-gray-600">Peder Hvitfeldts Straede 16</p>
-                      <p className="text-gray-600">1173 Copenhagen, Denmark</p>
+                      <h3 className="font-medium text-[#2C3E50] mb-1">{tContact('info.location')}</h3>
+                      <p className="text-gray-600 font-light">Peder Hvitfeldts Straede 16</p>
+                      <p className="text-gray-600 font-light">1173 Copenhagen, Denmark</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-blue-50 rounded-2xl p-6 border border-blue-100">
-                <h3 className="font-semibold text-gray-900 mb-2">{tContact('cta.urgent')}</h3>
-                <p className="text-gray-600 text-sm mb-4">{tContact('cta.book')}</p>
+              <div className="bg-[#6B8FA9]/5 rounded-lg p-6 border border-[#6B8FA9]/20">
+                <h3 className="font-medium text-[#2C3E50] mb-2">{tContact('cta.urgent')}</h3>
+                <p className="text-gray-600 text-sm font-light">{tContact('cta.book')}</p>
               </div>
             </motion.div>
           </div>
@@ -483,42 +477,42 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview Section */}
-      <section id="faq" className="py-12 sm:py-20 px-4 scroll-mt-20">
+      <section id="faq" className="py-20 px-4 bg-[#F5F7F9] scroll-mt-20 border-t border-gray-200">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
+          <h2 className="text-4xl sm:text-5xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
             {t('faq.title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-8 sm:mb-12">
+          <p className="text-xl md:text-2xl text-gray-600 text-center mb-16 font-light">
             {t('faq.description')}
           </p>
 
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-6">
             {/* FAQ 1 */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
                 {t('faq.questions.q1.question')}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-base text-gray-600 font-light">
                 {t('faq.questions.q1.answer')}
               </p>
             </div>
 
             {/* FAQ 2 */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
                 {t('faq.questions.q2.question')}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-base text-gray-600 font-light">
                 {t('faq.questions.q2.answer')}
               </p>
             </div>
 
             {/* FAQ 3 */}
-            <div className="bg-white p-6 sm:p-8 rounded-xl shadow-md border border-gray-100">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+            <div className="bg-white p-8 rounded-lg border border-gray-200">
+              <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
                 {t('faq.questions.q3.question')}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-base text-gray-600 font-light">
                 {t('faq.questions.q3.answer')}
               </p>
             </div>
@@ -527,15 +521,15 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-green-500 py-12 sm:py-16 px-4">
+      <section className="bg-gradient-to-r from-[#6B8FA9] to-[#8FA998] py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-6 tracking-tight">
             {t('cta.title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white mb-6 sm:mb-8 opacity-90">
+          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 font-light">
             {t('cta.description')}
           </p>
-          <Link href="/booking" className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg inline-block">
+          <Link href="/booking" className="bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors shadow-sm inline-block">
             {t('cta.button')}
           </Link>
         </div>

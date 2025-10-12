@@ -83,11 +83,11 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-              <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
+              <a href={`/${locale}#home`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.home')}
               </a>
 
-              <Link href={`/${locale}/preventive-testing`} className="relative text-[#6B8FA9] hover:text-[#5A7A94] font-medium transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/preventive-testing`} className="relative text-[#6B8FA9] hover:text-[#5A7A94] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.campaign')}
                 <span className="absolute -top-1 -right-1 flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8FA998] opacity-75"></span>
@@ -95,24 +95,24 @@ export default function Header() {
                 </span>
               </Link>
 
-              <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
+              <a href={`/${locale}#services`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.services')}
               </a>
 
-              <Link href={`/${locale}/team`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/team`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.team')}
               </Link>
 
-              <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.subscriptions')}
               </Link>
-              <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/booking`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.booking')}
               </Link>
-              <Link href={`/${locale}/blog`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base">
+              <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.blog')}
               </Link>
-              <a href={`/${locale}#contact`} className="text-gray-700 hover:text-blue-600 font-medium transition-colors text-sm xl:text-base scroll-smooth">
+              <a href={`/${locale}#contact`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base scroll-smooth">
                 {t('navigation.contact')}
               </a>
             </nav>
@@ -121,7 +121,7 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-3 xl:gap-4">
               <Link
                 href={`/${locale}/booking`}
-                className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all text-sm xl:text-base"
+                className="bg-[#6B8FA9] text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm text-sm xl:text-base"
               >
                 {t('bookNow')}
               </Link>
@@ -147,9 +147,9 @@ export default function Header() {
           {mobileMenuOpen && (
             <div className="lg:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col gap-3">
-                <a href={`/${locale}#home`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
+                <a href={`/${locale}#home`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.home')}</a>
 
-                <Link href={`/${locale}/preventive-testing`} className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium py-1 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                <Link href={`/${locale}/preventive-testing`} className="text-[#6B8FA9] hover:text-[#5A7A94] font-light py-1 flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                   {t('navigation.campaign')}
                   <span className="flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-[#8FA998] opacity-75"></span>
@@ -157,21 +157,21 @@ export default function Header() {
                   </span>
                 </Link>
 
-                <a href={`/${locale}#services`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.services')}</a>
+                <a href={`/${locale}#services`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.services')}</a>
 
-                <Link href={`/${locale}/team`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.team')}</Link>
+                <Link href={`/${locale}/team`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.team')}</Link>
 
-                <Link href={`/${locale}/subscriptions`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
-                <Link href={`/${locale}/booking`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</Link>
-                <Link href={`/${locale}/blog`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.blog')}</Link>
-                <a href={`/${locale}#contact`} className="text-gray-700 hover:text-blue-600 font-medium py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.contact')}</a>
+                <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
+                <Link href={`/${locale}/booking`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</Link>
+                <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.blog')}</Link>
+                <a href={`/${locale}#contact`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.contact')}</a>
 
                 {/* Language Switcher - Mobile */}
                 <LanguageSwitcher isMobile />
 
                 <Link
                   href={`/${locale}/booking`}
-                  className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-2.5 rounded-lg font-semibold text-center mt-2"
+                  className="bg-[#6B8FA9] text-white px-6 py-2.5 rounded-lg font-medium text-center mt-2 hover:bg-[#5A7A94] transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t('bookNow')}
