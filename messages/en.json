@@ -389,26 +389,26 @@
         "items": {
           "full": {
             "title": "Full Grooming Service",
-            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1000-1500 DKK (based on size).",
+            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1500-1700 DKK (based on size).",
             "bullets": [
-              "XS (< 3kg): 750-850 DKK",
-              "S (3-10kg): 850-1150 DKK",
-              "M (11-17kg): 950-1350 DKK",
-              "L (18-31kg): 1350-1650 DKK",
-              "XL (> 31kg): 1650-1950 DKK",
-              "Cat Grooming: 1000-1500 DKK"
+              "XS (< 3kg): 750-900 DKK",
+              "S (3-10kg): 750-1000 DKK",
+              "M (11-17kg): 950-1250 DKK",
+              "L (18-31kg): 1250-1750 DKK",
+              "XL (> 31kg): 1450-1950 DKK",
+              "Cat Grooming: 1500-1700 DKK"
             ],
             "button": "Book Full Grooming"
           },
           "bath": {
             "title": "Bath & Blow Dry",
-            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing for a clean, fresh coat.",
+            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing. Dogs: 700-1100 DKK, Cats: 750-800 DKK.",
             "bullets": [
-              "Premium bathing service",
-              "Professional shampoos",
-              "Thorough blow drying",
-              "Basic brushing",
-              "Size-based pricing"
+              "XS & S Dogs: 700 DKK",
+              "M Dogs: 750 DKK",
+              "L Dogs: 900 DKK",
+              "XL Dogs: 1100 DKK",
+              "Cats: 750-800 DKK"
             ],
             "button": "Book Bath Service"
           },
@@ -426,38 +426,38 @@
           },
           "nails": {
             "title": "Nail Clipping & Paw Care",
-            "description": "Safe nail trimming and paw care services. Available as standalone service or included in full grooming packages.",
+            "description": "Safe nail trimming and paw care services. Nail clipping: 150 DKK, Pawdicure: 200 DKK. Available standalone or included in full grooming.",
             "bullets": [
-              "Safe nail trimming",
-              "Paw care services",
-              "Standalone service available",
-              "Included in full grooming",
+              "Nail Clipping: 150 DKK",
+              "Pawdicure: 200 DKK",
+              "Ear Cleaning: 150 DKK",
+              "Teeth Brushing: 200 DKK",
               "Professional handling"
             ],
             "button": "Book Nail Care"
           },
           "spa": {
             "title": "Specialized Treatments",
-            "description": "De-matting, de-shedding treatments, medicated baths, and tick removal. Special packages available including Perfect Coat and Tangle-Free Life packages.",
+            "description": "De-shedding treatments, full spa packages, and specialized care. Dogs: 750-2400 DKK, Cats: 1000-1200 DKK based on size and coat type.",
             "bullets": [
-              "De-matting treatments",
-              "De-shedding packages",
-              "Medicated baths",
-              "Tick removal",
-              "Perfect Coat Package",
-              "Tangle-Free Life Package"
+              "De-shedding: 750-2400 DKK",
+              "Full Spa: 850-1450 DKK",
+              "Deep Conditioning: 150 DKK",
+              "Anal Glands: 150 DKK",
+              "Extra Time (15 min): 150 DKK",
+              "Knot Removal: 775 DKK"
             ],
             "button": "Book Spa Treatment"
           },
           "teeth": {
             "title": "Teeth Brushing & Extra Care",
-            "description": "Gentle teeth brushing and additional services including puppy grooming introduction and cat brushing packages.",
+            "description": "Gentle teeth brushing (200 DKK) and additional services including grooming training (550 DKK) and cat brushing (1300 DKK).",
             "bullets": [
-              "Gentle teeth brushing",
-              "Puppy grooming introduction",
-              "Cat brushing packages",
-              "Essential Pet Care Package",
-              "Additional care services"
+              "Teeth Brushing: 200 DKK",
+              "Grooming Training: 550 DKK",
+              "Cat Brushing Package: 1300 DKK",
+              "Touch-up: 350 DKK (Dogs)",
+              "Touch-up for Cats: 400 DKK"
             ],
             "button": "Book Dental Care"
           }
@@ -505,7 +505,7 @@
           },
           "catBrushing": {
             "title": "Cat Brushing Package",
-            "price": "749 DKK",
+            "price": "1300 DKK",
             "description": "Gentle grooming for felines",
             "features": [
               "Professional brushing",
@@ -526,27 +526,27 @@
             "items": [
               {
                 "name": "XS (< 3kg)",
-                "price": "750-850 DKK"
+                "price": "750-900 DKK"
               },
               {
                 "name": "S (3-10kg)",
-                "price": "850-1150 DKK"
+                "price": "750-1000 DKK"
               },
               {
                 "name": "M (11-17kg)",
-                "price": "950-1350 DKK"
+                "price": "950-1250 DKK"
               },
               {
                 "name": "L (18-31kg)",
-                "price": "1350-1650 DKK"
+                "price": "1250-1750 DKK"
               },
               {
                 "name": "XL (> 31kg)",
-                "price": "1650-1950 DKK"
+                "price": "1450-1950 DKK"
               },
               {
                 "name": "Cat Grooming",
-                "price": "1000-1500 DKK"
+                "price": "1500-1700 DKK"
               }
             ]
           },
@@ -554,16 +554,37 @@
             "title": "Hand-Stripping (Terriers)",
             "items": [
               {
-                "name": "Small Terrier",
-                "price": "1200 DKK"
+                "name": "Small (Under 6kg)",
+                "price": "1100 DKK"
               },
               {
-                "name": "Medium Terrier",
-                "price": "1400 DKK"
+                "name": "Medium (6-12kg)",
+                "price": "1300 DKK"
+              }
+            ]
+          },
+          "handScissoring": {
+            "title": "Hand-Scissoring (Long Hair)",
+            "items": [
+              {
+                "name": "XS",
+                "price": "950 DKK"
               },
               {
-                "name": "Large Terrier",
+                "name": "S",
+                "price": "1250 DKK"
+              },
+              {
+                "name": "M",
                 "price": "1600 DKK"
+              },
+              {
+                "name": "L",
+                "price": "2000 DKK"
+              },
+              {
+                "name": "XL",
+                "price": "2500 DKK"
               }
             ]
           },
@@ -571,16 +592,28 @@
             "title": "Bath & Blow Dry Only",
             "items": [
               {
-                "name": "XS-S",
-                "price": "400-550 DKK"
+                "name": "XS & S Dogs",
+                "price": "700 DKK"
               },
               {
-                "name": "M",
-                "price": "550-750 DKK"
+                "name": "M Dogs",
+                "price": "750 DKK"
               },
               {
-                "name": "L-XL",
-                "price": "750-1050 DKK"
+                "name": "L Dogs",
+                "price": "900 DKK"
+              },
+              {
+                "name": "XL Dogs",
+                "price": "1100 DKK"
+              },
+              {
+                "name": "Cats (Short Hair)",
+                "price": "750 DKK"
+              },
+              {
+                "name": "Cats (Long Hair)",
+                "price": "800 DKK"
               }
             ]
           },
@@ -588,28 +621,64 @@
             "title": "Add-On Services",
             "items": [
               {
+                "name": "Nail Clipping",
+                "price": "150 DKK"
+              },
+              {
                 "name": "Teeth Brushing",
-                "price": "100 DKK"
+                "price": "200 DKK"
               },
               {
-                "name": "De-shedding Treatment",
-                "price": "200-400 DKK"
-              },
-              {
-                "name": "De-matting (per 30 min)",
-                "price": "250 DKK"
-              },
-              {
-                "name": "Medicated Bath",
+                "name": "Ear Cleaning",
                 "price": "150 DKK"
               },
               {
-                "name": "Nail Clipping Only",
+                "name": "Ear Picking",
                 "price": "150 DKK"
               },
               {
-                "name": "Tick Removal",
-                "price": "100 DKK"
+                "name": "Anal Glands Expression",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Deep Conditioning Mask",
+                "price": "150 DKK"
+              },
+              {
+                "name": "De-shedding Add-on",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Extra Time (15 min)",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Pawdicure",
+                "price": "200 DKK"
+              },
+              {
+                "name": "Touch-up (Dogs)",
+                "price": "350 DKK"
+              },
+              {
+                "name": "Touch-up (Cats)",
+                "price": "400 DKK"
+              },
+              {
+                "name": "Grooming Consultation",
+                "price": "120 DKK"
+              },
+              {
+                "name": "Grooming Training",
+                "price": "550 DKK"
+              },
+              {
+                "name": "Knot Removal Only",
+                "price": "775 DKK"
+              },
+              {
+                "name": "Additional Hour",
+                "price": "400 DKK"
               }
             ]
           }

@@ -427,7 +427,7 @@
           },
           "catBrushing": {
             "title": "Kattebørstning Pakke",
-            "price": "650 Kr",
+            "price": "1300 Kr",
             "description": "Specialiseret børstning for kattepels",
             "features": [
               "Blid kattebørstning og udtryk",
@@ -448,27 +448,27 @@
             "items": [
               {
                 "name": "XS (< 3 kg)",
-                "price": "750 Kr"
+                "price": "750-900 Kr"
               },
               {
                 "name": "S (3-10 kg)",
-                "price": "950 Kr"
+                "price": "750-1000 Kr"
               },
               {
                 "name": "M (11-17 kg)",
-                "price": "1250 Kr"
+                "price": "950-1250 Kr"
               },
               {
                 "name": "L (18-31 kg)",
-                "price": "1650 Kr"
+                "price": "1250-1750 Kr"
               },
               {
                 "name": "XL (> 31 kg)",
-                "price": "1950 Kr"
+                "price": "1450-1950 Kr"
               },
               {
                 "name": "Kattepleje",
-                "price": "1000-1500 Kr"
+                "price": "1500-1700 Kr"
               }
             ]
           },
@@ -476,20 +476,37 @@
             "title": "Håndstrikning (Terrier)",
             "items": [
               {
-                "name": "XS (< 3 kg)",
+                "name": "Lille (Under 6kg)",
+                "price": "1100 Kr"
+              },
+              {
+                "name": "Mellem (6-12kg)",
+                "price": "1300 Kr"
+              }
+            ]
+          },
+          "handScissoring": {
+            "title": "Håndsaksebehandling (Langt Hår)",
+            "items": [
+              {
+                "name": "XS",
                 "price": "950 Kr"
               },
               {
-                "name": "S (3-10 kg)",
-                "price": "1150 Kr"
+                "name": "S",
+                "price": "1250 Kr"
               },
               {
-                "name": "M (11-17 kg)",
-                "price": "1450 Kr"
+                "name": "M",
+                "price": "1600 Kr"
               },
               {
-                "name": "L (18-31 kg)",
-                "price": "1850 Kr"
+                "name": "L",
+                "price": "2000 Kr"
+              },
+              {
+                "name": "XL",
+                "price": "2500 Kr"
               }
             ]
           },
@@ -497,24 +514,28 @@
             "title": "Kun Bad & Føntørring",
             "items": [
               {
-                "name": "XS (< 3 kg)",
-                "price": "350 Kr"
+                "name": "XS & S Hunde",
+                "price": "700 Kr"
               },
               {
-                "name": "S (3-10 kg)",
-                "price": "450 Kr"
-              },
-              {
-                "name": "M (11-17 kg)",
-                "price": "550 Kr"
-              },
-              {
-                "name": "L (18-31 kg)",
+                "name": "M Hunde",
                 "price": "750 Kr"
               },
               {
-                "name": "XL (> 31 kg)",
-                "price": "950 Kr"
+                "name": "L Hunde",
+                "price": "900 Kr"
+              },
+              {
+                "name": "XL Hunde",
+                "price": "1100 Kr"
+              },
+              {
+                "name": "Katte (Kort Hår)",
+                "price": "750 Kr"
+              },
+              {
+                "name": "Katte (Langt Hår)",
+                "price": "800 Kr"
               }
             ]
           },
@@ -522,28 +543,64 @@
             "title": "Tillæg og Specielle Tjenester",
             "items": [
               {
-                "name": "Negleklipning (Separat besøg)",
-                "price": "374 Kr"
-              },
-              {
-                "name": "Tandbørstning",
+                "name": "Negleklipning",
                 "price": "150 Kr"
               },
               {
-                "name": "Flåtfjernelse (pr. flåt)",
-                "price": "50 Kr"
+                "name": "Tandbørstning",
+                "price": "200 Kr"
               },
               {
-                "name": "Filtring (alvorlig)",
-                "price": "300-600 Kr"
+                "name": "Ørerensning",
+                "price": "150 Kr"
               },
               {
-                "name": "Medicinsk bad",
-                "price": "250 Kr"
+                "name": "Øreplukning",
+                "price": "150 Kr"
               },
               {
-                "name": "Flåtfjernelse",
-                "price": "100 Kr"
+                "name": "Analkirteltømning",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Dyb Konditioneringsmaske",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Pelsfjernende Tillæg",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Ekstra Tid (15 min)",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Pawdicure",
+                "price": "200 Kr"
+              },
+              {
+                "name": "Opfriskning (Hunde)",
+                "price": "350 Kr"
+              },
+              {
+                "name": "Opfriskning (Katte)",
+                "price": "400 Kr"
+              },
+              {
+                "name": "Plejekonsultation",
+                "price": "120 Kr"
+              },
+              {
+                "name": "Plejetræning",
+                "price": "550 Kr"
+              },
+              {
+                "name": "Kun Knutfjernelse",
+                "price": "775 Kr"
+              },
+              {
+                "name": "Ekstra Time",
+                "price": "400 Kr"
               }
             ]
           }
@@ -608,26 +665,26 @@
         "items": {
           "full": {
             "title": "Fuld Plejetjeneste",
-            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hundepleje: 750-1950 Kr, Kattepleje: 1000-1500 Kr (baseret på størrelse).",
+            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hundepleje: 750-1950 Kr, Kattepleje: 1500-1700 Kr (baseret på størrelse).",
             "bullets": [
-              "XS (< 3kg): 750-850 Kr",
-              "S (3-10kg): 850-1150 Kr",
-              "M (11-17kg): 950-1350 Kr",
-              "L (18-31kg): 1350-1650 Kr",
-              "XL (> 31kg): 1650-1950 Kr",
-              "Kattepleje: 1000-1500 Kr"
+              "XS (< 3kg): 750-900 Kr",
+              "S (3-10kg): 750-1000 Kr",
+              "M (11-17kg): 950-1250 Kr",
+              "L (18-31kg): 1250-1750 Kr",
+              "XL (> 31kg): 1450-1950 Kr",
+              "Kattepleje: 1500-1700 Kr"
             ],
             "button": "Book Fuld Pleje"
           },
           "bath": {
             "title": "Bad & Føntørring",
-            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning for en ren, frisk pels.",
+            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning. Hunde: 700-1100 Kr, Katte: 750-800 Kr.",
             "bullets": [
-              "Premium badning service",
-              "Professionelle shampooer",
-              "Grundig føntørring",
-              "Basis børstning",
-              "Størrelsesbaseret prissætning"
+              "XS & S Hunde: 700 Kr",
+              "M Hunde: 750 Kr",
+              "L Hunde: 900 Kr",
+              "XL Hunde: 1100 Kr",
+              "Katte: 750-800 Kr"
             ],
             "button": "Book Bad Service"
           },
@@ -645,38 +702,38 @@
           },
           "nails": {
             "title": "Negleklipning & Potepleje",
-            "description": "Sikker negleklipning og poteplejede tjenester. Tilgængelig som selvstændig tjeneste eller inkluderet i fuld plejepakker.",
+            "description": "Sikker negleklipning og poteplejede tjenester. Negleklipning: 150 Kr, Pawdicure: 200 Kr. Tilgængelig som selvstændig tjeneste eller inkluderet i fuld plejepakker.",
             "bullets": [
-              "Sikker negleklipning",
-              "Pote pleje tjenester",
-              "Selvstændig tjeneste tilgængelig",
-              "Inkluderet i fuld pleje",
+              "Negleklipning: 150 Kr",
+              "Pawdicure: 200 Kr",
+              "Ørerensning: 150 Kr",
+              "Tandbørstning: 200 Kr",
               "Professionel håndtering"
             ],
             "button": "Book Neglepleje"
           },
           "spa": {
             "title": "Specialiserede Behandlinger",
-            "description": "Filtring, pelsfjernende behandlinger, medicinske bade og flåtfjernelse. Specielle pakker tilgængelige inklusiv Perfect Coat og Tangle-Free Life pakker.",
+            "description": "Pelsfjernende behandlinger, fuld spa-pakker og specialiseret pleje. Hunde: 750-2400 Kr, Katte: 1000-1200 Kr baseret på størrelse og pelstype.",
             "bullets": [
-              "Filtringsbehandlinger",
-              "Pelsfjernende pakker",
-              "Medicinske bade",
-              "Flåtfjernelse",
-              "Perfect Coat Pakke",
-              "Tangle-Free Life Pakke"
+              "Pelsfjernende: 750-2400 Kr",
+              "Fuld Spa: 850-1450 Kr",
+              "Dyb Konditionering: 150 Kr",
+              "Analkirtler: 150 Kr",
+              "Ekstra Tid (15 min): 150 Kr",
+              "Knutfjernelse: 775 Kr"
             ],
             "button": "Book Spa Behandling"
           },
           "teeth": {
             "title": "Tandbørstning & Ekstra Pleje",
-            "description": "Blid tandbørstning og yderligere tjenester inklusiv hvalpepleje introduktion og kattebørstningspakker.",
+            "description": "Blid tandbørstning (200 Kr) og yderligere tjenester inklusiv plejetræning (550 Kr) og kattebørstning (1300 Kr).",
             "bullets": [
-              "Blid tandbørstning",
-              "Hvalpepleje introduktion",
-              "Kattebørstningspakker",
-              "Essential Pet Care Pakke",
-              "Yderligere plejetjenester"
+              "Tandbørstning: 200 Kr",
+              "Plejetræning: 550 Kr",
+              "Kattebørstningspakke: 1300 Kr",
+              "Opfriskning: 350 Kr (Hunde)",
+              "Opfriskning til Katte: 400 Kr"
             ],
             "button": "Book Tandpleje"
           }
