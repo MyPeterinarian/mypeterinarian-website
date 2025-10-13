@@ -1455,5 +1455,16 @@
       "button": "Send Your Application",
       "contactButton": "Contact Us"
     }
+  },
+  "chatbot": {
+    "title": "MyPeterinarian Assistant",
+    "subtitle": "Ask us anything!",
+    "welcomeMessage": "Hello! 👋 I'm here to help answer your questions about our veterinary services, grooming, pet sitting, and more. How can I assist you today?",
+    "placeholder": "Type your message...",
+    "send": "Send message",
+    "openChat": "Open chat",
+    "typing": "Typing...",
+    "errorMessage": "Sorry, I encountered an error. Please try again or contact us directly at +45 61 66 76 11 or hej@mypeterinarian.com",
+    "disclaimer": "AI assistant - For urgent matters, please call us directly"
   }
 }

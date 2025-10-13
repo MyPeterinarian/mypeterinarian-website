@@ -1466,5 +1466,16 @@
       "button": "Send Din Ansøgning",
       "contactButton": "Kontakt Os"
     }
+  },
+  "chatbot": {
+    "title": "MyPeterinarian Assistent",
+    "subtitle": "Spørg os om hvad som helst!",
+    "welcomeMessage": "Hej! 👋 Jeg er her for at hjælpe med at besvare dine spørgsmål om vores dyrlægetjenester, pleje, kæledyrspassning og mere. Hvordan kan jeg hjælpe dig i dag?",
+    "placeholder": "Skriv din besked...",
+    "send": "Send besked",
+    "openChat": "Åbn chat",
+    "typing": "Skriver...",
+    "errorMessage": "Beklager, jeg stødte på en fejl. Prøv venligst igen eller kontakt os direkte på +45 61 66 76 11 eller hej@mypeterinarian.com",
+    "disclaimer": "AI assistent - For akutte sager, ring venligst direkte"
   }
 }

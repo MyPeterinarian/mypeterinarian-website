@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import Chatbot from '@/components/Chatbot';
 import { Metadata } from 'next';
 import '../globals.css';
 
@@ -132,6 +133,7 @@ export default async function LocaleLayout({
       <Header />
       {children}
       <Footer />
+      <Chatbot />
       <SpeedInsights />
       <Analytics />
     </NextIntlClientProvider>
