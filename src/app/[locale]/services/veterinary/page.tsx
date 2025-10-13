@@ -61,7 +61,7 @@ export default function VeterinaryPage() {
     {
       key: 'subscription',
       icon: Calendar,
-      comingSoon: true
+      items: Array.from({ length: 4 }, (_, i) => t(`features.items.subscription.prices.${i}`))
     }
   ]
 
@@ -120,30 +120,32 @@ export default function VeterinaryPage() {
                     </h3>
                   </div>
 
-                  {service.comingSoon ? (
-                    <p className="text-center text-gray-500 italic">Coming soon!</p>
-                  ) : (
-                    <>
-                      <p className="text-sm text-gray-600 mb-4">
-                        {t(`features.items.${service.key}.description`)}
-                      </p>
-                      {service.items && (
-                        <ul className="space-y-2">
-                          {service.items.map((item, idx) => (
-                            <li key={idx} className="text-xs text-gray-700 flex items-start">
-                              <span className="text-[#22c0b6] mr-2">●</span>
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                      <div className="mt-6 pt-4 border-t border-gray-100">
+                  <>
+                    <p className="text-sm text-gray-600 mb-4">
+                      {t(`features.items.${service.key}.description`)}
+                    </p>
+                    {service.items && (
+                      <ul className="space-y-2">
+                        {service.items.map((item, idx) => (
+                          <li key={idx} className="text-xs text-gray-700 flex items-start">
+                            <span className="text-[#22c0b6] mr-2">●</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    <div className="mt-6 pt-4 border-t border-gray-100">
+                      {service.key === 'subscription' ? (
+                        <Link href={`/${locale}/subscriptions`} className="block w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
+                          {t(`features.items.${service.key}.cta`)}
+                        </Link>
+                      ) : (
                         <button className="w-full text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
                           {t(`features.items.${service.key}.cta`)}
                         </button>
-                      </div>
-                    </>
-                  )}
+                      )}
+                    </div>
+                  </>
                 </motion.div>
               )
             })}

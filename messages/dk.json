@@ -302,7 +302,14 @@
           },
           "subscription": {
             "title": "Abonnementsplaner",
-            "description": "Kommer snart!"
+            "description": "Omfattende sundhedsplaner med regelmæssige check-ups, vaccinationer og rabatter.",
+            "cta": "Se Planer",
+            "prices": {
+              "0": "Essentiel: Fra 299 DKK/måned",
+              "1": "Avanceret: Fra 440 DKK/måned",
+              "2": "Professionel: Fra 648 DKK/måned",
+              "3": "Priser varierer efter kæledyrets vægt"
+            }
           }
         }
       },

@@ -302,7 +302,14 @@
           },
           "subscription": {
             "title": "Subscription Plans",
-            "description": "Coming soon!"
+            "description": "Comprehensive health plans with regular check-ups, vaccinations, and discounts.",
+            "cta": "View Plans",
+            "prices": {
+              "0": "Essential: From 299 DKK/month",
+              "1": "Advanced: From 440 DKK/month",
+              "2": "Professional: From 648 DKK/month",
+              "3": "Pricing varies by pet weight"
+            }
           }
         }
       },
