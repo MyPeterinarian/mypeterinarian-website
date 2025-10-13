@@ -5293,7 +5293,7 @@ Søg øjeblikkelig veterinærhjælp for:
     author: 'MyPeterinarian Team',
     date: '2021-09-15',
     category: 'Pet Care',
-    image: 'https://images.unsplash.com/photo-1616925652896-36dd0e32a137?w=1600&h=900&fit=crop',
+    image: 'https://images.unsplash.com/photo-1616012687660-b2f1dceb2ddc?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Discover how regular professional grooming is essential for your pet\'s physical health, emotional wellbeing, and early disease detection.',
       dk: 'Opdag hvordan regelmæssig professionel pleje er essentiel for dit kæledyrs fysiske sundhed, følelsesmæssige velvære og tidlig sygdomsregistrering.'
@@ -7038,7 +7038,7 @@ At forstå kattekommunikation transformerer dit forhold fra simpelt at sameksist
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://images.unsplash.com/photo-1573865526739-10c1dd4540a1?w=1600&h=900&fit=crop',
+    image: 'https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Complete guide to cat socialization from kittenhood through adulthood. Learn critical periods, exposure techniques, and how to raise a confident, well-adjusted feline companion.',
       dk: 'Komplet guide til kattens socialisering fra killingetid gennem voksenalderen. Lær kritiske perioder, eksponeringsteknikker og hvordan man opdrager en selvsikker, veladjusteret feline ledsager.'
@@ -16386,7 +16386,7 @@ Husk at den "bedste" mad er en der holder din kat sund, vedligeholder ideel krop
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=1600&h=900&fit=crop',
+    image: 'https://images.unsplash.com/photo-1625316708582-7c38734be31d?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Comprehensive guide to canine nutrition covering dog food types, ingredients, life stages, and feeding practices for optimal health.',
       dk: 'Omfattende guide til hundeernæring, der dækker hundemadtyper, ingredienser, livsfaser og fodringspraksis for optimal sundhed.'
