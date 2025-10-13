@@ -1313,5 +1313,151 @@
       "button": "Book Now",
       "contact": "Contact Us"
     }
+  },
+  "careers": {
+    "title": "Career Opportunities",
+    "subtitle": "Join Our Team",
+    "description": "MyPeterinarian is seeking passionate individuals to join our team. Help us improve the pet care and veterinary services industry by ensuring convenience and professionalism for pets and pet owners in Copenhagen.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We're dedicated to improving the pet care and veterinary services industry by providing convenient, professional, and compassionate care for pets and their owners. Join us in making a real difference in the lives of pets and families across Copenhagen."
+    },
+    "openings": {
+      "title": "Current Job Openings",
+      "responsibilities": "Key Responsibilities",
+      "requirements": "Requirements",
+      "applyButton": "Apply for This Position",
+      "jobs": {
+        "finance": {
+          "title": "Finance Manager",
+          "location": "Copenhagen (preferred) | Remote within ±2 time zones",
+          "type": "Flexible/Part-Time",
+          "description": "We're looking for an experienced finance professional to lead our financial strategy and operations.",
+          "responsibilities": [
+            "Develop and implement financial strategy and roadmap",
+            "Manage all financial operations and reporting",
+            "Provide strategic financial insights to leadership team",
+            "Collaborate with management on business planning",
+            "Ensure compliance with financial regulations"
+          ],
+          "requirements": [
+            "Proven experience in financial management",
+            "Strong analytical and strategic thinking skills",
+            "Excellent communication skills in English",
+            "Experience with financial software and tools",
+            "Ability to work independently in flexible hours"
+          ]
+        },
+        "veterinarian": {
+          "title": "Hybrid Veterinarian",
+          "location": "Copenhagen",
+          "type": "Minimum 10 hours/week",
+          "description": "Join our veterinary team providing exceptional care to pets across Copenhagen.",
+          "responsibilities": [
+            "Conduct examinations and diagnose pet health issues",
+            "Perform surgical procedures and treatments",
+            "Provide preventive care and vaccinations",
+            "Communicate effectively with pet owners",
+            "Maintain accurate medical records"
+          ],
+          "requirements": [
+            "Veterinary Medicine degree",
+            "Valid Danish Veterinary License",
+            "Strong communication skills",
+            "Fluent in English (Danish is a plus)",
+            "Compassionate and patient-focused approach"
+          ]
+        },
+        "boarder": {
+          "title": "Seasonal Pet Boarder",
+          "location": "Copenhagen",
+          "type": "Freelance/Seasonal",
+          "description": "Provide loving care for pets in your home or theirs during boarding periods.",
+          "responsibilities": [
+            "Pet walking and exercise",
+            "Home pet care and feeding",
+            "Pet transportation when needed",
+            "Daily reporting to pet owners",
+            "Ensure pet safety and well-being",
+            "Basic grooming and care"
+          ],
+          "requirements": [
+            "Genuine love for animals",
+            "Reliable and responsible",
+            "Good communication skills",
+            "Flexible schedule",
+            "Previous pet care experience preferred"
+          ]
+        },
+        "marketing": {
+          "title": "Marketing Specialist Internship & Pet Caretaker",
+          "location": "Copenhagen",
+          "type": "Internship/Part-Time",
+          "description": "Combine your passion for marketing with hands-on pet care experience.",
+          "responsibilities": [
+            "Develop and implement social media strategy",
+            "Create engaging content for multiple platforms",
+            "Manage SEO optimization",
+            "Conduct audience research and analysis",
+            "Assist with pet care duties",
+            "Support marketing campaigns"
+          ],
+          "requirements": [
+            "Marketing or communications background",
+            "Strong social media skills",
+            "Content creation experience",
+            "Interest in pet care industry",
+            "Creative and detail-oriented",
+            "Comfortable working with animals"
+          ]
+        },
+        "webdev": {
+          "title": "Web Developer Intern",
+          "location": "Hybrid (Remote/Copenhagen)",
+          "type": "Internship",
+          "description": "Help us build and optimize our digital presence for pet owners across Copenhagen.",
+          "responsibilities": [
+            "UI/UX development and improvement",
+            "Website performance optimization",
+            "SEO management and implementation",
+            "E-commerce development and maintenance",
+            "Collaborate with design and marketing teams",
+            "Test and debug web applications"
+          ],
+          "requirements": [
+            "Experience with modern web technologies",
+            "Knowledge of React, Next.js, or similar frameworks",
+            "Understanding of responsive design",
+            "SEO optimization knowledge",
+            "Strong problem-solving skills",
+            "Portfolio of previous work"
+          ]
+        }
+      }
+    },
+    "application": {
+      "title": "How to Apply",
+      "instructions": "To apply for any position, please email your CV to jobs@mypeterinarian.com with the position title in the subject line. We review applications on a rolling basis and will contact qualified candidates for interviews.",
+      "emailButton": "Email Your Application"
+    },
+    "benefits": {
+      "title": "Why Join MyPeterinarian?",
+      "items": [
+        "Work with passionate animal lovers",
+        "Flexible working arrangements",
+        "Professional development opportunities",
+        "Make a real impact in pet care",
+        "Collaborative and supportive team",
+        "Competitive compensation",
+        "Central Copenhagen location",
+        "Growing company with expansion plans"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Join Our Team?",
+      "description": "Don't see the perfect position? Send us your CV anyway - we're always looking for talented individuals who share our passion for pet care.",
+      "button": "Send Your Application",
+      "contactButton": "Contact Us"
+    }
   }
 }

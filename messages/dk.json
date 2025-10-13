@@ -1324,5 +1324,151 @@
       "button": "Book Nu",
       "contact": "Kontakt Os"
     }
+  },
+  "careers": {
+    "title": "Karrieremuligheder",
+    "subtitle": "Bliv Del Af Vores Team",
+    "description": "MyPeterinarian søger passionerede personer til at slutte sig til vores team. Hjælp os med at forbedre kæledyrspleje- og veterinærindustrien ved at sikre bekvemmelighed og professionalisme for kæledyr og deres ejere i København.",
+    "mission": {
+      "title": "Vores Mission",
+      "description": "Vi er dedikeret til at forbedre kæledyrspleje- og veterinærindustrien ved at levere bekvem, professionel og omsorgsfuld pleje til kæledyr og deres ejere. Slut dig til os i at gøre en reel forskel i kæledyr og families liv i hele København."
+    },
+    "openings": {
+      "title": "Aktuelle Jobopslag",
+      "responsibilities": "Hovedansvar",
+      "requirements": "Krav",
+      "applyButton": "Ansøg Om Denne Stilling",
+      "jobs": {
+        "finance": {
+          "title": "Økonomichef",
+          "location": "København (foretrukket) | Fjern indenfor ±2 tidszoner",
+          "type": "Fleksibel/Deltid",
+          "description": "Vi søger en erfaren økonomiprofessionel til at lede vores finansielle strategi og operationer.",
+          "responsibilities": [
+            "Udvikle og implementere finansiel strategi og køreplan",
+            "Administrere alle finansielle operationer og rapportering",
+            "Levere strategiske finansielle indsigter til ledelsesteamet",
+            "Samarbejde med ledelsen om forretningsplanlægning",
+            "Sikre overholdelse af finansielle regler"
+          ],
+          "requirements": [
+            "Dokumenteret erfaring i økonomistyring",
+            "Stærke analytiske og strategiske tænkningsevner",
+            "Fremragende kommunikationsevner på engelsk",
+            "Erfaring med finansiel software og værktøjer",
+            "Evne til at arbejde selvstændigt med fleksible timer"
+          ]
+        },
+        "veterinarian": {
+          "title": "Hybrid Dyrlæge",
+          "location": "København",
+          "type": "Minimum 10 timer/uge",
+          "description": "Bliv en del af vores dyrlægeteam, der leverer exceptionel pleje til kæledyr i hele København.",
+          "responsibilities": [
+            "Foretage undersøgelser og diagnosticere kæledyrssundhedsproblemer",
+            "Udføre kirurgiske procedurer og behandlinger",
+            "Levere forebyggende pleje og vaccinationer",
+            "Kommunikere effektivt med kæledyrsejere",
+            "Vedligeholde nøjagtige medicinske journaler"
+          ],
+          "requirements": [
+            "Veterinærmedicinsk grad",
+            "Gyldig dansk veterinærlicens",
+            "Stærke kommunikationsevner",
+            "Flydende engelsk (dansk er en fordel)",
+            "Omsorgsfuld og patientfokuseret tilgang"
+          ]
+        },
+        "boarder": {
+          "title": "Sæsonbestemt Kæledyrspassning",
+          "location": "København",
+          "type": "Freelance/Sæsonbestemt",
+          "description": "Giv kærlig pleje til kæledyr i dit hjem eller deres under internatperioder.",
+          "responsibilities": [
+            "Kæledyrsgang og motion",
+            "Hjemmepleje og fodring af kæledyr",
+            "Kæledyrstransport ved behov",
+            "Daglig rapportering til kæledyrsejere",
+            "Sikre kæledyrssikkerhed og velvære",
+            "Grundlæggende pleje og omsorg"
+          ],
+          "requirements": [
+            "Ægte kærlighed til dyr",
+            "Pålidelig og ansvarlig",
+            "Gode kommunikationsevner",
+            "Fleksibel tidsplan",
+            "Tidligere kæledyrspleje erfaring foretrukket"
+          ]
+        },
+        "marketing": {
+          "title": "Marketing Specialist Praktikplads & Kæledyrsplejer",
+          "location": "København",
+          "type": "Praktikplads/Deltid",
+          "description": "Kombiner din passion for marketing med praktisk kæledyrspleje erfaring.",
+          "responsibilities": [
+            "Udvikle og implementere social media strategi",
+            "Skabe engagerende indhold til flere platforme",
+            "Administrere SEO-optimering",
+            "Udføre publikumsforskning og analyse",
+            "Assistere med kæledyrspleje opgaver",
+            "Støtte marketingkampagner"
+          ],
+          "requirements": [
+            "Marketing eller kommunikationsbaggrund",
+            "Stærke sociale mediefærdigheder",
+            "Indholdsskabelseserfaring",
+            "Interesse i kæledyrspleje industrien",
+            "Kreativ og detaljeorienteret",
+            "Tryg ved at arbejde med dyr"
+          ]
+        },
+        "webdev": {
+          "title": "Webudvikler Praktikant",
+          "location": "Hybrid (Fjern/København)",
+          "type": "Praktikplads",
+          "description": "Hjælp os med at bygge og optimere vores digitale tilstedeværelse for kæledyrsejere i hele København.",
+          "responsibilities": [
+            "UI/UX udvikling og forbedring",
+            "Hjemmeside ydeevne optimering",
+            "SEO-styring og implementering",
+            "E-handelsudvikling og vedligeholdelse",
+            "Samarbejde med design- og marketingteams",
+            "Test og fejlfinde webapplikationer"
+          ],
+          "requirements": [
+            "Erfaring med moderne webteknologier",
+            "Kendskab til React, Next.js eller lignende frameworks",
+            "Forståelse af responsivt design",
+            "SEO-optimeringsviden",
+            "Stærke problemløsningsevner",
+            "Portfolio af tidligere arbejde"
+          ]
+        }
+      }
+    },
+    "application": {
+      "title": "Sådan Ansøger Du",
+      "instructions": "For at ansøge om en stilling, send venligst dit CV til jobs@mypeterinarian.com med stillingstitlen i emnelinjen. Vi gennemgår ansøgninger løbende og kontakter kvalificerede kandidater til samtaler.",
+      "emailButton": "Send Din Ansøgning"
+    },
+    "benefits": {
+      "title": "Hvorfor Blive En Del Af MyPeterinarian?",
+      "items": [
+        "Arbejd med passionerede dyreelskere",
+        "Fleksible arbejdsarrangementer",
+        "Professionelle udviklingsmuligheder",
+        "Gør en reel forskel i kæledyrspleje",
+        "Samarbejdende og støttende team",
+        "Konkurrencedygtig kompensation",
+        "Central København placering",
+        "Voksende virksomhed med ekspansionsplaner"
+      ]
+    },
+    "cta": {
+      "title": "Klar Til At Blive En Del Af Vores Team?",
+      "description": "Kan du ikke se den perfekte stilling? Send os dit CV alligevel - vi leder altid efter talentfulde personer, der deler vores passion for kæledyrspleje.",
+      "button": "Send Din Ansøgning",
+      "contactButton": "Kontakt Os"
+    }
   }
 }
