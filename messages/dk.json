@@ -719,12 +719,12 @@
         "items": {
           "daily": {
             "title": "Kæledyrspassning",
-            "description": "Én daglig: 471 Kr. To daglige: 737 Kr (spar 165 Kr på 2. besøg). 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid.",
+            "description": "Én daglig: 471 Kr. To daglige: 737 Kr. 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid.",
             "cta": "Book Besøg",
             "prices": {
               "0": "Én Daglig Besøg: 471 Kr",
-              "1": "To Daglige Besøg: 737 Kr (spar 165 Kr på 2. besøg)",
-              "2": "60-minutters besøg",
+              "1": "To Daglige Besøg: 737 Kr",
+              "2": "Yderligere Kæledyr: 80 Kr",
               "3": "Fodring & vandskift",
               "4": "Katterensning",
               "5": "Kort gåtur & legetid"
@@ -732,41 +732,41 @@
           },
           "overnight": {
             "title": "Overnatning",
-            "description": "1360 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem.",
+            "description": "1361 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem.",
             "cta": "Book Overnatning",
             "prices": {
-              "0": "Overnatning: 1360 Kr pr. nat",
-              "1": "Komplet aften- & morgenrutiner",
-              "2": "Fodring og frisk vand",
-              "3": "Gåture og motion",
-              "4": "Selskab i kæledyrs eget hjem",
-              "5": "Sindsro mens du er væk"
+              "0": "Overnatning: 1361 Kr pr. nat",
+              "1": "Yderligere Kæledyr: 80 Kr",
+              "2": "Komplet aften- & morgenrutiner",
+              "3": "Fodring og frisk vand",
+              "4": "Gåture og motion",
+              "5": "Selskab i kæledyrs eget hjem"
             }
           },
           "boarding": {
-            "title": "Hundepension hos Vores Passere",
-            "description": "Hos Dyrlægens Hjem: 749 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
+            "title": "Kæledyrspension",
+            "description": "Hos Medarbejders Hjem: 1000 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
             "cta": "Book Pension",
             "prices": {
-              "0": "Hos Dyrlægens Hjem: 749 Kr/nat",
+              "0": "Hos Medarbejders Hjem: 1000 Kr/nat",
               "1": "Hos PQ: 1150 Kr/nat",
-              "2": "Personlig TLC",
-              "3": "To lange gåture dagligt",
-              "4": "Selskab med en eller to andre hunde",
+              "2": "Yderligere Kæledyr: 200 Kr",
+              "3": "Bur/Terrarium/Akvarium: 378 Kr/nat",
+              "4": "To lange gåture dagligt",
               "5": "Sikkert og komfortabelt miljø"
             }
           },
           "walking": {
             "title": "Hundegåtur",
-            "description": "Én Daglig (60 min): 465 Kr. To Daglige: 740 Kr (spar 190 Kr på 2. besøg). Inkluderer afhentning, aflevering, legetid og lorti opsamling.",
+            "description": "30 min: 340 Kr. 1 time: 465 Kr. 90 min: 645 Kr. To daglige muligheder tilgængelige. Inkluderer afhentning, aflevering, legetid og lorti opsamling.",
             "cta": "Planlæg Gåture",
             "prices": {
-              "0": "Én Daglig (60 min): 465 Kr",
-              "1": "To Daglige: 740 Kr (spar 190 Kr på 2. besøg)",
-              "2": "Afhentning og aflevering inkluderet",
-              "3": "Legetid og motion",
-              "4": "Lorti opsamling",
-              "5": "GPS sporings opdateringer"
+              "0": "30 Minutter Én Daglig: 340 Kr",
+              "1": "1 Time Én Daglig: 465 Kr",
+              "2": "1 Time To Daglige: 740 Kr",
+              "3": "90 Minutter Én Daglig: 645 Kr",
+              "4": "Yderligere Hund: 115 Kr",
+              "5": "Afhentning og aflevering inkluderet"
             }
           },
           "medication": {
@@ -783,16 +783,16 @@
             }
           },
           "updates": {
-            "title": "Hundedagpleje",
-            "description": "Fuld Dag (8 Timer): 680 Kr på Peder Hvitfeldts Stræde 16, 1173 København. Socialisering, legetid og overvåget hele dagen.",
+            "title": "Kæledyrs Dagpleje",
+            "description": "Time priser fra 1-8 timer. 8 Timer: 680 Kr. Hos Hjemme/Hotel: 4 Timer: 556 Kr, 6 Timer: 790 Kr. Socialisering, legetid og overvåget hele dagen.",
             "cta": "Book Dagpleje",
             "prices": {
-              "0": "Fuld Dag (8 Timer): 680 Kr",
-              "1": "Placering: Peder Hvitfeldts Stræde 16",
-              "2": "Socialisering med andre hunde",
-              "3": "Overvåget legetid",
-              "4": "Hvileperioder inkluderet",
-              "5": "Foto og video opdateringer"
+              "0": "1-4 Timer: 160-400 Kr",
+              "1": "5-8 Timer: 475-680 Kr",
+              "2": "Hos Hjemme/Hotel (4 Timer): 556 Kr",
+              "3": "Hos Hjemme/Hotel (6 Timer): 790 Kr",
+              "4": "Yderligere Last Minute Time: 136 Kr",
+              "5": "Overvåget legetid & socialisering"
             }
           }
         }
@@ -806,7 +806,7 @@
       },
       "pricing": {
         "title": "Gennemsigtig Prissætning",
-        "description": "Klar prissætning for alle tjenester. Introduktionsmøde: 408 Kr, Virtuelt møde: 249 Kr, Kæledyrs afhentning/aflevering: 272 Kr. Kontakt os for en personlig plejeplan.",
+        "description": "Klar prissætning for alle tjenester. Introduktionsmøde: 405 Kr, Kæledyrs afhentning/aflevering: 270 Kr. Fler-dages pakker tilgængelige med rabatter. Kontakt os for en personlig plejeplan.",
         "cta": "Anmod om Tilbud"
       },
       "faq": {

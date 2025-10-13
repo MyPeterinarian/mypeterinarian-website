@@ -706,12 +706,12 @@
         "items": {
           "daily": {
             "title": "Pet Sitting",
-            "description": "Once daily: 471 DKK. Twice daily: 737 DKK (save 165 DKK on 2nd visit). 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
+            "description": "Once daily: 471 DKK. Twice daily: 737 DKK. 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
             "cta": "Book Visits",
             "prices": {
               "0": "Once Daily Visit: 471 DKK",
-              "1": "Twice Daily Visits: 737 DKK (save 165 DKK on 2nd visit)",
-              "2": "60-minute visits",
+              "1": "Twice Daily Visits: 737 DKK",
+              "2": "Additional Pet: 80 DKK",
               "3": "Feeding & water change",
               "4": "Litter cleaning",
               "5": "Short walk & playtime"
@@ -719,41 +719,41 @@
           },
           "overnight": {
             "title": "Overnight Stay",
-            "description": "1360 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
+            "description": "1361 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
             "cta": "Book Overnight",
             "prices": {
-              "0": "Overnight Stay: 1360 DKK per night",
-              "1": "Complete evening & morning routines",
-              "2": "Feeding and fresh water",
-              "3": "Walks and exercise",
-              "4": "Companionship in pet's own home",
-              "5": "Peace of mind while you're away"
+              "0": "Overnight Stay: 1361 DKK per night",
+              "1": "Additional Pet: 80 DKK",
+              "2": "Complete evening & morning routines",
+              "3": "Feeding and fresh water",
+              "4": "Walks and exercise",
+              "5": "Companionship in pet's own home"
             }
           },
           "boarding": {
-            "title": "Dog Boarding at Our Sitters' Home",
-            "description": "At Veterinarian Home: 749 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
+            "title": "Pet Boarding",
+            "description": "At Employee's Home: 1000 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
             "cta": "Book Boarding",
             "prices": {
-              "0": "At Veterinarian Home: 749 DKK/night",
+              "0": "At Employee's Home: 1000 DKK/night",
               "1": "At PQ: 1150 DKK/night",
-              "2": "Personalized TLC",
-              "3": "Two long walks daily",
-              "4": "Company of one or two other dogs",
+              "2": "Additional Pet: 200 DKK",
+              "3": "Cage/Terrarium/Aquarium: 378 DKK/night",
+              "4": "Two long walks daily",
               "5": "Safe and comfortable environment"
             }
           },
           "walking": {
             "title": "Dog Walking",
-            "description": "Once Daily (60 min): 465 DKK. Twice Daily: 740 DKK (save 190 DKK on 2nd visit). Includes pick-up, drop-off, playtime, and poop pickup.",
+            "description": "30 min: 340 DKK. 1 hour: 465 DKK. 90 min: 645 DKK. Twice daily options available. Includes pick-up, drop-off, playtime, and poop pickup.",
             "cta": "Schedule Walks",
             "prices": {
-              "0": "Once Daily (60 min): 465 DKK",
-              "1": "Twice Daily: 740 DKK (save 190 DKK on 2nd visit)",
-              "2": "Pick-up and drop-off included",
-              "3": "Playtime and exercise",
-              "4": "Poop pickup",
-              "5": "GPS tracking updates"
+              "0": "30 Minutes Once Daily: 340 DKK",
+              "1": "1 Hour Once Daily: 465 DKK",
+              "2": "1 Hour Twice Daily: 740 DKK",
+              "3": "90 Minutes Once Daily: 645 DKK",
+              "4": "Additional Dog: 115 DKK",
+              "5": "Pick-up and drop-off included"
             }
           },
           "medication": {
@@ -770,16 +770,16 @@
             }
           },
           "updates": {
-            "title": "Dog Daycare",
-            "description": "Full Day (8 Hours): 680 DKK at Peder Hvitfeldts Stræde 16, 1173 København. Socialization, playtime, and supervised throughout the day.",
+            "title": "Pet Daycare",
+            "description": "Hourly rates from 1-8 hours. 8 Hours: 680 DKK. At Home/Hotel: 4 Hours: 556 DKK, 6 Hours: 790 DKK. Socialization, playtime, and supervised throughout the day.",
             "cta": "Book Daycare",
             "prices": {
-              "0": "Full Day (8 Hours): 680 DKK",
-              "1": "Location: Peder Hvitfeldts Stræde 16",
-              "2": "Socialization with other dogs",
-              "3": "Supervised playtime",
-              "4": "Rest periods included",
-              "5": "Photo and video updates"
+              "0": "1-4 Hours: 160-400 DKK",
+              "1": "5-8 Hours: 475-680 DKK",
+              "2": "At Home/Hotel (4 Hours): 556 DKK",
+              "3": "At Home/Hotel (6 Hours): 790 DKK",
+              "4": "Additional Last Minute Hour: 136 DKK",
+              "5": "Supervised playtime & socialization"
             }
           }
         }
@@ -793,7 +793,7 @@
       },
       "pricing": {
         "title": "Transparent Pricing",
-        "description": "Clear pricing for all services. Introductory meeting: 408 DKK, Virtual meeting: 249 DKK, Pet pick-up/drop-off: 272 DKK. Contact us for a personalized care plan.",
+        "description": "Clear pricing for all services. Introductory meeting: 405 DKK, Pet pick-up/drop-off: 270 DKK. Multi-day packages available with discounts. Contact us for a personalized care plan.",
         "cta": "Request Quote"
       },
       "faq": {
