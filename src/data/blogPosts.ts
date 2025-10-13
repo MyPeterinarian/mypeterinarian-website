@@ -5293,7 +5293,7 @@ Søg øjeblikkelig veterinærhjælp for:
     author: 'MyPeterinarian Team',
     date: '2021-09-15',
     category: 'Pet Care',
-    image: 'https://images.unsplash.com/photo-1616012687660-b2f1dceb2ddc?w=1600&h=900&fit=crop',
+    image: 'https://www.mypeterinarian.com/wp-content/uploads/2021/08/pet_grooming.jpg',
     excerpt: {
       en: 'Discover how regular professional grooming is essential for your pet\'s physical health, emotional wellbeing, and early disease detection.',
       dk: 'Opdag hvordan regelmæssig professionel pleje er essentiel for dit kæledyrs fysiske sundhed, følelsesmæssige velvære og tidlig sygdomsregistrering.'
@@ -7038,7 +7038,7 @@ At forstå kattekommunikation transformerer dit forhold fra simpelt at sameksist
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1600&h=900&fit=crop',
+    image: 'https://www.mypeterinarian.com/wp-content/uploads/2020/10/adorable-animal-photography-animals-2693561-1600x1066.jpg',
     excerpt: {
       en: 'Complete guide to cat socialization from kittenhood through adulthood. Learn critical periods, exposure techniques, and how to raise a confident, well-adjusted feline companion.',
       dk: 'Komplet guide til kattens socialisering fra killingetid gennem voksenalderen. Lær kritiske perioder, eksponeringsteknikker og hvordan man opdrager en selvsikker, veladjusteret feline ledsager.'
@@ -15615,7 +15615,7 @@ De vigtigste faktorer for vellykket kæledyrsrejse er:
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Cat Care',
-    image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=1600&h=900&fit=crop',
+    image: 'https://www.mypeterinarian.com/wp-content/uploads/2020/11/kabo-RKDRI_LK9c0-unsplash-scaled.jpg',
     excerpt: {
       en: 'Learn how to choose the best food for your cat with this comprehensive guide covering nutritional requirements, ingredients, life stages, and feeding practices.',
       dk: 'Lær hvordan du vælger den bedste mad til din kat med denne omfattende guide, der dækker ernæringskrav, ingredienser, livsfaser og fodringspraksis.'
@@ -16386,7 +16386,7 @@ Husk at den "bedste" mad er en der holder din kat sund, vedligeholder ideel krop
     author: 'MyPeterinarian Team',
     date: '2022-01-01',
     category: 'Dog Care',
-    image: 'https://images.unsplash.com/photo-1625316708582-7c38734be31d?w=1600&h=900&fit=crop',
+    image: 'https://www.mypeterinarian.com/wp-content/uploads/2020/09/Dog-Food-Article-From-The-Pet-agrees-1.jpg',
     excerpt: {
       en: 'Comprehensive guide to canine nutrition covering dog food types, ingredients, life stages, and feeding practices for optimal health.',
       dk: 'Omfattende guide til hundeernæring, der dækker hundemadtyper, ingredienser, livsfaser og fodringspraksis for optimal sundhed.'
