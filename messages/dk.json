@@ -219,38 +219,38 @@
         "items": {
           "exams": {
             "title": "Dyrlæge Konsultationer",
-            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1814 Kr), Hos Pet Quarters (938 Kr), Walk-in (1109 Kr), eller Virtuel (567 Kr).",
+            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1815 Kr), Hos Pet Quarters (930 Kr), Walk-in (1110 Kr), eller Virtuel (567 Kr).",
             "cta": "Book Konsultation",
             "prices": {
-              "0": "Konsultation-Hjemmebesøg: 1814 Kr",
-              "1": "Konsultation-Hos Pet Quarters: 938 Kr",
-              "2": "Konsultation-Walk-In: 1109 Kr",
-              "3": "Opfølgning (Hos Pet Quarters): 661 Kr",
+              "0": "Konsultation-Hjemmebesøg: 1815 Kr",
+              "1": "Konsultation-Hos Pet Quarters: 930 Kr",
+              "2": "Konsultation-Walk-In: 1110 Kr",
+              "3": "Opfølgning (Hos Pet Quarters): 641 Kr",
               "4": "Virtuel Konsultation (2,5 timer): 567 Kr"
             }
           },
           "vaccinations": {
             "title": "Forebyggende Pleje & Pakker",
-            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1858 Kr), anti-parasit behandling og omfattende sundhedstjek.",
+            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1059 Kr), anti-parasit behandling og omfattende sundhedstjek.",
             "cta": "Læs Mere",
             "prices": {
               "0": "Killing/Hvalpe Pakke (Hos Pet Quarters): 2494 Kr",
-              "1": "Hele Kuld Vaccination & Mikrochipning-Per (Hos Pet Quarters): 1858 Kr",
-              "2": "Anti-parasit Behandling-Grant-Abov Appn: 540 Kr",
-              "3": "Anti-parasit Behandling-Pet Quarters: 193,5 Kr",
-              "4": "Kæledyrs Sundhedstjek: 800 Kr",
+              "1": "Hele Kuld Vaccination & Mikrochipning-Per (Hos Pet Quarters): 1059 Kr",
+              "2": "Anti-parasit Behandling (Stand Alone): 540 Kr",
+              "3": "Anti-parasit Behandling (Hos Pet Quarters): 193,5 Kr",
+              "4": "Kæledyrs Sundhedstjek (Hjem): 1684 Kr",
               "5": "Kæledyrs Sundhedstjek (Rabies): 1065 Kr"
             }
           },
           "surgery": {
             "title": "Kemisk Kastration (Hunde/Katte)",
-            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2266 Kr hos Pet Quarters) og 6 måneders muligheder.",
+            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2268 Kr hos Pet Quarters) og 6 måneders muligheder.",
             "cta": "Anmod om Service",
             "prices": {
               "0": "1-År (Hjem): 3402 Kr",
-              "1": "1-År (Hos Pet Quarters): 2266 Kr",
-              "2": "6 Måneder (Hjem): 2579 Kr",
-              "3": "6 Måneder (Hos Pet Quarters): 1301 Kr"
+              "1": "1-År (Hos Pet Quarters): 2268 Kr",
+              "2": "6 Måneder (Hjem): 2495 Kr",
+              "3": "6 Måneder (Hos Pet Quarters): 1361 Kr"
             }
           },
           "dental": {
@@ -258,10 +258,10 @@
             "description": "EU Kæledyrspas aftaler, rabiesvaccine pakker og komplet rejsedokumentation assistance.",
             "cta": "Bliv Rejseklar",
             "prices": {
-              "0": "EU Kæledyrspas Aftale (Hjem): 1584 Kr",
-              "1": "EU Kæledyrspas Aftale (Hos Pet Quarters): 608 Kr",
-              "2": "Rabiesvaccine + EU Pas Pakke (Hjem): 2214 Kr",
-              "3": "Rejsepakke: Bx (AUS/US/UAE) (Hjem): Kontakt for Pris"
+              "0": "EU Kæledyrspas Aftale (Hjem): 1364 Kr",
+              "1": "EU Kæledyrspas Aftale (Hos Pet Quarters): 824 Kr",
+              "2": "Rabiesvaccine + EU Pas Pakke (Hjem): 2268 Kr",
+              "3": "Rabiesvaccine + EU Pas Pakke (Hos Pet Quarters): 1475 Kr"
             }
           },
           "diagnostics": {
@@ -281,12 +281,12 @@
             "description": "Medfølende aflivning og kremering. \"Dyrlæge tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
             "cta": "Diskuter Muligheder",
             "prices": {
-              "0": "Aflivning og Kremering (Hjem): 5103 Kr",
-              "1": "Aflivning og Kremering (Hos Pet Quarters): 2979 Kr",
-              "2": "Ingen Aflivning Privat Kremering (Kæledyrs Afhentning): 4422 Kr",
-              "3": "Ingen Aflivning Privat Kremering (via Afhentning): 3422 Kr",
-              "4": "Privat Kremering (Per Afhentning): 4212 Kr",
-              "5": "Privat Kremering (via Per Afhentning): 3425 Kr"
+              "0": "Aflivning (Lille-Mellem Hund, Hjem): 5958 Kr",
+              "1": "Aflivning (Mellem-Stor Hund, Hjem): 5103 Kr",
+              "2": "Aflivning (Lille-Mellem Hund, Hos Pet Quarters): 3834 Kr",
+              "3": "Aflivning (Mellem-Stor Hund, Hos Pet Quarters): 2979 Kr",
+              "4": "Privat Kremering (Kæledyrs Afhentning): 4212 Kr",
+              "5": "Privat Kremering (Pet Quarters Afhentning): 3425 Kr"
             }
           },
           "other": {
@@ -296,8 +296,8 @@
             "prices": {
               "0": "Negleklipning (Separat Besøg): 374 Kr",
               "1": "Kæledyrsregistrering: 545 Kr",
-              "2": "Velkommen til Danmark Pakke (Hjem): Kontakt for Pris",
-              "3": "Velkommen til Danmark Pakke (Hos Pet Quarters): Kontakt for Pris"
+              "2": "Kæledyrs Mikrochipning: 526 Kr",
+              "3": "Velkommen til Danmark Pakke: Kontakt for Pris"
             }
           },
           "subscription": {

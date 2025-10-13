@@ -219,38 +219,38 @@
         "items": {
           "exams": {
             "title": "Veterinary Consultations",
-            "description": "Flexible consultation options: Home visits (1814 DKK), At Clinic (938 DKK), Walk-in (1109 DKK), or Virtual (567 DKK).",
+            "description": "Flexible consultation options: Home visits (1815 DKK), At Clinic (930 DKK), Walk-in (1110 DKK), or Virtual (567 DKK).",
             "cta": "Book Consultation",
             "prices": {
-              "0": "Consultation-Home Visits: 1814 DKK",
-              "1": "Consultation-At Clinic: 938 DKK",
-              "2": "Consultation-Walk-In: 1109 DKK",
-              "3": "Follow Up (At Clinic): 661 DKK",
-              "4": "Virtual Consultation (2.5 hrs): 567 DKK"
+              "0": "Consultation-Home Visits: 1815 DKK",
+              "1": "Consultation-At Clinic (PQ): 930 DKK",
+              "2": "Consultation-Walk-In: 1110 DKK",
+              "3": "Follow Up (At Clinic/PQ): 641 DKK",
+              "4": "Virtual Consultation: 567 DKK"
             }
           },
           "vaccinations": {
             "title": "Preventive Care & Packages",
-            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1858 DKK), anti-parasite treatment, and comprehensive health checks.",
+            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1059 DKK), anti-parasite treatment, and comprehensive health checks.",
             "cta": "Learn More",
             "prices": {
               "0": "Kitten/Puppy Package (At Clinic): 2494 DKK",
-              "1": "Whole Litter Vaccination & Microchipping-Per (At Clinic): 1858 DKK",
-              "2": "Anti-parasite Treatment-Grant-Abov Appn: 540 DKK",
-              "3": "Anti-parasite Treatment-Clinic: 193.5 DKK",
-              "4": "Pet Health Check: 800 DKK",
+              "1": "Whole Litter Vaccination & Microchipping-Per (At Clinic): 1059 DKK",
+              "2": "Anti-parasite Treatment (Stand Alone): 540 DKK",
+              "3": "Anti-parasite Treatment (At Clinic): 193.5 DKK",
+              "4": "Pet Health Check (Home): 1684 DKK",
               "5": "Pet Health Check (Rabies): 1065 DKK"
             }
           },
           "surgery": {
             "title": "Chemical Castration (Dogs/Cats)",
-            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2266 DKK at Clinic) and 6-month options.",
+            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2268 DKK at Clinic) and 6-month options.",
             "cta": "Request Service",
             "prices": {
               "0": "1-Yr (Homes): 3402 DKK",
-              "1": "1-Yr (At Clinic): 2266 DKK",
-              "2": "6 Months (Home): 2579 DKK",
-              "3": "6 Months (At Clinic): 1301 DKK"
+              "1": "1-Yr (At Clinic): 2268 DKK",
+              "2": "6 Months (Home): 2495 DKK",
+              "3": "6 Months (At Clinic): 1361 DKK"
             }
           },
           "dental": {
@@ -258,10 +258,10 @@
             "description": "EU Pet Passport appointments, rabies vaccine packages, and complete travel documentation assistance.",
             "cta": "Get Travel Ready",
             "prices": {
-              "0": "EU Pet Passport Appointment (Home): 1584 DKK",
-              "1": "EU Pet Passport Appointment (At Clinic): 608 DKK",
-              "2": "Rabies Vaccine + EU Passport Package (Home): 2214 DKK",
-              "3": "Travel Package: Bx (AUS/US/UAE) (Home): Contact for Price"
+              "0": "EU Pet Passport Appointment (Home): 1364 DKK",
+              "1": "EU Pet Passport Appointment (At Clinic): 824 DKK",
+              "2": "Rabies Vaccine + EU Passport Package (Home): 2268 DKK",
+              "3": "Rabies Vaccine + EU Passport Package (At Clinic): 1475 DKK"
             }
           },
           "diagnostics": {
@@ -281,12 +281,12 @@
             "description": "Compassionate euthanasia and cremation. \"Veterinary services\" available at home in \"Copenhagen\" or at Clinic.",
             "cta": "Discuss Options",
             "prices": {
-              "0": "Euthanasia and Cremation (Home): 5103 DKK",
-              "1": "Euthanasia and Cremation (At Clinic): 2979 DKK",
-              "2": "No Euthanasia Private Cremation (Pet Pick-Up): 4422 DKK",
-              "3": "No Euthanasia Private Cremation (via Pick-Up): 3422 DKK",
-              "4": "Private Cremation (Per Pick Up): 4212 DKK",
-              "5": "Private Cremation (via Per Pick Up): 3425 DKK"
+              "0": "Euthanasia (Small-Medium Dog, Home): 5958 DKK",
+              "1": "Euthanasia (Medium-Large Dog, Home): 5103 DKK",
+              "2": "Euthanasia (Small-Medium Dog, At Clinic): 3834 DKK",
+              "3": "Euthanasia (Medium-Large Dog, At Clinic): 2979 DKK",
+              "4": "Private Cremation (Pet Pick-Up): 4212 DKK",
+              "5": "Private Cremation (Clinic Pick-Up): 3425 DKK"
             }
           },
           "other": {
@@ -296,8 +296,8 @@
             "prices": {
               "0": "Nail Clipping (Separate Visit): 374 DKK",
               "1": "Pet Registration: 545 DKK",
-              "2": "Welcome To Denmark Package (Home): Contact for Price",
-              "3": "Welcome To Denmark Package (At Clinic): Contact for Price"
+              "2": "Pet Microchipping: 526 DKK",
+              "3": "Welcome To Denmark Package: Contact for Price"
             }
           },
           "subscription": {
