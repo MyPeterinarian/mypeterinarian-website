@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Dana Abu Sham',
     date: '2024-06-01',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/06/White-Minimalist-New-Website-Promo-Banner-1-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Pet grooming at our Copenhagen, Denmark Pet Grooming Salon is more than just an aesthetic practice—it\'s a crucial component of maintaining your pet\'s overall health and well-being.',
       dk: 'Kæledyrspleje hos vores plejeklinik i København er mere end bare en æstetisk praksis—det er en afgørende del af at opretholde dit kæledyrs overordnede sundhed og trivsel.'
@@ -147,7 +147,7 @@ Regelmæssige plejeaftaler hjælper os med at opbygge et forhold til dit kæledy
     author: 'Dana Abu Sham',
     date: '2024-04-01',
     category: 'Travel',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/04/7-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Are you getting ready to travel with your pet? Feeling uncertain about the ins and outs of pet travel? This comprehensive guide covers everything you need to know about traveling with your furry companion.',
       dk: 'Gør du dig klar til at rejse med dit kæledyr? Føler du dig usikker på, hvad der kræves? Denne omfattende guide dækker alt, hvad du behøver at vide om at rejse med din pelede ledsager.'
@@ -344,7 +344,7 @@ Vi specialiserer os i at hjælpe kæledyrsforældre med at forberede sig til int
     author: 'Dana Abu Sham',
     date: '2024-03-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/03/White-Minimalist-New-Website-Promo-Banner--1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1415369629372-26f2fe60c467?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Beware of the lurking danger that parasites pose to the well-being and lifespan of your beloved pets. Learn essential prevention strategies to keep your furry friends safe.',
       dk: 'Vær opmærksom på den lurende fare, som parasitter udgør for dine kæledyrs velvære og levetid. Lær vigtige forebyggelsesstrategier for at holde dine pelede venner sikre.'
@@ -527,7 +527,7 @@ Hos vores klinik i København tilbyder vi:
     author: 'Dana Abu Sham',
     date: '2024-02-15',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/02/White-Minimalist-New-Website-Promo-Banner-2-1600x800.png',
+    image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Welcome to the wonderful world of pet parenthood! Bringing home a new puppy or kitten is an exciting adventure filled with joy, cuddles, and important responsibilities.',
       dk: 'Velkommen til den vidunderlige verden af kæledyrsforældre! At tage en ny hvalp eller killing med hjem er et spændende eventyr fyldt med glæde, kramme og vigtige ansvarsområder.'
@@ -910,7 +910,7 @@ De første måneder med dit nye kæledyr er afgørende for:
     author: 'Dana Abu Sham',
     date: '2024-01-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2024/01/White-Minimalist-New-Website-Promo-Banner--1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1444212477490-ca407925329e?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Pet obesity is a growing concern affecting over 50% of dogs and cats in developed nations. Learn how to help your pet achieve and maintain a healthy weight through proper nutrition and lifestyle changes.',
       dk: 'Kæledyrsfedme er en voksende bekymring, der påvirker over 50% af hunde og katte i udviklede nationer. Lær hvordan du kan hjælpe dit kæledyr med at opnå og vedligeholde en sund vægt gennem korrekt ernæring og livsstilsændringer.'
@@ -1465,7 +1465,7 @@ Vent ikke, indtil fedme forårsager alvorlige sundhedsproblemer. Hvis dit kæled
     author: 'Tarek Abu Sham',
     date: '2023-05-15',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2023/05/dog-sitting-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Discover the benefits of professional dog sitting services and learn how to choose the right care option for your furry friend when you need to be away.',
       dk: 'Opdag fordelene ved professionelle hundepasningsservices og lær hvordan du vælger den rigtige plejemulighed til din pelede ven, når du skal væk.'
@@ -1788,7 +1788,7 @@ Uanset om du vælger gruppe- eller individuel pleje, giver den rigtige hundepasn
     author: 'MyPeterinarian Team',
     date: '2023-05-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2021/11/separation-anxiety-1600x800.jpg',
+    image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn how to recognize and manage separation anxiety in dogs. Discover practical strategies to help your dog feel more comfortable when left alone.',
       dk: 'Lær hvordan du genkender og håndterer separationsangst hos hunde. Opdag praktiske strategier til at hjælpe din hund med at føle sig mere komfortabel, når den efterlades alene.'
@@ -2277,7 +2277,7 @@ Husk: Separationsangst kan behandles. Selvom det kræver tålmodighed, konsisten
     author: 'MyPeterinarian Team',
     date: '2023-05-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2021/09/giardia.jpg',
+    image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn about Giardia, a common intestinal parasite affecting pets. Understand the symptoms, treatment options, and how to prevent this condition in your dog or cat.',
       dk: 'Lær om Giardia, en almindelig tarmparasit, der påvirker kæledyr. Forstå symptomerne, behandlingsmuligheder og hvordan man forebygger denne tilstand hos din hund eller kat.'
@@ -2844,7 +2844,7 @@ Giardia kan behandles! Med korrekt diagnose, effektiv behandling og grundig milj
     author: 'MyPeterinarian Team',
     date: '2023-05-15',
     category: 'Veterinary Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2021/07/leptospirosis.jpg',
+    image: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn about leptospirosis, a serious bacterial infection that can affect dogs. Understand the risks, symptoms, treatment options, and how vaccination can protect your pet.',
       dk: 'Lær om leptospirose, en alvorlig bakterieinfektion, der kan påvirke hunde. Forstå risiciene, symptomerne, behandlingsmulighederne og hvordan vaccination kan beskytte dit kæledyr.'
@@ -3501,7 +3501,7 @@ Vent ikke på symptomer at dukke op. Beskyttelse starter med forebyggelse.
     author: 'MyPeterinarian Team',
     date: '2023-05-15',
     category: 'Travel',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2023/05/hundepas.jpg',
+    image: 'https://images.unsplash.com/photo-1494947665470-20322015e3a8?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Learn everything about obtaining an EU pet passport for your dog. Understand the requirements, costs, and process for traveling within Europe with your furry companion.',
       dk: 'Lær alt om at få et EU-hundepas til din hund. Forstå kravene, omkostningerne og processen for at rejse inden for Europa med din pelede ledsager.'
@@ -5293,7 +5293,7 @@ Søg øjeblikkelig veterinærhjælp for:
     author: 'MyPeterinarian Team',
     date: '2021-09-15',
     category: 'Pet Care',
-    image: 'https://www.mypeterinarian.com/wp-content/uploads/2021/09/pet-grooming-health.jpg',
+    image: 'https://images.unsplash.com/photo-1616925652896-36dd0e32a137?w=1600&h=900&fit=crop',
     excerpt: {
       en: 'Discover how regular professional grooming is essential for your pet\'s physical health, emotional wellbeing, and early disease detection.',
       dk: 'Opdag hvordan regelmæssig professionel pleje er essentiel for dit kæledyrs fysiske sundhed, følelsesmæssige velvære og tidlig sygdomsregistrering.'
