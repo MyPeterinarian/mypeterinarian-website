@@ -9,7 +9,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 export default function CareersPage() {
   const t = useTranslations('careers')
 
-  const jobs = ['finance', 'veterinarian', 'boarder', 'marketing', 'webdev']
+  const jobs = ['veterinarian', 'boarder', 'marketing', 'webdev']
 
   return (
     <div className="min-h-screen bg-gray-50">

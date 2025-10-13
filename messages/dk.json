@@ -117,6 +117,21 @@
         }
       }
     },
+    "team": {
+      "title": "Mød Vores Ekspertteam",
+      "description": "Dedikerede professionelle passionerede for dit kæledyrs sundhed og lykke",
+      "cta": "Mød Teamet"
+    },
+    "subscriptions": {
+      "title": "Abonnementsplaner",
+      "description": "Spar på regelmæssig pleje med vores fleksible abonnementsplaner designet til dit kæledyrs løbende sundhedsbehov",
+      "benefits": {
+        "regular": "Regelmæssig Pleje",
+        "savings": "Besparelser",
+        "priority": "Prioriteret Booking"
+      },
+      "cta": "Se Planer"
+    },
     "faq": {
       "title": "Ofte Stillede Spørgsmål",
       "description": "Få svar på almindelige spørgsmål om vores tjenester",
@@ -1339,26 +1354,6 @@
       "requirements": "Krav",
       "applyButton": "Ansøg Om Denne Stilling",
       "jobs": {
-        "finance": {
-          "title": "Økonomichef",
-          "location": "København (foretrukket) | Fjern indenfor ±2 tidszoner",
-          "type": "Fleksibel/Deltid",
-          "description": "Vi søger en erfaren økonomiprofessionel til at lede vores finansielle strategi og operationer.",
-          "responsibilities": [
-            "Udvikle og implementere finansiel strategi og køreplan",
-            "Administrere alle finansielle operationer og rapportering",
-            "Levere strategiske finansielle indsigter til ledelsesteamet",
-            "Samarbejde med ledelsen om forretningsplanlægning",
-            "Sikre overholdelse af finansielle regler"
-          ],
-          "requirements": [
-            "Dokumenteret erfaring i økonomistyring",
-            "Stærke analytiske og strategiske tænkningsevner",
-            "Fremragende kommunikationsevner på engelsk",
-            "Erfaring med finansiel software og værktøjer",
-            "Evne til at arbejde selvstændigt med fleksible timer"
-          ]
-        },
         "veterinarian": {
           "title": "Hybrid Dyrlæge",
           "location": "København",

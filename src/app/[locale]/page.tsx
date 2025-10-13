@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Phone, Mail, Clock, MapPin, CheckCircle, ArrowRight } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, CheckCircle, ArrowRight, Users, CreditCard } from 'lucide-react';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import CampaignBanner from '@/components/CampaignBanner';
@@ -199,6 +199,78 @@ export default function Home() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl sm:text-5xl font-light text-[#2C3E50] mb-4 tracking-tight">
+              {t('team.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+              {t('team.description')}
+            </p>
+          </motion.div>
+          <div className="flex justify-center">
+            <Link
+              href={`/${locale}/team`}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-4 rounded-lg text-lg font-medium hover:opacity-90 transition-opacity shadow-sm"
+            >
+              <Users className="w-5 h-5" />
+              {t('team.cta')}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Subscriptions Section */}
+      <section className="py-16 px-4 bg-gradient-to-br from-blue-50 to-teal-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl sm:text-5xl font-light text-[#2C3E50] mb-4 tracking-tight">
+              {t('subscriptions.title')}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light mb-6">
+              {t('subscriptions.description')}
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <CheckCircle className="w-8 h-8 text-[#22c0b6] mx-auto mb-3" />
+                <h3 className="font-medium text-gray-900 mb-2">{t('subscriptions.benefits.regular')}</h3>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <CheckCircle className="w-8 h-8 text-[#22c0b6] mx-auto mb-3" />
+                <h3 className="font-medium text-gray-900 mb-2">{t('subscriptions.benefits.savings')}</h3>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <CheckCircle className="w-8 h-8 text-[#22c0b6] mx-auto mb-3" />
+                <h3 className="font-medium text-gray-900 mb-2">{t('subscriptions.benefits.priority')}</h3>
+              </div>
+            </div>
+          </motion.div>
+          <div className="flex justify-center">
+            <Link
+              href={`/${locale}/subscriptions`}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-4 rounded-lg text-lg font-medium hover:opacity-90 transition-opacity shadow-sm"
+            >
+              <CreditCard className="w-5 h-5" />
+              {t('subscriptions.cta')}
+            </Link>
           </div>
         </div>
       </section>
