@@ -193,13 +193,13 @@ export async function POST(req: NextRequest) {
     let conversationId: string | null = null;
     try {
       // Check if conversation exists
-      const { data: existingConversation } = await supabaseServer
+      const { data: existingConversation, error: fetchError } = await supabaseServer
         .from('chat_conversations')
         .select('id')
         .eq('session_id', sessionId)
         .single();
 
-      if (existingConversation) {
+      if (existingConversation && !fetchError) {
         conversationId = existingConversation.id;
         // Update last_message_at
         await supabaseServer
@@ -208,7 +208,7 @@ export async function POST(req: NextRequest) {
           .eq('id', conversationId);
       } else {
         // Create new conversation
-        const { data: newConversation } = await supabaseServer
+        const { data: newConversation, error: insertError } = await supabaseServer
           .from('chat_conversations')
           .insert({
             session_id: sessionId,
@@ -219,7 +219,7 @@ export async function POST(req: NextRequest) {
           .select('id')
           .single();
 
-        if (newConversation) {
+        if (newConversation && !insertError) {
           conversationId = newConversation.id;
         }
       }
@@ -249,13 +249,13 @@ export async function POST(req: NextRequest) {
 
         if (bookingDetails.isComplete && conversationId) {
           // Check if already forwarded
-          const { data: conversation } = await supabaseServer
+          const { data: conversation, error: checkError } = await supabaseServer
             .from('chat_conversations')
             .select('booking_forwarded')
             .eq('id', conversationId)
             .single();
 
-          if (conversation && !conversation.booking_forwarded) {
+          if (conversation && !checkError && !conversation.booking_forwarded) {
             // Send email
             try {
               const resend = getResend();
