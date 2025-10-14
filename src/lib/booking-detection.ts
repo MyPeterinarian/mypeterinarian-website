@@ -33,26 +33,26 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
   // Extract from assistant's structured summary (most reliable)
   // Look for patterns like "- Dog's Name: Buddy" or "- Contact: John Doe"
 
-  // Pet Name from assistant summary
-  const petNameAssistant = assistantMessages.match(/(?:pet(?:'s)? name|dog(?:'s)? name|cat(?:'s)? name)[:\s]+([A-Za-z]+)/i);
+  // Pet Name from assistant summary - matches "Pet: Buddy" or "Pet: Buddy, French Bulldog"
+  const petNameAssistant = assistantMessages.match(/(?:pet|dog|cat)[:\s]+([A-Za-z]+)(?:,|\s|$)/i);
   if (petNameAssistant) {
     bookingDetails.petName = petNameAssistant[1];
   }
 
-  // Owner Name from assistant summary
-  const ownerNameAssistant = assistantMessages.match(/(?:contact|owner|name)[:\s]+([A-Za-z\s]+?)(?:\n|- |Email|Phone|$)/i);
+  // Owner Name from assistant summary - matches "Owner: John Doe"
+  const ownerNameAssistant = assistantMessages.match(/(?:owner)[:\s]+([A-Za-z\s]+?)(?:\n|contact:|$)/i);
   if (ownerNameAssistant) {
     bookingDetails.ownerName = ownerNameAssistant[1].trim();
   }
 
-  // Date from assistant summary
-  const dateAssistant = assistantMessages.match(/(?:date)[:\s]+([A-Za-z0-9\s,]+?)(?:\n|- |$)/i);
+  // Date from assistant summary - matches "Date requested: Thursday at 2pm"
+  const dateAssistant = assistantMessages.match(/(?:date requested?)[:\s]+([A-Za-z]+)(?:\s+at)?/i);
   if (dateAssistant) {
     bookingDetails.preferredDate = dateAssistant[1].trim();
   }
 
-  // Time from assistant summary
-  const timeAssistant = assistantMessages.match(/(?:time|at)[:\s]+(\d{1,2}:\d{2}\s*(?:AM|PM)?|\d{1,2}\s*(?:AM|PM))/i);
+  // Time from assistant summary - matches "Thursday at 2pm" or "at 2pm"
+  const timeAssistant = assistantMessages.match(/(?:at|time:?)\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)/i);
   if (timeAssistant) {
     bookingDetails.preferredTime = timeAssistant[1].trim();
   }
@@ -98,8 +98,35 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
   return bookingDetails;
 }
 
-export function formatBookingEmail(details: BookingDetails, locale: string, conversationId: string): string {
+export function formatBookingEmail(
+  details: BookingDetails,
+  locale: string,
+  conversationId: string,
+  chatTranscript?: Array<{ role: string; content: string }>
+): string {
   const title = locale === 'dk' ? '🐾 Ny Bookingforespørgsel fra Chatbot' : '🐾 New Booking Request from Chatbot';
+
+  // Format chat transcript
+  let transcriptHtml = '';
+  if (chatTranscript && chatTranscript.length > 0) {
+    const transcriptTitle = locale === 'dk' ? 'Fuld Samtale:' : 'Full Conversation:';
+    transcriptHtml = `
+<hr style="margin: 30px 0; border: none; border-top: 2px solid #e0e0e0;">
+<h3>${transcriptTitle}</h3>
+<div style="background: #f5f5f5; padding: 20px; border-radius: 8px; font-family: monospace; font-size: 13px;">
+${chatTranscript.map(msg => {
+  const roleLabel = msg.role === 'user'
+    ? (locale === 'dk' ? '<strong>Kunde:</strong>' : '<strong>Customer:</strong>')
+    : (locale === 'dk' ? '<strong>Chatbot:</strong>' : '<strong>Chatbot:</strong>');
+  return `
+  <div style="margin-bottom: 15px; padding: 10px; background: ${msg.role === 'user' ? '#e3f2fd' : '#fff'}; border-left: 3px solid ${msg.role === 'user' ? '#2196F3' : '#4CAF50'}; border-radius: 4px;">
+    ${roleLabel}
+    <div style="margin-top: 5px; white-space: pre-wrap;">${msg.content}</div>
+  </div>`;
+}).join('')}
+</div>
+    `;
+  }
 
   return `
 <h2>${title}</h2>
@@ -120,5 +147,7 @@ export function formatBookingEmail(details: BookingDetails, locale: string, conv
 </ul>
 
 <p><em>${locale === 'dk' ? 'Venligst kontakt kunden for at bekræfte bookingen og give prisoplysninger.' : 'Please contact the customer to confirm the booking and provide pricing information.'}</em></p>
+
+${transcriptHtml}
   `.trim();
 }

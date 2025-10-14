@@ -269,7 +269,7 @@ export async function POST(req: NextRequest) {
             // Send email
             try {
               const resend = getResend();
-              const emailHtml = formatBookingEmail(bookingDetails, locale, conversationId);
+              const emailHtml = formatBookingEmail(bookingDetails, locale, conversationId, messages);
 
               await resend.emails.send({
                 from: 'MyPeterinarian Chatbot <chatbot@mypeterinarian.com>',
