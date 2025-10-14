@@ -18,16 +18,9 @@ export default function Chatbot() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const bookingTimerRef = useRef<NodeJS.Timeout | null>(null);
-
-  // Quick-start suggestions
-  const quickStartOptions = [
-    t('quickStart.bookVet'),
-    t('quickStart.grooming'),
-    t('quickStart.pricing'),
-    t('quickStart.hours'),
-  ];
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -214,15 +207,101 @@ export default function Chatbot() {
                 <div className="mb-4 space-y-2">
                   <p className="text-xs text-gray-500 text-center">{t('quickStart.title')}</p>
                   <div className="grid grid-cols-1 gap-2">
-                    {quickStartOptions.map((option, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleSend(option)}
-                        className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
-                      >
-                        {option}
-                      </button>
-                    ))}
+                    {selectedCategory === null ? (
+                      // Show main categories
+                      <>
+                        <button
+                          onClick={() => setSelectedCategory('booking')}
+                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                        >
+                          {t('quickStart.categories.booking.label')}
+                        </button>
+                        <button
+                          onClick={() => setSelectedCategory('pricing')}
+                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                        >
+                          {t('quickStart.categories.pricing.label')}
+                        </button>
+                        <button
+                          onClick={() => handleSend(t('quickStart.categories.hours.text'))}
+                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                        >
+                          {t('quickStart.categories.hours.label')}
+                        </button>
+                      </>
+                    ) : (
+                      // Show sub-options for selected category
+                      <>
+                        <button
+                          onClick={() => setSelectedCategory(null)}
+                          className="text-left px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors text-sm font-medium"
+                        >
+                          {t('quickStart.back')}
+                        </button>
+                        {selectedCategory === 'booking' && (
+                          <>
+                            <button
+                              onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.vetClinic')}`); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.booking.options.vetClinic')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.vetHome')}`); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.booking.options.vetHome')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.grooming')}`); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.booking.options.grooming')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.daycare')}`); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.booking.options.daycare')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.petCare')}`); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.booking.options.petCare')}
+                            </button>
+                          </>
+                        )}
+                        {selectedCategory === 'pricing' && (
+                          <>
+                            <button
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.veterinary')); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.pricing.options.veterinary')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.grooming')); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.pricing.options.grooming')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.daycare')); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.pricing.options.daycare')}
+                            </button>
+                            <button
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.petCare')); setSelectedCategory(null); }}
+                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                            >
+                              {t('quickStart.categories.pricing.options.petCare')}
+                            </button>
+                          </>
+                        )}
+                      </>
+                    )}
                   </div>
                 </div>
               )}

@@ -1468,10 +1468,32 @@
     "disclaimer": "AI assistant - For urgent matters, please call us directly",
     "quickStart": {
       "title": "Quick options:",
-      "bookVet": "📅 Book a vet appointment",
-      "grooming": "✂️ Dog or cat grooming",
-      "pricing": "💰 Service pricing",
-      "hours": "🕐 Hours and location"
+      "categories": {
+        "booking": {
+          "label": "📅 Book a service",
+          "options": {
+            "vetClinic": "Veterinary - Clinic visit",
+            "vetHome": "Veterinary - Home visit",
+            "grooming": "Grooming Service",
+            "daycare": "Dog Daycare",
+            "petCare": "Pet Care Services"
+          }
+        },
+        "pricing": {
+          "label": "💰 Service pricing",
+          "options": {
+            "veterinary": "Veterinary pricing (/en/services/veterinary)",
+            "grooming": "Grooming pricing (/en/services/grooming)",
+            "daycare": "Daycare pricing (/en/services/pet-sitting)",
+            "petCare": "Pet care pricing (/en/services/pet-sitting)"
+          }
+        },
+        "hours": {
+          "label": "🕐 Hours & location",
+          "text": "Our physical location is open weekdays 10:00-16:00. Services can be booked starting at 09:00, with some available until 17:00. We're located at Peder Hvitfeldts Stræde 16, 1173 København."
+        }
+      },
+      "back": "← Back to main menu"
     }
   }
 }

@@ -1479,10 +1479,32 @@
     "disclaimer": "AI assistent - For akutte sager, ring venligst direkte",
     "quickStart": {
       "title": "Hurtige muligheder:",
-      "bookVet": "📅 Book en dyrlægetid",
-      "grooming": "✂️ Hunde- eller kattepleje",
-      "pricing": "💰 Servicepriser",
-      "hours": "🕐 Åbningstider og placering"
+      "categories": {
+        "booking": {
+          "label": "📅 Book en tjeneste",
+          "options": {
+            "vetClinic": "Dyrlæge - Klinikbesøg",
+            "vetHome": "Dyrlæge - Hjemmebesøg",
+            "grooming": "Plejetjeneste",
+            "daycare": "Hundedagpleje",
+            "petCare": "Kæledyrsplejetjenester"
+          }
+        },
+        "pricing": {
+          "label": "💰 Servicepriser",
+          "options": {
+            "veterinary": "Dyrlægepriser (/dk/services/veterinary)",
+            "grooming": "Plejepriser (/dk/services/grooming)",
+            "daycare": "Dagplejepriser (/dk/services/pet-sitting)",
+            "petCare": "Kæledyrsplejepris (/dk/services/pet-sitting)"
+          }
+        },
+        "hours": {
+          "label": "🕐 Åbningstider & placering",
+          "text": "Vores fysiske lokation er åben hverdage 10:00-16:00. Tjenester kan bookes fra kl. 09:00, nogle tilgængelige indtil kl. 17:00. Vi ligger på Peder Hvitfeldts Stræde 16, 1173 København."
+        }
+      },
+      "back": "← Tilbage til hovedmenu"
     }
   }
 }
