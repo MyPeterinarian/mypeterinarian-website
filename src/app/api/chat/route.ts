@@ -3,7 +3,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
 import { getResend } from '@/lib/resend';
 import { detectBookingInConversation, formatBookingEmail } from '@/lib/booking-detection';
-import type { Database } from '@/lib/database.types';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || '',
