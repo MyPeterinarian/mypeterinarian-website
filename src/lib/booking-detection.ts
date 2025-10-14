@@ -42,10 +42,11 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
   // This format appears in the bot's confirmation messages
 
   // Pet Name and Species from bullet format: "- Pet: Buddy (9-year-old French Bulldog)" or "- Pet: Buddy (dog)"
-  const petBulletMatch = assistantMessages.match(/[-•]\s*Pet:\s*([A-Za-z]+)\s*\(([^)]+)\)/i);
+  // Updated regex to handle multi-word pet names like "Fluffy Bear"
+  const petBulletMatch = assistantMessages.match(/[-•]\s*Pet:\s*([A-Za-z\s]+?)\s*\(([^)]+)\)/i);
   console.log('[Booking Detection] Pet match result:', petBulletMatch);
   if (petBulletMatch) {
-    bookingDetails.petName = petBulletMatch[1];
+    bookingDetails.petName = petBulletMatch[1].trim();
     const petInfo = petBulletMatch[2].toLowerCase();
 
     // Extract species from parentheses - could be "dog", "9-year-old French Bulldog", etc.
@@ -65,8 +66,9 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     console.log('[Booking Detection] Extracted owner:', bookingDetails.ownerName);
   }
 
-  // Preferred Time from bullet format: "- Preferred time: Thursday at 2 PM"
-  const timeBulletMatch = assistantMessages.match(/[-•]\s*Preferred time:\s*([A-Za-z]+)\s+at\s+(.+?)(?:\n|$)/i);
+  // Preferred Time from bullet format: "- Preferred time: Thursday at 2 PM" or "- Preferred time: October 16 at 10-12"
+  // Updated regex to handle dates with spaces like "October 16" or "next Monday"
+  const timeBulletMatch = assistantMessages.match(/[-•]\s*Preferred time:\s*(.+?)\s+at\s+(.+?)(?:\n|$)/i);
   console.log('[Booking Detection] Time match result:', timeBulletMatch);
   if (timeBulletMatch) {
     bookingDetails.preferredDate = timeBulletMatch[1].trim();
