@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
 import { getResend } from '@/lib/resend';
 import { detectBookingInConversation, formatBookingEmail } from '@/lib/booking-detection';
+import type { Database } from '@/lib/database.types';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || '',
@@ -200,14 +201,12 @@ export async function POST(req: NextRequest) {
         .maybeSingle();
 
       if (data && !fetchError) {
-        conversationId = (data as { id: string }).id;
+        conversationId = data.id;
         // Update last_message_at
-        const updateQuery = supabaseServer
+        await supabaseServer
           .from('chat_conversations')
           .update({ last_message_at: new Date().toISOString() })
           .eq('id', conversationId);
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        await (updateQuery as Promise<any>);
       } else {
         // Create new conversation
         const { data: newData, error: insertError } = await supabaseServer
@@ -222,7 +221,7 @@ export async function POST(req: NextRequest) {
           .maybeSingle();
 
         if (newData && !insertError) {
-          conversationId = (newData as { id: string }).id;
+          conversationId = newData.id;
         }
       }
 
@@ -257,7 +256,7 @@ export async function POST(req: NextRequest) {
             .eq('id', conversationId)
             .maybeSingle();
 
-          if (checkData && !checkError && !(checkData as { booking_forwarded: boolean }).booking_forwarded) {
+          if (checkData && !checkError && !checkData.booking_forwarded) {
             // Send email
             try {
               const resend = getResend();
@@ -276,7 +275,7 @@ export async function POST(req: NextRequest) {
                 .update({
                   is_booking_request: true,
                   booking_forwarded: true,
-                  metadata: bookingDetails
+                  metadata: JSON.parse(JSON.stringify(bookingDetails))
                 })
                 .eq('id', conversationId);
             } catch (emailError) {

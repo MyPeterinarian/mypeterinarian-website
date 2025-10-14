@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-import type { Database } from '@/types/database'
+import type { Database } from '@/lib/database.types'
 
 // Server-side Supabase client - no localStorage
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
