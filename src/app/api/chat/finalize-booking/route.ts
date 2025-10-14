@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
 import { getResend } from '@/lib/resend';
-import { formatBookingEmail } from '@/lib/booking-detection';
+import { formatBookingEmail, type BookingDetails } from '@/lib/booking-detection';
 
 export async function POST(req: NextRequest) {
   try {
@@ -63,17 +63,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Get booking details from metadata
-    const bookingDetails = conversation.metadata as {
-      serviceType?: string;
-      petName?: string;
-      petSpecies?: string;
-      ownerName?: string;
-      email?: string;
-      phone?: string;
-      preferredDate?: string;
-      preferredTime?: string;
-      location?: string;
-    };
+    const bookingDetails = conversation.metadata as BookingDetails;
 
     if (!bookingDetails || !bookingDetails.serviceType) {
       return NextResponse.json({ success: false, message: 'Invalid booking data' });
