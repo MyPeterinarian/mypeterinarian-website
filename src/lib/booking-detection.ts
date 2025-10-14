@@ -14,90 +14,78 @@ export interface BookingDetails {
 }
 
 export function detectBookingInConversation(messages: Array<{ role: string; content: string }>): BookingDetails {
-  const fullConversation = messages.map(m => m.content).join('\n').toLowerCase();
-
-  // Only search USER messages for personal information (owner name, email, phone)
-  const userMessages = messages
-    .filter(m => m.role === 'user')
-    .map(m => m.content)
-    .join('\n')
-    .toLowerCase();
-
   const bookingDetails: BookingDetails = {
     isComplete: false
   };
 
-  // Detect service type (search all messages)
+  // Strategy: Extract from the assistant's confirmation/summary message
+  // The bot already correctly parsed everything, so we extract from its structured output
+  const assistantMessages = messages
+    .filter(m => m.role === 'assistant')
+    .map(m => m.content)
+    .join('\n');
+
+  const userMessages = messages
+    .filter(m => m.role === 'user')
+    .map(m => m.content)
+    .join('\n');
+
+  // Extract from assistant's structured summary (most reliable)
+  // Look for patterns like "- Dog's Name: Buddy" or "- Contact: John Doe"
+
+  // Pet Name from assistant summary
+  const petNameAssistant = assistantMessages.match(/(?:pet(?:'s)? name|dog(?:'s)? name|cat(?:'s)? name)[:\s]+([A-Za-z]+)/i);
+  if (petNameAssistant) {
+    bookingDetails.petName = petNameAssistant[1];
+  }
+
+  // Owner Name from assistant summary
+  const ownerNameAssistant = assistantMessages.match(/(?:contact|owner|name)[:\s]+([A-Za-z\s]+?)(?:\n|- |Email|Phone|$)/i);
+  if (ownerNameAssistant) {
+    bookingDetails.ownerName = ownerNameAssistant[1].trim();
+  }
+
+  // Date from assistant summary
+  const dateAssistant = assistantMessages.match(/(?:date)[:\s]+([A-Za-z0-9\s,]+?)(?:\n|- |$)/i);
+  if (dateAssistant) {
+    bookingDetails.preferredDate = dateAssistant[1].trim();
+  }
+
+  // Time from assistant summary
+  const timeAssistant = assistantMessages.match(/(?:time|at)[:\s]+(\d{1,2}:\d{2}\s*(?:AM|PM)?|\d{1,2}\s*(?:AM|PM))/i);
+  if (timeAssistant) {
+    bookingDetails.preferredTime = timeAssistant[1].trim();
+  }
+
+  // Service type
   const services = ['veterinary', 'vet', 'grooming', 'sitting', 'pet sitting', 'daycare', 'boarding', 'passport', 'travel'];
   for (const service of services) {
-    if (fullConversation.includes(service)) {
+    if (assistantMessages.toLowerCase().includes(service)) {
       bookingDetails.serviceType = service;
       break;
     }
   }
 
-  // Detect pet name (search user messages only)
-  const petNameMatch = userMessages.match(/(?:pet(?:'s)? name is|his\/her name is|called|named|name:?)\s+([a-z]+)/i);
-  if (petNameMatch) {
-    bookingDetails.petName = petNameMatch[1];
+  // Pet species
+  if (assistantMessages.toLowerCase().includes('dog')) bookingDetails.petSpecies = 'dog';
+  if (assistantMessages.toLowerCase().includes('cat')) bookingDetails.petSpecies = 'cat';
+
+  // Location preference
+  if (assistantMessages.toLowerCase().includes('home visit')) {
+    bookingDetails.location = 'home';
+  } else if (assistantMessages.toLowerCase().includes('clinic') || assistantMessages.toLowerCase().includes('salon')) {
+    bookingDetails.location = 'clinic';
   }
 
-  // Detect pet species (search all messages)
-  if (fullConversation.includes('dog')) bookingDetails.petSpecies = 'dog';
-  if (fullConversation.includes('cat')) bookingDetails.petSpecies = 'cat';
-
-  // Detect owner name (search user messages only, with better patterns)
-  const ownerNamePatterns = [
-    /(?:my name is|i'm|i am|name:?)\s+([a-z\s]{3,30})(?:\s*[,.]|\s+\d|\s+email|\s+phone|$)/i,
-    /\d\.\s*([a-z\s]{3,30}),\s*(?:\+?\d|email)/i  // Pattern like "4. tarek abu sham, 28..."
-  ];
-
-  for (const pattern of ownerNamePatterns) {
-    const match = userMessages.match(pattern);
-    if (match) {
-      bookingDetails.ownerName = match[1].trim();
-      break;
-    }
-  }
-
-  // Detect email (search user messages only)
+  // Email and phone - always extract from user messages as they're most reliable there
   const emailMatch = userMessages.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i);
   if (emailMatch) {
     bookingDetails.email = emailMatch[0];
   }
 
-  // Detect phone (search user messages only)
   const phoneMatch = userMessages.match(/(?:\+45\s?)?[\d\s]{8,}/);
   if (phoneMatch) {
     bookingDetails.phone = phoneMatch[0].trim();
-  }
-
-  // Detect date (search all messages)
-  const datePatterns = [
-    /(?:on|for)\s+(\d{1,2}[\/\-]\d{1,2}[\/\-]\d{2,4})/i,
-    /(?:on|for)\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i,
-    /(?:on|for)\s+(tomorrow|next week|this week)/i,
-    /(?:oct|nov|dec|jan|feb|mar|apr|may|jun|jul|aug|sep)\s+\d{1,2}/i  // Month + day pattern
-  ];
-  for (const pattern of datePatterns) {
-    const match = fullConversation.match(pattern);
-    if (match) {
-      bookingDetails.preferredDate = match[0];
-      break;
-    }
-  }
-
-  // Detect time (search all messages)
-  const timeMatch = fullConversation.match(/(?:at|around|time:?)\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)|(\d{1,2}[-:]\d{1,2})/i);
-  if (timeMatch) {
-    bookingDetails.preferredTime = timeMatch[1] || timeMatch[2];
-  }
-
-  // Detect location preference (search all messages)
-  if (fullConversation.includes('home visit') || fullConversation.includes('at home') || fullConversation.includes('homde')) {
-    bookingDetails.location = 'home';
-  } else if (fullConversation.includes('clinic') || fullConversation.includes('come in') || fullConversation.includes('salon')) {
-    bookingDetails.location = 'clinic';
   }
 
   // Check if booking is complete (has minimum required info)
