@@ -255,8 +255,11 @@ export async function POST(req: NextRequest) {
 
         // Check for complete booking request
         const bookingDetails = detectBookingInConversation(messages);
+        console.log('[Chat API] Booking detection result:', JSON.stringify(bookingDetails, null, 2));
 
         if (bookingDetails.isComplete && conversationId) {
+          console.log('[Chat API] Booking is complete! Conversation ID:', conversationId);
+
           // Check if booking is already ready or forwarded
           const { data: checkData, error: checkError } = await supabaseServer
             .from('chat_conversations')
@@ -264,11 +267,14 @@ export async function POST(req: NextRequest) {
             .eq('id', conversationId)
             .maybeSingle();
 
+          console.log('[Chat API] Database check result:', { checkData, checkError });
+
           if (checkData && !checkError) {
             // If not yet marked as ready and not forwarded, mark it as ready
             // Email will be sent after 60 seconds of inactivity by the client
             if (!checkData.booking_ready_at && !checkData.booking_forwarded) {
-              await supabaseServer
+              console.log('[Chat API] Marking booking as ready...');
+              const updateResult = await supabaseServer
                 .from('chat_conversations')
                 .update({
                   is_booking_request: true,
@@ -276,8 +282,19 @@ export async function POST(req: NextRequest) {
                   metadata: JSON.parse(JSON.stringify(bookingDetails))
                 })
                 .eq('id', conversationId);
+              console.log('[Chat API] Update result:', updateResult);
+            } else {
+              console.log('[Chat API] Booking already marked or forwarded:', {
+                booking_ready_at: checkData.booking_ready_at,
+                booking_forwarded: checkData.booking_forwarded
+              });
             }
           }
+        } else {
+          console.log('[Chat API] Booking not complete or no conversation ID:', {
+            isComplete: bookingDetails.isComplete,
+            conversationId
+          });
         }
       }
     } catch (dbError) {

@@ -18,10 +18,15 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     isComplete: false
   };
 
+  console.log('[Booking Detection] Starting detection with', messages.length, 'messages');
+
   // Strategy: Extract from the assistant's structured bullet-point summary
   // Skip the welcome message by only looking at messages after the first user message
   const firstUserIndex = messages.findIndex(m => m.role === 'user');
   const relevantMessages = firstUserIndex >= 0 ? messages.slice(firstUserIndex) : messages;
+
+  console.log('[Booking Detection] First user message at index:', firstUserIndex);
+  console.log('[Booking Detection] Relevant messages count:', relevantMessages.length);
 
   const assistantMessages = relevantMessages
     .filter(m => m.role === 'assistant')
@@ -38,6 +43,7 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
 
   // Pet Name and Species from bullet format: "- Pet: Buddy (9-year-old French Bulldog)" or "- Pet: Buddy (dog)"
   const petBulletMatch = assistantMessages.match(/[-•]\s*Pet:\s*([A-Za-z]+)\s*\(([^)]+)\)/i);
+  console.log('[Booking Detection] Pet match result:', petBulletMatch);
   if (petBulletMatch) {
     bookingDetails.petName = petBulletMatch[1];
     const petInfo = petBulletMatch[2].toLowerCase();
@@ -48,23 +54,29 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     } else if (petInfo.includes('cat')) {
       bookingDetails.petSpecies = 'cat';
     }
+    console.log('[Booking Detection] Extracted pet:', bookingDetails.petName, bookingDetails.petSpecies);
   }
 
   // Owner Name from bullet format: "- Owner: John Doe"
   const ownerBulletMatch = assistantMessages.match(/[-•]\s*Owner:\s*([A-Za-z\s]+?)(?:\n|$)/i);
+  console.log('[Booking Detection] Owner match result:', ownerBulletMatch);
   if (ownerBulletMatch) {
     bookingDetails.ownerName = ownerBulletMatch[1].trim();
+    console.log('[Booking Detection] Extracted owner:', bookingDetails.ownerName);
   }
 
   // Preferred Time from bullet format: "- Preferred time: Thursday at 2 PM"
   const timeBulletMatch = assistantMessages.match(/[-•]\s*Preferred time:\s*([A-Za-z]+)\s+at\s+(.+?)(?:\n|$)/i);
+  console.log('[Booking Detection] Time match result:', timeBulletMatch);
   if (timeBulletMatch) {
     bookingDetails.preferredDate = timeBulletMatch[1].trim();
     bookingDetails.preferredTime = timeBulletMatch[2].trim();
+    console.log('[Booking Detection] Extracted time:', bookingDetails.preferredDate, bookingDetails.preferredTime);
   }
 
   // Service from bullet format: "- Service: Veterinary home visit"
   const serviceBulletMatch = assistantMessages.match(/[-•]\s*Service:\s*([^\n]+)/i);
+  console.log('[Booking Detection] Service match result:', serviceBulletMatch);
   if (serviceBulletMatch) {
     const serviceText = serviceBulletMatch[1].toLowerCase();
     if (serviceText.includes('veterinary') || serviceText.includes('vet')) {
@@ -87,17 +99,22 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     } else if (serviceText.includes('clinic') || serviceText.includes('salon')) {
       bookingDetails.location = 'clinic';
     }
+    console.log('[Booking Detection] Extracted service:', bookingDetails.serviceType, bookingDetails.location);
   }
 
   // Email and phone from user messages
   const emailMatch = userMessages.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i);
+  console.log('[Booking Detection] Email match result:', emailMatch);
   if (emailMatch) {
     bookingDetails.email = emailMatch[0];
+    console.log('[Booking Detection] Extracted email:', bookingDetails.email);
   }
 
   const phoneMatch = userMessages.match(/(?:\+45\s?)?[\d\s]{8,}/);
+  console.log('[Booking Detection] Phone match result:', phoneMatch);
   if (phoneMatch) {
     bookingDetails.phone = phoneMatch[0].trim();
+    console.log('[Booking Detection] Extracted phone:', bookingDetails.phone);
   }
 
   // Check if booking is complete (has minimum required info)
@@ -106,6 +123,13 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     (bookingDetails.email || bookingDetails.phone) &&
     (bookingDetails.ownerName || bookingDetails.petName)
   );
+
+  console.log('[Booking Detection] Final result:', {
+    isComplete: bookingDetails.isComplete,
+    hasService: !!bookingDetails.serviceType,
+    hasContact: !!(bookingDetails.email || bookingDetails.phone),
+    hasName: !!(bookingDetails.ownerName || bookingDetails.petName)
+  });
 
   return bookingDetails;
 }
