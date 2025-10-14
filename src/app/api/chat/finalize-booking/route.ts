@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Get booking details from metadata
-    const bookingDetails = conversation.metadata as BookingDetails;
+    const bookingDetails = conversation.metadata as unknown as BookingDetails;
 
     if (!bookingDetails || !bookingDetails.serviceType) {
       return NextResponse.json({ success: false, message: 'Invalid booking data' });
