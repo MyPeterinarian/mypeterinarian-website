@@ -193,22 +193,23 @@ export async function POST(req: NextRequest) {
     let conversationId: string | null = null;
     try {
       // Check if conversation exists
-      const { data: existingConversation, error: fetchError } = await supabaseServer
+      const { data, error: fetchError } = await supabaseServer
         .from('chat_conversations')
         .select('id')
         .eq('session_id', sessionId)
-        .single();
+        .maybeSingle();
 
-      if (existingConversation && !fetchError) {
-        conversationId = existingConversation.id;
+      if (data && !fetchError) {
+        conversationId = (data as { id: string }).id;
         // Update last_message_at
-        await supabaseServer
+        const updateQuery = supabaseServer
           .from('chat_conversations')
           .update({ last_message_at: new Date().toISOString() })
           .eq('id', conversationId);
+        await (updateQuery as Promise<any>);
       } else {
         // Create new conversation
-        const { data: newConversation, error: insertError } = await supabaseServer
+        const { data: newData, error: insertError } = await supabaseServer
           .from('chat_conversations')
           .insert({
             session_id: sessionId,
@@ -217,10 +218,10 @@ export async function POST(req: NextRequest) {
             last_message_at: new Date().toISOString(),
           })
           .select('id')
-          .single();
+          .maybeSingle();
 
-        if (newConversation && !insertError) {
-          conversationId = newConversation.id;
+        if (newData && !insertError) {
+          conversationId = (newData as { id: string }).id;
         }
       }
 
@@ -249,13 +250,13 @@ export async function POST(req: NextRequest) {
 
         if (bookingDetails.isComplete && conversationId) {
           // Check if already forwarded
-          const { data: conversation, error: checkError } = await supabaseServer
+          const { data: checkData, error: checkError } = await supabaseServer
             .from('chat_conversations')
             .select('booking_forwarded')
             .eq('id', conversationId)
-            .single();
+            .maybeSingle();
 
-          if (conversation && !checkError && !conversation.booking_forwarded) {
+          if (checkData && !checkError && !(checkData as { booking_forwarded: boolean }).booking_forwarded) {
             // Send email
             try {
               const resend = getResend();
