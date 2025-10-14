@@ -274,7 +274,7 @@ export async function POST(req: NextRequest) {
                 .update({
                   is_booking_request: true,
                   booking_forwarded: true,
-                  metadata: bookingDetails as any
+                  metadata: bookingDetails
                 })
                 .eq('id', conversationId);
             } catch (emailError) {
