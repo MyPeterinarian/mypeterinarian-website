@@ -206,6 +206,7 @@ export async function POST(req: NextRequest) {
           .from('chat_conversations')
           .update({ last_message_at: new Date().toISOString() })
           .eq('id', conversationId);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         await (updateQuery as Promise<any>);
       } else {
         // Create new conversation
