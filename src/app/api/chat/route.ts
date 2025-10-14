@@ -258,38 +258,25 @@ export async function POST(req: NextRequest) {
         const bookingDetails = detectBookingInConversation(messages);
 
         if (bookingDetails.isComplete && conversationId) {
-          // Check if already forwarded
+          // Check if booking is already ready or forwarded
           const { data: checkData, error: checkError } = await supabaseServer
             .from('chat_conversations')
-            .select('booking_forwarded')
+            .select('booking_ready_at, booking_forwarded')
             .eq('id', conversationId)
             .maybeSingle();
 
-          if (checkData && !checkError && !checkData.booking_forwarded) {
-            // Send email
-            try {
-              const resend = getResend();
-              const emailHtml = formatBookingEmail(bookingDetails, locale, conversationId, messages);
-
-              await resend.emails.send({
-                from: 'MyPeterinarian Chatbot <chatbot@mypeterinarian.com>',
-                to: 'hej@mypeterinarian.com',
-                subject: `🐾 New Booking Request - ${bookingDetails.serviceType || 'Service'} for ${bookingDetails.petName || 'Pet'}`,
-                html: emailHtml,
-              });
-
-              // Mark as forwarded
+          if (checkData && !checkError) {
+            // If not yet marked as ready and not forwarded, mark it as ready
+            // Email will be sent after 60 seconds of inactivity by the client
+            if (!checkData.booking_ready_at && !checkData.booking_forwarded) {
               await supabaseServer
                 .from('chat_conversations')
                 .update({
                   is_booking_request: true,
-                  booking_forwarded: true,
+                  booking_ready_at: new Date().toISOString(),
                   metadata: JSON.parse(JSON.stringify(bookingDetails))
                 })
                 .eq('id', conversationId);
-            } catch (emailError) {
-              console.error('Failed to send booking email:', emailError);
-              // Don't fail the request if email fails
             }
           }
         }

@@ -772,6 +772,7 @@ export type Database = {
       chat_conversations: {
         Row: {
           booking_forwarded: boolean | null
+          booking_ready_at: string | null
           created_at: string
           id: string
           is_booking_request: boolean | null
@@ -784,6 +785,7 @@ export type Database = {
         }
         Insert: {
           booking_forwarded?: boolean | null
+          booking_ready_at?: string | null
           created_at?: string
           id?: string
           is_booking_request?: boolean | null
@@ -796,6 +798,7 @@ export type Database = {
         }
         Update: {
           booking_forwarded?: boolean | null
+          booking_ready_at?: string | null
           created_at?: string
           id?: string
           is_booking_request?: boolean | null

@@ -19,6 +19,7 @@ export default function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const bookingTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Quick-start suggestions
   const quickStartOptions = [
@@ -35,6 +36,42 @@ export default function Chatbot() {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  // Auto-finalize booking after 60 seconds of inactivity
+  useEffect(() => {
+    // Clear existing timer
+    if (bookingTimerRef.current) {
+      clearTimeout(bookingTimerRef.current);
+    }
+
+    // Only start timer if chat is open and not loading
+    if (isOpen && !isLoading && messages.length > 0) {
+      bookingTimerRef.current = setTimeout(async () => {
+        try {
+          // Try to finalize any pending booking
+          await fetch('/api/chat/finalize-booking', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              sessionId: sessionId,
+            }),
+          });
+          // Silently handle the result - no need to notify user
+        } catch (error) {
+          console.error('Failed to finalize booking:', error);
+        }
+      }, 60000); // 60 seconds
+    }
+
+    // Cleanup timer on unmount or when dependencies change
+    return () => {
+      if (bookingTimerRef.current) {
+        clearTimeout(bookingTimerRef.current);
+      }
+    };
+  }, [isOpen, isLoading, messages, sessionId]);
 
   // Welcome message when chat opens
   useEffect(() => {

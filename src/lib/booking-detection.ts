@@ -18,66 +18,78 @@ export function detectBookingInConversation(messages: Array<{ role: string; cont
     isComplete: false
   };
 
-  // Strategy: Extract from the assistant's confirmation/summary message
-  // The bot already correctly parsed everything, so we extract from its structured output
-  const assistantMessages = messages
+  // Strategy: Extract from the assistant's structured bullet-point summary
+  // Skip the welcome message by only looking at messages after the first user message
+  const firstUserIndex = messages.findIndex(m => m.role === 'user');
+  const relevantMessages = firstUserIndex >= 0 ? messages.slice(firstUserIndex) : messages;
+
+  const assistantMessages = relevantMessages
     .filter(m => m.role === 'assistant')
     .map(m => m.content)
     .join('\n');
 
-  const userMessages = messages
+  const userMessages = relevantMessages
     .filter(m => m.role === 'user')
     .map(m => m.content)
     .join('\n');
 
-  // Extract from assistant's structured summary (most reliable)
-  // Look for patterns like "- Dog's Name: Buddy" or "- Contact: John Doe"
+  // Extract from structured bullet points (- Pet: Buddy (dog) or - Owner: John Doe)
+  // This format appears in the bot's confirmation messages
 
-  // Pet Name from assistant summary - matches "Pet: Buddy" or "Pet: Buddy, French Bulldog"
-  const petNameAssistant = assistantMessages.match(/(?:pet|dog|cat)[:\s]+([A-Za-z]+)(?:,|\s|$)/i);
-  if (petNameAssistant) {
-    bookingDetails.petName = petNameAssistant[1];
-  }
+  // Pet Name and Species from bullet format: "- Pet: Buddy (9-year-old French Bulldog)" or "- Pet: Buddy (dog)"
+  const petBulletMatch = assistantMessages.match(/[-•]\s*Pet:\s*([A-Za-z]+)\s*\(([^)]+)\)/i);
+  if (petBulletMatch) {
+    bookingDetails.petName = petBulletMatch[1];
+    const petInfo = petBulletMatch[2].toLowerCase();
 
-  // Owner Name from assistant summary - matches "Owner: John Doe"
-  const ownerNameAssistant = assistantMessages.match(/(?:owner)[:\s]+([A-Za-z\s]+?)(?:\n|contact:|$)/i);
-  if (ownerNameAssistant) {
-    bookingDetails.ownerName = ownerNameAssistant[1].trim();
-  }
-
-  // Date from assistant summary - matches "Date requested: Thursday at 2pm"
-  const dateAssistant = assistantMessages.match(/(?:date requested?)[:\s]+([A-Za-z]+)(?:\s+at)?/i);
-  if (dateAssistant) {
-    bookingDetails.preferredDate = dateAssistant[1].trim();
-  }
-
-  // Time from assistant summary - matches "Thursday at 2pm" or "at 2pm"
-  const timeAssistant = assistantMessages.match(/(?:at|time:?)\s+(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)/i);
-  if (timeAssistant) {
-    bookingDetails.preferredTime = timeAssistant[1].trim();
-  }
-
-  // Service type
-  const services = ['veterinary', 'vet', 'grooming', 'sitting', 'pet sitting', 'daycare', 'boarding', 'passport', 'travel'];
-  for (const service of services) {
-    if (assistantMessages.toLowerCase().includes(service)) {
-      bookingDetails.serviceType = service;
-      break;
+    // Extract species from parentheses - could be "dog", "9-year-old French Bulldog", etc.
+    if (petInfo.includes('dog') || petInfo.includes('bulldog') || petInfo.includes('retriever') || petInfo.includes('terrier')) {
+      bookingDetails.petSpecies = 'dog';
+    } else if (petInfo.includes('cat')) {
+      bookingDetails.petSpecies = 'cat';
     }
   }
 
-  // Pet species
-  if (assistantMessages.toLowerCase().includes('dog')) bookingDetails.petSpecies = 'dog';
-  if (assistantMessages.toLowerCase().includes('cat')) bookingDetails.petSpecies = 'cat';
-
-  // Location preference
-  if (assistantMessages.toLowerCase().includes('home visit')) {
-    bookingDetails.location = 'home';
-  } else if (assistantMessages.toLowerCase().includes('clinic') || assistantMessages.toLowerCase().includes('salon')) {
-    bookingDetails.location = 'clinic';
+  // Owner Name from bullet format: "- Owner: John Doe"
+  const ownerBulletMatch = assistantMessages.match(/[-•]\s*Owner:\s*([A-Za-z\s]+?)(?:\n|$)/i);
+  if (ownerBulletMatch) {
+    bookingDetails.ownerName = ownerBulletMatch[1].trim();
   }
 
-  // Email and phone - always extract from user messages as they're most reliable there
+  // Preferred Time from bullet format: "- Preferred time: Thursday at 2 PM"
+  const timeBulletMatch = assistantMessages.match(/[-•]\s*Preferred time:\s*([A-Za-z]+)\s+at\s+(.+?)(?:\n|$)/i);
+  if (timeBulletMatch) {
+    bookingDetails.preferredDate = timeBulletMatch[1].trim();
+    bookingDetails.preferredTime = timeBulletMatch[2].trim();
+  }
+
+  // Service from bullet format: "- Service: Veterinary home visit"
+  const serviceBulletMatch = assistantMessages.match(/[-•]\s*Service:\s*([^\n]+)/i);
+  if (serviceBulletMatch) {
+    const serviceText = serviceBulletMatch[1].toLowerCase();
+    if (serviceText.includes('veterinary') || serviceText.includes('vet')) {
+      bookingDetails.serviceType = 'veterinary';
+    } else if (serviceText.includes('grooming')) {
+      bookingDetails.serviceType = 'grooming';
+    } else if (serviceText.includes('sitting')) {
+      bookingDetails.serviceType = 'pet sitting';
+    } else if (serviceText.includes('daycare')) {
+      bookingDetails.serviceType = 'daycare';
+    } else if (serviceText.includes('boarding')) {
+      bookingDetails.serviceType = 'boarding';
+    } else if (serviceText.includes('passport') || serviceText.includes('travel')) {
+      bookingDetails.serviceType = 'passport';
+    }
+
+    // Location from service text
+    if (serviceText.includes('home visit')) {
+      bookingDetails.location = 'home';
+    } else if (serviceText.includes('clinic') || serviceText.includes('salon')) {
+      bookingDetails.location = 'clinic';
+    }
+  }
+
+  // Email and phone from user messages
   const emailMatch = userMessages.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/i);
   if (emailMatch) {
     bookingDetails.email = emailMatch[0];
