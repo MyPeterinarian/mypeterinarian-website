@@ -1,0 +1,34 @@
+[
+  {
+    "id": "cmd-hooks-1760278197235",
+    "type": "hooks",
+    "success": true,
+    "duration": 15.249210000000005,
+    "timestamp": 1760278197250,
+    "metadata": {}
+  },
+  {
+    "id": "cmd-hooks-1760278274653",
+    "type": "hooks",
+    "success": true,
+    "duration": 3018.930647,
+    "timestamp": 1760278277672,
+    "metadata": {}
+  },
+  {
+    "id": "cmd-hooks-1760282619015",
+    "type": "hooks",
+    "success": true,
+    "duration": 3028.403522,
+    "timestamp": 1760282622044,
+    "metadata": {}
+  },
+  {
+    "id": "cmd-hooks-1760283376820",
+    "type": "hooks",
+    "success": true,
+    "duration": 3028.961046,
+    "timestamp": 1760283379849,
+    "metadata": {}
+  }
+]

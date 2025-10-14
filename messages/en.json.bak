@@ -1465,13 +1465,6 @@
     "openChat": "Open chat",
     "typing": "Typing...",
     "errorMessage": "Sorry, I encountered an error. Please try again or contact us directly at +45 61 66 76 11 or hej@mypeterinarian.com",
-    "disclaimer": "AI assistant - For urgent matters, please call us directly",
-    "quickStart": {
-      "title": "Quick options:",
-      "bookVet": "📅 Book a vet appointment",
-      "grooming": "✂️ Dog or cat grooming",
-      "pricing": "💰 Service pricing",
-      "hours": "🕐 Hours and location"
-    }
+    "disclaimer": "AI assistant - For urgent matters, please call us directly"
   }
 }

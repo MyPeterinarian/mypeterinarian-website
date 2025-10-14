@@ -1476,13 +1476,6 @@
     "openChat": "Åbn chat",
     "typing": "Skriver...",
     "errorMessage": "Beklager, jeg stødte på en fejl. Prøv venligst igen eller kontakt os direkte på +45 61 66 76 11 eller hej@mypeterinarian.com",
-    "disclaimer": "AI assistent - For akutte sager, ring venligst direkte",
-    "quickStart": {
-      "title": "Hurtige muligheder:",
-      "bookVet": "📅 Book en dyrlægetid",
-      "grooming": "✂️ Hunde- eller kattepleje",
-      "pricing": "💰 Servicepriser",
-      "hours": "🕐 Åbningstider og placering"
-    }
+    "disclaimer": "AI assistent - For akutte sager, ring venligst direkte"
   }
 }

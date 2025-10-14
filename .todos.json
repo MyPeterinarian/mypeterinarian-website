@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Fix parasite prevention image URL with double dash",
+    "status": "completed",
+    "activeForm": "Fixed image URL"
+  },
+  {
+    "content": "Add 2 new blog posts (puppy/kitten tips and weight loss)",
+    "status": "completed",
+    "activeForm": "Added new blog posts"
+  },
+  {
+    "content": "Redesign blog article detail page with better UX/UI",
+    "status": "completed",
+    "activeForm": "Redesigned blog detail page"
+  },
+  {
+    "content": "Test all blog images and article display",
+    "status": "in_progress",
+    "activeForm": "Testing blog display"
+  },
+  {
+    "content": "Commit and push all blog improvements",
+    "status": "pending",
+    "activeForm": "Committing improvements"
+  }
+]

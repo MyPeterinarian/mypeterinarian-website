@@ -1,5 +1,8 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { NextRequest, NextResponse } from 'next/server';
+import { supabaseServer } from '@/lib/supabase-server';
+import { getResend } from '@/lib/resend';
+import { detectBookingInConversation, formatBookingEmail } from '@/lib/booking-detection';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || '',
@@ -87,8 +90,8 @@ When someone wants to book:
 **Important:** Mark all bookings as "REQUEST" not "confirmed" — humans confirm and provide pricing offline.
 
 **Confirmation message:**
-- **EN:** "Thank you! We'll review availability and contact you on weekdays 09:00–17:00 to confirm. For pricing, please call or email directly."
-- **DA:** "Tak! Vi tjekker ledige tider og kontakter dig hverdage 09:00–17:00 for at bekræfte. For priser bedes du ringe eller skrive direkte."
+- **EN:** "Thank you! I've forwarded your request to our team at hej@mypeterinarian.com. We'll contact you within 24 hours on weekdays (09:00–17:00) to confirm availability and provide pricing."
+- **DA:** "Tak! Jeg har videresendt din forespørgsel til vores team på hej@mypeterinarian.com. Vi kontakter dig inden for 24 timer på hverdage (09:00–17:00) for at bekræfte ledighed og give pris."
 
 ## GROOMING TRIAGE
 
@@ -154,7 +157,7 @@ function getEmergencyResponse(locale: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages, locale = 'en' } = await req.json();
+    const { messages, locale = 'en', sessionId } = await req.json();
 
     if (!process.env.ANTHROPIC_API_KEY) {
       return NextResponse.json(
@@ -184,9 +187,110 @@ export async function POST(req: NextRequest) {
     });
 
     const assistantMessage = response.content[0];
+    const assistantText = assistantMessage.type === 'text' ? assistantMessage.text : '';
+
+    // Save conversation to database
+    let conversationId: string | null = null;
+    try {
+      // Check if conversation exists
+      const { data: existingConversation } = await supabaseServer
+        .from('chat_conversations')
+        .select('id')
+        .eq('session_id', sessionId)
+        .single();
+
+      if (existingConversation) {
+        conversationId = existingConversation.id;
+        // Update last_message_at
+        await supabaseServer
+          .from('chat_conversations')
+          .update({ last_message_at: new Date().toISOString() })
+          .eq('id', conversationId);
+      } else {
+        // Create new conversation
+        const { data: newConversation } = await supabaseServer
+          .from('chat_conversations')
+          .insert({
+            session_id: sessionId,
+            locale: locale,
+            started_at: new Date().toISOString(),
+            last_message_at: new Date().toISOString(),
+          })
+          .select('id')
+          .single();
+
+        if (newConversation) {
+          conversationId = newConversation.id;
+        }
+      }
+
+      // Save messages
+      if (conversationId) {
+        const latestUserMessage = messages[messages.length - 1];
+
+        // Save user message
+        await supabaseServer.from('chat_messages').insert({
+          conversation_id: conversationId,
+          role: 'user',
+          content: latestUserMessage.content,
+          is_emergency: false,
+        });
+
+        // Save assistant message
+        await supabaseServer.from('chat_messages').insert({
+          conversation_id: conversationId,
+          role: 'assistant',
+          content: assistantText,
+          is_emergency: false,
+        });
+
+        // Check for complete booking request
+        const bookingDetails = detectBookingInConversation(messages);
+
+        if (bookingDetails.isComplete && conversationId) {
+          // Check if already forwarded
+          const { data: conversation } = await supabaseServer
+            .from('chat_conversations')
+            .select('booking_forwarded')
+            .eq('id', conversationId)
+            .single();
+
+          if (conversation && !conversation.booking_forwarded) {
+            // Send email
+            try {
+              const resend = getResend();
+              const emailHtml = formatBookingEmail(bookingDetails, locale, conversationId);
+
+              await resend.emails.send({
+                from: 'MyPeterinarian Chatbot <chatbot@mypeterinarian.com>',
+                to: 'hej@mypeterinarian.com',
+                subject: `🐾 New Booking Request - ${bookingDetails.serviceType || 'Service'} for ${bookingDetails.petName || 'Pet'}`,
+                html: emailHtml,
+              });
+
+              // Mark as forwarded
+              await supabaseServer
+                .from('chat_conversations')
+                .update({
+                  is_booking_request: true,
+                  booking_forwarded: true,
+                  metadata: bookingDetails as any
+                })
+                .eq('id', conversationId);
+            } catch (emailError) {
+              console.error('Failed to send booking email:', emailError);
+              // Don't fail the request if email fails
+            }
+          }
+        }
+      }
+    } catch (dbError) {
+      console.error('Database error:', dbError);
+      // Don't fail the request if database fails
+    }
 
     return NextResponse.json({
-      message: assistantMessage.type === 'text' ? assistantMessage.text : '',
+      message: assistantText,
       id: response.id,
     });
   } catch (error) {

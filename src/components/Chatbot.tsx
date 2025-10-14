@@ -17,7 +17,16 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [sessionId] = useState(() => `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Quick-start suggestions
+  const quickStartOptions = [
+    t('quickStart.bookVet'),
+    t('quickStart.grooming'),
+    t('quickStart.pricing'),
+    t('quickStart.hours'),
+  ];
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -39,12 +48,13 @@ export default function Chatbot() {
     }
   }, [isOpen, messages.length, t]);
 
-  const handleSend = async () => {
-    if (!input.trim() || isLoading) return;
+  const handleSend = async (messageText?: string) => {
+    const textToSend = messageText || input.trim();
+    if (!textToSend || isLoading) return;
 
     const userMessage: Message = {
       role: 'user',
-      content: input,
+      content: textToSend,
     };
 
     setMessages((prev) => [...prev, userMessage]);
@@ -60,6 +70,7 @@ export default function Chatbot() {
         body: JSON.stringify({
           messages: [...messages, userMessage],
           locale: locale,
+          sessionId: sessionId,
         }),
       });
 
@@ -158,6 +169,23 @@ export default function Chatbot() {
 
             {/* Messages */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+              {messages.length === 1 && messages[0].role === 'assistant' && (
+                <div className="mb-4 space-y-2">
+                  <p className="text-xs text-gray-500 text-center">{t('quickStart.title')}</p>
+                  <div className="grid grid-cols-1 gap-2">
+                    {quickStartOptions.map((option, index) => (
+                      <button
+                        key={index}
+                        onClick={() => handleSend(option)}
+                        className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                      >
+                        {option}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {messages.map((message, index) => (
                 <motion.div
                   key={index}
