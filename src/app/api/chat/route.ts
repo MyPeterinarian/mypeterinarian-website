@@ -1,8 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabase-server';
-import { getResend } from '@/lib/resend';
-import { detectBookingInConversation, formatBookingEmail } from '@/lib/booking-detection';
+import { detectBookingInConversation } from '@/lib/booking-detection';
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY || '',

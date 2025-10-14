@@ -63,7 +63,17 @@ export async function POST(req: NextRequest) {
     }
 
     // Get booking details from metadata
-    const bookingDetails = conversation.metadata as any;
+    const bookingDetails = conversation.metadata as {
+      serviceType?: string;
+      petName?: string;
+      petSpecies?: string;
+      ownerName?: string;
+      email?: string;
+      phone?: string;
+      preferredDate?: string;
+      preferredTime?: string;
+      location?: string;
+    };
 
     if (!bookingDetails || !bookingDetails.serviceType) {
       return NextResponse.json({ success: false, message: 'Invalid booking data' });
