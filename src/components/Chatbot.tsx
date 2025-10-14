@@ -46,10 +46,12 @@ export default function Chatbot() {
 
     // Only start timer if chat is open and not loading
     if (isOpen && !isLoading && messages.length > 0) {
+      console.log('[Chatbot] Starting 60-second timer for booking finalization');
       bookingTimerRef.current = setTimeout(async () => {
+        console.log('[Chatbot] 60 seconds passed, attempting to finalize booking...');
         try {
           // Try to finalize any pending booking
-          await fetch('/api/chat/finalize-booking', {
+          const response = await fetch('/api/chat/finalize-booking', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -58,9 +60,10 @@ export default function Chatbot() {
               sessionId: sessionId,
             }),
           });
-          // Silently handle the result - no need to notify user
+          const data = await response.json();
+          console.log('[Chatbot] Finalize booking response:', data);
         } catch (error) {
-          console.error('Failed to finalize booking:', error);
+          console.error('[Chatbot] Failed to finalize booking:', error);
         }
       }, 60000); // 60 seconds
     }

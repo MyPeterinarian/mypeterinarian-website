@@ -6,8 +6,10 @@ import { formatBookingEmail, type BookingDetails } from '@/lib/booking-detection
 export async function POST(req: NextRequest) {
   try {
     const { sessionId } = await req.json();
+    console.log('[Finalize Booking] Request received for session:', sessionId);
 
     if (!sessionId) {
+      console.log('[Finalize Booking] No session ID provided');
       return NextResponse.json(
         { error: 'Session ID is required' },
         { status: 400 }
@@ -21,12 +23,17 @@ export async function POST(req: NextRequest) {
       .eq('session_id', sessionId)
       .maybeSingle();
 
+    console.log('[Finalize Booking] Conversation found:', conversation);
+    console.log('[Finalize Booking] Error:', convError);
+
     if (convError || !conversation) {
+      console.log('[Finalize Booking] Conversation not found');
       return NextResponse.json({ success: false, message: 'Conversation not found' });
     }
 
     // Check if booking is ready but not forwarded
     if (!conversation.booking_ready_at || conversation.booking_forwarded) {
+      console.log('[Finalize Booking] No pending booking. Ready at:', conversation.booking_ready_at, 'Forwarded:', conversation.booking_forwarded);
       return NextResponse.json({ success: false, message: 'No pending booking' });
     }
 
@@ -42,13 +49,24 @@ export async function POST(req: NextRequest) {
     const timeSinceReady = now - bookingReadyTime;
     const timeSinceLastMessage = now - lastMessageTime;
 
+    console.log('[Finalize Booking] Time check:', {
+      timeSinceReady,
+      timeSinceLastMessage,
+      sixtySecondsInMs,
+      readyTimeOk: timeSinceReady >= sixtySecondsInMs,
+      lastMessageOk: timeSinceLastMessage >= sixtySecondsInMs
+    });
+
     if (timeSinceReady < sixtySecondsInMs && timeSinceLastMessage < sixtySecondsInMs) {
+      console.log('[Finalize Booking] Not enough time has passed');
       return NextResponse.json({
         success: false,
         message: 'Not enough time has passed',
         waitTime: Math.max(sixtySecondsInMs - timeSinceReady, sixtySecondsInMs - timeSinceLastMessage)
       });
     }
+
+    console.log('[Finalize Booking] Time check passed, proceeding with email...');
 
     // Get all messages for the conversation
     const { data: messages, error: messagesError } = await supabaseServer
@@ -71,6 +89,7 @@ export async function POST(req: NextRequest) {
 
     // Send email
     try {
+      console.log('[Finalize Booking] Preparing email...');
       const resend = getResend();
       const emailHtml = formatBookingEmail(
         bookingDetails,
@@ -79,12 +98,15 @@ export async function POST(req: NextRequest) {
         messages
       );
 
-      await resend.emails.send({
+      console.log('[Finalize Booking] Sending email to hej@mypeterinarian.com...');
+      const emailResult = await resend.emails.send({
         from: 'MyPeterinarian Chatbot <chatbot@mypeterinarian.com>',
         to: 'hej@mypeterinarian.com',
         subject: `🐾 New Booking Request - ${bookingDetails.serviceType || 'Service'} for ${bookingDetails.petName || 'Pet'}`,
         html: emailHtml,
       });
+
+      console.log('[Finalize Booking] Email sent successfully:', emailResult);
 
       // Mark as forwarded
       await supabaseServer
@@ -94,12 +116,14 @@ export async function POST(req: NextRequest) {
         })
         .eq('id', conversation.id);
 
+      console.log('[Finalize Booking] Marked as forwarded in database');
+
       return NextResponse.json({
         success: true,
         message: 'Booking email sent successfully'
       });
     } catch (emailError) {
-      console.error('Failed to send booking email:', emailError);
+      console.error('[Finalize Booking] Failed to send booking email:', emailError);
       return NextResponse.json(
         { error: 'Failed to send email' },
         { status: 500 }
