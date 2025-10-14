@@ -49,7 +49,8 @@ export default function Chatbot() {
   }, [isOpen, messages.length, t]);
 
   const handleSend = async (messageText?: string) => {
-    const textToSend = messageText || input.trim();
+    // If messageText is provided and is a string, use it. Otherwise use input.
+    const textToSend = (typeof messageText === 'string' && messageText.trim()) ? messageText.trim() : input.trim();
     if (!textToSend || isLoading) return;
 
     const userMessage: Message = {
@@ -237,7 +238,7 @@ export default function Chatbot() {
                   className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#22c0b6] focus:border-transparent disabled:opacity-50"
                 />
                 <button
-                  onClick={handleSend}
+                  onClick={() => handleSend()}
                   disabled={!input.trim() || isLoading}
                   className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white p-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label={t('send')}
