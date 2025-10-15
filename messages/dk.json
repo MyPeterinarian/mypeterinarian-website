@@ -1498,11 +1498,11 @@
             "daycare": "Hundedagpleje tjeneste",
             "petCare": "Kæledyrsplejetjenester"
           },
-          "responses": {
-            "veterinary": "For dyrlæge tjeneste priser, besøg venligst: www.mypeterinarian.com/dk/services/veterinary",
-            "grooming": "For plejetjeneste priser, besøg venligst: www.mypeterinarian.com/dk/services/grooming",
-            "daycare": "For hundedagpleje priser, besøg venligst: www.mypeterinarian.com/dk/services/pet-sitting",
-            "petCare": "For kæledyrsplejetjenester priser, besøg venligst: www.mypeterinarian.com/dk/services/pet-sitting"
+          "questions": {
+            "veterinary": "Hvad er priserne for dyrlæge tjeneste?",
+            "grooming": "Hvad er priserne for plejetjeneste?",
+            "daycare": "Hvad er priserne for hundedagpleje?",
+            "petCare": "Hvad er priserne for kæledyrsplejetjenester?"
           }
         },
         "hours": {
