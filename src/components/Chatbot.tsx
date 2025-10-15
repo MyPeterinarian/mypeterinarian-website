@@ -141,6 +141,30 @@ export default function Chatbot() {
     }
   };
 
+  // Convert URLs in text to clickable links
+  const renderMessageWithLinks = (text: string) => {
+    const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+)/g;
+    const parts = text.split(urlRegex);
+
+    return parts.map((part, index) => {
+      if (part.match(urlRegex)) {
+        const href = part.startsWith('http') ? part : `https://${part}`;
+        return (
+          <a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80 break-all"
+          >
+            {part}
+          </a>
+        );
+      }
+      return <span key={index}>{part}</span>;
+    });
+  };
+
   return (
     <>
       {/* Chat Button */}
@@ -323,7 +347,9 @@ export default function Chatbot() {
                         : 'bg-white text-gray-800 shadow-sm'
                     }`}
                   >
-                    <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+                    <p className="text-sm whitespace-pre-wrap break-words">
+                      {renderMessageWithLinks(message.content)}
+                    </p>
                   </div>
                 </motion.div>
               ))}
