@@ -219,8 +219,8 @@ export default function Chatbot() {
                   <MessageCircle className="w-6 h-6 text-[#22c0b6]" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">{t('title')}</h3>
-                  <p className="text-sm text-blue-100">{t('subtitle')}</p>
+                  <h3 className="font-semibold text-white drop-shadow-sm">{t('title')}</h3>
+                  <p className="text-sm text-white/90">{t('subtitle')}</p>
                 </div>
               </div>
             </div>
