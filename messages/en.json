@@ -325,6 +325,17 @@
               "2": "Professional: From 648 DKK/month",
               "3": "Pricing varies by pet weight"
             }
+          },
+          "petPassport": {
+            "title": "Pet Passport Services",
+            "description": "EU pet passport for travel. Complete service including consultation, health checks, vaccinations, and microchip.",
+            "cta": "Get Pet Passport",
+            "prices": {
+              "0": "EU Pet Passport (Home): 1364 DKK",
+              "1": "EU Pet Passport (Clinic): 824 DKK",
+              "2": "Rabies Vaccine + Passport (Home): 2268 DKK",
+              "3": "Rabies Vaccine + Passport (Clinic): 1475 DKK"
+            }
           }
         }
       },
@@ -896,6 +907,108 @@
         }
       }
     },
+    "dogDaycare": {
+      "title": "Dog Daycare Services Copenhagen",
+      "subtitle": "Professional dog daycare with supervised play and socialization",
+      "description": "Our dog daycare provides a safe, fun environment for your dog while you're at work or away. Located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care, half day, and flexible packages available.",
+      "hero": {
+        "cta": "Book Daycare Now"
+      },
+      "features": {
+        "title": "Why Choose Our Dog Daycare",
+        "items": {
+          "supervised": {
+            "title": "Supervised Play",
+            "description": "Constant supervision by our trained staff ensures safe and enjoyable playtime for all dogs."
+          },
+          "socialization": {
+            "title": "Dog Socialization",
+            "description": "Your dog interacts with other friendly dogs, improving social skills and behavior."
+          },
+          "flexible": {
+            "title": "Flexible Scheduling",
+            "description": "Full day, half day, trial days, and monthly packages to fit your schedule and budget."
+          },
+          "location": {
+            "title": "Central Location",
+            "description": "Conveniently located in central Copenhagen at Peder Hvitfeldts Stræde 16, 1173 København."
+          },
+          "updates": {
+            "title": "Regular Updates",
+            "description": "Receive photos and updates throughout the day so you know your dog is happy and safe."
+          },
+          "professional": {
+            "title": "Professional Care",
+            "description": "Our veterinary-educated team provides expert care and can handle any situation."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Flexible pricing options to suit your needs and budget",
+        "save": "Save",
+        "items": {
+          "fullDay": {
+            "name": "Full Day Care",
+            "description": "8 hours of supervised play, rest periods, water and snacks included"
+          },
+          "halfDay": {
+            "name": "Half Day Care",
+            "description": "4 hours of daycare - perfect for shorter stays"
+          },
+          "trial": {
+            "name": "Trial Day",
+            "description": "First-time trial to see if daycare is right for your dog"
+          },
+          "package10": {
+            "name": "10-Day Package",
+            "description": "Save 800 DKK with our 10-day package"
+          },
+          "monthly": {
+            "name": "Monthly Unlimited",
+            "description": "Unlimited daycare for one month - best value for regular attendees"
+          }
+        }
+      },
+      "location": {
+        "title": "Our Location",
+        "address": "Peder Hvitfeldts Stræde 16",
+        "details": "1173 København, Denmark - Central Copenhagen location with easy access",
+        "directions": "Get Directions"
+      },
+      "included": {
+        "title": "What's Included",
+        "items": {
+          "item1": "Supervised play sessions with compatible dogs",
+          "item2": "Rest periods in comfortable, safe areas",
+          "item3": "Fresh water and healthy snacks throughout the day",
+          "item4": "Photo updates sent to your phone",
+          "item5": "Professional care by veterinary-educated staff",
+          "item6": "Safe, clean, and climate-controlled environment"
+        }
+      },
+      "banner": {
+        "title": "Ready to Book Dog Daycare?",
+        "description": "Give your dog a fun day of play and socialization while you're at work or away.",
+        "cta1": "Call to Book",
+        "cta2": "Email Us"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": {
+          "question": "What are your daycare hours?",
+          "answer": "Our daycare is available from 09:00 to 17:00 on weekdays. Full day care is 8 hours, half day is 4 hours. We recommend drop-off between 09:00-10:00 and pick-up between 16:00-17:00."
+        },
+        "q2": {
+          "question": "Do you require vaccinations?",
+          "answer": "Yes, all dogs must be up-to-date on core vaccinations (DHPPi) and rabies vaccination. We also require bordatella (kennel cough) vaccine. This protects all dogs in our care."
+        },
+        "q3": {
+          "question": "How do you handle dogs of different sizes?",
+          "answer": "We carefully match dogs by size, age, and play style to ensure safe and appropriate playgroups. Small and large dogs are supervised separately when necessary to ensure everyone's safety and enjoyment."
+        }
+      }
+    },
     "petPassport": {
       "title": "EU Pet Passport: Travel With Your Furry Friend",
       "subtitle": "Official EU pet passport for dogs, cats, and ferrets",
@@ -1223,6 +1336,7 @@
     "grooming": "Grooming",
     "petsitting": "Pet Sitting",
     "petpassport": "Pet Passport",
+    "dogdaycare": "Dog Daycare",
     "petcare": "Pet Care",
     "subscriptions": "Subscriptions",
     "booking": "Book Appointment",

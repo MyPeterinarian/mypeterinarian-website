@@ -10,7 +10,8 @@ import {
   Pill,
   Heart,
   CheckCircle,
-  Calendar
+  Calendar,
+  FileText
 } from 'lucide-react'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -62,6 +63,11 @@ export default function VeterinaryPage() {
       key: 'subscription',
       icon: Calendar,
       items: Array.from({ length: 4 }, (_, i) => t(`features.items.subscription.prices.${i}`))
+    },
+    {
+      key: 'petPassport',
+      icon: FileText,
+      items: Array.from({ length: 4 }, (_, i) => t(`features.items.petPassport.prices.${i}`))
     }
   ]
 

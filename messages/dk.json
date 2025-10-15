@@ -325,6 +325,17 @@
               "2": "Professionel: Fra 648 DKK/måned",
               "3": "Priser varierer efter kæledyrets vægt"
             }
+          },
+          "petPassport": {
+            "title": "Kæledyrspas Tjenester",
+            "description": "EU kæledyrspas til rejse. Komplet service inklusiv konsultation, sundhedstjek, vaccinationer og mikrochip.",
+            "cta": "Få Kæledyrspas",
+            "prices": {
+              "0": "EU Kæledyrspas (Hjem): 1364 Kr",
+              "1": "EU Kæledyrspas (Klinik): 824 Kr",
+              "2": "Rabiesvaccine + Pas (Hjem): 2268 Kr",
+              "3": "Rabiesvaccine + Pas (Klinik): 1475 Kr"
+            }
           }
         }
       },
@@ -897,6 +908,108 @@
         }
       }
     },
+    "dogDaycare": {
+      "title": "Hundedagpleje Tjenester København",
+      "subtitle": "Professionel hundedagpleje med overvåget leg og socialisering",
+      "description": "Vores hundedagpleje giver et sikkert, sjovt miljø for din hund mens du er på arbejde eller væk. Placeret på Peder Hvitfeldts Stræde 16, 1173 København. Fuld dagpleje, halv dag og fleksible pakker tilgængelige.",
+      "hero": {
+        "cta": "Book Dagpleje Nu"
+      },
+      "features": {
+        "title": "Hvorfor Vælge Vores Hundedagpleje",
+        "items": {
+          "supervised": {
+            "title": "Overvåget Leg",
+            "description": "Konstant supervision af vores trænede personale sikrer sikker og fornøjelig legetid for alle hunde."
+          },
+          "socialization": {
+            "title": "Hunde Socialisering",
+            "description": "Din hund interagerer med andre venlige hunde, forbedrer sociale evner og adfærd."
+          },
+          "flexible": {
+            "title": "Fleksibel Planlægning",
+            "description": "Fuld dag, halv dag, prøvedage og månedlige pakker for at passe din tidsplan og budget."
+          },
+          "location": {
+            "title": "Central Placering",
+            "description": "Bekvemt placeret i central København på Peder Hvitfeldts Stræde 16, 1173 København."
+          },
+          "updates": {
+            "title": "Regelmæssige Opdateringer",
+            "description": "Modtag billeder og opdateringer hele dagen så du ved din hund er glad og sikker."
+          },
+          "professional": {
+            "title": "Professionel Pleje",
+            "description": "Vores veterinæruddannede team yder ekspertpleje og kan håndtere enhver situation."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Gennemsigtig Prissætning",
+        "description": "Fleksible prismuligheder for at passe dine behov og budget",
+        "save": "Spar",
+        "items": {
+          "fullDay": {
+            "name": "Fuld Dagpleje",
+            "description": "8 timer overvåget leg, hvileperioder, vand og snacks inkluderet"
+          },
+          "halfDay": {
+            "name": "Halv Dagpleje",
+            "description": "4 timer dagpleje - perfekt til kortere ophold"
+          },
+          "trial": {
+            "name": "Prøvedag",
+            "description": "Førstegangs prøve for at se om dagpleje passer til din hund"
+          },
+          "package10": {
+            "name": "10-Dages Pakke",
+            "description": "Spar 800 Kr med vores 10-dages pakke"
+          },
+          "monthly": {
+            "name": "Månedlig Ubegrænset",
+            "description": "Ubegrænset dagpleje i en måned - bedste værdi for regelmæssige deltagere"
+          }
+        }
+      },
+      "location": {
+        "title": "Vores Placering",
+        "address": "Peder Hvitfeldts Stræde 16",
+        "details": "1173 København, Danmark - Central København placering med nem adgang",
+        "directions": "Få Vejvisning"
+      },
+      "included": {
+        "title": "Hvad er Inkluderet",
+        "items": {
+          "item1": "Overvågede legesessioner med kompatible hunde",
+          "item2": "Hvileperioder i komfortable, sikre områder",
+          "item3": "Frisk vand og sunde snacks hele dagen",
+          "item4": "Billede opdateringer sendt til din telefon",
+          "item5": "Professionel pleje af veterinæruddannet personale",
+          "item6": "Sikkert, rent og klimakontrolleret miljø"
+        }
+      },
+      "banner": {
+        "title": "Klar til at Booke Hundedagpleje?",
+        "description": "Giv din hund en sjov dag med leg og socialisering mens du er på arbejde eller væk.",
+        "cta1": "Ring for at Booke",
+        "cta2": "Email Os"
+      },
+      "faq": {
+        "title": "Ofte Stillede Spørgsmål",
+        "q1": {
+          "question": "Hvad er jeres dagpleje timer?",
+          "answer": "Vores dagpleje er tilgængelig fra 09:00 til 17:00 på hverdage. Fuld dagpleje er 8 timer, halv dag er 4 timer. Vi anbefaler aflevering mellem 09:00-10:00 og afhentning mellem 16:00-17:00."
+        },
+        "q2": {
+          "question": "Kræver I vaccinationer?",
+          "answer": "Ja, alle hunde skal være opdateret på kernervaccinationer (DHPPi) og rabiesvaccination. Vi kræver også bordatella (kennelhoste) vaccine. Dette beskytter alle hunde i vores pleje."
+        },
+        "q3": {
+          "question": "Hvordan håndterer I hunde af forskellige størrelser?",
+          "answer": "Vi matcher omhyggeligt hunde efter størrelse, alder og legestil for at sikre sikre og passende legegrupper. Små og store hunde overvåges separat når det er nødvendigt for at sikre alles sikkerhed og fornøjelse."
+        }
+      }
+    },
     "petPassport": {
       "title": "EU Kæledyrspas: Rejs Med Din Pelsede Ven",
       "subtitle": "Officielt EU kæledyrspas til hunde, katte og fritter",
@@ -1234,6 +1347,7 @@
     "grooming": "Pleje",
     "petsitting": "Kæledyrspassning",
     "petpassport": "Kæledyrspas",
+    "dogdaycare": "Hundedagpleje",
     "petcare": "Kæledyrspleje",
     "subscriptions": "Abonnementer",
     "booking": "Book Tid",
