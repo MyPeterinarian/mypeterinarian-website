@@ -155,7 +155,7 @@ export default function Chatbot() {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:opacity-80 break-all"
+            className="underline decoration-2 underline-offset-2 hover:opacity-80 transition-opacity break-all font-medium"
           >
             {part}
           </a>
@@ -209,7 +209,7 @@ export default function Chatbot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
             transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-            className="fixed bottom-24 right-6 z-50 w-96 max-w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-24 right-6 z-50 w-96 max-w-[calc(100vw-3rem)] bg-white rounded-2xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden"
             style={{ height: '600px', maxHeight: 'calc(100vh - 8rem)' }}
           >
             {/* Header */}
@@ -226,29 +226,29 @@ export default function Chatbot() {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gradient-to-b from-blue-50/30 to-teal-50/30">
               {messages.length === 1 && messages[0].role === 'assistant' && (
                 <div className="mb-4 space-y-2">
-                  <p className="text-xs text-gray-500 text-center">{t('quickStart.title')}</p>
+                  <p className="text-xs text-gray-600 text-center font-medium">{t('quickStart.title')}</p>
                   <div className="grid grid-cols-1 gap-2">
                     {selectedCategory === null ? (
                       // Show main categories
                       <>
                         <button
                           onClick={() => setSelectedCategory('booking')}
-                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                          className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                         >
                           {t('quickStart.categories.booking.label')}
                         </button>
                         <button
                           onClick={() => setSelectedCategory('pricing')}
-                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                          className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                         >
                           {t('quickStart.categories.pricing.label')}
                         </button>
                         <button
                           onClick={() => handleSend(t('quickStart.categories.hours.text'))}
-                          className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                          className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                         >
                           {t('quickStart.categories.hours.label')}
                         </button>
@@ -258,7 +258,7 @@ export default function Chatbot() {
                       <>
                         <button
                           onClick={() => setSelectedCategory(null)}
-                          className="text-left px-4 py-2 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 transition-colors text-sm font-medium"
+                          className="text-left px-4 py-3 bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-300 rounded-xl hover:from-gray-150 hover:to-gray-100 transition-all duration-200 text-sm font-semibold"
                         >
                           {t('quickStart.back')}
                         </button>
@@ -266,31 +266,31 @@ export default function Chatbot() {
                           <>
                             <button
                               onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.vetClinic')}`); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.booking.options.vetClinic')}
                             </button>
                             <button
                               onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.vetHome')}`); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.booking.options.vetHome')}
                             </button>
                             <button
                               onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.grooming')}`); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.booking.options.grooming')}
                             </button>
                             <button
                               onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.daycare')}`); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.booking.options.daycare')}
                             </button>
                             <button
                               onClick={() => { handleSend(`I'd like to book ${t('quickStart.categories.booking.options.petCare')}`); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.booking.options.petCare')}
                             </button>
@@ -300,25 +300,25 @@ export default function Chatbot() {
                           <>
                             <button
                               onClick={() => { handleSend(t('quickStart.categories.pricing.questions.veterinary')); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.pricing.options.veterinary')}
                             </button>
                             <button
                               onClick={() => { handleSend(t('quickStart.categories.pricing.questions.grooming')); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.pricing.options.grooming')}
                             </button>
                             <button
                               onClick={() => { handleSend(t('quickStart.categories.pricing.questions.daycare')); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.pricing.options.daycare')}
                             </button>
                             <button
                               onClick={() => { handleSend(t('quickStart.categories.pricing.questions.petCare')); setSelectedCategory(null); }}
-                              className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
+                              className="text-left px-4 py-3 bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl hover:bg-white hover:border-[#22c0b6] hover:shadow-md transition-all duration-200 text-sm font-medium"
                             >
                               {t('quickStart.categories.pricing.options.petCare')}
                             </button>
@@ -336,18 +336,25 @@ export default function Chatbot() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
-                  className={`flex ${
+                  className={`flex gap-2 ${
                     message.role === 'user' ? 'justify-end' : 'justify-start'
                   }`}
                 >
+                  {message.role === 'assistant' && (
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#22c0b6] to-[#1d6896] flex items-center justify-center flex-shrink-0 shadow-sm">
+                      <MessageCircle className="w-4 h-4 text-white" />
+                    </div>
+                  )}
                   <div
-                    className={`max-w-[80%] p-3 rounded-2xl ${
+                    className={`max-w-[75%] p-4 rounded-2xl ${
                       message.role === 'user'
-                        ? 'bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white'
-                        : 'bg-white text-gray-800 shadow-sm'
+                        ? 'bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white shadow-md'
+                        : 'bg-gradient-to-br from-white via-white to-teal-50/20 text-gray-800 shadow-lg border border-gray-100/50'
                     }`}
                   >
-                    <p className="text-sm whitespace-pre-wrap break-words">
+                    <p className={`whitespace-pre-wrap break-words leading-relaxed ${
+                      message.role === 'user' ? 'text-sm' : 'text-sm'
+                    }`}>
                       {renderMessageWithLinks(message.content)}
                     </p>
                   </div>
@@ -356,13 +363,32 @@ export default function Chatbot() {
 
               {isLoading && (
                 <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  className="flex justify-start"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex gap-2 justify-start"
                 >
-                  <div className="bg-white text-gray-800 shadow-sm p-3 rounded-2xl flex items-center gap-2">
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                    <span className="text-sm">{t('typing')}</span>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#22c0b6] to-[#1d6896] flex items-center justify-center flex-shrink-0 shadow-sm">
+                    <MessageCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="bg-gradient-to-br from-white via-white to-teal-50/20 text-gray-800 shadow-lg border border-gray-100/50 p-4 rounded-2xl flex items-center gap-3">
+                    <div className="flex gap-1">
+                      <motion.div
+                        className="w-2 h-2 bg-[#22c0b6] rounded-full"
+                        animate={{ y: [0, -8, 0] }}
+                        transition={{ duration: 0.6, repeat: Infinity, delay: 0 }}
+                      />
+                      <motion.div
+                        className="w-2 h-2 bg-[#22c0b6] rounded-full"
+                        animate={{ y: [0, -8, 0] }}
+                        transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}
+                      />
+                      <motion.div
+                        className="w-2 h-2 bg-[#22c0b6] rounded-full"
+                        animate={{ y: [0, -8, 0] }}
+                        transition={{ duration: 0.6, repeat: Infinity, delay: 0.4 }}
+                      />
+                    </div>
+                    <span className="text-sm text-gray-600">{t('typing')}</span>
                   </div>
                 </motion.div>
               )}
@@ -371,7 +397,7 @@ export default function Chatbot() {
             </div>
 
             {/* Input */}
-            <div className="p-4 bg-white border-t border-gray-200">
+            <div className="p-4 bg-gradient-to-t from-white to-gray-50/50 border-t border-gray-200/50 backdrop-blur-sm">
               <div className="flex gap-2">
                 <input
                   type="text"
@@ -380,18 +406,18 @@ export default function Chatbot() {
                   onKeyPress={handleKeyPress}
                   placeholder={t('placeholder')}
                   disabled={isLoading}
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#22c0b6] focus:border-transparent disabled:opacity-50"
+                  className="flex-1 px-5 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#22c0b6] focus:border-transparent disabled:opacity-50 shadow-sm hover:shadow-md transition-shadow duration-200"
                 />
                 <button
                   onClick={() => handleSend()}
                   disabled={!input.trim() || isLoading}
-                  className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white p-2 rounded-full hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white p-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   aria-label={t('send')}
                 >
                   <Send className="w-5 h-5" />
                 </button>
               </div>
-              <p className="text-xs text-gray-500 mt-2 text-center">
+              <p className="text-xs text-gray-600 mt-3 text-center leading-relaxed">
                 {t('disclaimer')}
               </p>
             </div>
