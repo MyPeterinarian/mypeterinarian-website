@@ -275,25 +275,25 @@ export default function Chatbot() {
                         {selectedCategory === 'pricing' && (
                           <>
                             <button
-                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.veterinary')); setSelectedCategory(null); }}
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.responses.veterinary')); setSelectedCategory(null); }}
                               className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
                             >
                               {t('quickStart.categories.pricing.options.veterinary')}
                             </button>
                             <button
-                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.grooming')); setSelectedCategory(null); }}
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.responses.grooming')); setSelectedCategory(null); }}
                               className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
                             >
                               {t('quickStart.categories.pricing.options.grooming')}
                             </button>
                             <button
-                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.daycare')); setSelectedCategory(null); }}
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.responses.daycare')); setSelectedCategory(null); }}
                               className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
                             >
                               {t('quickStart.categories.pricing.options.daycare')}
                             </button>
                             <button
-                              onClick={() => { handleSend(t('quickStart.categories.pricing.options.petCare')); setSelectedCategory(null); }}
+                              onClick={() => { handleSend(t('quickStart.categories.pricing.responses.petCare')); setSelectedCategory(null); }}
                               className="text-left px-4 py-2 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-[#22c0b6] transition-colors text-sm"
                             >
                               {t('quickStart.categories.pricing.options.petCare')}

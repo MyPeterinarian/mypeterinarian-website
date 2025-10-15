@@ -1493,10 +1493,16 @@
         "pricing": {
           "label": "💰 Servicepriser",
           "options": {
-            "veterinary": "Dyrlægepriser (/dk/services/veterinary)",
-            "grooming": "Plejepriser (/dk/services/grooming)",
-            "daycare": "Dagplejepriser (/dk/services/pet-sitting)",
-            "petCare": "Kæledyrsplejepris (/dk/services/pet-sitting)"
+            "veterinary": "Dyrlæge tjeneste",
+            "grooming": "Plejetjeneste",
+            "daycare": "Hundedagpleje tjeneste",
+            "petCare": "Kæledyrsplejetjenester"
+          },
+          "responses": {
+            "veterinary": "For dyrlæge tjeneste priser, besøg venligst: www.mypeterinarian.com/dk/services/veterinary",
+            "grooming": "For plejetjeneste priser, besøg venligst: www.mypeterinarian.com/dk/services/grooming",
+            "daycare": "For hundedagpleje priser, besøg venligst: www.mypeterinarian.com/dk/services/pet-sitting",
+            "petCare": "For kæledyrsplejetjenester priser, besøg venligst: www.mypeterinarian.com/dk/services/pet-sitting"
           }
         },
         "hours": {

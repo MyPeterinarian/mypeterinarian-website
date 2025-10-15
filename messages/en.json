@@ -1482,10 +1482,16 @@
         "pricing": {
           "label": "💰 Service pricing",
           "options": {
-            "veterinary": "Veterinary pricing (/en/services/veterinary)",
-            "grooming": "Grooming pricing (/en/services/grooming)",
-            "daycare": "Daycare pricing (/en/services/pet-sitting)",
-            "petCare": "Pet care pricing (/en/services/pet-sitting)"
+            "veterinary": "Veterinary service",
+            "grooming": "Grooming Service",
+            "daycare": "Dog Daycare service",
+            "petCare": "Pet Care Services"
+          },
+          "responses": {
+            "veterinary": "For veterinary service pricing, please visit: www.mypeterinarian.com/en/services/veterinary",
+            "grooming": "For grooming service pricing, please visit: www.mypeterinarian.com/en/services/grooming",
+            "daycare": "For dog daycare pricing, please visit: www.mypeterinarian.com/en/services/pet-sitting",
+            "petCare": "For pet care services pricing, please visit: www.mypeterinarian.com/en/services/pet-sitting"
           }
         },
         "hours": {
