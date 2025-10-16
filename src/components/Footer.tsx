@@ -106,7 +106,7 @@ export default function Footer() {
               <li><Link href="/services/pet-sitting" className="hover:text-[#8FA998] transition-colors">Pet Sitting</Link></li>
               <li><Link href="/services/dog-daycare" className="hover:text-[#8FA998] transition-colors">Dog Daycare</Link></li>
               <li><Link href="/subscriptions" className="hover:text-[#8FA998] transition-colors">Subscriptions</Link></li>
-              <li><Link href="/booking" className="hover:text-[#8FA998] transition-colors">Book Appointment</Link></li>
+              <li><a href="https://www.mypeterinarian.com/booking/" className="hover:text-[#8FA998] transition-colors">Book Appointment</a></li>
             </ul>
           </div>
 

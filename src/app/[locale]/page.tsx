@@ -79,9 +79,9 @@ export default function HomePage() {
               {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/booking" className="bg-[#6B8FA9] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm">
+              <a href="https://www.mypeterinarian.com/booking/" className="bg-[#6B8FA9] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm">
                 {t('hero.bookAppointment')}
-              </Link>
+              </a>
               <a href="#services" className="bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium border-2 border-[#6B8FA9] hover:bg-[#F5F7F9] transition-colors">
                 {t('hero.viewServices')}
               </a>
@@ -589,9 +589,9 @@ export default function HomePage() {
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 font-light">
             {t('cta.description')}
           </p>
-          <Link href="/booking" className="bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors shadow-sm inline-block">
+          <a href="https://www.mypeterinarian.com/booking/" className="bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors shadow-sm inline-block">
             {t('cta.button')}
-          </Link>
+          </a>
         </div>
       </section>
     </div>

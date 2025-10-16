@@ -55,12 +55,12 @@ export default function CampaignBanner() {
               {t('cta')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              href={`/${locale}/booking`}
+            <a
+              href="https://www.mypeterinarian.com/booking/"
               className="bg-white text-[#6B8FA9] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium text-base sm:text-lg hover:bg-gray-50 transition-colors border-2 border-[#6B8FA9] text-center"
             >
               {t('bookNow')}
-            </Link>
+            </a>
           </div>
         </div>
 

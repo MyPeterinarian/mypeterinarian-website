@@ -106,9 +106,9 @@ export default function Header() {
               <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.subscriptions')}
               </Link>
-              <Link href={`/${locale}/booking`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
+              <a href="https://www.mypeterinarian.com/booking/" className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.booking')}
-              </Link>
+              </a>
               <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.blog')}
               </Link>
@@ -119,12 +119,12 @@ export default function Header() {
 
             {/* CTA Button & Language Switcher - Desktop */}
             <div className="hidden lg:flex items-center gap-3 xl:gap-4">
-              <Link
-                href={`/${locale}/booking`}
+              <a
+                href="https://www.mypeterinarian.com/booking/"
                 className="bg-[#6B8FA9] text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm text-sm xl:text-base"
               >
                 {t('bookNow')}
-              </Link>
+              </a>
               <LanguageSwitcher />
             </div>
 
@@ -162,20 +162,20 @@ export default function Header() {
                 <Link href={`/${locale}/team`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.team')}</Link>
 
                 <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
-                <Link href={`/${locale}/booking`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</Link>
+                <a href="https://www.mypeterinarian.com/booking/" className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</a>
                 <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.blog')}</Link>
                 <a href={`/${locale}#contact`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.contact')}</a>
 
                 {/* Language Switcher - Mobile */}
                 <LanguageSwitcher isMobile />
 
-                <Link
-                  href={`/${locale}/booking`}
+                <a
+                  href="https://www.mypeterinarian.com/booking/"
                   className="bg-[#6B8FA9] text-white px-6 py-2.5 rounded-lg font-medium text-center mt-2 hover:bg-[#5A7A94] transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {t('bookNow')}
-                </Link>
+                </a>
               </div>
             </div>
           )}

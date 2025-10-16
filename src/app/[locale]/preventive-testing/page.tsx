@@ -68,12 +68,12 @@ export default function PreventiveTestingPage() {
             {t('hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={`/${locale}/booking`}
+            <a
+              href="https://www.mypeterinarian.com/booking/"
               className="inline-block bg-[#6B8FA9] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#5A7A94] transition-colors shadow-sm"
             >
               {t('hero.bookNow')}
-            </Link>
+            </a>
             <a
               href="#tests"
               className="inline-block bg-white border-2 border-[#6B8FA9] text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#F5F7F9] transition-colors"
@@ -157,12 +157,12 @@ export default function PreventiveTestingPage() {
                         {t('pricing.savings')} {test.discount}% {t('pricing.off')}
                       </div>
                     </div>
-                    <Link
-                      href={`/${locale}/booking`}
+                    <a
+                      href="https://www.mypeterinarian.com/booking/"
                       className="block w-full bg-[#6B8FA9] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#5A7A94] transition-all"
                     >
                       {t('tests.bookTest')}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               );
@@ -253,13 +253,13 @@ export default function PreventiveTestingPage() {
               <p className="text-xl text-gray-600 mb-8 font-light">
                 {t('forPets.description')}
               </p>
-              <Link
-                href={`/${locale}/booking`}
+              <a
+                href="https://www.mypeterinarian.com/booking/"
                 className="inline-flex items-center gap-2 bg-[#6B8FA9] text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-[#5A7A94] transition-all shadow-sm"
               >
                 {t('forPets.bookNow')}
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 text-center">
@@ -290,12 +290,12 @@ export default function PreventiveTestingPage() {
             {t('cta.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={`/${locale}/booking`}
+            <a
+              href="https://www.mypeterinarian.com/booking/"
               className="inline-block bg-white text-[#6B8FA9] px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-50 transition-colors shadow-sm"
             >
               {t('cta.button')}
-            </Link>
+            </a>
             <Link
               href={`/${locale}/contact`}
               className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-white/20 transition-colors"

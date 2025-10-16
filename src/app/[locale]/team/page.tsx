@@ -181,12 +181,12 @@ export default function TeamPage() {
           <p className="text-lg sm:text-xl mb-8 opacity-90">
             {t('cta.description')}
           </p>
-          <Link
-            href={`/${locale}/booking`}
+          <a
+            href="https://www.mypeterinarian.com/booking/"
             className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             {t('cta.button')}
-          </Link>
+          </a>
         </div>
       </section>
     </div>
