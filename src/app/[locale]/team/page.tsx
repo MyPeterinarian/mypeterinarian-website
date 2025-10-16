@@ -15,84 +15,84 @@ export default function TeamPage() {
       name: 'Tarek',
       role: t('members.tarek.role'),
       bio: t('members.tarek.bio'),
-      location: 'Copenhagen & Tokyo',
+      location: t('members.tarek.location'),
       image: '/team/Tarek.jpg'
     },
     {
       name: 'Dr. Irene',
       role: t('members.irene.role'),
       bio: t('members.irene.bio'),
-      location: 'Copenhagen',
+      location: t('members.irene.location'),
       image: '/team/Irene.jpg'
     },
     {
       name: 'Dora',
       role: t('members.dora.role'),
       bio: t('members.dora.bio'),
-      location: 'Copenhagen',
+      location: t('members.dora.location'),
       image: '/team/Dora.jpeg'
     },
     {
       name: 'Martin',
       role: t('members.martin.role'),
       bio: t('members.martin.bio'),
-      location: 'Copenhagen',
+      location: t('members.martin.location'),
       image: '/team/Martin.jpg'
     },
     {
       name: 'Misty',
       role: t('members.misty.role'),
       bio: t('members.misty.bio'),
-      location: 'Copenhagen',
+      location: t('members.misty.location'),
       image: '/team/Misty.JPG'
     },
     {
       name: 'Veronika',
       role: t('members.veronika.role'),
       bio: t('members.veronika.bio'),
-      location: 'Copenhagen',
+      location: t('members.veronika.location'),
       image: '/team/Veronika.jpeg'
     },
     {
       name: 'Ionela',
       role: t('members.ionela.role'),
       bio: t('members.ionela.bio'),
-      location: 'Copenhagen',
+      location: t('members.ionela.location'),
       image: '/team/Ionela.jpeg'
     },
     {
       name: 'Quan',
       role: t('members.quan.role'),
       bio: t('members.quan.bio'),
-      location: 'Copenhagen',
+      location: t('members.quan.location'),
       image: '/team/Quan.JPG'
     },
     {
       name: 'Nikhil',
       role: t('members.nikhil.role'),
       bio: t('members.nikhil.bio'),
-      location: 'Copenhagen',
+      location: t('members.nikhil.location'),
       image: '/team/Nikhil.jpg'
     },
     {
       name: 'Sarah',
       role: t('members.sarah.role'),
       bio: t('members.sarah.bio'),
-      location: 'Copenhagen',
+      location: t('members.sarah.location'),
       image: '/team/Sarah.jpeg'
     },
     {
       name: 'Mariia',
       role: t('members.mariia.role'),
       bio: t('members.mariia.bio'),
-      location: 'Copenhagen',
+      location: t('members.mariia.location'),
       image: '/team/Mariia.jpeg'
     },
     {
       name: 'Marina',
       role: t('members.marina.role'),
       bio: t('members.marina.bio'),
-      location: 'Tokyo',
+      location: t('members.marina.location'),
       image: '/team/Marina.jpg'
     }
   ];
@@ -115,7 +115,7 @@ export default function TeamPage() {
             </p>
             <div className="flex items-center justify-center text-gray-500 gap-2">
               <MapPin className="w-5 h-5" />
-              <span className="text-lg">Copenhagen</span>
+              <span className="text-lg">{t('subtitle').includes('København') ? 'København' : 'Copenhagen'}</span>
             </div>
           </motion.div>
         </div>
