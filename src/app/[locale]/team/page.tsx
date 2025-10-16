@@ -36,7 +36,8 @@ export default function TeamPage() {
       name: 'Martin',
       role: t('members.martin.role'),
       bio: t('members.martin.bio'),
-      location: 'Copenhagen'
+      location: 'Copenhagen',
+      image: '/team/Martin.jpg'
     },
     {
       name: 'Misty',
