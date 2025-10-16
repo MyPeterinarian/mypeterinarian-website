@@ -115,7 +115,7 @@ export default function VeterinaryPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col"
                 >
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="bg-blue-50 p-3 rounded-full mb-3">
@@ -131,7 +131,7 @@ export default function VeterinaryPage() {
                       {t(`features.items.${service.key}.description`)}
                     </p>
                     {service.items && (
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 flex-grow">
                         {service.items.map((item, idx) => (
                           <li key={idx} className="text-xs text-gray-700 flex items-start">
                             <span className="text-[#22c0b6] mr-2">●</span>
