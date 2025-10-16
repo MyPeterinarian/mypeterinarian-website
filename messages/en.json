@@ -419,7 +419,7 @@
         "items": {
           "full": {
             "title": "Full Grooming Service",
-            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1500-1700 DKK (based on size).",
+            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dogs: 750-1950 DKK, Cats: 1500-1700 DKK (based on size).",
             "bullets": [
               "XS (< 3kg): 750-900 DKK",
               "S (3-10kg): 750-1000 DKK",
@@ -432,7 +432,7 @@
           },
           "bath": {
             "title": "Bath & Blow Dry",
-            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing. Dogs: 700-1100 DKK, Cats: 750-800 DKK.",
+            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing. Dogs: 700-1100 DKK, Cats: 750-800 DKK (based on size).",
             "bullets": [
               "XS & S Dogs: 700 DKK",
               "M Dogs: 750 DKK",

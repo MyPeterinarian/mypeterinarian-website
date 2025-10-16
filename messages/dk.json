@@ -691,7 +691,7 @@
         "items": {
           "full": {
             "title": "Fuld Plejetjeneste",
-            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hundepleje: 750-1950 Kr, Kattepleje: 1500-1700 Kr (baseret på størrelse).",
+            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hunde: 750-1950 Kr, Katte: 1500-1700 Kr (baseret på størrelse).",
             "bullets": [
               "XS (< 3kg): 750-900 Kr",
               "S (3-10kg): 750-1000 Kr",
@@ -704,7 +704,7 @@
           },
           "bath": {
             "title": "Bad & Føntørring",
-            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning. Hunde: 700-1100 Kr, Katte: 750-800 Kr.",
+            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning. Hunde: 700-1100 Kr, Katte: 750-800 Kr (baseret på størrelse).",
             "bullets": [
               "XS & S Hunde: 700 Kr",
               "M Hunde: 750 Kr",
