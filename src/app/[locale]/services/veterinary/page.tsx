@@ -146,9 +146,9 @@ export default function VeterinaryPage() {
                           {t(`features.items.${service.key}.cta`)}
                         </Link>
                       ) : (
-                        <button className="w-full text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
+                        <a href="mailto:hej@mypeterinarian.com" className="block w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
                           {t(`features.items.${service.key}.cta`)}
-                        </button>
+                        </a>
                       )}
                     </div>
                   </>

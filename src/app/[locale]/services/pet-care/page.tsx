@@ -115,9 +115,9 @@ export default function PetSittingPage() {
                     </ul>
                   )}
                   <div className="mt-6 pt-4 border-t border-gray-100">
-                    <button className="w-full text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
+                    <a href="mailto:hej@mypeterinarian.com" className="block w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
                       {t(`features.items.${service.key}.cta`)}
-                    </button>
+                    </a>
                   </div>
                 </motion.div>
               )
