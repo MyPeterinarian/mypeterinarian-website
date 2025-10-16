@@ -26,7 +26,7 @@ export default function TeamPage() {
       image: '/team/Irene.jpg'
     },
     {
-      name: 'Dora (Dori)',
+      name: 'Dora',
       role: t('members.dora.role'),
       bio: t('members.dora.bio'),
       location: 'Copenhagen',
@@ -87,6 +87,13 @@ export default function TeamPage() {
       bio: t('members.mariia.bio'),
       location: 'Copenhagen',
       image: '/team/Mariia.jpeg'
+    },
+    {
+      name: 'Marina',
+      role: t('members.marina.role'),
+      bio: t('members.marina.bio'),
+      location: 'Tokyo',
+      image: '/team/Marina.jpg'
     }
   ];
 
