@@ -16,84 +16,84 @@ export default function TeamPage() {
       role: t('members.tarek.role'),
       bio: t('members.tarek.bio'),
       location: t('members.tarek.location'),
-      image: '/team/Tarek.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Tarek.jpg'
     },
     {
       name: 'Dr. Irene',
       role: t('members.irene.role'),
       bio: t('members.irene.bio'),
       location: t('members.irene.location'),
-      image: '/team/Irene.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Irene.jpg'
     },
     {
       name: 'Dora',
       role: t('members.dora.role'),
       bio: t('members.dora.bio'),
       location: t('members.dora.location'),
-      image: '/team/Dora.jpeg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Dora.jpeg'
     },
     {
       name: 'Martin',
       role: t('members.martin.role'),
       bio: t('members.martin.bio'),
       location: t('members.martin.location'),
-      image: '/team/Martin.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Martin.jpg'
     },
     {
       name: 'Misty',
       role: t('members.misty.role'),
       bio: t('members.misty.bio'),
       location: t('members.misty.location'),
-      image: '/team/Misty.JPG'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Misty.JPG'
     },
     {
       name: 'Veronika',
       role: t('members.veronika.role'),
       bio: t('members.veronika.bio'),
       location: t('members.veronika.location'),
-      image: '/team/Veronika.jpeg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Veronika.jpeg'
     },
     {
       name: 'Ionela',
       role: t('members.ionela.role'),
       bio: t('members.ionela.bio'),
       location: t('members.ionela.location'),
-      image: '/team/Ionela.jpeg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Ionela.jpeg'
     },
     {
       name: 'Quan',
       role: t('members.quan.role'),
       bio: t('members.quan.bio'),
       location: t('members.quan.location'),
-      image: '/team/Quan.JPG'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Quan.JPG'
     },
     {
       name: 'Nikhil',
       role: t('members.nikhil.role'),
       bio: t('members.nikhil.bio'),
       location: t('members.nikhil.location'),
-      image: '/team/Nikhil.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Nikhil.jpg'
     },
     {
       name: 'Sarah',
       role: t('members.sarah.role'),
       bio: t('members.sarah.bio'),
       location: t('members.sarah.location'),
-      image: '/team/Sarah.jpeg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Sarah.jpeg'
     },
     {
       name: 'Mariia',
       role: t('members.mariia.role'),
       bio: t('members.mariia.bio'),
       location: t('members.mariia.location'),
-      image: '/team/Mariia.jpeg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Mariia.jpeg'
     },
     {
       name: 'Marina',
       role: t('members.marina.role'),
       bio: t('members.marina.bio'),
       location: t('members.marina.location'),
-      image: '/team/Marina.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Marina.jpg'
     }
   ];
 
