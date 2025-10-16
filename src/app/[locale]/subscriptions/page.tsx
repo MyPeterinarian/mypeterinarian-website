@@ -197,7 +197,7 @@ export default function SubscriptionsPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                  className={`relative bg-white rounded-lg shadow-sm p-6 sm:p-8 border hover:shadow-md transition-shadow ${
+                  className={`relative bg-white rounded-lg shadow-sm p-6 sm:p-8 border hover:shadow-md transition-shadow flex flex-col ${
                     tier.popular
                       ? 'border-[#8FA998]'
                       : 'border-gray-200'
@@ -231,7 +231,7 @@ export default function SubscriptionsPage() {
                     </p>
                   </div>
 
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-3 mb-8 flex-grow">
                     {tier.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <Check className="w-5 h-5 text-[#8FA998] flex-shrink-0 mt-0.5" />
@@ -244,11 +244,7 @@ export default function SubscriptionsPage() {
                     href="https://booking.mypeterinarian.com/subscription"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`block w-full text-center py-3 px-6 rounded-lg font-medium transition-all ${
-                      tier.popular
-                        ? 'bg-[#8FA998] text-white hover:bg-[#7A8F87]'
-                        : 'bg-[#6B8FA9] text-white hover:bg-[#5A7A94]'
-                    }`}
+                    className="block w-full text-center py-3 px-6 rounded-lg font-medium transition-all bg-[#6B8FA9] text-white hover:bg-[#5A7A94]"
                   >
                     {t('tiers.cta')}
                     <ArrowRight className="inline-block ml-2 w-4 h-4" />
