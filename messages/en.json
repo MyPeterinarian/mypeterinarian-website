@@ -225,28 +225,28 @@
     "veterinary": {
       "title": "Professional Veterinary Services in Copenhagen",
       "subtitle": "Compassionate and comprehensive veterinary services",
-      "description": "All our team members have veterinary education and provide professional, compassionate care for your pets. From routine checkups to specialized treatments, we're here for your pet's health and wellbeing.",
+      "description": "Our founder and all our veterinary team have veterinary education and provide professional, compassionate care for your pets. From routine checkups to specialized treatments, we're here for your pet's health and wellbeing.",
       "hero": {
-        "cta": "Book Veterinary Appointment"
+        "cta": "Inquire now"
       },
       "features": {
         "title": "Our Veterinary Services",
         "items": {
           "exams": {
             "title": "Veterinary Consultations",
-            "description": "Flexible consultation options: Home visits (1815 DKK), At Clinic (930 DKK), Walk-in (1110 DKK), or Virtual (567 DKK).",
-            "cta": "Book Consultation",
+            "description": "Flexible consultation options available: Home visits, clinic appointments, walk-in services, or virtual consultations.",
+            "cta": "Inquire now",
             "prices": {
               "0": "Consultation-Home Visits: 1815 DKK",
-              "1": "Consultation-At Clinic (PQ): 930 DKK",
+              "1": "Consultation-At Clinic: 930 DKK",
               "2": "Consultation-Walk-In: 1110 DKK",
-              "3": "Follow Up (At Clinic/PQ): 641 DKK",
+              "3": "Follow Up (At Clinic): 641 DKK",
               "4": "Virtual Consultation: 567 DKK"
             }
           },
           "vaccinations": {
             "title": "Preventive Care & Packages",
-            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1059 DKK), anti-parasite treatment, and comprehensive health checks.",
+            "description": "Comprehensive preventive care packages for kittens, puppies, and whole litters with vaccinations and health checks.",
             "cta": "Learn More",
             "prices": {
               "0": "Kitten/Puppy Package (At Clinic): 2494 DKK",
@@ -259,19 +259,19 @@
           },
           "surgery": {
             "title": "Chemical Castration (Dogs/Cats)",
-            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2268 DKK at Clinic) and 6-month options.",
-            "cta": "Request Service",
+            "description": "Chemical castration services available with flexible duration options at home or at clinic.",
+            "cta": "Inquire now",
             "prices": {
-              "0": "1-Yr (Homes): 3402 DKK",
-              "1": "1-Yr (At Clinic): 2268 DKK",
+              "0": "1-Year (Homes): 3402 DKK",
+              "1": "1-Year (At Clinic): 2268 DKK",
               "2": "6 Months (Home): 2495 DKK",
               "3": "6 Months (At Clinic): 1361 DKK"
             }
           },
           "dental": {
             "title": "Pet Travel Services",
-            "description": "EU Pet Passport appointments, rabies vaccine packages, and complete travel documentation assistance.",
-            "cta": "Get Travel Ready",
+            "description": "EU Pet Passport appointments with rabies vaccines and complete travel documentation assistance.",
+            "cta": "Inquire now",
             "prices": {
               "0": "EU Pet Passport Appointment (Home): 1364 DKK",
               "1": "EU Pet Passport Appointment (At Clinic): 824 DKK",
@@ -281,8 +281,8 @@
           },
           "diagnostics": {
             "title": "Prescriptions & Chronic Care",
-            "description": "Diet consultations, medication prescriptions, and ongoing management of chronic diseases.",
-            "cta": "Manage Prescriptions",
+            "description": "Professional diet consultations, medication prescriptions, and ongoing management of chronic conditions.",
+            "cta": "Inquire now",
             "prices": {
               "0": "Chronic Diseases Package (At Clinic): Contact for Price",
               "1": "Diet Consultations (At Clinic): 2752 DKK",
@@ -293,20 +293,24 @@
           },
           "emergency": {
             "title": "End-of-Life Care",
-            "description": "Compassionate euthanasia and cremation. \"Veterinary services\" available at home in \"Copenhagen\" or at Clinic.",
-            "cta": "Discuss Options",
+            "description": "Compassionate end-of-life care with at-home or in-clinic euthanasia and cremation services.",
+            "cta": "Inquire now",
             "prices": {
-              "0": "Euthanasia (Small-Medium Dog, Home): 5958 DKK",
-              "1": "Euthanasia (Medium-Large Dog, Home): 5103 DKK",
-              "2": "Euthanasia (Small-Medium Dog, At Clinic): 3834 DKK",
-              "3": "Euthanasia (Medium-Large Dog, At Clinic): 2979 DKK",
-              "4": "Private Cremation (Pet Pick-Up): 4212 DKK",
-              "5": "Private Cremation (Clinic Pick-Up): 3425 DKK"
+              "0": "Euthanasia Cat (Clinic): 1,225 DKK",
+              "1": "Euthanasia Dog (Under 9 kg) (Clinic): 1,225 DKK",
+              "2": "Euthanasia Dog (9-25 kg) (Clinic): 1,400 DKK",
+              "3": "Euthanasia Dog (25-50 kg) (Clinic): 1,900 DKK",
+              "4": "Euthanasia Dog (Above 50kg) (Clinic): 2,100 DKK",
+              "5": "Euthanasia Cat (Home): 2,284 DKK",
+              "6": "Euthanasia Dog (Under 9 kg) (Home): 2,009 DKK",
+              "7": "Euthanasia Dog (9-25 kg) (Home): 2,284 DKK",
+              "8": "Euthanasia Dog (25-50 kg) (Home): 2,764 DKK",
+              "9": "Euthanasia Dog (Above 50kg) (Home): 2,984 DKK"
             }
           },
           "other": {
             "title": "Other Services",
-            "description": "Additional \"veterinary services\" from your \"vet in Copenhagen\": including nail clipping and pet registration.",
+            "description": "Additional veterinary services including nail clipping, grooming, and pet registration assistance.",
             "cta": "Inquire Now",
             "prices": {
               "0": "Nail Clipping (Separate Visit): 374 DKK",
@@ -317,7 +321,7 @@
           },
           "subscription": {
             "title": "Subscription Plans",
-            "description": "Comprehensive health plans with regular check-ups, vaccinations, and discounts.",
+            "description": "Comprehensive health plans with regular check-ups, vaccinations, and exclusive member discounts.",
             "cta": "View Plans",
             "prices": {
               "0": "Essential: From 299 DKK/month",
@@ -328,8 +332,8 @@
           },
           "petPassport": {
             "title": "Pet Passport Services",
-            "description": "EU pet passport for travel. Complete service including consultation, health checks, vaccinations, and microchip.",
-            "cta": "Get Pet Passport",
+            "description": "Complete EU pet passport service including consultation, health checks, vaccinations, and microchipping.",
+            "cta": "Inquire now",
             "prices": {
               "0": "EU Pet Passport (Home): 1364 DKK",
               "1": "EU Pet Passport (Clinic): 824 DKK",
@@ -349,7 +353,7 @@
       "pricing": {
         "title": "Transparent Pricing",
         "description": "All our services have clear pricing. From basic consultations to specialized care, we provide upfront costs with no hidden fees. Contact us for specific quotes.",
-        "cta": "Get a Quote"
+        "cta": "Inquire now"
       },
       "faq": {
         "title": "FAQs",
@@ -372,7 +376,7 @@
       "subtitle": "Expert grooming for all breeds and sizes",
       "description": "Our experienced groomers provide professional grooming services for dogs and cats of all sizes. From full grooming to specialized treatments, we ensure your pet looks and feels their best. We serve Indre By, Vesterbro, Østerbro, Nørrebro, and Amager.",
       "hero": {
-        "cta": "Book Grooming Appointment"
+        "cta": "Inquire now"
       },
       "sizeCategories": {
         "title": "Size Categories",
@@ -424,7 +428,7 @@
               "XL (> 31kg): 1450-1950 DKK",
               "Cat Grooming: 1500-1700 DKK"
             ],
-            "button": "Book Full Grooming"
+            "button": "Inquire now"
           },
           "bath": {
             "title": "Bath & Blow Dry",
@@ -436,7 +440,7 @@
               "XL Dogs: 1100 DKK",
               "Cats: 750-800 DKK"
             ],
-            "button": "Book Bath Service"
+            "button": "Inquire now"
           },
           "haircut": {
             "title": "Breed-Specific Styling",
@@ -448,7 +452,7 @@
               "Specialized techniques",
               "All breeds & sizes"
             ],
-            "button": "Schedule Haircut"
+            "button": "Inquire now"
           },
           "nails": {
             "title": "Nail Clipping & Paw Care",
@@ -460,7 +464,7 @@
               "Teeth Brushing: 200 DKK",
               "Professional handling"
             ],
-            "button": "Book Nail Care"
+            "button": "Inquire now"
           },
           "spa": {
             "title": "Specialized Treatments",
@@ -473,7 +477,7 @@
               "Extra Time (15 min): 150 DKK",
               "Knot Removal: 775 DKK"
             ],
-            "button": "Book Spa Treatment"
+            "button": "Inquire now"
           },
           "teeth": {
             "title": "Teeth Brushing & Extra Care",
@@ -485,7 +489,7 @@
               "Touch-up: 350 DKK (Dogs)",
               "Touch-up for Cats: 400 DKK"
             ],
-            "button": "Book Dental Care"
+            "button": "Inquire now"
           }
         }
       },
@@ -495,7 +499,7 @@
         "items": {
           "perfectCoat": {
             "title": "Perfect Coat Package",
-            "price": "1499 DKK",
+            "price": "6480 DKK",
             "description": "For dogs with matted or tangled coats",
             "features": [
               "De-matting treatment",
@@ -507,7 +511,7 @@
           },
           "tangleFree": {
             "title": "Tangle-Free Life Package",
-            "price": "1299 DKK",
+            "price": "9180 DKK",
             "description": "Ongoing coat maintenance program",
             "features": [
               "De-shedding treatment",
@@ -519,7 +523,7 @@
           },
           "essentialCare": {
             "title": "Essential Pet Care Package",
-            "price": "899 DKK",
+            "price": "4275 DKK",
             "description": "Complete wellness grooming",
             "features": [
               "Bath and blow dry",
@@ -531,7 +535,7 @@
           },
           "catBrushing": {
             "title": "Cat Brushing Package",
-            "price": "1300 DKK",
+            "price": "4590 DKK",
             "description": "Gentle grooming for felines",
             "features": [
               "Professional brushing",
@@ -794,7 +798,7 @@
       "subtitle": "Professional pet care with a lot of love and attention",
       "description": "Do you need help with pet care? Our veterinary-educated team provides excellent professional services with personalized attention for your pet. From daily visits to overnight stays, we ensure your pet receives the best care while you're away.",
       "hero": {
-        "cta": "Book Pet Care Service"
+        "cta": "Inquire now"
       },
       "features": {
         "title": "Pet Care Services",
@@ -802,7 +806,7 @@
           "daily": {
             "title": "Pet Sitting",
             "description": "Once daily: 471 DKK. Twice daily: 737 DKK. 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
-            "cta": "Book Visits",
+            "cta": "Inquire now",
             "prices": {
               "0": "Once Daily Visit: 471 DKK",
               "1": "Twice Daily Visits: 737 DKK",
@@ -815,7 +819,7 @@
           "overnight": {
             "title": "Overnight Stay",
             "description": "1361 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
-            "cta": "Book Overnight",
+            "cta": "Inquire now",
             "prices": {
               "0": "Overnight Stay: 1361 DKK per night",
               "1": "Additional Pet: 80 DKK",
@@ -827,11 +831,11 @@
           },
           "boarding": {
             "title": "Pet Boarding",
-            "description": "At Employee's Home: 1000 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
-            "cta": "Book Boarding",
+            "description": "At Employee's Home: 1000 DKK/night. At Facility: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
+            "cta": "Inquire now",
             "prices": {
               "0": "At Employee's Home: 1000 DKK/night",
-              "1": "At PQ: 1150 DKK/night",
+              "1": "At Facility: 1150 DKK/night",
               "2": "Additional Pet: 200 DKK",
               "3": "Cage/Terrarium/Aquarium: 378 DKK/night",
               "4": "Two long walks daily",
@@ -841,7 +845,7 @@
           "walking": {
             "title": "Dog Walking",
             "description": "30 min: 340 DKK. 1 hour: 465 DKK. 90 min: 645 DKK. Twice daily options available. Includes pick-up, drop-off, playtime, and poop pickup.",
-            "cta": "Schedule Walks",
+            "cta": "Inquire now",
             "prices": {
               "0": "30 Minutes Once Daily: 340 DKK",
               "1": "1 Hour Once Daily: 465 DKK",
@@ -854,7 +858,7 @@
           "medication": {
             "title": "Medication Administration",
             "description": "Professional medication administration (45 DKK/day) for pets with special health needs. Our veterinary-educated team ensures proper care.",
-            "cta": "Medication Care",
+            "cta": "Inquire now",
             "prices": {
               "0": "Medication Administration: 45 DKK/day",
               "1": "Veterinary-educated team",
@@ -867,7 +871,7 @@
           "updates": {
             "title": "Pet Daycare",
             "description": "Hourly rates from 1-8 hours. 8 Hours: 680 DKK. At Home/Hotel: 4 Hours: 556 DKK, 6 Hours: 790 DKK. Socialization, playtime, and supervised throughout the day.",
-            "cta": "Book Daycare",
+            "cta": "Inquire now",
             "prices": {
               "0": "1-4 Hours: 160-400 DKK",
               "1": "5-8 Hours: 475-680 DKK",
@@ -889,7 +893,7 @@
       "pricing": {
         "title": "Transparent Pricing",
         "description": "Clear pricing for all services. Introductory meeting: 405 DKK, Pet pick-up/drop-off: 270 DKK. Multi-day packages available with discounts. Contact us for a personalized care plan.",
-        "cta": "Request Quote"
+        "cta": "Inquire now"
       },
       "faq": {
         "title": "Pet Care FAQs",
@@ -912,7 +916,7 @@
       "subtitle": "Professional dog daycare with supervised play and socialization",
       "description": "Our dog daycare provides a safe, fun environment for your dog while you're at work or away. Located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care, half day, and flexible packages available.",
       "hero": {
-        "cta": "Book Daycare Now"
+        "cta": "Inquire now"
       },
       "features": {
         "title": "Why Choose Our Dog Daycare",
@@ -1014,7 +1018,7 @@
       "subtitle": "Official EU pet passport for dogs, cats, and ferrets",
       "description": "The EU Pet Passport is required for non-commercial travel within the EU and certain other countries. It serves as official identification and proof of rabies vaccination. Only authorized veterinarians can issue passports. Complete service: 1474 DKK.",
       "hero": {
-        "cta": "Book Passport Appointment"
+        "cta": "Inquire now"
       },
       "features": {
         "title": "What's Included",
@@ -1296,9 +1300,9 @@
     },
     "trust": {
       "title": "Why Trust Us?",
-      "certified": "e-mærket certified",
       "coolOff": "14-day cooling-off period",
-      "noCommitment": "No long-term commitment"
+      "noCommitment": "No long-term commitment",
+      "licensed": "Licensed Veterinarians"
     },
     "cta": {
       "title": "Ready to Get Started?",

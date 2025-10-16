@@ -5,7 +5,7 @@
     "title": "🎉 Forebyggende Test Kampagne - Spar op til 50%",
     "description": "Beskyt dit kæledyrs sundhed med omfattende test. Tidlig opdagelse redder liv!",
     "cta": "Se Kampagne Tests",
-    "bookNow": "Book Nu",
+    "bookNow": "Forespørg nu",
     "feature1": "Spar op til 50% på essentielle test",
     "feature2": "Ekspert dyrlægepleje",
     "feature3": "Hurtig & nem booking"
@@ -33,7 +33,7 @@
       "petSitting": "Kæledyrspassning",
       "petPassport": "Kæledyrspas"
     },
-    "bookNow": "Book Nu",
+    "bookNow": "Forespørg nu",
     "language": "Sprog"
   },
   "home": {
@@ -225,17 +225,17 @@
     "veterinary": {
       "title": "Professionelle Dyrlæge Tjenester i København",
       "subtitle": "Medfølende og omfattende dyrlæge tjenester",
-      "description": "Alle vores teammedlemmer har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
+      "description": "Vores grundlægger og hele vores dyrlægeteam har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
       "hero": {
-        "cta": "Book Dyrlægetid"
+        "cta": "Forespørg nu"
       },
       "features": {
         "title": "Vores Dyrlæge Tjenester",
         "items": {
           "exams": {
             "title": "Dyrlæge Konsultationer",
-            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1815 Kr), Hos Pet Quarters (930 Kr), Walk-in (1110 Kr), eller Virtuel (567 Kr).",
-            "cta": "Book Konsultation",
+            "description": "Fleksible konsultationsmuligheder tilgængelige: Hjemmebesøg, klinikaftaler, walk-in service eller virtuelle konsultationer.",
+            "cta": "Forespørg nu",
             "prices": {
               "0": "Konsultation-Hjemmebesøg: 1815 Kr",
               "1": "Konsultation-Hos Pet Quarters: 930 Kr",
@@ -246,7 +246,7 @@
           },
           "vaccinations": {
             "title": "Forebyggende Pleje & Pakker",
-            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1059 Kr), anti-parasit behandling og omfattende sundhedstjek.",
+            "description": "Omfattende forebyggende plejepakker til killinger, hvalpe og hele kuld med vaccinationer og sundhedstjek.",
             "cta": "Læs Mere",
             "prices": {
               "0": "Killing/Hvalpe Pakke (Hos Pet Quarters): 2494 Kr",
@@ -259,18 +259,18 @@
           },
           "surgery": {
             "title": "Kemisk Kastration (Hunde/Katte)",
-            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2268 Kr hos Pet Quarters) og 6 måneders muligheder.",
+            "description": "Kemisk kastration tilgængelig med fleksible varighedsindstillinger hjemme eller på klinikken.",
             "cta": "Anmod om Service",
             "prices": {
-              "0": "1-År (Hjem): 3402 Kr",
-              "1": "1-År (Hos Pet Quarters): 2268 Kr",
+              "0": "1-år (Hjem): 3402 Kr",
+              "1": "1-år (Hos Pet Quarters): 2268 Kr",
               "2": "6 Måneder (Hjem): 2495 Kr",
               "3": "6 Måneder (Hos Pet Quarters): 1361 Kr"
             }
           },
           "dental": {
             "title": "Kæledyrs Rejsetjenester",
-            "description": "EU Kæledyrspas aftaler, rabiesvaccine pakker og komplet rejsedokumentation assistance.",
+            "description": "EU Kæledyrspas aftaler med rabiesvacciner og komplet rejsedokumentation assistance.",
             "cta": "Bliv Rejseklar",
             "prices": {
               "0": "EU Kæledyrspas Aftale (Hjem): 1364 Kr",
@@ -281,7 +281,7 @@
           },
           "diagnostics": {
             "title": "Recepter & Kronisk Pleje",
-            "description": "Diætkonsultationer, medicin recepter og løbende håndtering af kroniske sygdomme.",
+            "description": "Professionelle diætkonsultationer, medicin recepter og løbende håndtering af kroniske tilstande.",
             "cta": "Administrer Recepter",
             "prices": {
               "0": "Kroniske Sygdomme Pakke (Hos Pet Quarters): Kontakt for Pris",
@@ -293,7 +293,7 @@
           },
           "emergency": {
             "title": "Livets Afslutningspleje",
-            "description": "Medfølende aflivning og kremering. \"Dyrlæge tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
+            "description": "Medfølende aflivningspleje med hjemme eller på-klinik aflivning og kremeringservice.",
             "cta": "Diskuter Muligheder",
             "prices": {
               "0": "Aflivning (Lille-Mellem Hund, Hjem): 5958 Kr",
@@ -306,7 +306,7 @@
           },
           "other": {
             "title": "Andre Tjenester",
-            "description": "Yderligere \"dyrlæge tjenester\" fra din \"dyrlæge i København\": inklusive negleklipning og kæledyrsregistrering.",
+            "description": "Yderligere dyrlægetjenester inklusiv negleklipning, plejning og kæledyrsregistrering assistance.",
             "cta": "Forespørg Nu",
             "prices": {
               "0": "Negleklipning (Separat Besøg): 374 Kr",
@@ -317,7 +317,7 @@
           },
           "subscription": {
             "title": "Abonnementsplaner",
-            "description": "Omfattende sundhedsplaner med regelmæssige check-ups, vaccinationer og rabatter.",
+            "description": "Omfattende sundhedsplaner med regelmæssige check-ups, vaccinationer og eksklusive medlemsrabatter.",
             "cta": "Se Planer",
             "prices": {
               "0": "Essentiel: Fra 299 DKK/måned",
@@ -328,7 +328,7 @@
           },
           "petPassport": {
             "title": "Kæledyrspas Tjenester",
-            "description": "EU kæledyrspas til rejse. Komplet service inklusiv konsultation, sundhedstjek, vaccinationer og mikrochip.",
+            "description": "Komplet EU kæledyrspas service inklusiv konsultation, sundhedstjek, vaccinationer og microchipping.",
             "cta": "Få Kæledyrspas",
             "prices": {
               "0": "EU Kæledyrspas (Hjem): 1364 Kr",
@@ -417,7 +417,7 @@
         "items": {
           "perfectCoat": {
             "title": "Perfect Coat Pakke",
-            "price": "1600 Kr",
+            "price": "6480 Kr",
             "description": "Komplet plejetransformation for langpelsede racer",
             "features": [
               "Fuld plejesesssion inkl. bad & føntørring",
@@ -429,7 +429,7 @@
           },
           "tangleFree": {
             "title": "Tangle-Free Life Pakke",
-            "price": "1200 Kr",
+            "price": "9180 Kr",
             "description": "Forhindre og fjerne filtrer for glattere pels",
             "features": [
               "Filtringsbehandling med specialværktøjer",
@@ -441,7 +441,7 @@
           },
           "essentialCare": {
             "title": "Essential Pet Care Pakke",
-            "price": "950 Kr",
+            "price": "4275 Kr",
             "description": "Grundlæggende pleje-essentials for dit kæledyr",
             "features": [
               "Premium bad og føntørring",
@@ -453,7 +453,7 @@
           },
           "catBrushing": {
             "title": "Kattebørstning Pakke",
-            "price": "1300 Kr",
+            "price": "4590 Kr",
             "description": "Specialiseret børstning for kattepels",
             "features": [
               "Blid kattebørstning og udtryk",
@@ -828,11 +828,11 @@
           },
           "boarding": {
             "title": "Kæledyrspension",
-            "description": "Hos Medarbejders Hjem: 1000 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
+            "description": "Hos Medarbejders Hjem: 1000 Kr/nat. På Facilitet: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
             "cta": "Book Pension",
             "prices": {
               "0": "Hos Medarbejders Hjem: 1000 Kr/nat",
-              "1": "Hos PQ: 1150 Kr/nat",
+              "1": "På Facilitet: 1150 Kr/nat",
               "2": "Yderligere Kæledyr: 200 Kr",
               "3": "Bur/Terrarium/Akvarium: 378 Kr/nat",
               "4": "To lange gåture dagligt",
@@ -1096,7 +1096,7 @@
       }
     },
     "common": {
-      "bookNow": "Book Nu",
+      "bookNow": "Forespørg nu",
       "learnMore": "Læs Mere",
       "backToServices": "← Tilbage til Alle Tjenester",
       "relatedServices": "Relaterede Tjenester",
@@ -1307,9 +1307,9 @@
     },
     "trust": {
       "title": "Hvorfor Stole På Os?",
-      "certified": "e-mærket certificeret",
       "coolOff": "14 dages fortrydelsesret",
-      "noCommitment": "Ingen langsigtet forpligtelse"
+      "noCommitment": "Ingen langsigtet forpligtelse",
+      "licensed": "Autoriserede Dyrlæger"
     },
     "cta": {
       "title": "Klar Til At Komme I Gang?",
@@ -1451,7 +1451,7 @@
     "cta": {
       "title": "Gå Ikke Glip Af Denne Kampagne!",
       "description": "Begrænset tilbud. Book din forebyggende test i dag og spar op til 50% på essentielle sundhedsscreeninger.",
-      "button": "Book Nu",
+      "button": "Forespørg nu",
       "contact": "Kontakt Os"
     }
   },

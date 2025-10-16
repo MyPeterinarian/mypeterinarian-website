@@ -1,4 +1,15 @@
 {
+  "campaignBanner": {
+    "badge": "Limited Time",
+    "limited": "Limited Time Only",
+    "title": "🎉 Preventive Testing Campaign - Save up to 50%",
+    "description": "Protect your pet's health with comprehensive testing. Early detection saves lives!",
+    "cta": "View Campaign Tests",
+    "bookNow": "Book Now",
+    "feature1": "Save up to 50% on essential tests",
+    "feature2": "Expert veterinary care",
+    "feature3": "Quick & easy booking"
+  },
   "header": {
     "phone": "+45 61 66 76 11",
     "email": "hej@mypeterinarian.com",
@@ -7,12 +18,14 @@
     "call": "Call",
     "navigation": {
       "home": "Home",
+      "campaign": "🎉 Testing Campaign",
       "services": "Services",
       "subscriptions": "Subscriptions",
       "booking": "Booking",
       "about": "About Us",
       "blog": "Blog",
-      "contact": "Contact"
+      "contact": "Contact",
+      "team": "Team"
     },
     "servicesDropdown": {
       "veterinary": "Veterinary Services",
@@ -27,7 +40,7 @@
     "hero": {
       "title": "Copenhagen's Premier",
       "subtitle": "Pet Care & Veterinary Services",
-      "description": "Professional veterinary care, grooming, and pet services in the heart of Copenhagen. Your pet's health and happiness is our priority.",
+      "description": "Professional veterinary care, dog and cat grooming, pet boarding, and comprehensive pet services in the heart of Copenhagen. Your pet's health and happiness is our priority.",
       "bookAppointment": "Book Appointment",
       "viewServices": "View Services"
     },
@@ -36,7 +49,7 @@
       "description": "Comprehensive pet care services tailored to your furry family members",
       "learnMore": "Learn More",
       "veterinary": {
-        "title": "Veterinary Care",
+        "title": "Veterinary Care in Copenhagen",
         "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
         "items": {
           "exams": "Health Examinations",
@@ -45,7 +58,7 @@
         }
       },
       "grooming": {
-        "title": "Grooming",
+        "title": "Pet Grooming Copenhagen",
         "description": "Professional grooming services to keep your pet looking and feeling their best.",
         "items": {
           "full": "Full Grooming",
@@ -54,7 +67,7 @@
         }
       },
       "petSitting": {
-        "title": "Pet Care Services",
+        "title": "Pet Care & Boarding Copenhagen",
         "description": "Trusted pet care services while you're away. Your pet stays happy and cared for.",
         "items": {
           "daily": "Daily Visits",
@@ -104,6 +117,21 @@
         }
       }
     },
+    "team": {
+      "title": "Meet Our Expert Team",
+      "description": "Dedicated professionals passionate about your pet's health and happiness",
+      "cta": "Meet the Team"
+    },
+    "subscriptions": {
+      "title": "Subscription Plans",
+      "description": "Save on regular care with our flexible subscription plans designed for your pet's ongoing health needs",
+      "benefits": {
+        "regular": "Regular Care",
+        "savings": "Cost Savings",
+        "priority": "Priority Booking"
+      },
+      "cta": "View Plans"
+    },
     "faq": {
       "title": "Frequently Asked Questions",
       "description": "Get answers to common questions about our services",
@@ -113,7 +141,7 @@
           "answer": "You can book online through our booking system, call us, or send us an email. We typically respond within a few hours."
         },
         "q2": {
-          "question": "Do you handle emergencies?",
+          "question": "Can you help with pet relocation to/from Denmark?",
           "answer": "We provide comprehensive relocation and travel services for your pet. Contact us to discuss your pet's travel needs."
         },
         "q3": {
@@ -131,7 +159,7 @@
     },
     "services": {
       "veterinary": {
-        "title": "Veterinary Services",
+        "title": "Veterinary Services Copenhagen",
         "description": "Expert medical care from experienced veterinarians. From routine checkups to advanced treatments.",
         "highlights": {
           "0": "Comprehensive health examinations",
@@ -140,7 +168,7 @@
         }
       },
       "grooming": {
-        "title": "Grooming Services",
+        "title": "Pet Grooming Services Copenhagen",
         "description": "Professional grooming to keep your pet looking and feeling their best.",
         "highlights": {
           "0": "Full grooming packages for all sizes",
@@ -149,7 +177,7 @@
         }
       },
       "petSitting": {
-        "title": "Pet Sitting & Care",
+        "title": "Pet Sitting & Boarding Copenhagen",
         "description": "Trusted pet sitting and care services while you're away. Your pet stays happy and cared for.",
         "highlights": {
           "0": "Daily visits and overnight stays",
@@ -158,7 +186,7 @@
         }
       },
       "petPassport": {
-        "title": "Pet Passport & Travel",
+        "title": "Pet Passport Copenhagen",
         "description": "Complete pet passport services for EU and international travel requirements.",
         "highlights": {
           "0": "EU pet passport preparation",
@@ -197,7 +225,7 @@
     "veterinary": {
       "title": "Professional Veterinary Services in Copenhagen",
       "subtitle": "Compassionate and comprehensive veterinary services",
-      "description": "All our team members have veterinary education and provide professional, compassionate care for your pets. From routine checkups to specialized treatments, we're here for your pet's health and wellbeing.",
+      "description": "Our founder and all our veterinary team have veterinary education and provide professional, compassionate care for your pets. From routine checkups to specialized treatments, we're here for your pet's health and wellbeing.",
       "hero": {
         "cta": "Book Veterinary Appointment"
       },
@@ -206,38 +234,38 @@
         "items": {
           "exams": {
             "title": "Veterinary Consultations",
-            "description": "Flexible consultation options: Home visits (1814 DKK), At Clinic (938 DKK), Walk-in (1109 DKK), or Virtual (567 DKK).",
+            "description": "Flexible consultation options: Home visits (1815 DKK), At Clinic (930 DKK), Walk-in (1110 DKK), or Virtual (567 DKK).",
             "cta": "Book Consultation",
             "prices": {
-              "0": "Consultation-Home Visits: 1814 DKK",
-              "1": "Consultation-At Clinic: 938 DKK",
-              "2": "Consultation-Walk-In: 1109 DKK",
-              "3": "Follow Up (At Clinic): 661 DKK",
-              "4": "Virtual Consultation (2.5 hrs): 567 DKK"
+              "0": "Consultation-Home Visits: 1815 DKK",
+              "1": "Consultation-At Clinic (PQ): 930 DKK",
+              "2": "Consultation-Walk-In: 1110 DKK",
+              "3": "Follow Up (At Clinic/PQ): 641 DKK",
+              "4": "Virtual Consultation: 567 DKK"
             }
           },
           "vaccinations": {
             "title": "Preventive Care & Packages",
-            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1858 DKK), anti-parasite treatment, and comprehensive health checks.",
+            "description": "Kitten/Puppy packages (2494 DKK), whole litter vaccination (1059 DKK), anti-parasite treatment, and comprehensive health checks.",
             "cta": "Learn More",
             "prices": {
               "0": "Kitten/Puppy Package (At Clinic): 2494 DKK",
-              "1": "Whole Litter Vaccination & Microchipping-Per (At Clinic): 1858 DKK",
-              "2": "Anti-parasite Treatment-Grant-Abov Appn: 540 DKK",
-              "3": "Anti-parasite Treatment-Clinic: 193.5 DKK",
-              "4": "Pet Health Check: 800 DKK",
+              "1": "Whole Litter Vaccination & Microchipping-Per (At Clinic): 1059 DKK",
+              "2": "Anti-parasite Treatment (Stand Alone): 540 DKK",
+              "3": "Anti-parasite Treatment (At Clinic): 193.5 DKK",
+              "4": "Pet Health Check (Home): 1684 DKK",
               "5": "Pet Health Check (Rabies): 1065 DKK"
             }
           },
           "surgery": {
             "title": "Chemical Castration (Dogs/Cats)",
-            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2266 DKK at Clinic) and 6-month options.",
+            "description": "Chemical castration services available - 1 year (3402 DKK home visit, 2268 DKK at Clinic) and 6-month options.",
             "cta": "Request Service",
             "prices": {
               "0": "1-Yr (Homes): 3402 DKK",
-              "1": "1-Yr (At Clinic): 2266 DKK",
-              "2": "6 Months (Home): 2579 DKK",
-              "3": "6 Months (At Clinic): 1301 DKK"
+              "1": "1-Yr (At Clinic): 2268 DKK",
+              "2": "6 Months (Home): 2495 DKK",
+              "3": "6 Months (At Clinic): 1361 DKK"
             }
           },
           "dental": {
@@ -245,10 +273,10 @@
             "description": "EU Pet Passport appointments, rabies vaccine packages, and complete travel documentation assistance.",
             "cta": "Get Travel Ready",
             "prices": {
-              "0": "EU Pet Passport Appointment (Home): 1584 DKK",
-              "1": "EU Pet Passport Appointment (At Clinic): 608 DKK",
-              "2": "Rabies Vaccine + EU Passport Package (Home): 2214 DKK",
-              "3": "Travel Package: Bx (AUS/US/UAE) (Home): Contact for Price"
+              "0": "EU Pet Passport Appointment (Home): 1364 DKK",
+              "1": "EU Pet Passport Appointment (At Clinic): 824 DKK",
+              "2": "Rabies Vaccine + EU Passport Package (Home): 2268 DKK",
+              "3": "Rabies Vaccine + EU Passport Package (At Clinic): 1475 DKK"
             }
           },
           "diagnostics": {
@@ -268,12 +296,12 @@
             "description": "Compassionate euthanasia and cremation. \"Veterinary services\" available at home in \"Copenhagen\" or at Clinic.",
             "cta": "Discuss Options",
             "prices": {
-              "0": "Euthanasia and Cremation (Home): 5103 DKK",
-              "1": "Euthanasia and Cremation (At Clinic): 2979 DKK",
-              "2": "No Euthanasia Private Cremation (Pet Pick-Up): 4422 DKK",
-              "3": "No Euthanasia Private Cremation (via Pick-Up): 3422 DKK",
-              "4": "Private Cremation (Per Pick Up): 4212 DKK",
-              "5": "Private Cremation (via Per Pick Up): 3425 DKK"
+              "0": "Euthanasia (Small-Medium Dog, Home): 5958 DKK",
+              "1": "Euthanasia (Medium-Large Dog, Home): 5103 DKK",
+              "2": "Euthanasia (Small-Medium Dog, At Clinic): 3834 DKK",
+              "3": "Euthanasia (Medium-Large Dog, At Clinic): 2979 DKK",
+              "4": "Private Cremation (Pet Pick-Up): 4212 DKK",
+              "5": "Private Cremation (Clinic Pick-Up): 3425 DKK"
             }
           },
           "other": {
@@ -283,13 +311,31 @@
             "prices": {
               "0": "Nail Clipping (Separate Visit): 374 DKK",
               "1": "Pet Registration: 545 DKK",
-              "2": "Welcome To Denmark Package (Home): Contact for Price",
-              "3": "Welcome To Denmark Package (At Clinic): Contact for Price"
+              "2": "Pet Microchipping: 526 DKK",
+              "3": "Welcome To Denmark Package: Contact for Price"
             }
           },
           "subscription": {
             "title": "Subscription Plans",
-            "description": "Coming soon!"
+            "description": "Comprehensive health plans with regular check-ups, vaccinations, and discounts.",
+            "cta": "View Plans",
+            "prices": {
+              "0": "Essential: From 299 DKK/month",
+              "1": "Advanced: From 440 DKK/month",
+              "2": "Professional: From 648 DKK/month",
+              "3": "Pricing varies by pet weight"
+            }
+          },
+          "petPassport": {
+            "title": "Pet Passport Services",
+            "description": "EU pet passport for travel. Complete service including consultation, health checks, vaccinations, and microchip.",
+            "cta": "Get Pet Passport",
+            "prices": {
+              "0": "EU Pet Passport (Home): 1364 DKK",
+              "1": "EU Pet Passport (Clinic): 824 DKK",
+              "2": "Rabies Vaccine + Passport (Home): 2268 DKK",
+              "3": "Rabies Vaccine + Passport (Clinic): 1475 DKK"
+            }
           }
         }
       },
@@ -369,26 +415,26 @@
         "items": {
           "full": {
             "title": "Full Grooming Service",
-            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1000-1500 DKK (based on size).",
+            "description": "Complete grooming including bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check. Dog grooming: 750-1950 DKK, Cat grooming: 1500-1700 DKK (based on size).",
             "bullets": [
-              "XS (< 3kg): 750-850 DKK",
-              "S (3-10kg): 850-1150 DKK",
-              "M (11-17kg): 950-1350 DKK",
-              "L (18-31kg): 1350-1650 DKK",
-              "XL (> 31kg): 1650-1950 DKK",
-              "Cat Grooming: 1000-1500 DKK"
+              "XS (< 3kg): 750-900 DKK",
+              "S (3-10kg): 750-1000 DKK",
+              "M (11-17kg): 950-1250 DKK",
+              "L (18-31kg): 1250-1750 DKK",
+              "XL (> 31kg): 1450-1950 DKK",
+              "Cat Grooming: 1500-1700 DKK"
             ],
             "button": "Book Full Grooming"
           },
           "bath": {
             "title": "Bath & Blow Dry",
-            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing for a clean, fresh coat.",
+            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing. Dogs: 700-1100 DKK, Cats: 750-800 DKK.",
             "bullets": [
-              "Premium bathing service",
-              "Professional shampoos",
-              "Thorough blow drying",
-              "Basic brushing",
-              "Size-based pricing"
+              "XS & S Dogs: 700 DKK",
+              "M Dogs: 750 DKK",
+              "L Dogs: 900 DKK",
+              "XL Dogs: 1100 DKK",
+              "Cats: 750-800 DKK"
             ],
             "button": "Book Bath Service"
           },
@@ -406,38 +452,38 @@
           },
           "nails": {
             "title": "Nail Clipping & Paw Care",
-            "description": "Safe nail trimming and paw care services. Available as standalone service or included in full grooming packages.",
+            "description": "Safe nail trimming and paw care services. Nail clipping: 150 DKK, Pawdicure: 200 DKK. Available standalone or included in full grooming.",
             "bullets": [
-              "Safe nail trimming",
-              "Paw care services",
-              "Standalone service available",
-              "Included in full grooming",
+              "Nail Clipping: 150 DKK",
+              "Pawdicure: 200 DKK",
+              "Ear Cleaning: 150 DKK",
+              "Teeth Brushing: 200 DKK",
               "Professional handling"
             ],
             "button": "Book Nail Care"
           },
           "spa": {
             "title": "Specialized Treatments",
-            "description": "De-matting, de-shedding treatments, medicated baths, and tick removal. Special packages available including Perfect Coat and Tangle-Free Life packages.",
+            "description": "De-shedding treatments, full spa packages, and specialized care. Dogs: 750-2400 DKK, Cats: 1000-1200 DKK based on size and coat type.",
             "bullets": [
-              "De-matting treatments",
-              "De-shedding packages",
-              "Medicated baths",
-              "Tick removal",
-              "Perfect Coat Package",
-              "Tangle-Free Life Package"
+              "De-shedding: 750-2400 DKK",
+              "Full Spa: 850-1450 DKK",
+              "Deep Conditioning: 150 DKK",
+              "Anal Glands: 150 DKK",
+              "Extra Time (15 min): 150 DKK",
+              "Knot Removal: 775 DKK"
             ],
             "button": "Book Spa Treatment"
           },
           "teeth": {
             "title": "Teeth Brushing & Extra Care",
-            "description": "Gentle teeth brushing and additional services including puppy grooming introduction and cat brushing packages.",
+            "description": "Gentle teeth brushing (200 DKK) and additional services including grooming training (550 DKK) and cat brushing (1300 DKK).",
             "bullets": [
-              "Gentle teeth brushing",
-              "Puppy grooming introduction",
-              "Cat brushing packages",
-              "Essential Pet Care Package",
-              "Additional care services"
+              "Teeth Brushing: 200 DKK",
+              "Grooming Training: 550 DKK",
+              "Cat Brushing Package: 1300 DKK",
+              "Touch-up: 350 DKK (Dogs)",
+              "Touch-up for Cats: 400 DKK"
             ],
             "button": "Book Dental Care"
           }
@@ -485,7 +531,7 @@
           },
           "catBrushing": {
             "title": "Cat Brushing Package",
-            "price": "749 DKK",
+            "price": "1300 DKK",
             "description": "Gentle grooming for felines",
             "features": [
               "Professional brushing",
@@ -504,39 +550,162 @@
           "fullGrooming": {
             "title": "Full Grooming Service",
             "items": [
-              { "name": "XS (< 3kg)", "price": "750-850 DKK" },
-              { "name": "S (3-10kg)", "price": "850-1150 DKK" },
-              { "name": "M (11-17kg)", "price": "950-1350 DKK" },
-              { "name": "L (18-31kg)", "price": "1350-1650 DKK" },
-              { "name": "XL (> 31kg)", "price": "1650-1950 DKK" },
-              { "name": "Cat Grooming", "price": "1000-1500 DKK" }
+              {
+                "name": "XS (< 3kg)",
+                "price": "750-900 DKK"
+              },
+              {
+                "name": "S (3-10kg)",
+                "price": "750-1000 DKK"
+              },
+              {
+                "name": "M (11-17kg)",
+                "price": "950-1250 DKK"
+              },
+              {
+                "name": "L (18-31kg)",
+                "price": "1250-1750 DKK"
+              },
+              {
+                "name": "XL (> 31kg)",
+                "price": "1450-1950 DKK"
+              },
+              {
+                "name": "Cat Grooming",
+                "price": "1500-1700 DKK"
+              }
             ]
           },
           "handStripping": {
             "title": "Hand-Stripping (Terriers)",
             "items": [
-              { "name": "Small Terrier", "price": "1200 DKK" },
-              { "name": "Medium Terrier", "price": "1400 DKK" },
-              { "name": "Large Terrier", "price": "1600 DKK" }
+              {
+                "name": "Small (Under 6kg)",
+                "price": "1100 DKK"
+              },
+              {
+                "name": "Medium (6-12kg)",
+                "price": "1300 DKK"
+              }
+            ]
+          },
+          "handScissoring": {
+            "title": "Hand-Scissoring (Long Hair)",
+            "items": [
+              {
+                "name": "XS",
+                "price": "950 DKK"
+              },
+              {
+                "name": "S",
+                "price": "1250 DKK"
+              },
+              {
+                "name": "M",
+                "price": "1600 DKK"
+              },
+              {
+                "name": "L",
+                "price": "2000 DKK"
+              },
+              {
+                "name": "XL",
+                "price": "2500 DKK"
+              }
             ]
           },
           "bathing": {
             "title": "Bath & Blow Dry Only",
             "items": [
-              { "name": "XS-S", "price": "400-550 DKK" },
-              { "name": "M", "price": "550-750 DKK" },
-              { "name": "L-XL", "price": "750-1050 DKK" }
+              {
+                "name": "XS & S Dogs",
+                "price": "700 DKK"
+              },
+              {
+                "name": "M Dogs",
+                "price": "750 DKK"
+              },
+              {
+                "name": "L Dogs",
+                "price": "900 DKK"
+              },
+              {
+                "name": "XL Dogs",
+                "price": "1100 DKK"
+              },
+              {
+                "name": "Cats (Short Hair)",
+                "price": "750 DKK"
+              },
+              {
+                "name": "Cats (Long Hair)",
+                "price": "800 DKK"
+              }
             ]
           },
           "addOns": {
             "title": "Add-On Services",
             "items": [
-              { "name": "Teeth Brushing", "price": "100 DKK" },
-              { "name": "De-shedding Treatment", "price": "200-400 DKK" },
-              { "name": "De-matting (per 30 min)", "price": "250 DKK" },
-              { "name": "Medicated Bath", "price": "150 DKK" },
-              { "name": "Nail Clipping Only", "price": "150 DKK" },
-              { "name": "Tick Removal", "price": "100 DKK" }
+              {
+                "name": "Nail Clipping",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Teeth Brushing",
+                "price": "200 DKK"
+              },
+              {
+                "name": "Ear Cleaning",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Ear Picking",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Anal Glands Expression",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Deep Conditioning Mask",
+                "price": "150 DKK"
+              },
+              {
+                "name": "De-shedding Add-on",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Extra Time (15 min)",
+                "price": "150 DKK"
+              },
+              {
+                "name": "Pawdicure",
+                "price": "200 DKK"
+              },
+              {
+                "name": "Touch-up (Dogs)",
+                "price": "350 DKK"
+              },
+              {
+                "name": "Touch-up (Cats)",
+                "price": "400 DKK"
+              },
+              {
+                "name": "Grooming Consultation",
+                "price": "120 DKK"
+              },
+              {
+                "name": "Grooming Training",
+                "price": "550 DKK"
+              },
+              {
+                "name": "Knot Removal Only",
+                "price": "775 DKK"
+              },
+              {
+                "name": "Additional Hour",
+                "price": "400 DKK"
+              }
             ]
           }
         }
@@ -632,12 +801,12 @@
         "items": {
           "daily": {
             "title": "Pet Sitting",
-            "description": "Once daily: 471 DKK. Twice daily: 737 DKK (save 165 DKK on 2nd visit). 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
+            "description": "Once daily: 471 DKK. Twice daily: 737 DKK. 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
             "cta": "Book Visits",
             "prices": {
               "0": "Once Daily Visit: 471 DKK",
-              "1": "Twice Daily Visits: 737 DKK (save 165 DKK on 2nd visit)",
-              "2": "60-minute visits",
+              "1": "Twice Daily Visits: 737 DKK",
+              "2": "Additional Pet: 80 DKK",
               "3": "Feeding & water change",
               "4": "Litter cleaning",
               "5": "Short walk & playtime"
@@ -645,41 +814,41 @@
           },
           "overnight": {
             "title": "Overnight Stay",
-            "description": "1360 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
+            "description": "1361 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
             "cta": "Book Overnight",
             "prices": {
-              "0": "Overnight Stay: 1360 DKK per night",
-              "1": "Complete evening & morning routines",
-              "2": "Feeding and fresh water",
-              "3": "Walks and exercise",
-              "4": "Companionship in pet's own home",
-              "5": "Peace of mind while you're away"
+              "0": "Overnight Stay: 1361 DKK per night",
+              "1": "Additional Pet: 80 DKK",
+              "2": "Complete evening & morning routines",
+              "3": "Feeding and fresh water",
+              "4": "Walks and exercise",
+              "5": "Companionship in pet's own home"
             }
           },
           "boarding": {
-            "title": "Dog Boarding at Our Sitters' Home",
-            "description": "At Veterinarian Home: 749 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
+            "title": "Pet Boarding",
+            "description": "At Employee's Home: 1000 DKK/night. At PQ: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
             "cta": "Book Boarding",
             "prices": {
-              "0": "At Veterinarian Home: 749 DKK/night",
+              "0": "At Employee's Home: 1000 DKK/night",
               "1": "At PQ: 1150 DKK/night",
-              "2": "Personalized TLC",
-              "3": "Two long walks daily",
-              "4": "Company of one or two other dogs",
+              "2": "Additional Pet: 200 DKK",
+              "3": "Cage/Terrarium/Aquarium: 378 DKK/night",
+              "4": "Two long walks daily",
               "5": "Safe and comfortable environment"
             }
           },
           "walking": {
             "title": "Dog Walking",
-            "description": "Once Daily (60 min): 465 DKK. Twice Daily: 740 DKK (save 190 DKK on 2nd visit). Includes pick-up, drop-off, playtime, and poop pickup.",
+            "description": "30 min: 340 DKK. 1 hour: 465 DKK. 90 min: 645 DKK. Twice daily options available. Includes pick-up, drop-off, playtime, and poop pickup.",
             "cta": "Schedule Walks",
             "prices": {
-              "0": "Once Daily (60 min): 465 DKK",
-              "1": "Twice Daily: 740 DKK (save 190 DKK on 2nd visit)",
-              "2": "Pick-up and drop-off included",
-              "3": "Playtime and exercise",
-              "4": "Poop pickup",
-              "5": "GPS tracking updates"
+              "0": "30 Minutes Once Daily: 340 DKK",
+              "1": "1 Hour Once Daily: 465 DKK",
+              "2": "1 Hour Twice Daily: 740 DKK",
+              "3": "90 Minutes Once Daily: 645 DKK",
+              "4": "Additional Dog: 115 DKK",
+              "5": "Pick-up and drop-off included"
             }
           },
           "medication": {
@@ -696,16 +865,16 @@
             }
           },
           "updates": {
-            "title": "Dog Daycare",
-            "description": "Full Day (8 Hours): 680 DKK at Peder Hvitfeldts Stræde 16, 1173 København. Socialization, playtime, and supervised throughout the day.",
+            "title": "Pet Daycare",
+            "description": "Hourly rates from 1-8 hours. 8 Hours: 680 DKK. At Home/Hotel: 4 Hours: 556 DKK, 6 Hours: 790 DKK. Socialization, playtime, and supervised throughout the day.",
             "cta": "Book Daycare",
             "prices": {
-              "0": "Full Day (8 Hours): 680 DKK",
-              "1": "Location: Peder Hvitfeldts Stræde 16",
-              "2": "Socialization with other dogs",
-              "3": "Supervised playtime",
-              "4": "Rest periods included",
-              "5": "Photo and video updates"
+              "0": "1-4 Hours: 160-400 DKK",
+              "1": "5-8 Hours: 475-680 DKK",
+              "2": "At Home/Hotel (4 Hours): 556 DKK",
+              "3": "At Home/Hotel (6 Hours): 790 DKK",
+              "4": "Additional Last Minute Hour: 136 DKK",
+              "5": "Supervised playtime & socialization"
             }
           }
         }
@@ -719,7 +888,7 @@
       },
       "pricing": {
         "title": "Transparent Pricing",
-        "description": "Clear pricing for all services. Introductory meeting: 408 DKK, Virtual meeting: 249 DKK, Pet pick-up/drop-off: 272 DKK. Contact us for a personalized care plan.",
+        "description": "Clear pricing for all services. Introductory meeting: 405 DKK, Pet pick-up/drop-off: 270 DKK. Multi-day packages available with discounts. Contact us for a personalized care plan.",
         "cta": "Request Quote"
       },
       "faq": {
@@ -735,6 +904,108 @@
         "q3": {
           "question": "Where is the dog daycare located?",
           "answer": "Our dog daycare is located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care (8 hours) is 680 DKK and includes supervised play, socialization, and rest periods."
+        }
+      }
+    },
+    "dogDaycare": {
+      "title": "Dog Daycare Services Copenhagen",
+      "subtitle": "Professional dog daycare with supervised play and socialization",
+      "description": "Our dog daycare provides a safe, fun environment for your dog while you're at work or away. Located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care, half day, and flexible packages available.",
+      "hero": {
+        "cta": "Book Daycare Now"
+      },
+      "features": {
+        "title": "Why Choose Our Dog Daycare",
+        "items": {
+          "supervised": {
+            "title": "Supervised Play",
+            "description": "Constant supervision by our trained staff ensures safe and enjoyable playtime for all dogs."
+          },
+          "socialization": {
+            "title": "Dog Socialization",
+            "description": "Your dog interacts with other friendly dogs, improving social skills and behavior."
+          },
+          "flexible": {
+            "title": "Flexible Scheduling",
+            "description": "Full day, half day, trial days, and monthly packages to fit your schedule and budget."
+          },
+          "location": {
+            "title": "Central Location",
+            "description": "Conveniently located in central Copenhagen at Peder Hvitfeldts Stræde 16, 1173 København."
+          },
+          "updates": {
+            "title": "Regular Updates",
+            "description": "Receive photos and updates throughout the day so you know your dog is happy and safe."
+          },
+          "professional": {
+            "title": "Professional Care",
+            "description": "Our veterinary-educated team provides expert care and can handle any situation."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "description": "Flexible pricing options to suit your needs and budget",
+        "save": "Save",
+        "items": {
+          "fullDay": {
+            "name": "Full Day Care",
+            "description": "8 hours of supervised play, rest periods, water and snacks included"
+          },
+          "halfDay": {
+            "name": "Half Day Care",
+            "description": "4 hours of daycare - perfect for shorter stays"
+          },
+          "trial": {
+            "name": "Trial Day",
+            "description": "First-time trial to see if daycare is right for your dog"
+          },
+          "package10": {
+            "name": "10-Day Package",
+            "description": "Save 800 DKK with our 10-day package"
+          },
+          "monthly": {
+            "name": "Monthly Unlimited",
+            "description": "Unlimited daycare for one month - best value for regular attendees"
+          }
+        }
+      },
+      "location": {
+        "title": "Our Location",
+        "address": "Peder Hvitfeldts Stræde 16",
+        "details": "1173 København, Denmark - Central Copenhagen location with easy access",
+        "directions": "Get Directions"
+      },
+      "included": {
+        "title": "What's Included",
+        "items": {
+          "item1": "Supervised play sessions with compatible dogs",
+          "item2": "Rest periods in comfortable, safe areas",
+          "item3": "Fresh water and healthy snacks throughout the day",
+          "item4": "Photo updates sent to your phone",
+          "item5": "Professional care by veterinary-educated staff",
+          "item6": "Safe, clean, and climate-controlled environment"
+        }
+      },
+      "banner": {
+        "title": "Ready to Book Dog Daycare?",
+        "description": "Give your dog a fun day of play and socialization while you're at work or away.",
+        "cta1": "Call to Book",
+        "cta2": "Email Us"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": {
+          "question": "What are your daycare hours?",
+          "answer": "Our daycare is available from 09:00 to 17:00 on weekdays. Full day care is 8 hours, half day is 4 hours. We recommend drop-off between 09:00-10:00 and pick-up between 16:00-17:00."
+        },
+        "q2": {
+          "question": "Do you require vaccinations?",
+          "answer": "Yes, all dogs must be up-to-date on core vaccinations (DHPPi) and rabies vaccination. We also require bordatella (kennel cough) vaccine. This protects all dogs in our care."
+        },
+        "q3": {
+          "question": "How do you handle dogs of different sizes?",
+          "answer": "We carefully match dogs by size, age, and play style to ensure safe and appropriate playgroups. Small and large dogs are supervised separately when necessary to ensure everyone's safety and enjoyment."
         }
       }
     },
@@ -860,8 +1131,8 @@
       "locationText": "Copenhagen and surrounding areas"
     },
     "cta": {
-      "urgent": "For urgent matters, please call us directly",
-      "book": "Ready to book? Use our online booking system"
+      "urgent": "For urgent matters, email is preferred - especially on weekends for guaranteed response",
+      "book": "Ready to book? Email us for the fastest response"
     }
   },
   "newsletter": {
@@ -880,59 +1151,469 @@
     "members": {
       "tarek": {
         "role": "Founder & CEO",
-        "location": "Copenhagen & Tokyo",
-        "bio": "Born in Jordan, studied veterinary medicine. Founded MyPeterinarian to provide quality pet care services with endless love for animals."
+        "bio": "Born and raised in Jordan, Tarek comes from a multicultural family. He currently lives in Copenhagen after having lived in a number of major cities around the world. Having studied veterinary medicine, Tarek founded MyPeterinarian in 2016 with a mission to create a safe place where you can take your pets and their parents. His love for animals, big or small, is endless."
       },
       "irene": {
         "role": "Manager & Veterinarian",
-        "location": "Copenhagen",
-        "bio": "Specializes in internal medicine, focusing on gastrointestinal and kidney disorders. Experience in Spain and United Kingdom."
+        "bio": "Irene holds a strong passion for internal medicine, with a primary focus on gastrointestinal disorders, kidney and urinary tract disorders. Her professional journey has spanned across Spain, her country of origin, and the United Kingdom before calling Denmark home. With over 5 years of experience in international vet centers, her unwavering commitment to excellence is evident through her consistent pursuit of advanced learning opportunities and continues skills enhancement throughout her career."
       },
       "dora": {
-        "role": "Assistant Operational Manager",
-        "location": "Copenhagen",
-        "bio": "Dedicated to ensuring smooth operations and excellent customer service for all our pet care clients."
+        "role": "Assistant Operational Manager & Pet Caretaker",
+        "bio": "Dora, known to everyone as Dori, is from Hungary and has been living in Denmark for nearly five years. Having lived in Aarhus and Odense, she now resides in Copenhagen's city center with her boyfriend. When she's not busy at MyPeterinarian, you can find her playing board games. She has two cats, Liszka and Nazani, with Liszka boasting over 4500 followers on Instagram. She is excited to join the MyPeterinarian team and looks forward to caring for your pets just as if they were her own."
       },
       "martin": {
-        "role": "CFO",
-        "location": "Copenhagen",
-        "bio": "Manages financial operations to ensure sustainable growth while maintaining quality pet care services."
+        "role": "Fractional Chief Financial Officer",
+        "bio": "Meet Martin, the accountant who isn't afraid to switch from serious numbers to yodels in a quest for sustainable solutions for entrepreneurs. He specializes in giving scale-up companies the strategic map and economic structure they need to grow, ensuring their tax/accounting is done correctly - all while balancing with his family in Slagelse, bee gels, one dog, and a cat!"
       },
       "misty": {
-        "role": "Pet Groomer",
-        "location": "Copenhagen",
-        "bio": "Expert groomer passionate about making every pet look and feel their absolute best."
+        "role": "Groomer & Caretaker",
+        "bio": "Misty, originally from Sweden, spent her upbringing in Singapore, developing a deep appreciation for diverse cultures and a lifelong love for pets. After being separated from her pet for five years, Misty understands that every dog and cat is unique, requiring her approach to ensure their own comfortable experience and aiming to give them the best and healthy grooming day. Previously involved in equestrian grooming and with experience at prestigious dog and puppy farms, Misty looks forward to building a trusting relationship with you and your beloved pet!"
       },
       "veronika": {
-        "role": "Pet Caretaker",
-        "location": "Copenhagen",
-        "bio": "Caring and attentive pet caretaker providing loving care and attention to every animal."
+        "role": "Pet Caretaker & Boarder",
+        "bio": "Veronika is a 19-year-old student from Ukraine, currently in her second year of studying Public Management and Administration. She speaks Ukrainian, Russian, and English, and has also studied some basic Danish. Having a deep love for animals, Veronika is most excited to stay connected with pets in Ukraine. She is excited to bring her passion for animal care to our team and looks forward to fostering ensure your pets receive the attention and love they deserve while you're away. Veronika is happy to assist with any of your pet care needs."
       },
       "quan": {
         "role": "Pet Caretaker",
-        "location": "Copenhagen",
-        "bio": "Experienced pet caretaker dedicated to providing exceptional care and companionship."
+        "bio": "Quan was born in China and moved to Denmark in 2022 for her education. She has been a dog lover for over 10 years and has developed a deep affection for animals. After moving to Copenhagen, she began looking for a steady friends for daily care of their pets, including dogs, cats, and rabbits. She enjoys various activities in her free time, such as working out in the gym, swimming, and hiking. Quan has a natural affinity with animals and quickly builds trust with them. She is excited to bring her enthusiasm, experience, and love for animals to MyPeterinarian, ensuring that every pet gets the care and devotion."
       },
       "nikhil": {
         "role": "Pet Caretaker",
-        "location": "Copenhagen",
-        "bio": "Passionate about animal welfare and providing personalized care for every pet."
+        "bio": "Nikhil is originally from India and has been living in Copenhagen for over seven years. He works as a software developer and is passionate about nature and outdoor activities. He has a strong interest in sustainability and loves animals of all kinds, especially dogs, horses, and dolphins. Nikhil is excited to join the MyPeterinarian team and looks forward to caring for your pets and they seem his own."
       },
       "sarah": {
         "role": "Pet Caretaker",
-        "location": "Copenhagen",
-        "bio": "Committed to creating positive experiences and ensuring the wellbeing of all pets."
+        "bio": "Sarah hails from the U.S. and is currently completing her MSc in Environmental Engineering at DTU, with a focus on Environmental Management. With a B.A. in Engineering Sciences from Dartmouth, specializing in Mechanical Engineering, she has a wealth of experience in diverse fields. Sarah has built a fulfilling life surrounded by beloved pets — a Husky, a Maltese, a Burmese cat, and a few hamsters and fish - fostering a lifelong bond with animals of all sizes and temperaments. Known for her warmth, organization, and responsibilities, Sarah is also an avid runner and hiker, exploring Denmark's scenic landscapes while relishing her Danish skills."
       },
       "mariia": {
         "role": "Pet Caretaker",
-        "location": "Copenhagen",
-        "bio": "Devoted pet caretaker bringing warmth and professional care to every interaction."
+        "bio": "Mariia has been an absolute cat lover for 27 years, and 2 of those were in Denmark. After moving from Kyiv, Ukraine, she started attending a Danish language school and majoring in English on her own. She understands that their connection is based on trust and loves animals very much, and recently has become addicted to huge Chinese novels. She also finds time to play modern computer games, especially if there is an opportunity to raise care of animals and develop their skills. She is delighted to have joined MyPeterinarian, because now she can enjoy the company of pets as much as they want!"
+      },
+      "ionela": {
+        "role": "Pet Boarder",
+        "bio": "Meet Ionela, one of our dedicated pet sitters from Moldova, Romania. She has been living in Denmark since 2016. Ionela is a stage-mom with a four year old son who shares her love for animals. Their family includes four hamsters and they're welcoming to their apartment with a lovely garden and a fenced dog park just moments away. Ionela is excited to care for your pet, ensuring they feel right at home so you can relax and enjoy your vacation."
       }
     },
     "cta": {
       "title": "Want to Meet Our Team?",
       "description": "Book an appointment and experience our passionate care firsthand",
       "button": "Schedule Appointment"
+    }
+  },
+  "subscriptions": {
+    "hero": {
+      "title": "Comprehensive Pet Care Plans",
+      "subtitle": "Choose the perfect subscription plan for your pet's health and wellbeing",
+      "benefits": [
+        "Preventive care included",
+        "Save up to 40% annually",
+        "Cancel anytime"
+      ]
+    },
+    "weightSelector": {
+      "title": "Select Your Pet's Weight Category",
+      "description": "Pricing varies based on your pet's weight to ensure appropriate care"
+    },
+    "weightCategories": {
+      "under_4_9kg": "Under 4.9 kg",
+      "5_9_9kg": "5-9.9 kg",
+      "10_24_9kg": "10-24.9 kg",
+      "25_39_9kg": "25-39.9 kg",
+      "over_40kg": "Over 40 kg"
+    },
+    "weightDescriptions": {
+      "under_4_9kg": "Small breeds",
+      "5_9_9kg": "Medium-small",
+      "10_24_9kg": "Medium",
+      "25_39_9kg": "Large",
+      "over_40kg": "Extra large"
+    },
+    "tiers": {
+      "mostPopular": "Most Popular",
+      "perMonth": "month",
+      "priceNote": "Prices vary by weight category",
+      "cta": "Get Started",
+      "essential": {
+        "name": "Essential Care",
+        "description": "Perfect for basic preventive care and routine health maintenance",
+        "features": [
+          "2 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "50% discount on parasite treatments",
+          "20% discount on nail clipping",
+          "20% discount on anal gland expression",
+          "10% discount on special vaccines",
+          "10% discount on other services"
+        ]
+      },
+      "advanced": {
+        "name": "Advanced Care",
+        "description": "Comprehensive care with additional benefits and savings",
+        "features": [
+          "3 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "All parasite treatments included",
+          "1 nail clipping included",
+          "50% discount on anal gland expression",
+          "2 virtual consultations included",
+          "1 daycare session included",
+          "20% discount on special vaccines",
+          "20% discount on other services"
+        ]
+      },
+      "professional": {
+        "name": "Professional Care",
+        "description": "Premium all-inclusive care for complete peace of mind",
+        "features": [
+          "4 health check-ups per year",
+          "1 core vaccine (DHP or DHPPi) included",
+          "All prescriptions included",
+          "All parasite treatments included",
+          "2 nail clippings included",
+          "1 anal gland expression included",
+          "4 virtual consultations included",
+          "2 daycare sessions included",
+          "30% discount on special vaccines",
+          "30% discount on other services",
+          "Priority booking",
+          "Dedicated care coordinator"
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Why Choose MyPeterinarian?",
+      "subtitle": "Compare our subscription plans with other veterinary services",
+      "feature": "Feature",
+      "rows": {
+        "price": "Monthly price range",
+        "healthChecks": "Health check-ups",
+        "prescriptions": "All prescriptions included",
+        "daycare": "Daycare sessions",
+        "virtualConsultations": "Virtual consultations"
+      }
+    },
+    "trust": {
+      "title": "Why Trust Us?",
+      "certified": "e-mærket certified",
+      "coolOff": "14-day cooling-off period",
+      "noCommitment": "No long-term commitment"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Join hundreds of happy pet parents who trust MyPeterinarian for their pet's health",
+      "button": "Subscribe Now"
+    }
+  },
+  "blog": {
+    "title": "Pet Care Blog & Tips",
+    "description": "Expert advice, tips, and insights for keeping your pet healthy and happy",
+    "readMore": "Read More",
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "relatedPosts": "Related Articles",
+    "search": "Search articles...",
+    "allCategories": "All Categories",
+    "noResults": "No articles found matching your search.",
+    "categories": {
+      "all": "All Categories",
+      "petCare": "Pet Care",
+      "travel": "Travel",
+      "veterinaryCare": "Veterinary Care"
+    },
+    "cta": {
+      "title": "Need Professional Pet Care?",
+      "description": "Our experienced team is here to help with all your pet care needs",
+      "button": "Contact Us"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "services": "Services",
+    "veterinary": "Veterinary Services",
+    "grooming": "Grooming",
+    "petsitting": "Pet Sitting",
+    "petpassport": "Pet Passport",
+    "dogdaycare": "Dog Daycare",
+    "petcare": "Pet Care",
+    "subscriptions": "Subscriptions",
+    "booking": "Book Appointment",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "team": "Our Team",
+    "careers": "Careers"
+  },
+  "preventiveTesting": {
+    "hero": {
+      "badge": "🎉 Limited Time Campaign",
+      "title": "Preventive Testing Campaign",
+      "subtitle": "Protect your pet's health with comprehensive testing at campaign prices. Save up to 50% on essential tests.",
+      "bookNow": "Book Testing Now",
+      "viewTests": "View Available Tests"
+    },
+    "why": {
+      "title": "Why Preventive Testing?",
+      "benefits": {
+        "0": {
+          "title": "Early Detection",
+          "description": "Catch health issues before they become serious problems. Early detection saves lives."
+        },
+        "1": {
+          "title": "Peace of Mind",
+          "description": "Know your pet is healthy and protected from common parasites and diseases."
+        },
+        "2": {
+          "title": "Cost Effective",
+          "description": "Prevention is always cheaper than treatment. Save money with our campaign prices."
+        },
+        "3": {
+          "title": "Expert Care",
+          "description": "Our veterinary team provides professional testing and detailed health reports."
+        }
+      }
+    },
+    "tests": {
+      "title": "Available Tests",
+      "subtitle": "Choose from our comprehensive range of preventive tests",
+      "zoonotic": "Zoonotic",
+      "bookTest": "Book This Test",
+      "items": {
+        "giardia": {
+          "name": "Giardia Test",
+          "description": "Detect Giardia parasites that can affect both pets and humans. Essential for household safety."
+        },
+        "lungworm": {
+          "name": "Lungworm Test",
+          "description": "Screen for lungworm infection, a serious respiratory parasite affecting dogs and cats."
+        },
+        "basicFecal": {
+          "name": "Basic Fecal Test",
+          "description": "Comprehensive stool analysis to detect common intestinal parasites and abnormalities."
+        },
+        "combinedFecal": {
+          "name": "Combined Fecal Test",
+          "description": "Advanced fecal testing including multiple parasite screens and bacterial analysis."
+        },
+        "comboTest": {
+          "name": "Combo Test Package",
+          "description": "Complete health screening combining multiple tests for comprehensive parasite detection."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Campaign Pricing Comparison",
+      "test": "Test Name",
+      "regular": "Regular Price",
+      "campaign": "Campaign Price",
+      "savings": "Save",
+      "off": "OFF"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": {
+        "0": {
+          "title": "Book Online",
+          "description": "Schedule your preventive testing appointment through our easy booking system."
+        },
+        "1": {
+          "title": "Sample Collection",
+          "description": "Our veterinary team collects samples during your visit or provides home collection kits."
+        },
+        "2": {
+          "title": "Laboratory Analysis",
+          "description": "Samples are analyzed in our certified laboratory using advanced diagnostic equipment."
+        },
+        "3": {
+          "title": "Results & Consultation",
+          "description": "Receive detailed results and expert recommendations from our veterinary team."
+        }
+      }
+    },
+    "forPets": {
+      "title": "For Dogs & Cats",
+      "description": "All our preventive tests are suitable for both dogs and cats. Regular testing ensures your pet stays healthy and parasite-free throughout the year.",
+      "bookNow": "Book Testing Now"
+    },
+    "cta": {
+      "title": "Don't Miss This Campaign!",
+      "description": "Limited time offer. Book your preventive testing today and save up to 50% on essential health screenings.",
+      "button": "Book Now",
+      "contact": "Contact Us"
+    }
+  },
+  "careers": {
+    "title": "Career Opportunities",
+    "subtitle": "Join Our Team",
+    "description": "MyPeterinarian is seeking passionate individuals to join our team. Help us improve the pet care and veterinary services industry by ensuring convenience and professionalism for pets and pet owners in Copenhagen.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We're dedicated to improving the pet care and veterinary services industry by providing convenient, professional, and compassionate care for pets and their owners. Join us in making a real difference in the lives of pets and families across Copenhagen."
+    },
+    "openings": {
+      "title": "Current Job Openings",
+      "responsibilities": "Key Responsibilities",
+      "requirements": "Requirements",
+      "applyButton": "Apply for This Position",
+      "jobs": {
+        "veterinarian": {
+          "title": "Hybrid Veterinarian",
+          "location": "Copenhagen",
+          "type": "Minimum 10 hours/week",
+          "description": "Join our veterinary team providing exceptional care to pets across Copenhagen.",
+          "responsibilities": [
+            "Conduct examinations and diagnose pet health issues",
+            "Perform surgical procedures and treatments",
+            "Provide preventive care and vaccinations",
+            "Communicate effectively with pet owners",
+            "Maintain accurate medical records"
+          ],
+          "requirements": [
+            "Veterinary Medicine degree",
+            "Valid Danish Veterinary License",
+            "Strong communication skills",
+            "Fluent in English (Danish is a plus)",
+            "Compassionate and patient-focused approach"
+          ]
+        },
+        "boarder": {
+          "title": "Seasonal Pet Boarder",
+          "location": "Copenhagen",
+          "type": "Freelance/Seasonal",
+          "description": "Provide loving care for pets in your home or theirs during boarding periods.",
+          "responsibilities": [
+            "Pet walking and exercise",
+            "Home pet care and feeding",
+            "Pet transportation when needed",
+            "Daily reporting to pet owners",
+            "Ensure pet safety and well-being",
+            "Basic grooming and care"
+          ],
+          "requirements": [
+            "Genuine love for animals",
+            "Reliable and responsible",
+            "Good communication skills",
+            "Flexible schedule",
+            "Previous pet care experience preferred"
+          ]
+        },
+        "marketing": {
+          "title": "Marketing Specialist Internship & Pet Caretaker",
+          "location": "Copenhagen",
+          "type": "Internship/Part-Time",
+          "description": "Combine your passion for marketing with hands-on pet care experience.",
+          "responsibilities": [
+            "Develop and implement social media strategy",
+            "Create engaging content for multiple platforms",
+            "Manage SEO optimization",
+            "Conduct audience research and analysis",
+            "Assist with pet care duties",
+            "Support marketing campaigns"
+          ],
+          "requirements": [
+            "Marketing or communications background",
+            "Strong social media skills",
+            "Content creation experience",
+            "Interest in pet care industry",
+            "Creative and detail-oriented",
+            "Comfortable working with animals"
+          ]
+        },
+        "webdev": {
+          "title": "Web Developer Intern",
+          "location": "Hybrid (Remote/Copenhagen)",
+          "type": "Internship",
+          "description": "Help us build and optimize our digital presence for pet owners across Copenhagen.",
+          "responsibilities": [
+            "UI/UX development and improvement",
+            "Website performance optimization",
+            "SEO management and implementation",
+            "E-commerce development and maintenance",
+            "Collaborate with design and marketing teams",
+            "Test and debug web applications"
+          ],
+          "requirements": [
+            "Experience with modern web technologies",
+            "Knowledge of React, Next.js, or similar frameworks",
+            "Understanding of responsive design",
+            "SEO optimization knowledge",
+            "Strong problem-solving skills",
+            "Portfolio of previous work"
+          ]
+        }
+      }
+    },
+    "application": {
+      "title": "How to Apply",
+      "instructions": "To apply for any position, please email your CV to jobs@mypeterinarian.com with the position title in the subject line. We review applications on a rolling basis and will contact qualified candidates for interviews.",
+      "emailButton": "Email Your Application"
+    },
+    "benefits": {
+      "title": "Why Join MyPeterinarian?",
+      "items": [
+        "Work with passionate animal lovers",
+        "Flexible working arrangements",
+        "Professional development opportunities",
+        "Make a real impact in pet care",
+        "Collaborative and supportive team",
+        "Competitive compensation",
+        "Central Copenhagen location",
+        "Growing company with expansion plans"
+      ]
+    },
+    "cta": {
+      "title": "Ready to Join Our Team?",
+      "description": "Don't see the perfect position? Send us your CV anyway - we're always looking for talented individuals who share our passion for pet care.",
+      "button": "Send Your Application",
+      "contactButton": "Contact Us"
+    }
+  },
+  "chatbot": {
+    "title": "MyPeterinarian Assistant",
+    "subtitle": "Ask us anything!",
+    "welcomeMessage": "Hello! 👋 I'm here to help answer your questions about our veterinary services, grooming, pet sitting, and more. How can I assist you today?",
+    "placeholder": "Type your message...",
+    "send": "Send message",
+    "openChat": "Open chat",
+    "typing": "Typing...",
+    "errorMessage": "Sorry, I encountered an error. Please try again or contact us directly at +45 61 66 76 11 or hej@mypeterinarian.com",
+    "disclaimer": "AI chatbot in Beta - May make mistakes. For urgent matters, call us directly.",
+    "quickStart": {
+      "title": "Quick options:",
+      "categories": {
+        "booking": {
+          "label": "📅 Book a service",
+          "options": {
+            "vetClinic": "Veterinary - Clinic visit",
+            "vetHome": "Veterinary - Home visit",
+            "grooming": "Grooming Service",
+            "daycare": "Dog Daycare",
+            "petCare": "Pet Care Services"
+          }
+        },
+        "pricing": {
+          "label": "💰 Service pricing",
+          "options": {
+            "veterinary": "Veterinary service",
+            "grooming": "Grooming Service",
+            "daycare": "Dog Daycare service",
+            "petCare": "Pet Care Services"
+          },
+          "questions": {
+            "veterinary": "What are the prices for veterinary service?",
+            "grooming": "What are the prices for grooming service?",
+            "daycare": "What are the prices for dog daycare?",
+            "petCare": "What are the prices for pet care services?"
+          }
+        },
+        "hours": {
+          "label": "🕐 Hours & location",
+          "text": "Our physical location is open weekdays 10:00-16:00. Services can be booked starting at 09:00, with some available until 17:00. We're located at Peder Hvitfeldts Stræde 16, 1173 København."
+        }
+      },
+      "back": "← Back to main menu"
     }
   }
 }

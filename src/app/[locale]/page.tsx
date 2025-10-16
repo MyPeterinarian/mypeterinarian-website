@@ -5,12 +5,12 @@ import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Phone, Mail, Clock, MapPin, CheckCircle, ArrowRight, Users, CreditCard } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, CheckCircle, ArrowRight, Users, CreditCard, Stethoscope, Scissors, Home as HomeIcon } from 'lucide-react';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 import CampaignBanner from '@/components/CampaignBanner';
 
-export default function Home() {
+export default function HomePage() {
   const t = useTranslations('home');
   const tContact = useTranslations('contact');
   const params = useParams();
@@ -104,11 +104,7 @@ export default function Home() {
             {/* Veterinary Care */}
             <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
               <div className="w-16 h-16 bg-[#6B8FA9]/10 rounded-2xl flex items-center justify-center mb-6">
-                <img
-                  src="/icons/stethoscope.svg"
-                  alt="Veterinary Care"
-                  className="w-10 h-10"
-                />
+                <Stethoscope className="w-10 h-10 text-[#6B8FA9]" />
               </div>
               <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.veterinary.title')}</h3>
               <p className="text-base text-gray-600 mb-6 font-light">
@@ -136,12 +132,8 @@ export default function Home() {
 
             {/* Grooming Services */}
             <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
-              <div className="w-16 h-16 bg-[#8FA998]/10 rounded-2xl flex items-center justify-center mb-6">
-                <img
-                  src="/icons/grooming.svg"
-                  alt="Grooming"
-                  className="w-8 h-8"
-                />
+              <div className="w-16 h-16 bg-[#6B8FA9]/10 rounded-2xl flex items-center justify-center mb-6">
+                <Scissors className="w-10 h-10 text-[#6B8FA9]" />
               </div>
               <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.grooming.title')}</h3>
               <p className="text-base text-gray-600 mb-6 font-light">
@@ -149,19 +141,19 @@ export default function Home() {
               </p>
               <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.grooming.items.full')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.grooming.items.nails')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.grooming.items.spa')}</span>
                 </li>
               </ul>
-              <Link href={`/${locale}/services/grooming`} className="w-full bg-[#8FA998] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#7A8F87] transition-all inline-flex items-center justify-center gap-2">
+              <Link href={`/${locale}/services/grooming`} className="w-full bg-[#6B8FA9] text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-[#5A7A94] transition-all inline-flex items-center justify-center gap-2">
                 {t('services.learnMore')}
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -170,11 +162,7 @@ export default function Home() {
             {/* Pet Care Services */}
             <div className="bg-[#F5F7F9] p-8 rounded-lg border border-gray-200 hover:shadow-sm transition-shadow flex flex-col">
               <div className="w-16 h-16 bg-[#6B8FA9]/10 rounded-2xl flex items-center justify-center mb-6">
-                <img
-                  src="/icons/heart-hands.svg"
-                  alt="Pet Care Services"
-                  className="w-10 h-10"
-                />
+                <HomeIcon className="w-10 h-10 text-[#6B8FA9]" />
               </div>
               <h3 className="text-2xl font-medium text-[#2C3E50] mb-3">{t('services.petSitting.title')}</h3>
               <p className="text-base text-gray-600 mb-6 font-light">
@@ -182,15 +170,15 @@ export default function Home() {
               </p>
               <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.petSitting.items.daily')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.petSitting.items.overnight')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.petSitting.items.updates')}</span>
                 </li>
               </ul>

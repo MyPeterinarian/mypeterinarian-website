@@ -334,16 +334,16 @@ export default function SubscriptionsPage() {
             <h3 className="text-2xl sm:text-3xl font-light text-[#2C3E50] mb-8 tracking-tight">{t('trust.title')}</h3>
             <div className="flex flex-wrap justify-center gap-8 items-center">
               <div className="flex items-center gap-2 text-gray-600">
-                <Shield className="w-6 h-6 text-[#8FA998]" />
-                <span className="font-light">{t('trust.certified')}</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-600">
                 <Clock className="w-6 h-6 text-[#6B8FA9]" />
                 <span className="font-light">{t('trust.coolOff')}</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Heart className="w-6 h-6 text-[#8FA998]" />
                 <span className="font-light">{t('trust.noCommitment')}</span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-600">
+                <Shield className="w-6 h-6 text-[#8FA998]" />
+                <span className="font-light">{t('trust.licensed')}</span>
               </div>
             </div>
           </motion.div>

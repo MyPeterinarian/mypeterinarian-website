@@ -25,7 +25,7 @@ export default function ServicesPage() {
     {
       key: 'petSitting',
       icon: Home,
-      href: '/services/pet-sitting',
+      href: '/services/pet-care',
       gradient: 'from-[#22c0b6] to-[#1d6896]'
     },
     {

@@ -1,4 +1,15 @@
 {
+  "campaignBanner": {
+    "badge": "Begrænset Tid",
+    "limited": "Kun Begrænset Tid",
+    "title": "🎉 Forebyggende Test Kampagne - Spar op til 50%",
+    "description": "Beskyt dit kæledyrs sundhed med omfattende test. Tidlig opdagelse redder liv!",
+    "cta": "Se Kampagne Tests",
+    "bookNow": "Book Nu",
+    "feature1": "Spar op til 50% på essentielle test",
+    "feature2": "Ekspert dyrlægepleje",
+    "feature3": "Hurtig & nem booking"
+  },
   "header": {
     "phone": "+45 61 66 76 11",
     "email": "hej@mypeterinarian.com",
@@ -7,12 +18,14 @@
     "call": "Ring",
     "navigation": {
       "home": "Hjem",
+      "campaign": "🎉 Test Kampagne",
       "services": "Tjenester",
       "subscriptions": "Abonnementer",
       "booking": "Booking",
       "about": "Om Os",
       "blog": "Blog",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "team": "Team"
     },
     "servicesDropdown": {
       "veterinary": "Dyrlæge Tjenester",
@@ -27,7 +40,7 @@
     "hero": {
       "title": "Københavns Førende",
       "subtitle": "Kæledyrspleje & Dyrlægetjenester",
-      "description": "Professionel dyrlægepleje, pleje og kæledyrstjenester i hjertet af København. Din kæledyrs sundhed og lykke er vores prioritet.",
+      "description": "Professionel dyrlægepleje, hunde- og kattepleje, kæledyrsophold og omfattende kæledyrstjenester i hjertet af København. Din kæledyrs sundhed og lykke er vores prioritet.",
       "bookAppointment": "Book Tid",
       "viewServices": "Se Tjenester"
     },
@@ -35,7 +48,7 @@
       "title": "Vores Tjenester",
       "description": "Omfattende kæledyrsplejetjenester skræddersyet til dine pelskære familiemedlemmer",
       "veterinary": {
-        "title": "Dyrlægepleje",
+        "title": "Dyrlægepleje København",
         "description": "Ekspertmedicinsk pleje fra erfarne dyrlæger. Fra rutinetjek til avancerede behandlinger.",
         "items": {
           "exams": "Sundhedsundersøgelser",
@@ -44,7 +57,7 @@
         }
       },
       "grooming": {
-        "title": "Pleje",
+        "title": "Kæledyrspleje København",
         "description": "Professionelle plejetjenester for at holde dit kæledyr ser godt ud og føler sig bedst.",
         "items": {
           "full": "Fuld Pleje",
@@ -53,7 +66,7 @@
         }
       },
       "petSitting": {
-        "title": "Kæledyrsplejetjenester",
+        "title": "Kæledyrspleje & Ophold København",
         "description": "Pålidelige kæledyrsplejetjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
         "items": {
           "daily": "Daglige Besøg",
@@ -104,6 +117,21 @@
         }
       }
     },
+    "team": {
+      "title": "Mød Vores Ekspertteam",
+      "description": "Dedikerede professionelle passionerede for dit kæledyrs sundhed og lykke",
+      "cta": "Mød Teamet"
+    },
+    "subscriptions": {
+      "title": "Abonnementsplaner",
+      "description": "Spar på regelmæssig pleje med vores fleksible abonnementsplaner designet til dit kæledyrs løbende sundhedsbehov",
+      "benefits": {
+        "regular": "Regelmæssig Pleje",
+        "savings": "Besparelser",
+        "priority": "Prioriteret Booking"
+      },
+      "cta": "Se Planer"
+    },
     "faq": {
       "title": "Ofte Stillede Spørgsmål",
       "description": "Få svar på almindelige spørgsmål om vores tjenester",
@@ -113,8 +141,8 @@
           "answer": "Du kan booke online gennem vores bookingsystem, ringe til os eller sende os en e-mail. Vi svarer typisk inden for få timer."
         },
         "q2": {
-          "question": "Håndterer I nødsituationer?",
-          "answer": "Ja, vi tilbyder akut dyrlægepleje. Ring til os med det samme, hvis dit kæledyr har brug for akut hjælp."
+          "question": "Kan I hjælpe med kæledyrsflytning til/fra Danmark?",
+          "answer": "Vi tilbyder omfattende flytnings- og rejsetjenester til dit kæledyr. Kontakt os for at diskutere dit kæledyrs rejsebehov."
         },
         "q3": {
           "question": "Hvad er jeres priser?",
@@ -131,7 +159,7 @@
     },
     "services": {
       "veterinary": {
-        "title": "Dyrlæge Tjenester",
+        "title": "Dyrlæge Tjenester København",
         "description": "Ekspertmedicinsk pleje fra erfarne dyrlæger. Fra rutinetjek til avancerede behandlinger.",
         "highlights": {
           "0": "Omfattende sundhedsundersøgelser",
@@ -140,7 +168,7 @@
         }
       },
       "grooming": {
-        "title": "Plejetjenester",
+        "title": "Kæledyrs Plejetjenester København",
         "description": "Professionel pleje for at holde dit kæledyr ser godt ud og føler sig bedst.",
         "highlights": {
           "0": "Fulde plejepakker til alle størrelser",
@@ -149,7 +177,7 @@
         }
       },
       "petSitting": {
-        "title": "Kæledyrspassning & Pleje",
+        "title": "Kæledyrspassning & Ophold København",
         "description": "Pålidelige kæledyrspassnings- og plejetjenester mens du er væk. Dit kæledyr forbliver glad og passet.",
         "highlights": {
           "0": "Daglige besøg og overnatninger",
@@ -158,7 +186,7 @@
         }
       },
       "petPassport": {
-        "title": "Kæledyrspas & Rejse",
+        "title": "Kæledyrspas København",
         "description": "Komplette kæledyrspasstjenester til EU og internationale rejsekrav.",
         "highlights": {
           "0": "EU kæledyrspas forberedelse",
@@ -197,7 +225,7 @@
     "veterinary": {
       "title": "Professionelle Dyrlæge Tjenester i København",
       "subtitle": "Medfølende og omfattende dyrlæge tjenester",
-      "description": "Alle vores teammedlemmer har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
+      "description": "Vores grundlægger og hele vores dyrlægeteam har veterinær uddannelse og yder professionel, medfølende pleje til dine kæledyr. Fra rutinetjek til specialiserede behandlinger er vi her for dit kæledyrs sundhed og trivsel.",
       "hero": {
         "cta": "Book Dyrlægetid"
       },
@@ -206,38 +234,38 @@
         "items": {
           "exams": {
             "title": "Dyrlæge Konsultationer",
-            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1814 Kr), Hos Pet Quarters (938 Kr), Walk-in (1109 Kr), eller Virtuel (567 Kr).",
+            "description": "Fleksible konsultationsmuligheder: Hjemmebesøg (1815 Kr), Hos Pet Quarters (930 Kr), Walk-in (1110 Kr), eller Virtuel (567 Kr).",
             "cta": "Book Konsultation",
             "prices": {
-              "0": "Konsultation-Hjemmebesøg: 1814 Kr",
-              "1": "Konsultation-Hos Pet Quarters: 938 Kr",
-              "2": "Konsultation-Walk-In: 1109 Kr",
-              "3": "Opfølgning (Hos Pet Quarters): 661 Kr",
+              "0": "Konsultation-Hjemmebesøg: 1815 Kr",
+              "1": "Konsultation-Hos Pet Quarters: 930 Kr",
+              "2": "Konsultation-Walk-In: 1110 Kr",
+              "3": "Opfølgning (Hos Pet Quarters): 641 Kr",
               "4": "Virtuel Konsultation (2,5 timer): 567 Kr"
             }
           },
           "vaccinations": {
             "title": "Forebyggende Pleje & Pakker",
-            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1858 Kr), anti-parasit behandling og omfattende sundhedstjek.",
+            "description": "Killing/Hvalpe pakker (2494 Kr), hele kuld vaccination (1059 Kr), anti-parasit behandling og omfattende sundhedstjek.",
             "cta": "Læs Mere",
             "prices": {
               "0": "Killing/Hvalpe Pakke (Hos Pet Quarters): 2494 Kr",
-              "1": "Hele Kuld Vaccination & Mikrochipning-Per (Hos Pet Quarters): 1858 Kr",
-              "2": "Anti-parasit Behandling-Grant-Abov Appn: 540 Kr",
-              "3": "Anti-parasit Behandling-Pet Quarters: 193,5 Kr",
-              "4": "Kæledyrs Sundhedstjek: 800 Kr",
+              "1": "Hele Kuld Vaccination & Mikrochipning-Per (Hos Pet Quarters): 1059 Kr",
+              "2": "Anti-parasit Behandling (Stand Alone): 540 Kr",
+              "3": "Anti-parasit Behandling (Hos Pet Quarters): 193,5 Kr",
+              "4": "Kæledyrs Sundhedstjek (Hjem): 1684 Kr",
               "5": "Kæledyrs Sundhedstjek (Rabies): 1065 Kr"
             }
           },
           "surgery": {
             "title": "Kemisk Kastration (Hunde/Katte)",
-            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2266 Kr hos Pet Quarters) og 6 måneders muligheder.",
+            "description": "Kemisk kastration tilgængelig - 1 år (3402 Kr hjemmebesøg, 2268 Kr hos Pet Quarters) og 6 måneders muligheder.",
             "cta": "Anmod om Service",
             "prices": {
               "0": "1-År (Hjem): 3402 Kr",
-              "1": "1-År (Hos Pet Quarters): 2266 Kr",
-              "2": "6 Måneder (Hjem): 2579 Kr",
-              "3": "6 Måneder (Hos Pet Quarters): 1301 Kr"
+              "1": "1-År (Hos Pet Quarters): 2268 Kr",
+              "2": "6 Måneder (Hjem): 2495 Kr",
+              "3": "6 Måneder (Hos Pet Quarters): 1361 Kr"
             }
           },
           "dental": {
@@ -245,10 +273,10 @@
             "description": "EU Kæledyrspas aftaler, rabiesvaccine pakker og komplet rejsedokumentation assistance.",
             "cta": "Bliv Rejseklar",
             "prices": {
-              "0": "EU Kæledyrspas Aftale (Hjem): 1584 Kr",
-              "1": "EU Kæledyrspas Aftale (Hos Pet Quarters): 608 Kr",
-              "2": "Rabiesvaccine + EU Pas Pakke (Hjem): 2214 Kr",
-              "3": "Rejsepakke: Bx (AUS/US/UAE) (Hjem): Kontakt for Pris"
+              "0": "EU Kæledyrspas Aftale (Hjem): 1364 Kr",
+              "1": "EU Kæledyrspas Aftale (Hos Pet Quarters): 824 Kr",
+              "2": "Rabiesvaccine + EU Pas Pakke (Hjem): 2268 Kr",
+              "3": "Rabiesvaccine + EU Pas Pakke (Hos Pet Quarters): 1475 Kr"
             }
           },
           "diagnostics": {
@@ -268,12 +296,12 @@
             "description": "Medfølende aflivning og kremering. \"Dyrlæge tjenester\" tilgængelige hjemme i \"København\" eller på Pet Quarters.",
             "cta": "Diskuter Muligheder",
             "prices": {
-              "0": "Aflivning og Kremering (Hjem): 5103 Kr",
-              "1": "Aflivning og Kremering (Hos Pet Quarters): 2979 Kr",
-              "2": "Ingen Aflivning Privat Kremering (Kæledyrs Afhentning): 4422 Kr",
-              "3": "Ingen Aflivning Privat Kremering (via Afhentning): 3422 Kr",
-              "4": "Privat Kremering (Per Afhentning): 4212 Kr",
-              "5": "Privat Kremering (via Per Afhentning): 3425 Kr"
+              "0": "Aflivning (Lille-Mellem Hund, Hjem): 5958 Kr",
+              "1": "Aflivning (Mellem-Stor Hund, Hjem): 5103 Kr",
+              "2": "Aflivning (Lille-Mellem Hund, Hos Pet Quarters): 3834 Kr",
+              "3": "Aflivning (Mellem-Stor Hund, Hos Pet Quarters): 2979 Kr",
+              "4": "Privat Kremering (Kæledyrs Afhentning): 4212 Kr",
+              "5": "Privat Kremering (Pet Quarters Afhentning): 3425 Kr"
             }
           },
           "other": {
@@ -283,13 +311,31 @@
             "prices": {
               "0": "Negleklipning (Separat Besøg): 374 Kr",
               "1": "Kæledyrsregistrering: 545 Kr",
-              "2": "Velkommen til Danmark Pakke (Hjem): Kontakt for Pris",
-              "3": "Velkommen til Danmark Pakke (Hos Pet Quarters): Kontakt for Pris"
+              "2": "Kæledyrs Mikrochipning: 526 Kr",
+              "3": "Velkommen til Danmark Pakke: Kontakt for Pris"
             }
           },
           "subscription": {
             "title": "Abonnementsplaner",
-            "description": "Kommer snart!"
+            "description": "Omfattende sundhedsplaner med regelmæssige check-ups, vaccinationer og rabatter.",
+            "cta": "Se Planer",
+            "prices": {
+              "0": "Essentiel: Fra 299 DKK/måned",
+              "1": "Avanceret: Fra 440 DKK/måned",
+              "2": "Professionel: Fra 648 DKK/måned",
+              "3": "Priser varierer efter kæledyrets vægt"
+            }
+          },
+          "petPassport": {
+            "title": "Kæledyrspas Tjenester",
+            "description": "EU kæledyrspas til rejse. Komplet service inklusiv konsultation, sundhedstjek, vaccinationer og mikrochip.",
+            "cta": "Få Kæledyrspas",
+            "prices": {
+              "0": "EU Kæledyrspas (Hjem): 1364 Kr",
+              "1": "EU Kæledyrspas (Klinik): 824 Kr",
+              "2": "Rabiesvaccine + Pas (Hjem): 2268 Kr",
+              "3": "Rabiesvaccine + Pas (Klinik): 1475 Kr"
+            }
           }
         }
       },
@@ -407,7 +453,7 @@
           },
           "catBrushing": {
             "title": "Kattebørstning Pakke",
-            "price": "650 Kr",
+            "price": "1300 Kr",
             "description": "Specialiseret børstning for kattepels",
             "features": [
               "Blid kattebørstning og udtryk",
@@ -428,27 +474,27 @@
             "items": [
               {
                 "name": "XS (< 3 kg)",
-                "price": "750 Kr"
+                "price": "750-900 Kr"
               },
               {
                 "name": "S (3-10 kg)",
-                "price": "950 Kr"
+                "price": "750-1000 Kr"
               },
               {
                 "name": "M (11-17 kg)",
-                "price": "1250 Kr"
+                "price": "950-1250 Kr"
               },
               {
                 "name": "L (18-31 kg)",
-                "price": "1650 Kr"
+                "price": "1250-1750 Kr"
               },
               {
                 "name": "XL (> 31 kg)",
-                "price": "1950 Kr"
+                "price": "1450-1950 Kr"
               },
               {
                 "name": "Kattepleje",
-                "price": "1000-1500 Kr"
+                "price": "1500-1700 Kr"
               }
             ]
           },
@@ -456,20 +502,37 @@
             "title": "Håndstrikning (Terrier)",
             "items": [
               {
-                "name": "XS (< 3 kg)",
+                "name": "Lille (Under 6kg)",
+                "price": "1100 Kr"
+              },
+              {
+                "name": "Mellem (6-12kg)",
+                "price": "1300 Kr"
+              }
+            ]
+          },
+          "handScissoring": {
+            "title": "Håndsaksebehandling (Langt Hår)",
+            "items": [
+              {
+                "name": "XS",
                 "price": "950 Kr"
               },
               {
-                "name": "S (3-10 kg)",
-                "price": "1150 Kr"
+                "name": "S",
+                "price": "1250 Kr"
               },
               {
-                "name": "M (11-17 kg)",
-                "price": "1450 Kr"
+                "name": "M",
+                "price": "1600 Kr"
               },
               {
-                "name": "L (18-31 kg)",
-                "price": "1850 Kr"
+                "name": "L",
+                "price": "2000 Kr"
+              },
+              {
+                "name": "XL",
+                "price": "2500 Kr"
               }
             ]
           },
@@ -477,24 +540,28 @@
             "title": "Kun Bad & Føntørring",
             "items": [
               {
-                "name": "XS (< 3 kg)",
-                "price": "350 Kr"
+                "name": "XS & S Hunde",
+                "price": "700 Kr"
               },
               {
-                "name": "S (3-10 kg)",
-                "price": "450 Kr"
-              },
-              {
-                "name": "M (11-17 kg)",
-                "price": "550 Kr"
-              },
-              {
-                "name": "L (18-31 kg)",
+                "name": "M Hunde",
                 "price": "750 Kr"
               },
               {
-                "name": "XL (> 31 kg)",
-                "price": "950 Kr"
+                "name": "L Hunde",
+                "price": "900 Kr"
+              },
+              {
+                "name": "XL Hunde",
+                "price": "1100 Kr"
+              },
+              {
+                "name": "Katte (Kort Hår)",
+                "price": "750 Kr"
+              },
+              {
+                "name": "Katte (Langt Hår)",
+                "price": "800 Kr"
               }
             ]
           },
@@ -502,28 +569,64 @@
             "title": "Tillæg og Specielle Tjenester",
             "items": [
               {
-                "name": "Negleklipning (Separat besøg)",
-                "price": "374 Kr"
-              },
-              {
-                "name": "Tandbørstning",
+                "name": "Negleklipning",
                 "price": "150 Kr"
               },
               {
-                "name": "Flåtfjernelse (pr. flåt)",
-                "price": "50 Kr"
+                "name": "Tandbørstning",
+                "price": "200 Kr"
               },
               {
-                "name": "Filtring (alvorlig)",
-                "price": "300-600 Kr"
+                "name": "Ørerensning",
+                "price": "150 Kr"
               },
               {
-                "name": "Medicinsk bad",
-                "price": "250 Kr"
+                "name": "Øreplukning",
+                "price": "150 Kr"
               },
               {
-                "name": "Flåtfjernelse",
-                "price": "100 Kr"
+                "name": "Analkirteltømning",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Dyb Konditioneringsmaske",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Pelsfjernende Tillæg",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Ekstra Tid (15 min)",
+                "price": "150 Kr"
+              },
+              {
+                "name": "Pawdicure",
+                "price": "200 Kr"
+              },
+              {
+                "name": "Opfriskning (Hunde)",
+                "price": "350 Kr"
+              },
+              {
+                "name": "Opfriskning (Katte)",
+                "price": "400 Kr"
+              },
+              {
+                "name": "Plejekonsultation",
+                "price": "120 Kr"
+              },
+              {
+                "name": "Plejetræning",
+                "price": "550 Kr"
+              },
+              {
+                "name": "Kun Knutfjernelse",
+                "price": "775 Kr"
+              },
+              {
+                "name": "Ekstra Time",
+                "price": "400 Kr"
               }
             ]
           }
@@ -588,26 +691,26 @@
         "items": {
           "full": {
             "title": "Fuld Plejetjeneste",
-            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hundepleje: 750-1950 Kr, Kattepleje: 1000-1500 Kr (baseret på størrelse).",
+            "description": "Komplet pleje inklusiv bad, føntørring, racespecifik klipning eller trim, negleklipning, ørerensning og analkirteltjek. Hundepleje: 750-1950 Kr, Kattepleje: 1500-1700 Kr (baseret på størrelse).",
             "bullets": [
-              "XS (< 3kg): 750-850 Kr",
-              "S (3-10kg): 850-1150 Kr",
-              "M (11-17kg): 950-1350 Kr",
-              "L (18-31kg): 1350-1650 Kr",
-              "XL (> 31kg): 1650-1950 Kr",
-              "Kattepleje: 1000-1500 Kr"
+              "XS (< 3kg): 750-900 Kr",
+              "S (3-10kg): 750-1000 Kr",
+              "M (11-17kg): 950-1250 Kr",
+              "L (18-31kg): 1250-1750 Kr",
+              "XL (> 31kg): 1450-1950 Kr",
+              "Kattepleje: 1500-1700 Kr"
             ],
             "button": "Book Fuld Pleje"
           },
           "bath": {
             "title": "Bad & Føntørring",
-            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning for en ren, frisk pels.",
+            "description": "Premium badning med professionelle shampooer, grundig føntørring og grundlæggende børstning. Hunde: 700-1100 Kr, Katte: 750-800 Kr.",
             "bullets": [
-              "Premium badning service",
-              "Professionelle shampooer",
-              "Grundig føntørring",
-              "Basis børstning",
-              "Størrelsesbaseret prissætning"
+              "XS & S Hunde: 700 Kr",
+              "M Hunde: 750 Kr",
+              "L Hunde: 900 Kr",
+              "XL Hunde: 1100 Kr",
+              "Katte: 750-800 Kr"
             ],
             "button": "Book Bad Service"
           },
@@ -625,38 +728,38 @@
           },
           "nails": {
             "title": "Negleklipning & Potepleje",
-            "description": "Sikker negleklipning og poteplejede tjenester. Tilgængelig som selvstændig tjeneste eller inkluderet i fuld plejepakker.",
+            "description": "Sikker negleklipning og poteplejede tjenester. Negleklipning: 150 Kr, Pawdicure: 200 Kr. Tilgængelig som selvstændig tjeneste eller inkluderet i fuld plejepakker.",
             "bullets": [
-              "Sikker negleklipning",
-              "Pote pleje tjenester",
-              "Selvstændig tjeneste tilgængelig",
-              "Inkluderet i fuld pleje",
+              "Negleklipning: 150 Kr",
+              "Pawdicure: 200 Kr",
+              "Ørerensning: 150 Kr",
+              "Tandbørstning: 200 Kr",
               "Professionel håndtering"
             ],
             "button": "Book Neglepleje"
           },
           "spa": {
             "title": "Specialiserede Behandlinger",
-            "description": "Filtring, pelsfjernende behandlinger, medicinske bade og flåtfjernelse. Specielle pakker tilgængelige inklusiv Perfect Coat og Tangle-Free Life pakker.",
+            "description": "Pelsfjernende behandlinger, fuld spa-pakker og specialiseret pleje. Hunde: 750-2400 Kr, Katte: 1000-1200 Kr baseret på størrelse og pelstype.",
             "bullets": [
-              "Filtringsbehandlinger",
-              "Pelsfjernende pakker",
-              "Medicinske bade",
-              "Flåtfjernelse",
-              "Perfect Coat Pakke",
-              "Tangle-Free Life Pakke"
+              "Pelsfjernende: 750-2400 Kr",
+              "Fuld Spa: 850-1450 Kr",
+              "Dyb Konditionering: 150 Kr",
+              "Analkirtler: 150 Kr",
+              "Ekstra Tid (15 min): 150 Kr",
+              "Knutfjernelse: 775 Kr"
             ],
             "button": "Book Spa Behandling"
           },
           "teeth": {
             "title": "Tandbørstning & Ekstra Pleje",
-            "description": "Blid tandbørstning og yderligere tjenester inklusiv hvalpepleje introduktion og kattebørstningspakker.",
+            "description": "Blid tandbørstning (200 Kr) og yderligere tjenester inklusiv plejetræning (550 Kr) og kattebørstning (1300 Kr).",
             "bullets": [
-              "Blid tandbørstning",
-              "Hvalpepleje introduktion",
-              "Kattebørstningspakker",
-              "Essential Pet Care Pakke",
-              "Yderligere plejetjenester"
+              "Tandbørstning: 200 Kr",
+              "Plejetræning: 550 Kr",
+              "Kattebørstningspakke: 1300 Kr",
+              "Opfriskning: 350 Kr (Hunde)",
+              "Opfriskning til Katte: 400 Kr"
             ],
             "button": "Book Tandpleje"
           }
@@ -699,12 +802,12 @@
         "items": {
           "daily": {
             "title": "Kæledyrspassning",
-            "description": "Én daglig: 471 Kr. To daglige: 737 Kr (spar 165 Kr på 2. besøg). 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid.",
+            "description": "Én daglig: 471 Kr. To daglige: 737 Kr. 60-minutters besøg inkluderer fodring, vandskift, katterensning, kort gåtur og legetid.",
             "cta": "Book Besøg",
             "prices": {
               "0": "Én Daglig Besøg: 471 Kr",
-              "1": "To Daglige Besøg: 737 Kr (spar 165 Kr på 2. besøg)",
-              "2": "60-minutters besøg",
+              "1": "To Daglige Besøg: 737 Kr",
+              "2": "Yderligere Kæledyr: 80 Kr",
               "3": "Fodring & vandskift",
               "4": "Katterensning",
               "5": "Kort gåtur & legetid"
@@ -712,41 +815,41 @@
           },
           "overnight": {
             "title": "Overnatning",
-            "description": "1360 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem.",
+            "description": "1361 Kr pr. nat. Komplet aften- og morgenrutiner, fodring, gåture og selskab i komforten af dit kæledyrs eget hjem.",
             "cta": "Book Overnatning",
             "prices": {
-              "0": "Overnatning: 1360 Kr pr. nat",
-              "1": "Komplet aften- & morgenrutiner",
-              "2": "Fodring og frisk vand",
-              "3": "Gåture og motion",
-              "4": "Selskab i kæledyrs eget hjem",
-              "5": "Sindsro mens du er væk"
+              "0": "Overnatning: 1361 Kr pr. nat",
+              "1": "Yderligere Kæledyr: 80 Kr",
+              "2": "Komplet aften- & morgenrutiner",
+              "3": "Fodring og frisk vand",
+              "4": "Gåture og motion",
+              "5": "Selskab i kæledyrs eget hjem"
             }
           },
           "boarding": {
-            "title": "Hundepension hos Vores Passere",
-            "description": "Hos Dyrlægens Hjem: 749 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
+            "title": "Kæledyrspension",
+            "description": "Hos Medarbejders Hjem: 1000 Kr/nat. Hos PQ: 1150 Kr/nat. Personlig TLC, to lange gåture, selskab med en eller to andre hunde.",
             "cta": "Book Pension",
             "prices": {
-              "0": "Hos Dyrlægens Hjem: 749 Kr/nat",
+              "0": "Hos Medarbejders Hjem: 1000 Kr/nat",
               "1": "Hos PQ: 1150 Kr/nat",
-              "2": "Personlig TLC",
-              "3": "To lange gåture dagligt",
-              "4": "Selskab med en eller to andre hunde",
+              "2": "Yderligere Kæledyr: 200 Kr",
+              "3": "Bur/Terrarium/Akvarium: 378 Kr/nat",
+              "4": "To lange gåture dagligt",
               "5": "Sikkert og komfortabelt miljø"
             }
           },
           "walking": {
             "title": "Hundegåtur",
-            "description": "Én Daglig (60 min): 465 Kr. To Daglige: 740 Kr (spar 190 Kr på 2. besøg). Inkluderer afhentning, aflevering, legetid og lorti opsamling.",
+            "description": "30 min: 340 Kr. 1 time: 465 Kr. 90 min: 645 Kr. To daglige muligheder tilgængelige. Inkluderer afhentning, aflevering, legetid og lorti opsamling.",
             "cta": "Planlæg Gåture",
             "prices": {
-              "0": "Én Daglig (60 min): 465 Kr",
-              "1": "To Daglige: 740 Kr (spar 190 Kr på 2. besøg)",
-              "2": "Afhentning og aflevering inkluderet",
-              "3": "Legetid og motion",
-              "4": "Lorti opsamling",
-              "5": "GPS sporings opdateringer"
+              "0": "30 Minutter Én Daglig: 340 Kr",
+              "1": "1 Time Én Daglig: 465 Kr",
+              "2": "1 Time To Daglige: 740 Kr",
+              "3": "90 Minutter Én Daglig: 645 Kr",
+              "4": "Yderligere Hund: 115 Kr",
+              "5": "Afhentning og aflevering inkluderet"
             }
           },
           "medication": {
@@ -763,16 +866,16 @@
             }
           },
           "updates": {
-            "title": "Hundedagpleje",
-            "description": "Fuld Dag (8 Timer): 680 Kr på Peder Hvitfeldts Stræde 16, 1173 København. Socialisering, legetid og overvåget hele dagen.",
+            "title": "Kæledyrs Dagpleje",
+            "description": "Time priser fra 1-8 timer. 8 Timer: 680 Kr. Hos Hjemme/Hotel: 4 Timer: 556 Kr, 6 Timer: 790 Kr. Socialisering, legetid og overvåget hele dagen.",
             "cta": "Book Dagpleje",
             "prices": {
-              "0": "Fuld Dag (8 Timer): 680 Kr",
-              "1": "Placering: Peder Hvitfeldts Stræde 16",
-              "2": "Socialisering med andre hunde",
-              "3": "Overvåget legetid",
-              "4": "Hvileperioder inkluderet",
-              "5": "Foto og video opdateringer"
+              "0": "1-4 Timer: 160-400 Kr",
+              "1": "5-8 Timer: 475-680 Kr",
+              "2": "Hos Hjemme/Hotel (4 Timer): 556 Kr",
+              "3": "Hos Hjemme/Hotel (6 Timer): 790 Kr",
+              "4": "Yderligere Last Minute Time: 136 Kr",
+              "5": "Overvåget legetid & socialisering"
             }
           }
         }
@@ -786,7 +889,7 @@
       },
       "pricing": {
         "title": "Gennemsigtig Prissætning",
-        "description": "Klar prissætning for alle tjenester. Introduktionsmøde: 408 Kr, Virtuelt møde: 249 Kr, Kæledyrs afhentning/aflevering: 272 Kr. Kontakt os for en personlig plejeplan.",
+        "description": "Klar prissætning for alle tjenester. Introduktionsmøde: 405 Kr, Kæledyrs afhentning/aflevering: 270 Kr. Fler-dages pakker tilgængelige med rabatter. Kontakt os for en personlig plejeplan.",
         "cta": "Anmod om Tilbud"
       },
       "faq": {
@@ -802,6 +905,108 @@
         "q3": {
           "question": "Hvor ligger hundedagplejen?",
           "answer": "Vores hundedagpleje ligger på Peder Hvitfeldts Stræde 16, 1173 København. Fuld dagpleje (8 timer) er 680 Kr og inkluderer overvåget leg, socialisering og hvileperioder."
+        }
+      }
+    },
+    "dogDaycare": {
+      "title": "Hundedagpleje Tjenester København",
+      "subtitle": "Professionel hundedagpleje med overvåget leg og socialisering",
+      "description": "Vores hundedagpleje giver et sikkert, sjovt miljø for din hund mens du er på arbejde eller væk. Placeret på Peder Hvitfeldts Stræde 16, 1173 København. Fuld dagpleje, halv dag og fleksible pakker tilgængelige.",
+      "hero": {
+        "cta": "Book Dagpleje Nu"
+      },
+      "features": {
+        "title": "Hvorfor Vælge Vores Hundedagpleje",
+        "items": {
+          "supervised": {
+            "title": "Overvåget Leg",
+            "description": "Konstant supervision af vores trænede personale sikrer sikker og fornøjelig legetid for alle hunde."
+          },
+          "socialization": {
+            "title": "Hunde Socialisering",
+            "description": "Din hund interagerer med andre venlige hunde, forbedrer sociale evner og adfærd."
+          },
+          "flexible": {
+            "title": "Fleksibel Planlægning",
+            "description": "Fuld dag, halv dag, prøvedage og månedlige pakker for at passe din tidsplan og budget."
+          },
+          "location": {
+            "title": "Central Placering",
+            "description": "Bekvemt placeret i central København på Peder Hvitfeldts Stræde 16, 1173 København."
+          },
+          "updates": {
+            "title": "Regelmæssige Opdateringer",
+            "description": "Modtag billeder og opdateringer hele dagen så du ved din hund er glad og sikker."
+          },
+          "professional": {
+            "title": "Professionel Pleje",
+            "description": "Vores veterinæruddannede team yder ekspertpleje og kan håndtere enhver situation."
+          }
+        }
+      },
+      "pricing": {
+        "title": "Gennemsigtig Prissætning",
+        "description": "Fleksible prismuligheder for at passe dine behov og budget",
+        "save": "Spar",
+        "items": {
+          "fullDay": {
+            "name": "Fuld Dagpleje",
+            "description": "8 timer overvåget leg, hvileperioder, vand og snacks inkluderet"
+          },
+          "halfDay": {
+            "name": "Halv Dagpleje",
+            "description": "4 timer dagpleje - perfekt til kortere ophold"
+          },
+          "trial": {
+            "name": "Prøvedag",
+            "description": "Førstegangs prøve for at se om dagpleje passer til din hund"
+          },
+          "package10": {
+            "name": "10-Dages Pakke",
+            "description": "Spar 800 Kr med vores 10-dages pakke"
+          },
+          "monthly": {
+            "name": "Månedlig Ubegrænset",
+            "description": "Ubegrænset dagpleje i en måned - bedste værdi for regelmæssige deltagere"
+          }
+        }
+      },
+      "location": {
+        "title": "Vores Placering",
+        "address": "Peder Hvitfeldts Stræde 16",
+        "details": "1173 København, Danmark - Central København placering med nem adgang",
+        "directions": "Få Vejvisning"
+      },
+      "included": {
+        "title": "Hvad er Inkluderet",
+        "items": {
+          "item1": "Overvågede legesessioner med kompatible hunde",
+          "item2": "Hvileperioder i komfortable, sikre områder",
+          "item3": "Frisk vand og sunde snacks hele dagen",
+          "item4": "Billede opdateringer sendt til din telefon",
+          "item5": "Professionel pleje af veterinæruddannet personale",
+          "item6": "Sikkert, rent og klimakontrolleret miljø"
+        }
+      },
+      "banner": {
+        "title": "Klar til at Booke Hundedagpleje?",
+        "description": "Giv din hund en sjov dag med leg og socialisering mens du er på arbejde eller væk.",
+        "cta1": "Ring for at Booke",
+        "cta2": "Email Os"
+      },
+      "faq": {
+        "title": "Ofte Stillede Spørgsmål",
+        "q1": {
+          "question": "Hvad er jeres dagpleje timer?",
+          "answer": "Vores dagpleje er tilgængelig fra 09:00 til 17:00 på hverdage. Fuld dagpleje er 8 timer, halv dag er 4 timer. Vi anbefaler aflevering mellem 09:00-10:00 og afhentning mellem 16:00-17:00."
+        },
+        "q2": {
+          "question": "Kræver I vaccinationer?",
+          "answer": "Ja, alle hunde skal være opdateret på kernervaccinationer (DHPPi) og rabiesvaccination. Vi kræver også bordatella (kennelhoste) vaccine. Dette beskytter alle hunde i vores pleje."
+        },
+        "q3": {
+          "question": "Hvordan håndterer I hunde af forskellige størrelser?",
+          "answer": "Vi matcher omhyggeligt hunde efter størrelse, alder og legestil for at sikre sikre og passende legegrupper. Små og store hunde overvåges separat når det er nødvendigt for at sikre alles sikkerhed og fornøjelse."
         }
       }
     },
@@ -927,8 +1132,8 @@
       "locationText": "København og omegn"
     },
     "cta": {
-      "urgent": "For hastesager, ring venligst direkte til os",
-      "book": "Klar til at booke? Brug vores online bookingsystem"
+      "urgent": "For hastesager foretrækkes email - især i weekenden for garanteret svar",
+      "book": "Klar til at booke? Send os en email for hurtigste svar"
     }
   },
   "newsletter": {
@@ -948,58 +1153,478 @@
       "tarek": {
         "role": "Stifter & CEO",
         "location": "København & Tokyo",
-        "bio": "Født i Jordan, studerede veterinærmedicin. Grundlagde MyPeterinarian for at levere kvalitetskæledyrsplejetjenester med endeløs kærlighed til dyr."
+        "bio": "Tarek er født og opvokset i Jordan i en multikulturel familie. Han bor i øjeblikket i København efter at have boet i en række store byer rundt om i verden. Efter at have studeret veterinærmedicin grundlagde Tarek MyPeterinarian for at levere kvalitets- og professionel kæledyrspleje og veterinærservice til kæledyr og deres forældre. Hans kærlighed til dyr, store eller små, er ubeskrivelig."
       },
       "irene": {
         "role": "Manager & Dyrlæge",
         "location": "København",
-        "bio": "Specialiseret i intern medicin med fokus på gastrointestinale og nyrelidelser. Erfaring fra Spanien og Storbritannien."
+        "bio": "Irene har en stærk lidenskab for intern medicin med særlig fokus på mave-tarmsygdomme, nyre- og urinvejsproblemer. Hendes professionelle rejse har strakt sig over både Spanien, hendes hjemland, og Storbritannien, indtil hun har fundet hendes med omfattende erfaring i at skitsere forskellige internationale kæledyrs sjere. Hendes urokkelige engagement i at levere enestående service bliver gennem i hendes vedvarende søgning efter avancerede læringsmuligheder og kontinuerlig forbedring af færdigheder gennem hele hendes karriere."
       },
       "dora": {
-        "role": "Assisterende Operationschef",
+        "role": "Assistent Driftschef & Kæledyrspassser i København",
         "location": "København",
-        "bio": "Dedikeret til at sikre problemfri drift og fremragende kundeservice til alle vores kæledyrskunder."
+        "bio": "Dora, kendt af alle som Dori eller en 28-års fra Ungarn, der bor boet i Danmark i næsten fire år. Efter at have boet i både Aarhus og Odense, bor hun nu i Københavns centrum med sin kæreste. Det nyder at holde øvet bro at strikke og løber. Hun har også to katte, Liszka og Nazani, med Liszka med over 4000 følgere på Instagram. Hun er begejstret for at skifte sig til MyPeterinarian-teamet og ser frem til at passe på din kæledyr, som om de var hendes egne."
       },
       "martin": {
-        "role": "CFO",
+        "role": "Fraktionel Chief Financial Officer",
         "location": "København",
-        "bio": "Styrer økonomiske operationer for at sikre bæredygtig vækst samtidig med at opretholde kvalitetskæledyrsplejetjenester."
+        "bio": "Mød Martin, revisoren, der ikke er bange for at skifte fra seriøse tal til jojke i en søgen efter bæredygtige løsninger til iværksættere. Han specialiserer sig i at give scale-up virksomheder det strategiske kort og økonomiske struktur, de har brug for at vokse, samtidig med at sikre deres skat/regnskab er gjort korrekt - alt imens han balancerer med sin familie i Slagelse, bigeder, en hund og en kat!"
       },
       "misty": {
-        "role": "Kæledyrstrimmer",
+        "role": "Groomer & Kæledyrspassser i København",
         "location": "København",
-        "bio": "Ekspert trimmer passioneret omkring at få hvert kæledyr til at se og føle sig bedst."
+        "bio": "Misty, der oprindeligt kommer fra Sverige, tilbragte sin opvækst i Singapore, hvor hun udviklede en dyb forståelse for forskellige kulturer og en livsvarig kærlighed til kæledyr. Efter at være blevet adskilt fra sit kæledyr i fem år, forstår Misty, at enhver hund og kat er unik og kræver en tilpasset tilgang til at sikre deres behagelige oplevelse. Hun stiler efter at give hver kæledyr en sund og rar pleje dag. Med tidligere erfaring i ridepleje, holder hun en tillidsfuld relation med dig og dit elskede kæledyr!"
       },
       "veronika": {
-        "role": "Kæledyrsplejer",
+        "role": "Kæledyrspasser & Pensionat i København",
         "location": "København",
-        "bio": "Omsorgsfuld og opmærksom kæledyrsplejer der giver kærlig pleje og opmærksomhed til hvert dyr."
+        "bio": "Veronika er en 19-årig studerende fra Ukraine, som i øjeblikket er i sit andet år af studier af offentlig administration. Hun taler ukrainsk, russisk og engelsk, og har også studeret lidt grundlæggende dansk. Hun har en stor kærlighed til dyr og savner sin egen dyre i Ukraine. Hun er begejstret for at bringe sin passion til dyrepleje til vores team og se frem til at sikre, at dine kæledyr får opmærksomhed og kærlighed, de fortjener, mens du er væk. Veronika er glad for at hjælpe med alle dine behov for dyrepleje!"
       },
       "quan": {
-        "role": "Kæledyrsplejer",
+        "role": "Kæledyrspasser i København",
         "location": "København",
-        "bio": "Erfaren kæledyrsplejer dedikeret til at yde eksceptionel pleje og selskab."
+        "bio": "Quan er født i Kina og flyttede til Danmark i 2022 for sin uddannelse. Hun har været en hundelsker i over 10 år og har udviklet en dyb hengivenhed til dyr. Efter at være flyttet til København, begyndte hun at lede efter en fast ven til daglig pasning af deres kæledyr, herunder hunde, katte og kaniner. Hun nyder forskellige aktiviteter i sin fritid, såsom at træne i fitnesscentret, svømme og vandre. Quan har en naturlig affinitet med dyr og opbygger hurtigt tillid til dem. Hun er begejstret for at bringe sin entusiasme, erfaring og kærlighed til dyr til MyPeterinarian."
       },
       "nikhil": {
-        "role": "Kæledyrsplejer",
+        "role": "Kæledyrspasser i København",
         "location": "København",
-        "bio": "Passioneret omkring dyrevelfærd og leverer personlig pleje til hvert kæledyr."
+        "bio": "Nikhil er oprindeligt fra Indien og har boet i København i over seks år. Han arbejder som softwareudvikler og er meget engageret i natur og udendørs aktiviteter. Han brænder for bæredygtighed og elsker dyr af alle slags, især hunde, heste og delfiner. Nikhil er begejstret for at slutte sig til MyPeterinarian-teamet og ser frem til at passe dine kæledyr, som om de var hans egne."
       },
       "sarah": {
-        "role": "Kæledyrsplejer",
+        "role": "Kæledyrspasser i København",
         "location": "København",
-        "bio": "Forpligtet til at skabe positive oplevelser og sikre velbefindende for alle kæledyr."
+        "bio": "Sarah kommer fra USA og tager i øjeblikket en MSc i miljøteknik ved DTU med fokus på miljøledelse. Med en BA i ingeniørvidenskab fra Dartmouth med speciale i mekanik, har hun en alsidig erfaring inden for forskellige områder. Sarah har bygget et tilfredsstillende liv omkranset af elskede kæledyr - en Husky, en Malteser, en Burmansk kat og nogle hamstere og fisk - hvilket forstærker en livslang bånd med dyr af alle størrelser og temperamenter. Kendt for sin varme, organisering og ansvar, er Sarah også en ivrig løber og vandringsmand, der udforsker Danmarks smukke landskaber mens hun forbedrer sine danskkundskaber."
       },
       "mariia": {
-        "role": "Kæledyrsplejer",
+        "role": "Kæledyrspasser i København",
         "location": "København",
-        "bio": "Hengivet kæledyrsplejer der bringer varme og professionel pleje til hver interaktion."
+        "bio": "Mariia har været en absolut katteelsker i 27 år, hvoraf to af dem har været i Danmark. Efter at være flyttet fra Kiev i Ukraine, begyndte hun at tage danskundervisning og studere engelsk på egen hånd. Hun forstår, at deres forbindelse er baseret på tillid og elsker dyr meget, og er for nylig blevet afhængig af store kinesiske romaner. Hun finder også tid til at spille moderne computerspil, især hvis der er en mulighed for at hæve pleje af dyr og udvikle deres evner. Hun er henrykt over at være blevet en del af MyPeterinarian, fordi hun nu kan nyde selskabet med kæledyr, så meget som de ønsker!"
+      },
+      "ionela": {
+        "role": "Pensionat i København",
+        "bio": "Mød Ionela, en af vores dedikerede dyrepassere fra Moldova, Rumænien. Hun har boet i Danmark siden 2016. Ionela er en scenemor med en fireårig søn, der deler hendes kærlighed til dyr. Deres familie inkluderer fire hamstere, og de har en lejlighed med en dejlig have og en indhegnet hundegård blot få øjeblikke væk. Ionela er begejstret for at passe dit dyr, så du kan slappe af og nyde din ferie."
       }
     },
     "cta": {
       "title": "Vil Du Møde Vores Team?",
       "description": "Book en tid og oplev vores passionerede pleje på første hånd",
       "button": "Planlæg Tid"
+    }
+  },
+  "subscriptions": {
+    "hero": {
+      "title": "Omfattende Plejeplaner til Kæledyr",
+      "subtitle": "Vælg den perfekte abonnementsplan for dit kæledyrs sundhed og trivsel",
+      "benefits": [
+        "Forebyggende pleje inkluderet",
+        "Spar op til 40% årligt",
+        "Opsig når som helst"
+      ]
+    },
+    "weightSelector": {
+      "title": "Vælg Dit Kæledyrs Vægtkategori",
+      "description": "Priserne varierer baseret på dit kæledyrs vægt for at sikre passende pleje"
+    },
+    "weightCategories": {
+      "under_4_9kg": "Under 4,9 kg",
+      "5_9_9kg": "5-9,9 kg",
+      "10_24_9kg": "10-24,9 kg",
+      "25_39_9kg": "25-39,9 kg",
+      "over_40kg": "Over 40 kg"
+    },
+    "weightDescriptions": {
+      "under_4_9kg": "Små racer",
+      "5_9_9kg": "Mellem-små",
+      "10_24_9kg": "Mellem",
+      "25_39_9kg": "Store",
+      "over_40kg": "Ekstra store"
+    },
+    "tiers": {
+      "mostPopular": "Mest Populære",
+      "perMonth": "måned",
+      "priceNote": "Priserne varierer efter vægtkategori",
+      "cta": "Kom I Gang",
+      "essential": {
+        "name": "Essentiel Pleje",
+        "description": "Perfekt til grundlæggende forebyggende pleje og rutinemæssig sundhedsvedligeholdelse",
+        "features": [
+          "2 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "50% rabat på parasitbehandlinger",
+          "20% rabat på negleklipning",
+          "20% rabat på analkirteltømning",
+          "10% rabat på specialvacciner",
+          "10% rabat på andre ydelser"
+        ]
+      },
+      "advanced": {
+        "name": "Avanceret Pleje",
+        "description": "Omfattende pleje med yderligere fordele og besparelser",
+        "features": [
+          "3 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "Alle parasitbehandlinger inkluderet",
+          "1 negleklipning inkluderet",
+          "50% rabat på analkirteltømning",
+          "2 virtuelle konsultationer inkluderet",
+          "1 dagplejesesson inkluderet",
+          "20% rabat på specialvacciner",
+          "20% rabat på andre ydelser"
+        ]
+      },
+      "professional": {
+        "name": "Professionel Pleje",
+        "description": "Premium alt-inklusiv pleje for fuldstændig tryghed",
+        "features": [
+          "4 helbredstjek om året",
+          "1 kernervaccination (DHP eller DHPPi) inkluderet",
+          "Alle recepter inkluderet",
+          "Alle parasitbehandlinger inkluderet",
+          "2 negleklipninger inkluderet",
+          "1 analkirteltømning inkluderet",
+          "4 virtuelle konsultationer inkluderet",
+          "2 dagplejessessioner inkluderet",
+          "30% rabat på specialvacciner",
+          "30% rabat på andre ydelser",
+          "Prioriteret booking",
+          "Dedikeret plejekoordinator"
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Hvorfor Vælge MyPeterinarian?",
+      "subtitle": "Sammenlign vores abonnementsplaner med andre dyrlægetjenester",
+      "feature": "Funktion",
+      "rows": {
+        "price": "Månedligt prisinterval",
+        "healthChecks": "Helbredstjek",
+        "prescriptions": "Alle recepter inkluderet",
+        "daycare": "Dagplejesesessioner",
+        "virtualConsultations": "Virtuelle konsultationer"
+      }
+    },
+    "trust": {
+      "title": "Hvorfor Stole På Os?",
+      "certified": "e-mærket certificeret",
+      "coolOff": "14 dages fortrydelsesret",
+      "noCommitment": "Ingen langsigtet forpligtelse"
+    },
+    "cta": {
+      "title": "Klar Til At Komme I Gang?",
+      "description": "Bliv en del af hundredvis af glade kæledyrsejere, der stoler på MyPeterinarian for deres kæledyrs sundhed",
+      "button": "Abonner Nu"
+    }
+  },
+  "blog": {
+    "title": "Kæledyrspleje Blog & Tips",
+    "description": "Ekspertrådgivning, tips og indsigt for at holde dit kæledyr sundt og lykkeligt",
+    "readMore": "Læs Mere",
+    "noPosts": "Ingen blogindlæg tilgængelige endnu. Kom tilbage snart!",
+    "backToBlog": "Tilbage til Blog",
+    "share": "Del",
+    "relatedPosts": "Relaterede Artikler",
+    "search": "Søg artikler...",
+    "allCategories": "Alle Kategorier",
+    "noResults": "Ingen artikler fundet, der matcher din søgning.",
+    "categories": {
+      "all": "Alle Kategorier",
+      "petCare": "Kæledyrspleje",
+      "travel": "Rejse",
+      "veterinaryCare": "Dyrlægebehandling"
+    },
+    "cta": {
+      "title": "Brug for Professionel Kæledyrspleje?",
+      "description": "Vores erfarne team er her for at hjælpe med alle dine kæledyrsbehov",
+      "button": "Kontakt Os"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Hjem",
+    "services": "Tjenester",
+    "veterinary": "Dyrlægetjenester",
+    "grooming": "Pleje",
+    "petsitting": "Kæledyrspassning",
+    "petpassport": "Kæledyrspas",
+    "dogdaycare": "Hundedagpleje",
+    "petcare": "Kæledyrspleje",
+    "subscriptions": "Abonnementer",
+    "booking": "Book Tid",
+    "about": "Om Os",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "team": "Vores Team",
+    "careers": "Karriere"
+  },
+  "preventiveTesting": {
+    "hero": {
+      "badge": "🎉 Begrænset Kampagne",
+      "title": "Forebyggende Test Kampagne",
+      "subtitle": "Beskyt dit kæledyrs sundhed med omfattende test til kampagnepriser. Spar op til 50% på essentielle test.",
+      "bookNow": "Book Test Nu",
+      "viewTests": "Se Tilgængelige Test"
+    },
+    "why": {
+      "title": "Hvorfor Forebyggende Test?",
+      "benefits": {
+        "0": {
+          "title": "Tidlig Opdagelse",
+          "description": "Fang sundhedsproblemer før de bliver alvorlige. Tidlig opdagelse redder liv."
+        },
+        "1": {
+          "title": "Sindsro",
+          "description": "Vid at dit kæledyr er sundt og beskyttet mod almindelige parasitter og sygdomme."
+        },
+        "2": {
+          "title": "Omkostningseffektivt",
+          "description": "Forebyggelse er altid billigere end behandling. Spar penge med vores kampagnepriser."
+        },
+        "3": {
+          "title": "Ekspertpleje",
+          "description": "Vores dyrlægeteam leverer professionel testning og detaljerede sundhedsrapporter."
+        }
+      }
+    },
+    "tests": {
+      "title": "Tilgængelige Test",
+      "subtitle": "Vælg fra vores omfattende udvalg af forebyggende test",
+      "zoonotic": "Zoonotisk",
+      "bookTest": "Book Denne Test",
+      "items": {
+        "giardia": {
+          "name": "Giardia Test",
+          "description": "Påvis Giardia-parasitter der kan påvirke både kæledyr og mennesker. Essentiel for husstands sikkerhed."
+        },
+        "lungworm": {
+          "name": "Lungeorm Test",
+          "description": "Screen for lungeorminfektion, en alvorlig luftvejsparasit der påvirker hunde og katte."
+        },
+        "basicFecal": {
+          "name": "Basis Afføringstest",
+          "description": "Omfattende afføringsanalyse for at påvise almindelige tarmparasitter og abnormiteter."
+        },
+        "combinedFecal": {
+          "name": "Kombineret Afføringstest",
+          "description": "Avanceret afføringstest inklusiv flere parasitscreeninger og bakterieanalyse."
+        },
+        "comboTest": {
+          "name": "Kombinations Test Pakke",
+          "description": "Komplet sundhedsscreening der kombinerer flere test for omfattende parasitpåvisning."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Kampagne Prissammenligning",
+      "test": "Test Navn",
+      "regular": "Normal Pris",
+      "campaign": "Kampagnepris",
+      "savings": "Spar",
+      "off": "RABAT"
+    },
+    "howItWorks": {
+      "title": "Sådan Fungerer Det",
+      "steps": {
+        "0": {
+          "title": "Book Online",
+          "description": "Planlæg din forebyggende test aftale gennem vores nemme bookingsystem."
+        },
+        "1": {
+          "title": "Prøveindsamling",
+          "description": "Vores dyrlægeteam indsamler prøver under dit besøg eller leverer hjemmeindsamlingssæt."
+        },
+        "2": {
+          "title": "Laboratorieanalyse",
+          "description": "Prøver analyseres i vores certificerede laboratorium ved hjælp af avanceret diagnostisk udstyr."
+        },
+        "3": {
+          "title": "Resultater & Konsultation",
+          "description": "Modtag detaljerede resultater og ekspertanbefalinger fra vores dyrlægeteam."
+        }
+      }
+    },
+    "forPets": {
+      "title": "Til Hunde & Katte",
+      "description": "Alle vores forebyggende test er egnede til både hunde og katte. Regelmæssig testning sikrer at dit kæledyr forbliver sundt og parasitfrit hele året.",
+      "bookNow": "Book Test Nu"
+    },
+    "cta": {
+      "title": "Gå Ikke Glip Af Denne Kampagne!",
+      "description": "Begrænset tilbud. Book din forebyggende test i dag og spar op til 50% på essentielle sundhedsscreeninger.",
+      "button": "Book Nu",
+      "contact": "Kontakt Os"
+    }
+  },
+  "careers": {
+    "title": "Karrieremuligheder",
+    "subtitle": "Bliv Del Af Vores Team",
+    "description": "MyPeterinarian søger passionerede personer til at slutte sig til vores team. Hjælp os med at forbedre kæledyrspleje- og veterinærindustrien ved at sikre bekvemmelighed og professionalisme for kæledyr og deres ejere i København.",
+    "mission": {
+      "title": "Vores Mission",
+      "description": "Vi er dedikeret til at forbedre kæledyrspleje- og veterinærindustrien ved at levere bekvem, professionel og omsorgsfuld pleje til kæledyr og deres ejere. Slut dig til os i at gøre en reel forskel i kæledyr og families liv i hele København."
+    },
+    "openings": {
+      "title": "Aktuelle Jobopslag",
+      "responsibilities": "Hovedansvar",
+      "requirements": "Krav",
+      "applyButton": "Ansøg Om Denne Stilling",
+      "jobs": {
+        "veterinarian": {
+          "title": "Hybrid Dyrlæge",
+          "location": "København",
+          "type": "Minimum 10 timer/uge",
+          "description": "Bliv en del af vores dyrlægeteam, der leverer exceptionel pleje til kæledyr i hele København.",
+          "responsibilities": [
+            "Foretage undersøgelser og diagnosticere kæledyrssundhedsproblemer",
+            "Udføre kirurgiske procedurer og behandlinger",
+            "Levere forebyggende pleje og vaccinationer",
+            "Kommunikere effektivt med kæledyrsejere",
+            "Vedligeholde nøjagtige medicinske journaler"
+          ],
+          "requirements": [
+            "Veterinærmedicinsk grad",
+            "Gyldig dansk veterinærlicens",
+            "Stærke kommunikationsevner",
+            "Flydende engelsk (dansk er en fordel)",
+            "Omsorgsfuld og patientfokuseret tilgang"
+          ]
+        },
+        "boarder": {
+          "title": "Sæsonbestemt Kæledyrspassning",
+          "location": "København",
+          "type": "Freelance/Sæsonbestemt",
+          "description": "Giv kærlig pleje til kæledyr i dit hjem eller deres under internatperioder.",
+          "responsibilities": [
+            "Kæledyrsgang og motion",
+            "Hjemmepleje og fodring af kæledyr",
+            "Kæledyrstransport ved behov",
+            "Daglig rapportering til kæledyrsejere",
+            "Sikre kæledyrssikkerhed og velvære",
+            "Grundlæggende pleje og omsorg"
+          ],
+          "requirements": [
+            "Ægte kærlighed til dyr",
+            "Pålidelig og ansvarlig",
+            "Gode kommunikationsevner",
+            "Fleksibel tidsplan",
+            "Tidligere kæledyrspleje erfaring foretrukket"
+          ]
+        },
+        "marketing": {
+          "title": "Marketing Specialist Praktikplads & Kæledyrsplejer",
+          "location": "København",
+          "type": "Praktikplads/Deltid",
+          "description": "Kombiner din passion for marketing med praktisk kæledyrspleje erfaring.",
+          "responsibilities": [
+            "Udvikle og implementere social media strategi",
+            "Skabe engagerende indhold til flere platforme",
+            "Administrere SEO-optimering",
+            "Udføre publikumsforskning og analyse",
+            "Assistere med kæledyrspleje opgaver",
+            "Støtte marketingkampagner"
+          ],
+          "requirements": [
+            "Marketing eller kommunikationsbaggrund",
+            "Stærke sociale mediefærdigheder",
+            "Indholdsskabelseserfaring",
+            "Interesse i kæledyrspleje industrien",
+            "Kreativ og detaljeorienteret",
+            "Tryg ved at arbejde med dyr"
+          ]
+        },
+        "webdev": {
+          "title": "Webudvikler Praktikant",
+          "location": "Hybrid (Fjern/København)",
+          "type": "Praktikplads",
+          "description": "Hjælp os med at bygge og optimere vores digitale tilstedeværelse for kæledyrsejere i hele København.",
+          "responsibilities": [
+            "UI/UX udvikling og forbedring",
+            "Hjemmeside ydeevne optimering",
+            "SEO-styring og implementering",
+            "E-handelsudvikling og vedligeholdelse",
+            "Samarbejde med design- og marketingteams",
+            "Test og fejlfinde webapplikationer"
+          ],
+          "requirements": [
+            "Erfaring med moderne webteknologier",
+            "Kendskab til React, Next.js eller lignende frameworks",
+            "Forståelse af responsivt design",
+            "SEO-optimeringsviden",
+            "Stærke problemløsningsevner",
+            "Portfolio af tidligere arbejde"
+          ]
+        }
+      }
+    },
+    "application": {
+      "title": "Sådan Ansøger Du",
+      "instructions": "For at ansøge om en stilling, send venligst dit CV til jobs@mypeterinarian.com med stillingstitlen i emnelinjen. Vi gennemgår ansøgninger løbende og kontakter kvalificerede kandidater til samtaler.",
+      "emailButton": "Send Din Ansøgning"
+    },
+    "benefits": {
+      "title": "Hvorfor Blive En Del Af MyPeterinarian?",
+      "items": [
+        "Arbejd med passionerede dyreelskere",
+        "Fleksible arbejdsarrangementer",
+        "Professionelle udviklingsmuligheder",
+        "Gør en reel forskel i kæledyrspleje",
+        "Samarbejdende og støttende team",
+        "Konkurrencedygtig kompensation",
+        "Central København placering",
+        "Voksende virksomhed med ekspansionsplaner"
+      ]
+    },
+    "cta": {
+      "title": "Klar Til At Blive En Del Af Vores Team?",
+      "description": "Kan du ikke se den perfekte stilling? Send os dit CV alligevel - vi leder altid efter talentfulde personer, der deler vores passion for kæledyrspleje.",
+      "button": "Send Din Ansøgning",
+      "contactButton": "Kontakt Os"
+    }
+  },
+  "chatbot": {
+    "title": "MyPeterinarian Assistent",
+    "subtitle": "Spørg os om hvad som helst!",
+    "welcomeMessage": "Hej! 👋 Jeg er her for at hjælpe med at besvare dine spørgsmål om vores dyrlægetjenester, pleje, kæledyrspassning og mere. Hvordan kan jeg hjælpe dig i dag?",
+    "placeholder": "Skriv din besked...",
+    "send": "Send besked",
+    "openChat": "Åbn chat",
+    "typing": "Skriver...",
+    "errorMessage": "Beklager, jeg stødte på en fejl. Prøv venligst igen eller kontakt os direkte på +45 61 66 76 11 eller hej@mypeterinarian.com",
+    "disclaimer": "AI chatbot i Beta - Kan lave fejl. For akutte sager, ring direkte.",
+    "quickStart": {
+      "title": "Hurtige muligheder:",
+      "categories": {
+        "booking": {
+          "label": "📅 Book en tjeneste",
+          "options": {
+            "vetClinic": "Dyrlæge - Klinikbesøg",
+            "vetHome": "Dyrlæge - Hjemmebesøg",
+            "grooming": "Plejetjeneste",
+            "daycare": "Hundedagpleje",
+            "petCare": "Kæledyrsplejetjenester"
+          }
+        },
+        "pricing": {
+          "label": "💰 Servicepriser",
+          "options": {
+            "veterinary": "Dyrlæge tjeneste",
+            "grooming": "Plejetjeneste",
+            "daycare": "Hundedagpleje tjeneste",
+            "petCare": "Kæledyrsplejetjenester"
+          },
+          "questions": {
+            "veterinary": "Hvad er priserne for dyrlæge tjeneste?",
+            "grooming": "Hvad er priserne for plejetjeneste?",
+            "daycare": "Hvad er priserne for hundedagpleje?",
+            "petCare": "Hvad er priserne for kæledyrsplejetjenester?"
+          }
+        },
+        "hours": {
+          "label": "🕐 Åbningstider & placering",
+          "text": "Vores fysiske lokation er åben hverdage 10:00-16:00. Tjenester kan bookes fra kl. 09:00, nogle tilgængelige indtil kl. 17:00. Vi ligger på Peder Hvitfeldts Stræde 16, 1173 København."
+        }
+      },
+      "back": "← Tilbage til hovedmenu"
     }
   }
 }
