@@ -58,7 +58,7 @@
         }
       },
       "grooming": {
-        "title": "Pet Grooming Copenhagen",
+        "title": "Pet Grooming in Copenhagen",
         "description": "Professional grooming services to keep your pet looking and feeling their best.",
         "items": {
           "full": "Full Grooming",
@@ -67,7 +67,7 @@
         }
       },
       "petSitting": {
-        "title": "Pet Care & Boarding Copenhagen",
+        "title": "Pet Care & Boarding in Copenhagen",
         "description": "Trusted pet care services while you're away. Your pet stays happy and cared for.",
         "items": {
           "daily": "Daily Visits",
