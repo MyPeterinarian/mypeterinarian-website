@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { motion } from 'framer-motion'
 import {
@@ -15,8 +16,10 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import ContactModal from '@/components/ContactModal'
 
 export default function VeterinaryPage() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const t = useTranslations('services.veterinary')
   const common = useTranslations('services.common')
   const header = useTranslations('header')
@@ -146,9 +149,12 @@ export default function VeterinaryPage() {
                           {t(`features.items.${service.key}.cta`)}
                         </Link>
                       ) : (
-                        <a href="mailto:hej@mypeterinarian.com" className="block w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
+                        <button
+                          onClick={() => setIsContactModalOpen(true)}
+                          className="w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors"
+                        >
                           {t(`features.items.${service.key}.cta`)}
-                        </a>
+                        </button>
                       )}
                     </div>
                   </>
@@ -246,6 +252,13 @@ export default function VeterinaryPage() {
           </div>
         </div>
       </section>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+        subject="Veterinary Services Inquiry"
+      />
     </div>
   )
 }

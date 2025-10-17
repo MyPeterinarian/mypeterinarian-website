@@ -1,12 +1,15 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Home, Moon, Building2, Dog, Pill, Sun } from 'lucide-react'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import ContactModal from '@/components/ContactModal'
 
 export default function PetSittingPage() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const t = useTranslations('services.petSitting')
   const common = useTranslations('services.common')
   const header = useTranslations('header')
@@ -115,9 +118,12 @@ export default function PetSittingPage() {
                     </ul>
                   )}
                   <div className="mt-6 pt-4 border-t border-gray-100">
-                    <a href="mailto:hej@mypeterinarian.com" className="block w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors">
+                    <button
+                      onClick={() => setIsContactModalOpen(true)}
+                      className="w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors"
+                    >
                       {t(`features.items.${service.key}.cta`)}
-                    </a>
+                    </button>
                   </div>
                 </motion.div>
               )
@@ -213,6 +219,13 @@ export default function PetSittingPage() {
           </div>
         </div>
       </section>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+        subject="Pet Sitting Services Inquiry"
+      />
     </div>
   )
 }
