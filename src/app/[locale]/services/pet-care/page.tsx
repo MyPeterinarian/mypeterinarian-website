@@ -195,21 +195,6 @@ export default function PetSittingPage() {
                   <td className="px-6 py-4 text-gray-900 font-medium">Last Minute Change</td>
                   <td className="px-6 py-4 text-right text-gray-900 font-semibold">170 DKK</td>
                 </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Overnight Stay</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">540 DKK</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Weekend Package (2 nights)</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">945 DKK</td>
-                </tr>
-                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">
-                    Multi-Day Package (5+ days)
-                    <span className="block text-sm text-gray-600 mt-1">Discounts available</span>
-                  </td>
-                  <td className="px-6 py-4 text-right text-[#1d6896] font-bold">Contact Us</td>
-                </tr>
               </tbody>
             </table>
           </div>
