@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { X, Mail, Send } from 'lucide-react';
+import { X, Mail, Send, CheckCircle } from 'lucide-react';
 
 interface ContactModalProps {
   isOpen: boolean;
