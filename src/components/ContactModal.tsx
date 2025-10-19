@@ -79,7 +79,7 @@ export default function ContactModal({ isOpen, onClose, subject = '' }: ContactM
 
           <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">Get in Touch</h2>
           <p className="text-gray-600 mb-6 text-center">
-            Send us an email and we'll get back to you as soon as possible!
+            Send us an email and we&apos;ll get back to you as soon as possible!
           </p>
 
           {/* Email Form */}
