@@ -25,9 +25,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Send email using Resend
+    // Send email using Resend with verified domain
     const { data, error } = await resend.emails.send({
-      from: 'MyPeterinarian Contact <onboarding@resend.dev>',
+      from: 'MyPeterinarian Contact <contact@mypeterinarian.com>',
       to: ['hej@mypeterinarian.com'],
       replyTo: email,
       subject: `New Contact Form: ${subject}`,
