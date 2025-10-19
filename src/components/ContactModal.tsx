@@ -24,23 +24,32 @@ export default function ContactModal({ isOpen, onClose, subject = '' }: ContactM
     e.preventDefault();
     setStatus('loading');
 
-    // Create mailto link with all form data
-    const mailtoLink = `mailto:hej@mypeterinarian.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    )}`;
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Open in new window
-    window.open(mailtoLink, '_blank');
-
-    // Reset form and close modal after a short delay
-    setTimeout(() => {
-      setStatus('success');
-      setTimeout(() => {
-        setFormData({ name: '', email: '', subject: subject, message: '' });
-        setStatus('idle');
-        onClose();
-      }, 1500);
-    }, 500);
+      if (response.ok) {
+        setStatus('success');
+        // Reset form and close modal after showing success
+        setTimeout(() => {
+          setFormData({ name: '', email: '', subject: subject, message: '' });
+          setStatus('idle');
+          onClose();
+        }, 2000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -152,7 +161,7 @@ export default function ContactModal({ isOpen, onClose, subject = '' }: ContactM
               ) : status === 'success' ? (
                 <>
                   <CheckCircle className="w-5 h-5" />
-                  Sent!
+                  Message Sent!
                 </>
               ) : (
                 <>
@@ -161,6 +170,12 @@ export default function ContactModal({ isOpen, onClose, subject = '' }: ContactM
                 </>
               )}
             </button>
+
+            {status === 'error' && (
+              <p className="text-red-600 text-sm text-center">
+                Failed to send message. Please try again or call us directly.
+              </p>
+            )}
           </form>
 
           {/* Additional info */}
