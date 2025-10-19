@@ -165,15 +165,66 @@ export default function PetSittingPage() {
 
       {/* Pricing Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('pricing.title')}</h2>
-          <p className="text-lg text-gray-600 mb-8">{t('pricing.description')}</p>
-          <Link
-            href={`mailto:${header('email')}`}
-            className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-          >
-            {t('pricing.cta')}
-          </Link>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">{t('pricing.title')}</h2>
+          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">{t('pricing.description')}</p>
+
+          {/* Pricing Table */}
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 mb-8">
+            <table className="w-full">
+              <thead className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Service</th>
+                  <th className="px-6 py-4 text-right text-sm font-semibold uppercase tracking-wider">Price</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Introductory Meeting</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">405 DKK</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Pet Pick-up/Drop-off</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">270 DKK</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Daily Visit (30 min)</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">270 DKK</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Extended Visit (60 min)</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">405 DKK</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Overnight Stay</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">540 DKK</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">Weekend Package (2 nights)</td>
+                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">945 DKK</td>
+                </tr>
+                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
+                  <td className="px-6 py-4 text-gray-900 font-medium">
+                    Multi-Day Package (5+ days)
+                    <span className="block text-sm text-gray-600 mt-1">Discounts available</span>
+                  </td>
+                  <td className="px-6 py-4 text-right text-[#1d6896] font-bold">Contact Us</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="text-center">
+            <button
+              onClick={() => setIsContactModalOpen(true)}
+              className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+            >
+              {t('pricing.cta')}
+            </button>
+            <p className="mt-4 text-sm text-gray-600">
+              All prices in Danish Krone (DKK). Custom packages available for your specific needs.
+            </p>
+          </div>
         </div>
       </section>
 
