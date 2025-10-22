@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Check, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import SavingsCalculator from '@/components/SavingsCalculator';
 import Script from 'next/script';
 
@@ -344,12 +345,12 @@ export default function SubscriptionsPage() {
             <div className="mt-10 text-center">
               <p className="text-gray-600 font-light">
                 {t('clearTerms.footer')}{' '}
-                <a
+                <Link
                   href="/wellness-plan-terms"
                   className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium underline transition-colors"
                 >
                   {t('clearTerms.termsLink')}
-                </a>
+                </Link>
               </p>
               <button className="mt-4 text-[#6B8FA9] hover:text-[#5A7A94] font-medium flex items-center gap-2 mx-auto transition-colors">
                 <span>{t('clearTerms.downloadText')}</span>

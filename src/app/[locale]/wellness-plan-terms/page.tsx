@@ -116,7 +116,7 @@ export default function WellnessPlanTermsPage() {
 
         {/* Terms Sections */}
         <div className="space-y-8 print:space-y-4">
-          {t.raw('sections').map((section: any, index: number) => (
+          {t.raw('sections').map((section: { id: string; title: string; content: string }, index: number) => (
             <motion.section
               key={section.id}
               id={section.id}
