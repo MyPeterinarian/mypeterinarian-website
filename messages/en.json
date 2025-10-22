@@ -126,9 +126,9 @@
       "title": "Subscription Plans",
       "description": "Save on regular care with our flexible subscription plans designed for your pet's ongoing health needs",
       "benefits": {
-        "regular": "Regular Care",
+        "regular": "Preventive Health Care",
         "savings": "Cost Savings",
-        "priority": "Priority Booking"
+        "priority": "Flexible Scheduling"
       },
       "cta": "View Plans"
     },
@@ -454,40 +454,52 @@
             ],
             "button": "Inquire now"
           },
-          "nails": {
-            "title": "Nail Clipping & Paw Care",
-            "description": "Safe nail trimming and paw care services. Nail clipping: 150 DKK, Pawdicure: 200 DKK. Available standalone or included in full grooming.",
+          "standalone": {
+            "title": "Quick Stand-Alone Services",
+            "description": "Perfect for pets who need just a quick touch-up between grooming appointments. These services are available as stand-alone appointments or can be added to full grooming sessions at discounted rates.",
             "bullets": [
               "Nail Clipping: 150 DKK",
               "Pawdicure: 200 DKK",
               "Ear Cleaning: 150 DKK",
+              "Ear Picking: 150 DKK",
               "Teeth Brushing: 200 DKK",
-              "Professional handling"
+              "Grooming Training: 550 DKK"
             ],
             "button": "Inquire now"
           },
-          "spa": {
-            "title": "Specialized Treatments",
-            "description": "De-shedding treatments, full spa packages, and specialized care. Dogs: 750-2400 DKK, Cats: 1000-1200 DKK based on size and coat type.",
+          "dogGrooming": {
+            "title": "Dog Grooming",
+            "description": "Complete grooming services for dogs of all breeds and sizes. Includes bath, blow dry, breed-specific cut or trim, nail clipping, ear cleaning, and anal gland check.",
             "bullets": [
-              "De-shedding: 750-2400 DKK",
-              "Full Spa: 850-1450 DKK",
-              "Deep Conditioning: 150 DKK",
-              "Anal Glands: 150 DKK",
-              "Extra Time (15 min): 150 DKK",
-              "Knot Removal: 775 DKK"
+              "Full Grooming: 750-1950 DKK",
+              "Hand-Scissoring: 950-2500 DKK",
+              "Hand-Stripping (Terriers): 1100-1300 DKK",
+              "De-shedding Treatment: 750-2400 DKK",
+              "Price varies by size and coat type"
             ],
             "button": "Inquire now"
           },
-          "teeth": {
-            "title": "Teeth Brushing & Extra Care",
-            "description": "Gentle teeth brushing (200 DKK) and additional services including grooming training (550 DKK) and cat brushing (1300 DKK).",
+          "catGrooming": {
+            "title": "Cat Grooming",
+            "description": "Specialized grooming services for cats with gentle handling and stress-free techniques. We understand feline behavior and provide patient, calming care.",
             "bullets": [
-              "Teeth Brushing: 200 DKK",
-              "Grooming Training: 550 DKK",
+              "Cat Grooming (with bathing): 1500-1700 DKK",
+              "Cat Grooming (without bathing): 1300 DKK",
+              "Cat De-shedding: 1000-1200 DKK",
               "Cat Brushing Package: 1300 DKK",
-              "Touch-up: 350 DKK (Dogs)",
-              "Touch-up for Cats: 400 DKK"
+              "Cat Knot Removal Only: 775 DKK"
+            ],
+            "button": "Inquire now"
+          },
+          "dogBathing": {
+            "title": "Dog Bathing",
+            "description": "Premium bathing service with professional shampoos, thorough blow drying, and basic brushing. Perfect for maintaining your dog's coat between full grooming sessions.",
+            "bullets": [
+              "Bath & Blow Dry: 700-1100 DKK",
+              "Bath + Touch-up: 1050-1450 DKK",
+              "Includes ear cleaning",
+              "Price varies by dog size",
+              "Add-ons available"
             ],
             "button": "Inquire now"
           }
@@ -495,12 +507,12 @@
       },
       "packages": {
         "title": "Grooming Packages",
-        "description": "Special packages designed for your pet's specific needs",
+        "description": "Special packages designed for your pet's specific needs. Save money with multi-session packages!",
         "items": {
           "perfectCoat": {
             "title": "Perfect Coat Package",
-            "price": "6480 DKK",
-            "description": "For dogs with matted or tangled coats",
+            "price": "From 6480 DKK",
+            "description": "For dogs with matted or tangled coats. 6 sessions included. Save up to 15%! Price varies by dog size.",
             "features": [
               "De-matting treatment",
               "Full grooming service",
@@ -511,8 +523,8 @@
           },
           "tangleFree": {
             "title": "Tangle-Free Life Package",
-            "price": "9180 DKK",
-            "description": "Ongoing coat maintenance program",
+            "price": "From 9180 DKK",
+            "description": "Ongoing coat maintenance program. 10 sessions included. Save up to 20%! Price varies by dog size.",
             "features": [
               "De-shedding treatment",
               "Full grooming",
@@ -523,8 +535,8 @@
           },
           "essentialCare": {
             "title": "Essential Pet Care Package",
-            "price": "4275 DKK",
-            "description": "Complete wellness grooming",
+            "price": "From 4275 DKK",
+            "description": "Complete wellness grooming. 5 sessions included. Save 10%! Price varies by pet size.",
             "features": [
               "Bath and blow dry",
               "Nail clipping",
@@ -535,8 +547,8 @@
           },
           "catBrushing": {
             "title": "Cat Brushing Package",
-            "price": "4590 DKK",
-            "description": "Gentle grooming for felines",
+            "price": "From 4590 DKK",
+            "description": "Gentle grooming for felines. 4 sessions included. Save 12%! Fixed price for all cats.",
             "features": [
               "Professional brushing",
               "De-shedding treatment",
@@ -805,79 +817,85 @@
         "items": {
           "daily": {
             "title": "Pet Sitting",
-            "description": "Once daily: 471 DKK. Twice daily: 737 DKK. 60-minute visits include feeding, water change, litter cleaning, short walk, and playtime.",
+            "description": "Professional in-home visits while you're away. 60-minute visits include feeding, fresh water, litter box care, short walks, and quality playtime with your pet.",
+            "pricing": "471 DKK once daily | 737 DKK twice daily",
             "cta": "Inquire now",
             "prices": {
-              "0": "Once Daily Visit: 471 DKK",
-              "1": "Twice Daily Visits: 737 DKK",
-              "2": "Additional Pet: 80 DKK",
-              "3": "Feeding & water change",
-              "4": "Litter cleaning",
-              "5": "Short walk & playtime"
+              "0": "Feeding & water change",
+              "1": "Litter cleaning",
+              "2": "Short walk & playtime",
+              "3": "Additional Pet: +80 DKK",
+              "4": "Save 165 DKK on 2nd daily visit",
+              "5": "Flexible scheduling"
             }
           },
           "overnight": {
             "title": "Overnight Stay",
-            "description": "1361 DKK per night. Complete evening and morning routines, feeding, walks, and companionship in the comfort of your pet's own home.",
+            "description": "Complete overnight care in the comfort of your pet's own home. Full evening and morning routines, walks, feeding, and companionship throughout the night.",
+            "pricing": "1361 DKK per night",
             "cta": "Inquire now",
             "prices": {
-              "0": "Overnight Stay: 1361 DKK per night",
-              "1": "Additional Pet: 80 DKK",
-              "2": "Complete evening & morning routines",
-              "3": "Feeding and fresh water",
-              "4": "Walks and exercise",
-              "5": "Companionship in pet's own home"
+              "0": "Complete evening & morning routines",
+              "1": "Feeding and fresh water",
+              "2": "Walks and exercise",
+              "3": "Overnight companionship",
+              "4": "Additional Pet: +80 DKK",
+              "5": "Sleep-over in pet's home"
             }
           },
           "boarding": {
             "title": "Pet Boarding",
-            "description": "At Employee's Home: 1000 DKK/night. At Facility: 1150 DKK/night. Personalized TLC, two long walks, company of one or two other dogs.",
+            "description": "Safe and loving boarding at our employee's home or professional facility. Personalized care with two long daily walks, socialization, and a comfortable environment.",
+            "pricing": "From 1000 DKK/night at home | 1150 DKK/night at facility",
             "cta": "Inquire now",
             "prices": {
-              "0": "At Employee's Home: 1000 DKK/night",
-              "1": "At Facility: 1150 DKK/night",
-              "2": "Additional Pet: 200 DKK",
-              "3": "Cage/Terrarium/Aquarium: 378 DKK/night",
-              "4": "Two long walks daily",
-              "5": "Safe and comfortable environment"
+              "0": "Two long walks daily",
+              "1": "Safe and comfortable environment",
+              "2": "Socialization with 1-2 friendly dogs",
+              "3": "Additional Pet: +200 DKK",
+              "4": "Cage/Terrarium/Aquarium: +378 DKK/night",
+              "5": "Personalized TLC and attention"
             }
           },
           "walking": {
             "title": "Dog Walking",
-            "description": "30 min: 340 DKK. 1 hour: 465 DKK. 90 min: 645 DKK. Twice daily options available. Includes pick-up, drop-off, playtime, and poop pickup.",
+            "description": "Professional dog walking service with pick-up and drop-off included. Choose from 30 minutes, 1 hour, or 90-minute walks. Perfect for busy pet owners or dogs needing regular exercise.",
+            "pricing": "From 340 DKK (30 min) to 645 DKK (90 min)",
             "cta": "Inquire now",
             "prices": {
-              "0": "30 Minutes Once Daily: 340 DKK",
-              "1": "1 Hour Once Daily: 465 DKK",
-              "2": "1 Hour Twice Daily: 740 DKK",
-              "3": "90 Minutes Once Daily: 645 DKK",
-              "4": "Additional Dog: 115 DKK",
+              "0": "30 Minutes: 340 DKK",
+              "1": "1 Hour: 465 DKK",
+              "2": "90 Minutes: 645 DKK",
+              "3": "Twice daily options available",
+              "4": "Additional Dog: +115 DKK",
               "5": "Pick-up and drop-off included"
             }
           },
           "medication": {
             "title": "Medication Administration",
-            "description": "Professional medication administration (45 DKK/day) for pets with special health needs. Our veterinary-educated team ensures proper care.",
+            "description": "Professional medication administration for pets with special health needs. Multiple service categories available based on your pet's specific requirements. Our experienced team ensures proper dosing, timing, and monitoring.",
+            "pricing": "45 DKK per day",
             "cta": "Inquire now",
             "prices": {
-              "0": "Medication Administration: 45 DKK/day",
-              "1": "Veterinary-educated team",
-              "2": "Professional care for special needs",
-              "3": "Proper dosing and timing",
-              "4": "Medication tracking",
-              "5": "Health updates to owners"
+              "0": "Proper dosing and timing",
+              "1": "Medication tracking",
+              "2": "Health updates to owners",
+              "3": "Multiple service categories available",
+              "4": "Professional monitoring",
+              "5": "Experienced and caring team"
             }
           },
           "updates": {
             "title": "Pet Daycare",
-            "description": "Hourly rates from 1-8 hours. 8 Hours: 680 DKK. At Home/Hotel: 4 Hours: 556 DKK, 6 Hours: 790 DKK. Socialization, playtime, and supervised throughout the day.",
+            "description": "Safe and supervised daycare with socialization and playtime. Starting at 160 DKK/hour with better rates for longer stays. From 4 hours onwards, includes a complimentary dog walk. Options for at-home or facility care.",
+            "pricing": "From 160 DKK/hour to 680 DKK full day",
             "cta": "Inquire now",
             "prices": {
-              "0": "1-4 Hours: 160-400 DKK",
-              "1": "5-8 Hours: 475-680 DKK",
-              "2": "At Home/Hotel (4 Hours): 556 DKK",
-              "3": "At Home/Hotel (6 Hours): 790 DKK",
-              "4": "Additional Last Minute Hour: 136 DKK",
+              "0": "1 Hour: 160 DKK (better rates for longer stays)",
+              "1": "4+ Hours: Includes dog walk",
+              "2": "Full Day (8 Hours): 680 DKK",
+              "3": "At Home/Hotel (4 Hours): 556 DKK",
+              "4": "At Home/Hotel (6 Hours): 790 DKK",
               "5": "Supervised playtime & socialization"
             }
           }
@@ -885,7 +903,7 @@
       },
       "banner": {
         "title": "Professional Pet Care in Copenhagen",
-        "description": "Our veterinary-educated team provides personalized attention for your pet while you're away.",
+        "description": "Our experienced team provides personalized attention for your pet while you're away.",
         "additionalInfo": "From daily visits to overnight stays, we ensure your pet receives the best care.",
         "cta1": "BOOK PET CARE",
         "cta2": "REQUEST QUOTE"
@@ -903,11 +921,11 @@
         },
         "q2": {
           "question": "Can you care for multiple pets?",
-          "answer": "Yes! Our overnight stay service is 1360 DKK per night. We're experienced with multi-pet households and provide individualized attention for each pet."
+          "answer": "Yes! We're experienced with multi-pet households and provide individualized attention for each pet. Additional pet fees apply and vary depending on the service - typically ranging from 80-200 DKK per additional pet."
         },
         "q3": {
           "question": "Where is the dog daycare located?",
-          "answer": "Our dog daycare is located at Peder Hvitfeldts Stræde 16, 1173 København. Full day care (8 hours) is 680 DKK and includes supervised play, socialization, and rest periods."
+          "answer": "Our dog daycare is located at Peder Hvitfeldts Stræde 16, 1173 København. We also offer daycare services at your home or hotel for added convenience. All options include supervised play, socialization, and rest periods."
         }
       }
     },
@@ -1016,7 +1034,7 @@
     "petPassport": {
       "title": "EU Pet Passport: Travel With Your Furry Friend",
       "subtitle": "Official EU pet passport for dogs, cats, and ferrets",
-      "description": "The EU Pet Passport is required for non-commercial travel within the EU and certain other countries. It serves as official identification and proof of rabies vaccination. Only authorized veterinarians can issue passports. Complete service: 1474 DKK.",
+      "description": "The EU Pet Passport is required for non-commercial travel within the EU and certain other countries. It serves as official identification and proof of rabies vaccination. Only authorized veterinarians can issue passports.",
       "hero": {
         "cta": "Inquire now"
       },
@@ -1072,14 +1090,14 @@
       },
       "banner": {
         "title": "Ready to Travel with Your Pet?",
-        "pricing": "Complete passport service: 1474 {currency} includes EU pet passport and rabies vaccination.",
+        "pricing": "Complete passport service includes EU pet passport and rabies vaccination.",
         "note": "Remember: Rabies vaccination must be at least 21 days before travel.",
         "cta1": "BOOK PASSPORT",
         "cta2": "ASK QUESTIONS"
       },
       "pricing": {
         "title": "Complete Passport Service",
-        "description": "1474 DKK includes EU pet passport and rabies vaccination. Home visit option available. Older format passports (pre-2014) remain valid if rabies vaccination is current.",
+        "description": "Our service includes EU pet passport and rabies vaccination. Home visit option available. Older format passports (pre-2014) remain valid if rabies vaccination is current.",
         "cta": "Book Appointment"
       },
       "faq": {
@@ -1166,7 +1184,7 @@
       "dora": {
         "role": "Assistant Operational Manager & Pet Caretaker",
         "location": "Copenhagen",
-        "bio": "Dora, known to everyone as Dori, is from Hungary who has been living in Denmark for nearly five years. Having lived in Aarhus and Odense, she now resides in Copenhagen's city center with her boyfriend. Dori enjoys feeding pigeons from her window and, in her free time, loves reading, watching TV shows, and playing board games. Back in Hungary, she has two cats, Lindzi and Naomi, with Lindzi boasting over 4000 followers on Instagram. She is excited to join the MyPeterinarian team and looks forward to caring for your pets as if they were her own."
+        "bio": "Meet Dora! Originally from Hungary, she currently lives in the heart of Copenhagen with her boyfriend. Dora is a dedicated pet lover whose passion extends to her two cats back home, Lindzi and Naomi. Since she couldn't bring her cats with her, she finds joy in feeding pigeons from her window and spends time with animals at our Pet Quarters. When she's not doing that, she enjoys reading or watching TV shows."
       },
       "martin": {
         "role": "Fractional Chief Financial Officer",
