@@ -1,16 +1,18 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { motion } from 'framer-motion';
-import { Check, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Check, Heart, Shield, Clock, Star, ArrowRight, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import SavingsCalculator from '@/components/SavingsCalculator';
 import Script from 'next/script';
+import { useState } from 'react';
 
 export default function SubscriptionsPage() {
   const t = useTranslations('subscriptions');
   const locale = useLocale();
   const selectedWeightCategory = '10_24_9kg';
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   const getPricing = (tier: string): number => {
     const pricing: Record<string, Record<string, number>> = {
@@ -564,29 +566,111 @@ export default function SubscriptionsPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 px-4 bg-white">
+      {/* FAQ Section - Enhanced Accordion Design */}
+      <section className="py-16 px-4 bg-gradient-to-b from-white to-[#F5F7F9]">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.1 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-12 tracking-tight">
-              {t('faq.title')}
-            </h2>
-            <div className="space-y-6">
-              {Array.from({ length: 17 }, (_, index) => index).map((index) => (
-                <div key={index} className="bg-[#F5F7F9] rounded-lg p-6 border border-gray-200">
-                  <h3 className="text-lg font-medium text-[#2C3E50] mb-3">
-                    {t(`faq.questions.${index}.question`)}
-                  </h3>
-                  <p className="text-gray-700 font-light leading-relaxed">
-                    {t(`faq.questions.${index}.answer`)}
-                  </p>
-                </div>
-              ))}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-light text-[#2C3E50] mb-4 tracking-tight">
+                {t('faq.title')}
+              </h2>
+              <p className="text-gray-600 font-light max-w-2xl mx-auto">
+                Click on any question to expand the answer
+              </p>
             </div>
+
+            <div className="space-y-3">
+              {Array.from({ length: 17 }, (_, index) => index).map((index) => {
+                const isOpen = openFaqIndex === index;
+
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.03 }}
+                    className="bg-white rounded-xl border-2 border-gray-100 overflow-hidden hover:border-[#6B8FA9]/30 transition-all duration-300 hover:shadow-md"
+                  >
+                    {/* Question Header - Clickable */}
+                    <button
+                      onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                      className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 group"
+                    >
+                      <h3 className="text-base sm:text-lg font-medium text-[#2C3E50] group-hover:text-[#6B8FA9] transition-colors flex-grow">
+                        {t(`faq.questions.${index}.question`)}
+                      </h3>
+                      <motion.div
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        className="flex-shrink-0"
+                      >
+                        <ChevronDown
+                          className={`w-5 h-5 transition-colors ${
+                            isOpen ? 'text-[#6B8FA9]' : 'text-gray-400 group-hover:text-[#6B8FA9]'
+                          }`}
+                        />
+                      </motion.div>
+                    </button>
+
+                    {/* Answer Content - Collapsible */}
+                    <AnimatePresence initial={false}>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{
+                            height: 'auto',
+                            opacity: 1,
+                            transition: {
+                              height: { duration: 0.3, ease: 'easeInOut' },
+                              opacity: { duration: 0.2, delay: 0.1 }
+                            }
+                          }}
+                          exit={{
+                            height: 0,
+                            opacity: 0,
+                            transition: {
+                              height: { duration: 0.3, ease: 'easeInOut' },
+                              opacity: { duration: 0.15 }
+                            }
+                          }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-5 pt-1">
+                            <div className="pt-3 border-t border-gray-100">
+                              <p className="text-gray-700 font-light leading-relaxed">
+                                {t(`faq.questions.${index}.answer`)}
+                              </p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+                );
+              })}
+            </div>
+
+            {/* FAQ Footer */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-10 text-center"
+            >
+              <p className="text-gray-600 font-light">
+                Still have questions?{' '}
+                <Link
+                  href="/contact"
+                  className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium underline transition-colors"
+                >
+                  Contact our team
+                </Link>
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
