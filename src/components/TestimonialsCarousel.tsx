@@ -63,7 +63,7 @@ export default function TestimonialsCarousel({
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.5 }}
-            className="bg-white p-8 sm:p-12 rounded-xl shadow-lg"
+            className="bg-white p-8 sm:p-12 rounded-xl shadow-lg min-h-[400px] flex flex-col justify-center"
           >
             {/* Rating Stars */}
             <div className="flex items-center justify-center mb-6">
