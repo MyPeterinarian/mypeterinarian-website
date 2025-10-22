@@ -50,6 +50,7 @@ export default function SubscriptionsPage() {
     {
       id: 'essential',
       name: t('tiers.essential.name'),
+      savings: t('tiers.essential.savings'),
       description: t('tiers.essential.description'),
       icon: Heart,
       color: 'blue',
@@ -67,6 +68,7 @@ export default function SubscriptionsPage() {
     {
       id: 'advanced',
       name: t('tiers.advanced.name'),
+      savings: t('tiers.advanced.savings'),
       description: t('tiers.advanced.description'),
       icon: Shield,
       color: 'green',
@@ -87,6 +89,7 @@ export default function SubscriptionsPage() {
     {
       id: 'professional',
       name: t('tiers.professional.name'),
+      savings: t('tiers.professional.savings'),
       description: t('tiers.professional.description'),
       icon: Star,
       color: 'purple',
@@ -217,6 +220,14 @@ export default function SubscriptionsPage() {
                     </div>
                     <h3 className="text-2xl font-medium text-[#2C3E50]">{tier.name}</h3>
                   </div>
+
+                  {tier.savings && (
+                    <div className="mb-3">
+                      <span className="inline-block bg-[#8FA998]/10 text-[#8FA998] px-3 py-1 rounded-full text-sm font-medium">
+                        {tier.savings}
+                      </span>
+                    </div>
+                  )}
 
                   <p className="text-gray-600 mb-6 font-light">{tier.description}</p>
 

@@ -1223,7 +1223,7 @@
       "subtitle": "Vælg den perfekte abonnementsplan for dit kæledyrs sundhed og trivsel",
       "benefits": [
         "Forebyggende pleje inkluderet",
-        "Spar op til 40% årligt",
+        "Spar op til 40% årligt med omfattende forebyggende pleje",
         "Opsig når som helst"
       ]
     },
@@ -1252,7 +1252,8 @@
       "cta": "Kom I Gang",
       "essential": {
         "name": "Essentiel Pleje",
-        "description": "Perfekt til grundlæggende forebyggende pleje og rutinemæssig sundhedsvedligeholdelse",
+        "savings": "Spar op til 50%",
+        "description": "Perfekt til sunde kæledyr, der har brug for grundlæggende forebyggende pleje",
         "features": [
           "2 helbredstjek om året",
           "1 kernervaccination (DHP eller DHPPi) inkluderet",
@@ -1266,7 +1267,8 @@
       },
       "advanced": {
         "name": "Avanceret Pleje",
-        "description": "Omfattende pleje med yderligere fordele og besparelser",
+        "savings": "Spar op til 60%",
+        "description": "Mest Populære | Komplet plejepakke med omfattende fordele",
         "features": [
           "3 helbredstjek om året",
           "1 kernervaccination (DHP eller DHPPi) inkluderet",
@@ -1282,7 +1284,8 @@
       },
       "professional": {
         "name": "Professionel Pleje",
-        "description": "Premium alt-inklusiv pleje for fuldstændig tryghed",
+        "savings": "Spar op til 70%",
+        "description": "For kæledyr, der har brug for hyppig pleje | Premium alt-inklusiv pakke",
         "features": [
           "4 helbredstjek om året",
           "1 kernervaccination (DHP eller DHPPi) inkluderet",

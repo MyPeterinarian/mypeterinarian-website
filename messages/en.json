@@ -1244,7 +1244,7 @@
       "subtitle": "Choose the perfect subscription plan for your pet's health and wellbeing",
       "benefits": [
         "Preventive care included",
-        "Save up to 40% annually",
+        "Save up to 40% annually with comprehensive preventive care",
         "Cancel anytime"
       ]
     },
@@ -1273,7 +1273,8 @@
       "cta": "Get Started",
       "essential": {
         "name": "Essential Care",
-        "description": "Perfect for basic preventive care and routine health maintenance",
+        "savings": "Save up to 50%",
+        "description": "Perfect for healthy pets needing basic preventive care",
         "features": [
           "2 health check-ups per year",
           "1 core vaccine (DHP or DHPPi) included",
@@ -1287,7 +1288,8 @@
       },
       "advanced": {
         "name": "Advanced Care",
-        "description": "Comprehensive care with additional benefits and savings",
+        "savings": "Save up to 60%",
+        "description": "Most Popular | Complete care package with comprehensive benefits",
         "features": [
           "3 health check-ups per year",
           "1 core vaccine (DHP or DHPPi) included",
@@ -1303,7 +1305,8 @@
       },
       "professional": {
         "name": "Professional Care",
-        "description": "Premium all-inclusive care for complete peace of mind",
+        "savings": "Save up to 70%",
+        "description": "For pets needing frequent care | Premium all-inclusive package",
         "features": [
           "4 health check-ups per year",
           "1 core vaccine (DHP or DHPPi) included",
