@@ -110,7 +110,8 @@ export default function HomePage() {
               <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.veterinary.description')}
               </p>
-              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+              <div className="flex-grow" />
+              <ul className="space-y-2 text-base text-gray-600 mb-6">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.veterinary.items.exams')}</span>
@@ -139,7 +140,8 @@ export default function HomePage() {
               <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.grooming.description')}
               </p>
-              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+              <div className="flex-grow" />
+              <ul className="space-y-2 text-base text-gray-600 mb-6">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.grooming.items.full')}</span>
@@ -168,7 +170,8 @@ export default function HomePage() {
               <p className="text-base text-gray-600 mb-6 font-light">
                 {t('services.petSitting.description')}
               </p>
-              <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
+              <div className="flex-grow" />
+              <ul className="space-y-2 text-base text-gray-600 mb-6">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.petSitting.items.daily')}</span>
