@@ -13,9 +13,10 @@ export default function SubscriptionsPage() {
   const locale = useLocale();
   const selectedWeightCategory = '10_24_9kg';
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [billingFrequency, setBillingFrequency] = useState<'monthly' | 'annual'>('monthly');
 
-  const getPricing = (tier: string): number => {
-    const pricing: Record<string, Record<string, number>> = {
+  const getPricing = (tier: string): { monthly: number; annual: number } => {
+    const monthlyPricing: Record<string, Record<string, number>> = {
       'essential': {
         'under_4_9kg': 299,
         '5_9_9kg': 310,
@@ -38,7 +39,9 @@ export default function SubscriptionsPage() {
         'over_40kg': 740
       }
     };
-    return pricing[tier]?.[selectedWeightCategory] || 0;
+    const monthly = monthlyPricing[tier]?.[selectedWeightCategory] || 0;
+    const annual = Math.round(monthly * 12 * 0.95); // 5% discount for annual payment
+    return { monthly, annual };
   };
 
   const tiers = [
@@ -398,10 +401,46 @@ export default function SubscriptionsPage() {
       {/* Pricing Tiers */}
       <section className="py-16 px-4 bg-[#F5F7F9] border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
+          {/* Billing Frequency Toggle */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex justify-center mb-10"
+          >
+            <div className="inline-flex items-center gap-2 bg-white rounded-lg p-1.5 border-2 border-gray-200">
+              <button
+                onClick={() => setBillingFrequency('monthly')}
+                className={`px-6 py-2.5 rounded-md font-medium text-sm transition-all ${
+                  billingFrequency === 'monthly'
+                    ? 'bg-[#6B8FA9] text-white shadow-sm'
+                    : 'text-gray-600 hover:text-[#6B8FA9]'
+                }`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setBillingFrequency('annual')}
+                className={`px-6 py-2.5 rounded-md font-medium text-sm transition-all flex items-center gap-2 ${
+                  billingFrequency === 'annual'
+                    ? 'bg-[#6B8FA9] text-white shadow-sm'
+                    : 'text-gray-600 hover:text-[#6B8FA9]'
+                }`}
+              >
+                Annual
+                <span className="text-xs bg-[#8FA998] text-white px-2 py-0.5 rounded-full">
+                  Save 5%
+                </span>
+              </button>
+            </div>
+          </motion.div>
+
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {tiers.map((tier, index) => {
               const Icon = tier.icon;
-              const price = getPricing(tier.id);
+              const pricing = getPricing(tier.id);
+              const displayPrice = billingFrequency === 'monthly' ? pricing.monthly : pricing.annual;
+              const savingsAmount = Math.round(pricing.monthly * 12 - pricing.annual);
 
               return (
                 <motion.div
@@ -442,13 +481,27 @@ export default function SubscriptionsPage() {
 
                   <div className="mb-6">
                     <div className="flex items-baseline gap-2">
-                      <span className="text-4xl font-medium text-[#2C3E50]">{price}</span>
+                      <span className="text-4xl font-medium text-[#2C3E50]">{displayPrice}</span>
                       <span className="text-xl text-gray-600 font-light">DKK</span>
-                      <span className="text-gray-500 font-light">/{t('tiers.perMonth')}</span>
+                      <span className="text-gray-500 font-light">
+                        {billingFrequency === 'monthly' ? `/${t('tiers.perMonth')}` : '/year'}
+                      </span>
                     </div>
-                    <p className="text-sm text-gray-500 mt-1 font-light">
-                      {t('tiers.priceNote')}
-                    </p>
+                    {billingFrequency === 'annual' && (
+                      <div className="mt-2 space-y-1">
+                        <p className="text-sm text-[#8FA998] font-medium">
+                          Save {savingsAmount} DKK per year
+                        </p>
+                        <p className="text-xs text-gray-500 font-light">
+                          ({pricing.monthly} DKK/month × 12 months with 5% discount)
+                        </p>
+                      </div>
+                    )}
+                    {billingFrequency === 'monthly' && (
+                      <p className="text-sm text-gray-500 mt-1 font-light">
+                        {t('tiers.priceNote')}
+                      </p>
+                    )}
                   </div>
 
                   <ul className="space-y-3 mb-8 flex-grow">
