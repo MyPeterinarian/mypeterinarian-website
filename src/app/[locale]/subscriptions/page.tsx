@@ -1,12 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Check, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
 import SavingsCalculator from '@/components/SavingsCalculator';
+import Script from 'next/script';
 
 export default function SubscriptionsPage() {
   const t = useTranslations('subscriptions');
+  const locale = useLocale();
   const selectedWeightCategory = '10_24_9kg';
 
   const getPricing = (tier: string): number => {
@@ -270,6 +272,94 @@ export default function SubscriptionsPage() {
         </div>
       </section>
 
+      {/* Clear Terms Section */}
+      <section className="py-16 px-4 bg-white border-y border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
+              {t('clearTerms.title')}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto font-light">
+              {t('clearTerms.subtitle')}
+            </p>
+
+            <div className="space-y-8">
+              {/* Section 1: Annual Commitment */}
+              <div className="bg-gradient-to-br from-[#6B8FA9]/5 to-transparent rounded-lg p-6 border border-[#6B8FA9]/20">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-[#6B8FA9]/10 flex-shrink-0">
+                    <Shield className="w-6 h-6 text-[#6B8FA9]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
+                      {t('clearTerms.sections.0.title')}
+                    </h3>
+                    <p className="text-gray-700 font-light leading-relaxed">
+                      {t('clearTerms.sections.0.content')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 2: Fair Cancellation */}
+              <div className="bg-gradient-to-br from-[#8FA998]/5 to-transparent rounded-lg p-6 border border-[#8FA998]/20">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Heart className="w-6 h-6 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
+                      {t('clearTerms.sections.1.title')}
+                    </h3>
+                    <p className="text-gray-700 font-light leading-relaxed">
+                      {t('clearTerms.sections.1.content')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Section 3: Special Circumstances */}
+              <div className="bg-gradient-to-br from-[#6B8FA9]/5 to-transparent rounded-lg p-6 border border-[#6B8FA9]/20">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-[#6B8FA9]/10 flex-shrink-0">
+                    <Star className="w-6 h-6 text-[#6B8FA9]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-medium text-[#2C3E50] mb-3">
+                      {t('clearTerms.sections.2.title')}
+                    </h3>
+                    <p className="text-gray-700 font-light leading-relaxed">
+                      {t('clearTerms.sections.2.content')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer with link to full T&C */}
+            <div className="mt-10 text-center">
+              <p className="text-gray-600 font-light">
+                {t('clearTerms.footer')}{' '}
+                <a
+                  href="/wellness-plan-terms"
+                  className="text-[#6B8FA9] hover:text-[#5A7A94] font-medium underline transition-colors"
+                >
+                  {t('clearTerms.termsLink')}
+                </a>
+              </p>
+              <button className="mt-4 text-[#6B8FA9] hover:text-[#5A7A94] font-medium flex items-center gap-2 mx-auto transition-colors">
+                <span>{t('clearTerms.downloadText')}</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Pricing Tiers */}
       <section className="py-16 px-4 bg-[#F5F7F9] border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
@@ -453,7 +543,7 @@ export default function SubscriptionsPage() {
               {t('faq.title')}
             </h2>
             <div className="space-y-6">
-              {[0, 1, 2, 3, 4, 5, 6, 7].map((index) => (
+              {Array.from({ length: 17 }, (_, index) => index).map((index) => (
                 <div key={index} className="bg-[#F5F7F9] rounded-lg p-6 border border-gray-200">
                   <h3 className="text-lg font-medium text-[#2C3E50] mb-3">
                     {t(`faq.questions.${index}.question`)}
@@ -488,6 +578,33 @@ export default function SubscriptionsPage() {
           </a>
         </div>
       </section>
+
+      {/* FAQ Schema Markup for SEO */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": Object.values(t.raw('faq') as Record<string, unknown>)
+              .filter((item): item is { question: string; answer: string } =>
+                typeof item === 'object' &&
+                item !== null &&
+                'question' in item &&
+                'answer' in item
+              )
+              .map((faqItem) => ({
+                "@type": "Question",
+                "name": faqItem.question,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": faqItem.answer
+                }
+              }))
+          })
+        }}
+      />
     </div>
   );
 }

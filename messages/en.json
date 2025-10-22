@@ -1446,43 +1446,212 @@
       "description": "Join hundreds of happy pet parents who trust MyPeterinarian for their pet's health",
       "button": "Subscribe Now"
     },
+    "clearTerms": {
+      "title": "Clear Terms, No Surprises",
+      "subtitle": "We believe in transparency. Here's exactly what you need to know about your wellness plan commitment:",
+      "sections": [
+        {
+          "title": "Annual Commitment with Flexibility",
+          "content": "Our wellness plans run for 12 months to ensure your pet receives comprehensive preventive care throughout the year. We offer a 14-day cooling-off period with full refund if no services are used. You can pay monthly or annually (with a 5% discount for annual payment). This commitment helps us provide consistent, high-quality care while keeping costs affordable for your family."
+        },
+        {
+          "title": "Fair Cancellation Policy",
+          "content": "You can cancel anytime with 30 days' notice. If you cancel after the 14-day trial, a Value Reconciliation Fee applies to ensure fairness: you pay the lesser of either your remaining monthly fees OR the retail value of benefits used minus fees already paid. We send renewal reminders 30 days before your anniversary date. This policy prevents system abuse while treating our members fairly."
+        },
+        {
+          "title": "Special Circumstances",
+          "content": "If your pet passes away, we offer immediate cancellation with no fees and a pro-rata refund of unused months. We understand this is a difficult time and want to support you with compassion and flexibility. If you need to upgrade to a higher tier, it takes effect immediately with a pro-rated fee adjustment."
+        }
+      ],
+      "footer": "For complete details, please review our full",
+      "termsLink": "Wellness Plan Terms & Conditions",
+      "downloadText": "Download PDF Version"
+    },
     "faq": {
-      "title": "Frequently Asked Questions",
+      "title": "Frequently Asked Questions About Pet Wellness Plans",
       "questions": [
         {
-          "question": "Can I cancel my subscription anytime?",
-          "answer": "Yes! We offer complete flexibility with no long-term commitment. You can cancel your subscription at any time with 30 days notice, and we also provide a 14-day cooling-off period from when you sign up."
+          "question": "How much money will I save with a wellness plan?",
+          "answer": "Most families save 40-60% annually compared to paying per visit. For example, if you use all included services in the Advanced plan, you save over 22,000 DKK per year. Our plans bundle preventive care at a significant discount to help you budget predictably while keeping your pet healthy."
         },
         {
-          "question": "How does the subscription save me money?",
-          "answer": "Our subscriptions bundle essential preventive care services at significantly discounted rates. Instead of paying full price for each individual service, you get comprehensive coverage for a fixed monthly fee, saving up to 70% annually compared to pay-as-you-go pricing."
+          "question": "Is this pet insurance?",
+          "answer": "No, our wellness plans are different from pet insurance. While insurance covers unexpected emergencies and accidents, our plans focus on preventive care—routine check-ups, vaccines, parasite treatment, and consultations to keep your pet healthy and avoid costly emergencies. Many families use both: our plan for routine care and insurance for unexpected events!"
         },
         {
-          "question": "Which subscription plan is right for my pet?",
-          "answer": "Use our savings calculator above to determine the best plan based on your pet's typical care needs. Essential is perfect for healthy pets needing basic preventive care, Advanced offers the best value for most pet families, and Professional is ideal for pets requiring frequent visits or premium services."
+          "question": "How long is the commitment?",
+          "answer": "Our wellness plans run for 12 months and automatically renew each year. You can choose to pay monthly or annually (with a 5% discount for annual payment). The plan provides the best value when you use the preventive services throughout the year."
         },
         {
-          "question": "Do subscriptions cover emergency visits?",
-          "answer": "While subscriptions focus on preventive care to help avoid emergencies, they include discounts on additional services. Emergency visits are charged separately, but regular health check-ups included in your plan help catch issues early before they become emergencies."
+          "question": "Do you have a trial period?",
+          "answer": "Yes! We offer a 14-day cooling-off period after enrollment. If you haven't used any benefits and decide the plan isn't right for you, we'll provide a full refund. If you've used some services, you'll pay only the retail value of those services, and we'll refund the difference."
         },
         {
-          "question": "Can I use the subscription for multiple pets?",
-          "answer": "Each subscription covers one pet. If you have multiple pets, you'll need a separate subscription for each. Contact us about multi-pet discounts for families with 3+ pets."
+          "question": "Can I cancel my subscription?",
+          "answer": "Yes. You can cancel at any time by giving us 30 days' notice via email or our online portal. Please note: During the first 14 days you get a full refund if no services used. After 14 days, a Value Reconciliation Fee applies (the lesser of remaining monthly fees OR retail value of benefits used minus fees paid). Before renewal, cancel at least 30 days before your anniversary date to avoid the next year's charges. If your pet passes away, we offer immediate cancellation with no fees and pro-rata refund of unused months. This policy ensures fairness to both our practice and members while preventing system abuse."
         },
         {
-          "question": "What happens to unused services at the end of the month?",
-          "answer": "Annual services (like health check-ups and core vaccines) can be scheduled anytime during the year. Monthly services don't roll over, but our plans are designed to match typical pet care needs, ensuring you get great value throughout the year."
+          "question": "When will I be notified about renewal?",
+          "answer": "We send a renewal reminder email at least 30 days before your anniversary date, including the upcoming fee, any price changes, and clear instructions to cancel if you choose. You'll never be surprised by a renewal charge."
         },
         {
-          "question": "Do you offer home visits with subscriptions?",
-          "answer": "Yes! Home visits are available for subscription members. Some plans include home visit options, while others offer them at discounted rates. Check your specific plan details or contact us for more information."
+          "question": "Can I upgrade or downgrade my plan?",
+          "answer": "Yes! To upgrade to a higher tier, it takes effect immediately. You pay a pro-rated difference for the remaining period, and your 12-month term resets from the upgrade date. To downgrade to a lower tier, it takes effect on your next anniversary date. You keep your current benefits until renewal."
         },
         {
-          "question": "How quickly can I start using my subscription?",
-          "answer": "You can start using your subscription benefits immediately after signing up! We offer same-day bookings, so you can schedule your first appointment right away."
+          "question": "What if I miss a payment?",
+          "answer": "If a payment is 7 days overdue, a late fee of 150 DKK is added. We'll send a reminder, and if payment remains outstanding after 14 days, your plan will be suspended. Benefits resume once payment is received."
+        },
+        {
+          "question": "Can I use my wellness plan for emergency visits?",
+          "answer": "Wellness plans cover routine preventive care only. Emergency visits are charged separately, but subscribers receive priority booking and discounted rates on additional services (10-30% depending on your tier)."
+        },
+        {
+          "question": "What areas of Copenhagen do you serve?",
+          "answer": "We serve all of Copenhagen, Frederiksberg, and surrounding municipalities. Home visits are available in most areas for added convenience."
+        },
+        {
+          "question": "Do you have English-speaking veterinarians?",
+          "answer": "Absolutely! All our veterinarians are fluent in English and experienced in serving Copenhagen's international community. We understand the challenges expats face finding quality English-speaking vet care."
+        },
+        {
+          "question": "What if my pet needs treatment not included in my plan?",
+          "answer": "Subscribers receive 10-30% discounts on all services not included in their plan (discounts vary by tier: Essential 10%, Advanced 10-20%, Professional 20-30%)."
+        },
+        {
+          "question": "Do unused benefits roll over to the next year?",
+          "answer": "No, unused benefits expire at the end of each 12-month term and do not carry over. This is why we recommend using all your included services—regular preventive care provides the best value and keeps your pet healthiest!"
+        },
+        {
+          "question": "Can I enroll multiple pets?",
+          "answer": "Yes! Each pet needs their own individual plan matched to their weight category. Contact us about multi-pet households for personalized assistance."
+        },
+        {
+          "question": "What if I cancel and want to rejoin later?",
+          "answer": "You're welcome to re-enroll at any time as a new subscriber. Please note that any conditions diagnosed or treated during your prior membership may be considered pre-existing and could be excluded for the first 90 days of your new plan."
+        },
+        {
+          "question": "Is my personal data protected?",
+          "answer": "Yes. We process all personal data in accordance with GDPR regulations. We never sell your data and use it solely to administer your plan and deliver veterinary services. Full details are in our Privacy Policy."
+        },
+        {
+          "question": "Where can I read the full Terms & Conditions?",
+          "answer": "You can view our complete Wellness Plan Terms & Conditions on our dedicated terms page. We encourage all members to review the full policy before enrolling."
         }
       ]
     }
+  },
+  "wellnessPlanTerms": {
+    "title": "Wellness Plan Terms & Conditions",
+    "subtitle": "Last Updated: January 2025",
+    "intro": "These Terms & Conditions govern your enrollment in MyPeterinarian's Wellness Plans. Please read carefully before subscribing.",
+    "tableOfContents": {
+        "title": "Table of Contents",
+        "items": [
+          "Definitions",
+          "Enrollment & Eligibility",
+          "Plan Duration & Commitment",
+          "Cooling-Off Period",
+          "Payment Terms",
+          "Cancellation Policy",
+          "Value Reconciliation Fee",
+          "Special Circumstances",
+          "Renewal Process",
+          "Plan Benefits",
+          "Exclusions",
+          "Changes to Terms",
+          "Limitation of Liability",
+          "Dispute Resolution",
+          "Governing Law",
+          "Contact Information"
+        ]
+      },
+      "sections": [
+        {
+          "id": "definitions",
+          "title": "1. Definitions",
+          "content": "\"Plan\" refers to any MyPeterinarian Wellness Plan (Essential, Advanced, or Professional). \"Member\" means the pet owner who enrolls in a Plan. \"Pet\" means the animal covered under the Plan. \"Anniversary Date\" is the date 12 months after enrollment. \"Value Reconciliation Fee\" is the fee charged upon early cancellation after the cooling-off period."
+        },
+        {
+          "id": "enrollment",
+          "title": "2. Enrollment & Eligibility",
+          "content": "Enrollment is open to all pet owners in Copenhagen and surrounding areas. Each pet requires an individual Plan matched to their weight category. Pets must be at least 8 weeks old to enroll. Pre-existing conditions may be excluded for the first 90 days. We reserve the right to decline enrollment for pets with chronic conditions requiring intensive ongoing care."
+        },
+        {
+          "id": "duration",
+          "title": "3. Plan Duration & Commitment",
+          "content": "All Wellness Plans run for 12 consecutive months from your enrollment date. This annual commitment ensures your pet receives comprehensive preventive care throughout the year. Plans automatically renew unless you provide 30 days' written notice before your Anniversary Date. The 12-month commitment helps us provide consistent, high-quality care while keeping costs affordable."
+        },
+        {
+          "id": "cooling-off",
+          "title": "4. 14-Day Cooling-Off Period",
+          "content": "You may cancel within 14 days of enrollment with a full refund, provided no services have been used. To exercise this right, contact us in writing before the 14-day period expires. If any services have been used during the cooling-off period, you will be charged the retail value of those services, and the balance will be refunded."
+        },
+        {
+          "id": "payment",
+          "title": "5. Payment Terms",
+          "content": "You may pay monthly or annually. Annual payment receives a 5% discount. Monthly payments are charged automatically on the same day each month. Annual payments are charged on your enrollment date and Anniversary Date. Failed payments may result in plan suspension after 7 days. A 100 DKK late fee applies to payments more than 15 days overdue. All fees are in Danish Kroner (DKK) and include applicable VAT."
+        },
+        {
+          "id": "cancellation",
+          "title": "6. Cancellation Policy",
+          "content": "You may cancel at any time by providing 30 days' written notice. Cancellations after the 14-day cooling-off period are subject to a Value Reconciliation Fee (see Section 7). Your Plan remains active during the 30-day notice period. We send renewal reminders 30 days before your Anniversary Date. If you do not respond, your Plan will automatically renew for another 12 months. Cancellation must be requested in writing via email to hello@mypeterinarian.com or through your online account."
+        },
+        {
+          "id": "reconciliation",
+          "title": "7. Value Reconciliation Fee",
+          "content": "If you cancel after the 14-day cooling-off period, a Value Reconciliation Fee applies to ensure fairness to all members. This fee is calculated as the LESSER of: (A) Your remaining monthly fees for the rest of the 12-month term, OR (B) The retail value of benefits you've used minus fees you've already paid. Example: If you've paid 3 months (1,197 DKK total for Essential Plan) and used 2 health checks (retail value 1,600 DKK), you would pay the lesser of: (A) 9 remaining months × 399 DKK = 3,591 DKK, or (B) 1,600 DKK - 1,197 DKK = 403 DKK. In this case, you'd pay 403 DKK. This policy prevents system abuse while treating members fairly."
+        },
+        {
+          "id": "special",
+          "title": "8. Special Circumstances",
+          "content": "Pet Passing: If your pet passes away, we offer immediate cancellation with no Value Reconciliation Fee and a pro-rata refund of unused months. We understand this is a difficult time and want to support you with compassion. Tier Upgrades: You may upgrade to a higher tier at any time. The upgrade takes effect immediately with a pro-rated fee adjustment for the remainder of your 12-month term. Tier Downgrades: Downgrades are not permitted during your current 12-month term but will take effect upon renewal. Relocation: If you relocate outside our service area (Copenhagen and surrounding areas), you may cancel with no Value Reconciliation Fee upon providing proof of relocation."
+        },
+        {
+          "id": "renewal",
+          "title": "9. Renewal Process",
+          "content": "We send renewal reminders 30 days before your Anniversary Date via email. If you take no action, your Plan automatically renews for another 12 months at the current published rates. To prevent renewal, you must provide written notice at least 30 days before your Anniversary Date. Plan rates may be adjusted at renewal with 60 days' advance notice. Current members always receive priority pricing and will never pay more than new enrollees."
+        },
+        {
+          "id": "benefits",
+          "title": "10. Plan Benefits",
+          "content": "Each Plan includes specified services as outlined in the plan comparison table on our website. Benefits must be used within your 12-month term and do not roll over. Services must be scheduled in advance and are subject to clinic availability. Unused benefits expire at the end of your 12-month term. We recommend using all included services for optimal pet health and value. Additional services not included in your Plan are available at discounted rates (10-30% depending on your tier)."
+        },
+        {
+          "id": "exclusions",
+          "title": "11. Exclusions",
+          "content": "Wellness Plans do NOT cover: Emergency care outside regular clinic hours; Specialist referrals; Surgery or hospitalization; Diagnostic imaging (X-rays, ultrasounds, MRIs); Chronic disease management requiring ongoing prescriptions; Behavioral consultations; Breeding services; Pre-existing conditions (first 90 days); Experimental or elective treatments. These services are available at standard retail rates with member discounts (10-30% depending on tier). Wellness Plans are preventive care packages, not pet insurance."
+        },
+        {
+          "id": "changes",
+          "title": "12. Changes to Terms",
+          "content": "We may update these Terms & Conditions with 60 days' written notice. Continued use of your Plan after the effective date constitutes acceptance of updated terms. Material changes affecting fees or benefits will be communicated via email and posted on our website. If you do not agree to updated terms, you may cancel without a Value Reconciliation Fee within 30 days of the notice."
+        },
+        {
+          "id": "liability",
+          "title": "13. Limitation of Liability",
+          "content": "MyPeterinarian's liability is limited to the fees you have paid for your Plan. We are not responsible for indirect, incidental, or consequential damages. Our veterinarians exercise professional judgment in all medical decisions. Wellness Plans do not guarantee specific health outcomes. You are responsible for following veterinary recommendations and administering prescribed treatments. We maintain professional liability insurance as required by Danish law."
+        },
+        {
+          "id": "disputes",
+          "title": "14. Dispute Resolution",
+          "content": "We strive to resolve all concerns amicably. If you have a complaint, please contact us at hello@mypeterinarian.com. We will respond within 5 business days. If we cannot resolve your concern, you may file a complaint with the Danish Veterinary and Food Administration (Fødevarestyrelsen). For billing disputes, you may contact the Danish Consumer Ombudsman (Forbrugerombudsmanden). Legal disputes will be resolved through mediation before litigation."
+        },
+        {
+          "id": "governing",
+          "title": "15. Governing Law",
+          "content": "These Terms & Conditions are governed by Danish law. Any legal proceedings must be brought in Copenhagen courts. Danish consumer protection laws apply. If you are a consumer, you retain the protection of mandatory provisions of consumer law in your country of residence. The Danish-language version of these terms prevails in case of translation discrepancies."
+        },
+        {
+          "id": "contact",
+          "title": "16. Contact Information",
+          "content": "For questions about these Terms & Conditions, please contact us: Email: hello@mypeterinarian.com | Phone: +45 XX XX XX XX | Address: MyPeterinarian, Copenhagen, Denmark | Website: www.mypeterinarian.com | Business Hours: Monday-Friday 9:00-18:00, Saturday 10:00-14:00"
+        }
+      ],
+      "printButton": "Print Terms",
+      "downloadButton": "Download PDF",
+      "backToPlans": "Back to Wellness Plans",
+      "acknowledgment": "By enrolling in a MyPeterinarian Wellness Plan, you acknowledge that you have read, understood, and agree to these Terms & Conditions."
   },
   "blog": {
     "title": "Pet Care Blog & Tips",

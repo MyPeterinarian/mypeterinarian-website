@@ -1425,43 +1425,212 @@
       "description": "Bliv en del af hundredvis af glade kæledyrsejere, der stoler på MyPeterinarian for deres kæledyrs sundhed",
       "button": "Abonner Nu"
     },
+    "clearTerms": {
+      "title": "Klare Vilkår, Ingen Overraskelser",
+      "subtitle": "Vi tror på gennemsigtighed. Her er præcis, hvad du skal vide om din sundhedsplans forpligtelse:",
+      "sections": [
+        {
+          "title": "Årlig Forpligtelse med Fleksibilitet",
+          "content": "Vores sundhedsplaner løber i 12 måneder for at sikre, at dit kæledyr modtager omfattende forebyggende pleje gennem hele året. Vi tilbyder en 14-dages fortrydelsesperiode med fuld refusion, hvis ingen tjenester er brugt. Du kan betale månedligt eller årligt (med 5% rabat ved årlig betaling). Denne forpligtelse hjælper os med at yde konsekvent pleje af høj kvalitet, mens omkostningerne holdes overkommelige for din familie."
+        },
+        {
+          "title": "Fair Opsigelsespolitik",
+          "content": "Du kan opsige når som helst med 30 dages varsel. Hvis du opsiger efter 14-dages prøveperioden, gælder et Værdiudligningsgebyr for at sikre retfærdighed: du betaler det mindste af enten dine resterende månedlige gebyrer ELLER detailværdien af brugte fordele minus allerede betalte gebyrer. Vi sender fornyelsespåmindelser 30 dage før din jubilæumsdato. Denne politik forhindrer systemmisbrug, mens vores medlemmer behandles retfærdigt."
+        },
+        {
+          "title": "Særlige Omstændigheder",
+          "content": "Hvis dit kæledyr dør, tilbyder vi øjeblikkelig opsigelse uden gebyrer og en forholdsmæssig refusion af ubrugte måneder. Vi forstår, at dette er en vanskelig tid, og ønsker at støtte dig med medfølelse og fleksibilitet. Hvis du skal opgradere til et højere niveau, træder det i kraft med det samme med en forholdsmæssig gebyrjustering."
+        }
+      ],
+      "footer": "For komplette detaljer, venligst gennemgå vores fulde",
+      "termsLink": "Sundhedsplan Vilkår og Betingelser",
+      "downloadText": "Download PDF-version"
+    },
     "faq": {
-      "title": "Ofte Stillede Spørgsmål",
+      "title": "Ofte Stillede Spørgsmål Om Kæledyrs Sundhedsplaner",
       "questions": [
         {
-          "question": "Kan jeg opsige mit abonnement når som helst?",
-          "answer": "Ja! Vi tilbyder fuld fleksibilitet uden langsigtet forpligtelse. Du kan opsige dit abonnement når som helst med 30 dages varsel, og vi tilbyder også en 14-dages fortrydelsesret fra det tidspunkt, du tilmelder dig."
+          "question": "Hvor meget penge sparer jeg med en sundhedsplan?",
+          "answer": "De fleste familier sparer 40-60% årligt sammenlignet med at betale pr. besøg. For eksempel, hvis du bruger alle inkluderede tjenester i Avanceret-planen, sparer du over 22.000 DKK om året. Vores planer samler forebyggende pleje til en betydelig rabat for at hjælpe dig med at budgettere forudsigeligt, mens dit kæledyr holdes sundt."
         },
         {
-          "question": "Hvordan sparer abonnementet mig penge?",
-          "answer": "Vores abonnementer samler væsentlige forebyggende plejetjenester til betydeligt nedsatte priser. I stedet for at betale fuld pris for hver enkelt tjeneste, får du omfattende dækning for et fast månedligt gebyr, hvilket sparer op til 70% årligt sammenlignet med betal-som-du-bruger priser."
+          "question": "Er dette kæledyrsforsikring?",
+          "answer": "Nej, vores sundhedsplaner er forskellige fra kæledyrsforsikring. Mens forsikring dækker uventede nødsituationer og ulykker, fokuserer vores planer på forebyggende pleje—rutinemæssige tjek, vacciner, parasitbehandling og konsultationer for at holde dit kæledyr sundt og undgå kostbare nødsituationer. Mange familier bruger begge dele: vores plan til rutinepleje og forsikring til uventede begivenheder!"
         },
         {
-          "question": "Hvilken abonnementsplan er rigtig for mit kæledyr?",
-          "answer": "Brug vores besparelsesberegner ovenfor til at bestemme den bedste plan baseret på dit kæledyrs typiske plejebehov. Essentiel er perfekt til sunde kæledyr, der har brug for grundlæggende forebyggende pleje, Avanceret tilbyder den bedste værdi for de fleste kæledyrsfamilier, og Professionel er ideel til kæledyr, der kræver hyppige besøg eller premium tjenester."
+          "question": "Hvor lang er forpligtelsen?",
+          "answer": "Vores sundhedsplaner løber i 12 måneder og fornyes automatisk hvert år. Du kan vælge at betale månedligt eller årligt (med 5% rabat ved årlig betaling). Planen giver den bedste værdi, når du bruger de forebyggende tjenester gennem hele året."
         },
         {
-          "question": "Dækker abonnementer nødbesøg?",
-          "answer": "Selvom abonnementer fokuserer på forebyggende pleje for at hjælpe med at undgå nødsituationer, inkluderer de rabatter på yderligere tjenester. Nødbesøg faktureres separat, men regelmæssige sundhedstjek inkluderet i din plan hjælper med at fange problemer tidligt, før de bliver til nødsituationer."
+          "question": "Har I en prøveperiode?",
+          "answer": "Ja! Vi tilbyder en 14-dages fortrydelsesperiode efter tilmelding. Hvis du ikke har brugt nogen fordele og beslutter, at planen ikke er den rigtige for dig, giver vi fuld refusion. Hvis du har brugt nogle tjenester, betaler du kun detailværdien af disse tjenester, og vi refunderer forskellen."
         },
         {
-          "question": "Kan jeg bruge abonnementet til flere kæledyr?",
-          "answer": "Hvert abonnement dækker ét kæledyr. Hvis du har flere kæledyr, skal du have et separat abonnement for hver. Kontakt os angående rabatter til flere kæledyr for familier med 3+ kæledyr."
+          "question": "Kan jeg opsige mit abonnement?",
+          "answer": "Ja. Du kan opsige når som helst ved at give os 30 dages varsel via e-mail eller vores online portal. Bemærk venligst: I de første 14 dage får du fuld refusion, hvis ingen tjenester er brugt. Efter 14 dage gælder et Værdiudligningsgebyr (det mindste af resterende månedlige gebyrer ELLER detailværdi af brugte fordele minus betalte gebyrer). Før fornyelse, opsig mindst 30 dage før din jubilæumsdato for at undgå næste års gebyrer. Hvis dit kæledyr dør, tilbyder vi øjeblikkelig opsigelse uden gebyrer og forholdsmæssig refusion af ubrugte måneder. Denne politik sikrer retfærdighed for både vores praksis og medlemmer, mens systemmisbrug forebygges."
         },
         {
-          "question": "Hvad sker der med ubrugte tjenester ved slutningen af måneden?",
-          "answer": "Årlige tjenester (som sundhedstjek og kernervaccinationer) kan planlægges når som helst i løbet af året. Månedlige tjenester overføres ikke, men vores planer er designet til at matche typiske kæledyrsplejebehov, hvilket sikrer, at du får god værdi hele året."
+          "question": "Hvornår bliver jeg informeret om fornyelse?",
+          "answer": "Vi sender en fornyelsespåmindelse via e-mail mindst 30 dage før din jubilæumsdato, inklusive det kommende gebyr, eventuelle prisændringer og klare instruktioner om at opsige, hvis du vælger det. Du vil aldrig blive overrasket over en fornyelsesopkrævning."
         },
         {
-          "question": "Tilbyder I hjemmebesøg med abonnementer?",
-          "answer": "Ja! Hjemmebesøg er tilgængelige for abonnementsmedlemmer. Nogle planer inkluderer hjemmebesøgsmuligheder, mens andre tilbyder dem til nedsatte priser. Tjek dine specifikke plandetaljer eller kontakt os for mere information."
+          "question": "Kan jeg opgradere eller nedgradere min plan?",
+          "answer": "Ja! For at opgradere til et højere niveau træder det i kraft med det samme. Du betaler en forholdsmæssig forskel for den resterende periode, og din 12-måneders periode nulstilles fra opgraderingsdatoen. For at nedgradere til et lavere niveau træder det i kraft på din næste jubilæumsdato. Du beholder dine nuværende fordele indtil fornyelsen."
         },
         {
-          "question": "Hvor hurtigt kan jeg begynde at bruge mit abonnement?",
-          "answer": "Du kan begynde at bruge dine abonnementsfordele straks efter tilmelding! Vi tilbyder booking samme dag, så du kan planlægge din første tid med det samme."
+          "question": "Hvad hvis jeg overser en betaling?",
+          "answer": "Hvis en betaling er 7 dage forsinket, tilføjes et forsinkelsesgebyr på 150 DKK. Vi sender en påmindelse, og hvis betalingen forbliver udestående efter 14 dage, suspenderes din plan. Fordelene genoptages, når betalingen er modtaget."
+        },
+        {
+          "question": "Kan jeg bruge min sundhedsplan til akutbesøg?",
+          "answer": "Sundhedsplaner dækker kun rutinemæssig forebyggende pleje. Akutbesøg opkræves separat, men abonnenter modtager prioritetsbooking og nedsatte priser på yderligere tjenester (10-30% afhængigt af dit niveau)."
+        },
+        {
+          "question": "Hvilke områder af København betjener I?",
+          "answer": "Vi betjener hele København, Frederiksberg og omkringliggende kommuner. Hjemmebesøg er tilgængelige i de fleste områder for ekstra bekvemmelighed."
+        },
+        {
+          "question": "Har I engelsktalende dyrlæger?",
+          "answer": "Absolut! Alle vores dyrlæger taler flydende engelsk og har erfaring med at betjene Københavns internationale samfund. Vi forstår de udfordringer, som udlændinge står over for med at finde kvalitets engelsktalende dyrlægepleje."
+        },
+        {
+          "question": "Hvad hvis mit kæledyr har brug for behandling, der ikke er inkluderet i min plan?",
+          "answer": "Abonnenter modtager 10-30% rabat på alle tjenester, der ikke er inkluderet i deres plan (rabatter varierer efter niveau: Essentiel 10%, Avanceret 10-20%, Professionel 20-30%)."
+        },
+        {
+          "question": "Kan ubrugte fordele overføres til næste år?",
+          "answer": "Nej, ubrugte fordele udløber ved slutningen af hver 12-måneders periode og overføres ikke. Dette er grunden til, at vi anbefaler at bruge alle dine inkluderede tjenester—regelmæssig forebyggende pleje giver den bedste værdi og holder dit kæledyr sundest!"
+        },
+        {
+          "question": "Kan jeg tilmelde flere kæledyr?",
+          "answer": "Ja! Hvert kæledyr har brug for sin egen individuelle plan, der matcher deres vægtkategori. Kontakt os angående husstande med flere kæledyr for personlig assistance."
+        },
+        {
+          "question": "Hvad hvis jeg opsiger og ønsker at tilmelde mig igen senere?",
+          "answer": "Du er velkommen til at tilmelde dig igen når som helst som et nyt medlem. Bemærk venligst, at eventuelle tilstande diagnosticeret eller behandlet under dit tidligere medlemskab kan betragtes som eksisterende og kan være udelukket i de første 90 dage af din nye plan."
+        },
+        {
+          "question": "Er mine personlige data beskyttet?",
+          "answer": "Ja. Vi behandler alle personlige data i overensstemmelse med GDPR-reglerne. Vi sælger aldrig dine data og bruger dem udelukkende til at administrere din plan og levere veterinærtjenester. Fuld information findes i vores fortrolighedspolitik."
+        },
+        {
+          "question": "Hvor kan jeg læse de fulde vilkår og betingelser?",
+          "answer": "Du kan se vores komplette Sundhedsplan Vilkår og Betingelser på vores dedikerede vilkårsside. Vi opfordrer alle medlemmer til at gennemgå den fulde politik før tilmelding."
         }
       ]
     }
+  },
+  "wellnessPlanTerms": {
+    "title": "Sundhedsplan Vilkår og Betingelser",
+      "subtitle": "Sidst opdateret: Januar 2025",
+      "intro": "Disse vilkår og betingelser styrer din tilmelding til MyPeterinarians sundhedsplaner. Læs venligst omhyggeligt før abonnement.",
+      "tableOfContents": {
+        "title": "Indholdsfortegnelse",
+        "items": [
+          "Definitioner",
+          "Tilmelding og Berettigelse",
+          "Planens Varighed og Forpligtelse",
+          "Fortrydelsesperiode",
+          "Betalingsbetingelser",
+          "Opsigelsespolitik",
+          "Værdiudligningsgebyr",
+          "Særlige Omstændigheder",
+          "Fornyelsesproces",
+          "Planfordele",
+          "Undtagelser",
+          "Ændringer af Vilkår",
+          "Ansvarsbegrænsning",
+          "Tvistløsning",
+          "Gældende Lov",
+          "Kontaktinformation"
+        ]
+      },
+      "sections": [
+        {
+          "id": "definitions",
+          "title": "1. Definitioner",
+          "content": "\"Plan\" henviser til enhver MyPeterinarian Sundhedsplan (Essentiel, Avanceret eller Professionel). \"Medlem\" betyder kæledyrsejeren, der tilmelder sig en plan. \"Kæledyr\" betyder det dyr, der er dækket af planen. \"Jubilæumsdato\" er datoen 12 måneder efter tilmelding. \"Værdiudligningsgebyr\" er gebyret, der opkræves ved tidlig opsigelse efter fortrydelsesperioden."
+        },
+        {
+          "id": "enrollment",
+          "title": "2. Tilmelding og Berettigelse",
+          "content": "Tilmelding er åben for alle kæledyrsejere i København og omegn. Hvert kæledyr kræver en individuel plan, der matcher deres vægtkategori. Kæledyr skal være mindst 8 uger gamle for at tilmelde sig. Eksisterende tilstande kan være udelukket i de første 90 dage. Vi forbeholder os retten til at afslå tilmelding for kæledyr med kroniske tilstande, der kræver intensiv løbende pleje."
+        },
+        {
+          "id": "duration",
+          "title": "3. Planens Varighed og Forpligtelse",
+          "content": "Alle sundhedsplaner løber i 12 på hinanden følgende måneder fra din tilmeldingsdato. Denne årlige forpligtelse sikrer, at dit kæledyr modtager omfattende forebyggende pleje året rundt. Planer fornyes automatisk, medmindre du giver 30 dages skriftligt varsel før din jubilæumsdato. Den 12-måneders forpligtelse hjælper os med at yde konsekvent pleje af høj kvalitet, mens omkostningerne holdes overkommelige."
+        },
+        {
+          "id": "cooling-off",
+          "title": "4. 14-dages Fortrydelsesperiode",
+          "content": "Du kan opsige inden for 14 dage efter tilmelding med fuld refusion, forudsat at ingen tjenester er blevet brugt. For at udøve denne ret skal du kontakte os skriftligt, før 14-dagesperioden udløber. Hvis nogen tjenester er blevet brugt i fortrydelsesperioden, vil du blive opkrævet detailværdien af disse tjenester, og saldoen vil blive refunderet."
+        },
+        {
+          "id": "payment",
+          "title": "5. Betalingsbetingelser",
+          "content": "Du kan betale månedligt eller årligt. Årlig betaling modtager en 5% rabat. Månedlige betalinger opkræves automatisk den samme dag hver måned. Årlige betalinger opkræves på din tilmeldingsdato og jubilæumsdato. Mislykkede betalinger kan resultere i plansuspension efter 7 dage. Et gebyr på 100 DKK for forsinket betaling gælder for betalinger mere end 15 dage for sent. Alle gebyrer er i danske kroner (DKK) og inkluderer gældende moms."
+        },
+        {
+          "id": "cancellation",
+          "title": "6. Opsigelsespolitik",
+          "content": "Du kan opsige når som helst ved at give 30 dages skriftligt varsel. Opsigelser efter 14-dages fortrydelsesperioden er underlagt et værdiudligningsgebyr (se afsnit 7). Din plan forbliver aktiv i 30-dages varslingsperioden. Vi sender fornyelsespåmindelser 30 dage før din jubilæumsdato. Hvis du ikke svarer, vil din plan automatisk blive fornyet i yderligere 12 måneder. Opsigelse skal anmodes skriftligt via e-mail til hello@mypeterinarian.com eller gennem din online-konto."
+        },
+        {
+          "id": "reconciliation",
+          "title": "7. Værdiudligningsgebyr",
+          "content": "Hvis du opsiger efter 14-dages fortrydelsesperioden, gælder et værdiudligningsgebyr for at sikre retfærdighed over for alle medlemmer. Dette gebyr beregnes som det MINDSTE af: (A) Dine resterende månedlige gebyrer for resten af 12-måneders perioden, ELLER (B) Detailværdien af fordele, du har brugt, minus gebyrer, du allerede har betalt. Eksempel: Hvis du har betalt 3 måneder (1.197 DKK i alt for Essentiel Plan) og brugt 2 sundhedstjek (detailværdi 1.600 DKK), ville du betale det mindste af: (A) 9 resterende måneder × 399 DKK = 3.591 DKK, eller (B) 1.600 DKK - 1.197 DKK = 403 DKK. I dette tilfælde ville du betale 403 DKK. Denne politik forhindrer systemmisbrug, mens medlemmer behandles retfærdigt."
+        },
+        {
+          "id": "special",
+          "title": "8. Særlige Omstændigheder",
+          "content": "Kæledyrs Bortgang: Hvis dit kæledyr dør, tilbyder vi øjeblikkelig opsigelse uden værdiudligningsgebyr og en forholdsmæssig refusion af ubrugte måneder. Vi forstår, at dette er en vanskelig tid og ønsker at støtte dig med medfølelse. Niveauopgraderinger: Du kan opgradere til et højere niveau når som helst. Opgraderingen træder i kraft med det samme med en forholdsmæssig gebyrjustering for resten af din 12-måneders periode. Niveaunedgraderinger: Nedgraderinger er ikke tilladt i din nuværende 12-måneders periode, men vil træde i kraft ved fornyelse. Flytning: Hvis du flytter uden for vores serviceområde (København og omegn), kan du opsige uden værdiudligningsgebyr ved at fremlægge bevis for flytning."
+        },
+        {
+          "id": "renewal",
+          "title": "9. Fornyelsesproces",
+          "content": "Vi sender fornyelsespåmindelser 30 dage før din jubilæumsdato via e-mail. Hvis du ikke foretager dig noget, fornyes din plan automatisk i yderligere 12 måneder til de nuværende offentliggjorte satser. For at forhindre fornyelse skal du give skriftligt varsel mindst 30 dage før din jubilæumsdato. Plansatser kan justeres ved fornyelse med 60 dages forhåndsvarsel. Nuværende medlemmer modtager altid prioritetspriser og vil aldrig betale mere end nye tilmeldte."
+        },
+        {
+          "id": "benefits",
+          "title": "10. Planfordele",
+          "content": "Hver plan inkluderer specificerede tjenester som beskrevet i plansammenlignings-tabellen på vores hjemmeside. Fordele skal bruges inden for din 12-måneders periode og overføres ikke. Tjenester skal bookes på forhånd og er underlagt klinikkens tilgængelighed. Ubrugte fordele udløber ved slutningen af din 12-måneders periode. Vi anbefaler at bruge alle inkluderede tjenester for optimal kæledyrssundhed og værdi. Yderligere tjenester, der ikke er inkluderet i din plan, er tilgængelige til rabatterede priser (10-30% afhængigt af dit niveau)."
+        },
+        {
+          "id": "exclusions",
+          "title": "11. Undtagelser",
+          "content": "Sundhedsplaner dækker IKKE: Akutpleje uden for almindelige kliniktider; Specialistreferencer; Kirurgi eller indlæggelse; Diagnostisk billeddannelse (røntgen, ultralyd, MR); Kronisk sygdomshåndtering, der kræver løbende ordinationer; Adfærdskonsultationer; Avlstjenester; Eksisterende tilstande (første 90 dage); Eksperimentelle eller valgfrie behandlinger. Disse tjenester er tilgængelige til standard detailpriser med medlemsrabatter (10-30% afhængigt af niveau). Sundhedsplaner er forebyggende plejepakker, ikke kæledyrsforsikring."
+        },
+        {
+          "id": "changes",
+          "title": "12. Ændringer af Vilkår",
+          "content": "Vi kan opdatere disse vilkår og betingelser med 60 dages skriftligt varsel. Fortsat brug af din plan efter ikrafttrædelsesdatoen udgør accept af opdaterede vilkår. Væsentlige ændringer, der påvirker gebyrer eller fordele, vil blive kommunikeret via e-mail og offentliggjort på vores hjemmeside. Hvis du ikke accepterer opdaterede vilkår, kan du opsige uden værdiudligningsgebyr inden for 30 dage efter meddelelsen."
+        },
+        {
+          "id": "liability",
+          "title": "13. Ansvarsbegrænsning",
+          "content": "MyPeterinarians ansvar er begrænset til de gebyrer, du har betalt for din plan. Vi er ikke ansvarlige for indirekte, tilfældige eller følgeskader. Vores dyrlæger udøver professionel vurdering i alle medicinske beslutninger. Sundhedsplaner garanterer ikke specifikke sundhedsresultater. Du er ansvarlig for at følge dyrlægeanbefalinger og administrere ordinerede behandlinger. Vi opretholder erhvervsansvarsforsikring som krævet af dansk lov."
+        },
+        {
+          "id": "disputes",
+          "title": "14. Tvistløsning",
+          "content": "Vi bestræber os på at løse alle bekymringer i mindelighed. Hvis du har en klage, bedes du kontakte os på hello@mypeterinarian.com. Vi vil svare inden for 5 hverdage. Hvis vi ikke kan løse din bekymring, kan du indgive en klage til Fødevarestyrelsen. For faktureringstvister kan du kontakte Forbrugerombudsmanden. Juridiske tvister vil blive løst gennem mægling før retssag."
+        },
+        {
+          "id": "governing",
+          "title": "15. Gældende Lov",
+          "content": "Disse vilkår og betingelser er underlagt dansk lovgivning. Enhver retssag skal anlægges ved Københavns domstole. Danske forbrugerbeskyttelseslove gælder. Hvis du er forbruger, beholder du beskyttelsen af obligatoriske bestemmelser i forbrugerlovgivningen i dit bopælsland. Den dansksprogede version af disse vilkår har forrang i tilfælde af oversættelsesforskelle."
+        },
+        {
+          "id": "contact",
+          "title": "16. Kontaktinformation",
+          "content": "For spørgsmål om disse vilkår og betingelser, kontakt os venligst: E-mail: hello@mypeterinarian.com | Telefon: +45 XX XX XX XX | Adresse: MyPeterinarian, København, Danmark | Hjemmeside: www.mypeterinarian.com | Åbningstider: Mandag-fredag 9:00-18:00, lørdag 10:00-14:00"
+        }
+      ],
+      "printButton": "Udskriv Vilkår",
+      "downloadButton": "Download PDF",
+      "backToPlans": "Tilbage til Sundhedsplaner",
+      "acknowledgment": "Ved at tilmelde dig en MyPeterinarian Sundhedsplan anerkender du, at du har læst, forstået og accepteret disse vilkår og betingelser."
   },
   "blog": {
     "title": "Kæledyrspleje Blog & Tips",
