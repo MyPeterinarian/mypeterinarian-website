@@ -106,9 +106,6 @@ export default function Header() {
               <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.subscriptions')}
               </Link>
-              <a href="https://www.mypeterinarian.com/booking/" className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
-                {t('navigation.booking')}
-              </a>
               <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light transition-colors text-sm xl:text-base">
                 {t('navigation.blog')}
               </Link>
@@ -162,7 +159,6 @@ export default function Header() {
                 <Link href={`/${locale}/team`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.team')}</Link>
 
                 <Link href={`/${locale}/subscriptions`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.subscriptions')}</Link>
-                <a href="https://www.mypeterinarian.com/booking/" className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.booking')}</a>
                 <Link href={`/${locale}/blog`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.blog')}</Link>
                 <a href={`/${locale}#contact`} className="text-[#2C3E50] hover:text-[#6B8FA9] font-light py-1" onClick={() => setMobileMenuOpen(false)}>{t('navigation.contact')}</a>
 
