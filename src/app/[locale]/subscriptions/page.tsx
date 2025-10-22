@@ -1,14 +1,13 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Check, Weight, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
 import { useState } from 'react';
+import SavingsCalculator from '@/components/SavingsCalculator';
 
 export default function SubscriptionsPage() {
   const t = useTranslations('subscriptions');
-  const locale = useLocale();
   const [selectedWeightCategory, setSelectedWeightCategory] = useState('10_24_9kg');
   const [exactWeight, setExactWeight] = useState('');
 
@@ -230,6 +229,13 @@ export default function SubscriptionsPage() {
               </div>
             </motion.div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Savings Calculator */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SavingsCalculator selectedWeightCategory={selectedWeightCategory} />
         </div>
       </section>
 

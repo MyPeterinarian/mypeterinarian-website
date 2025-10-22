@@ -1268,6 +1268,59 @@
       "25_39_9kg": "Large",
       "over_40kg": "Extra large"
     },
+    "savingsCalculator": {
+      "title": "Calculate Your Potential Savings",
+      "description": "Enter your typical annual veterinary usage to see personalized savings estimates for each plan",
+      "inputs": {
+        "vetVisits": {
+          "label": "Vet Consultation Visits",
+          "placeholder": "Number per year",
+          "tooltip": "Standard vet consultations (€60 each without subscription)"
+        },
+        "vaccines": {
+          "label": "Vaccines (beyond core)",
+          "placeholder": "Number per year",
+          "tooltip": "Special vaccines like kennel cough, leptospirosis (€45 each)"
+        },
+        "parasiteTreatments": {
+          "label": "Parasite Treatments",
+          "placeholder": "Treatments per year",
+          "tooltip": "Flea, tick, and worm treatments (€35 each)"
+        },
+        "nailClipping": {
+          "label": "Nail Clipping Sessions",
+          "placeholder": "Sessions per year",
+          "tooltip": "Professional nail trimming (€25 per session)"
+        },
+        "virtualConsultations": {
+          "label": "Virtual Consultations",
+          "placeholder": "Number per year",
+          "tooltip": "Online vet consultations (€30 each)"
+        },
+        "daycareVisits": {
+          "label": "Daycare Sessions",
+          "placeholder": "Days per year",
+          "tooltip": "Professional daycare (€40 per day)"
+        }
+      },
+      "calculate": "Calculate Savings",
+      "reset": "Reset Calculator",
+      "results": {
+        "title": "Your Personalized Savings Estimate",
+        "withoutSubscription": "Estimated Annual Cost (Pay-As-You-Go)",
+        "withSubscription": "With {tier} Subscription",
+        "annualSavings": "Annual Savings",
+        "monthlyCost": "Monthly Cost",
+        "recommendation": "Recommended Plan",
+        "bestValue": "Best Value for Your Usage"
+      },
+      "tierRecommendations": {
+        "essential": "Based on your usage, the Essential plan offers great value for basic preventive care needs.",
+        "advanced": "The Advanced plan is ideal for your usage pattern, providing comprehensive coverage and excellent savings.",
+        "professional": "For your usage level, the Professional plan offers maximum value with all-inclusive premium care.",
+        "payAsYouGo": "With your low usage, pay-as-you-go might be more cost-effective than a subscription."
+      }
+    },
     "tiers": {
       "mostPopular": "Most Popular",
       "perMonth": "month",

@@ -1247,6 +1247,59 @@
       "25_39_9kg": "Store",
       "over_40kg": "Ekstra store"
     },
+    "savingsCalculator": {
+      "title": "Beregn Dine Potentielle Besparelser",
+      "description": "Indtast dit typiske årlige dyrlægebrug for at se personlige besparelsesestimater for hver plan",
+      "inputs": {
+        "vetVisits": {
+          "label": "Dyrlægekonsultationer",
+          "placeholder": "Antal pr. år",
+          "tooltip": "Standard dyrlægekonsultationer (€60 hver uden abonnement)"
+        },
+        "vaccines": {
+          "label": "Vacciner (ud over kernervaccination)",
+          "placeholder": "Antal pr. år",
+          "tooltip": "Specialvacciner som kennelhostevaccine, leptospirose (€45 hver)"
+        },
+        "parasiteTreatments": {
+          "label": "Parasitbehandlinger",
+          "placeholder": "Behandlinger pr. år",
+          "tooltip": "Loppe-, flåt- og ormebehandlinger (€35 hver)"
+        },
+        "nailClipping": {
+          "label": "Negleklipningssessioner",
+          "placeholder": "Sessioner pr. år",
+          "tooltip": "Professionel negleklipning (€25 pr. session)"
+        },
+        "virtualConsultations": {
+          "label": "Virtuelle Konsultationer",
+          "placeholder": "Antal pr. år",
+          "tooltip": "Online dyrlægekonsultationer (€30 hver)"
+        },
+        "daycareVisits": {
+          "label": "Dagplejesesessioner",
+          "placeholder": "Dage pr. år",
+          "tooltip": "Professionel dagpleje (€40 pr. dag)"
+        }
+      },
+      "calculate": "Beregn Besparelser",
+      "reset": "Nulstil Beregner",
+      "results": {
+        "title": "Dit Personlige Besparelsesestimer",
+        "withoutSubscription": "Estimeret Årlig Omkostning (Betal Som Du Bruger)",
+        "withSubscription": "Med {tier} Abonnement",
+        "annualSavings": "Årlige Besparelser",
+        "monthlyCost": "Månedlig Omkostning",
+        "recommendation": "Anbefalet Plan",
+        "bestValue": "Bedste Værdi for Dit Forbrug"
+      },
+      "tierRecommendations": {
+        "essential": "Baseret på dit forbrug tilbyder Essentiel-planen god værdi for grundlæggende forebyggende plejebehov.",
+        "advanced": "Avanceret-planen er ideel til dit forbrugsmønster og giver omfattende dækning og fremragende besparelser.",
+        "professional": "For dit forbrugsniveau tilbyder Professionel-planen maksimal værdi med alt-inklusiv premium pleje.",
+        "payAsYouGo": "Med dit lave forbrug kan betal-som-du-bruger være mere omkostningseffektivt end et abonnement."
+      }
+    },
     "tiers": {
       "mostPopular": "Mest Populære",
       "perMonth": "måned",
