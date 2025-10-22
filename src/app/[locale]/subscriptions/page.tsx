@@ -620,21 +620,14 @@ export default function SubscriptionsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": Object.values(t.raw('faq') as Record<string, unknown>)
-              .filter((item): item is { question: string; answer: string } =>
-                typeof item === 'object' &&
-                item !== null &&
-                'question' in item &&
-                'answer' in item
-              )
-              .map((faqItem) => ({
-                "@type": "Question",
-                "name": faqItem.question,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": faqItem.answer
-                }
-              }))
+            "mainEntity": (t.raw('faq.questions') as Array<{ question: string; answer: string }>).map((faqItem) => ({
+              "@type": "Question",
+              "name": faqItem.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faqItem.answer
+              }
+            }))
           })
         }}
       />
