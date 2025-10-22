@@ -334,11 +334,11 @@ export default function SubscriptionsPage() {
                 <span className="font-light">{t('trust.coolOff')}</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
-                <Heart className="w-6 h-6 text-[#8FA998]" />
+                <Heart className="w-6 h-6 text-[#6B8FA9]" />
                 <span className="font-light">{t('trust.noCommitment')}</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
-                <Shield className="w-6 h-6 text-[#8FA998]" />
+                <Shield className="w-6 h-6 text-[#6B8FA9]" />
                 <span className="font-light">{t('trust.licensed')}</span>
               </div>
             </div>
