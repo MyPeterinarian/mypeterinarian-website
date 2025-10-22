@@ -1250,7 +1250,9 @@
     },
     "weightSelector": {
       "title": "Select Your Dog's Weight Category",
-      "description": "Pricing varies based on your dog's weight to ensure appropriate care. Cat subscriptions have different pricing - please contact us for details."
+      "description": "Pricing varies based on your dog's weight to ensure appropriate care. Cat subscriptions have different pricing - please contact us for details.",
+      "exactWeightLabel": "Or enter exact weight:",
+      "exactWeightPlaceholder": "Enter weight"
     },
     "weightCategories": {
       "under_4_9kg": "Under 4.9 kg",

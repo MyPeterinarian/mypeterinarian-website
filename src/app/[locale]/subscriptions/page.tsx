@@ -10,6 +10,7 @@ export default function SubscriptionsPage() {
   const t = useTranslations('subscriptions');
   const locale = useLocale();
   const [selectedWeightCategory, setSelectedWeightCategory] = useState('10_24_9kg');
+  const [exactWeight, setExactWeight] = useState('');
 
   const weightCategories = [
     { range: 'under_4_9kg', label: t('weightCategories.under_4_9kg'), example: t('weightDescriptions.under_4_9kg') },
@@ -18,6 +19,23 @@ export default function SubscriptionsPage() {
     { range: '25_39_9kg', label: t('weightCategories.25_39_9kg'), example: t('weightDescriptions.25_39_9kg') },
     { range: 'over_40kg', label: t('weightCategories.over_40kg'), example: t('weightDescriptions.over_40kg') }
   ];
+
+  const getWeightCategoryFromExact = (weight: number): string => {
+    if (weight < 4.9) return 'under_4_9kg';
+    if (weight < 10) return '5_9_9kg';
+    if (weight < 25) return '10_24_9kg';
+    if (weight < 40) return '25_39_9kg';
+    return 'over_40kg';
+  };
+
+  const handleExactWeightChange = (value: string) => {
+    setExactWeight(value);
+    const weight = parseFloat(value);
+    if (!isNaN(weight) && weight > 0) {
+      const category = getWeightCategoryFromExact(weight);
+      setSelectedWeightCategory(category);
+    }
+  };
 
   const getPricing = (tier: string) => {
     const pricing: Record<string, Record<string, number>> = {
@@ -170,7 +188,10 @@ export default function SubscriptionsPage() {
                       ? 'border-[#6B8FA9] bg-[#F5F7F9] shadow-sm'
                       : 'border-gray-200 hover:border-[#6B8FA9] hover:bg-[#F5F7F9] hover:shadow-sm'
                   }`}
-                  onClick={() => setSelectedWeightCategory(category.range)}
+                  onClick={() => {
+                    setSelectedWeightCategory(category.range);
+                    setExactWeight('');
+                  }}
                 >
                   <Weight className="h-6 w-6 mx-auto mb-2 text-[#6B8FA9]" />
                   <span className="block text-sm font-medium text-[#2C3E50] mb-1">
@@ -182,6 +203,32 @@ export default function SubscriptionsPage() {
                 </motion.button>
               ))}
             </div>
+
+            {/* Exact Weight Calculator */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-8 max-w-md mx-auto"
+            >
+              <div className="bg-[#F5F7F9] border border-gray-200 rounded-lg p-6">
+                <label className="block text-sm font-medium text-[#2C3E50] mb-3">
+                  {t('weightSelector.exactWeightLabel')}
+                </label>
+                <div className="flex items-center gap-3">
+                  <input
+                    type="number"
+                    min="0"
+                    step="0.1"
+                    value={exactWeight}
+                    onChange={(e) => handleExactWeightChange(e.target.value)}
+                    placeholder={t('weightSelector.exactWeightPlaceholder')}
+                    className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent outline-none transition-all"
+                  />
+                  <span className="text-gray-600 font-medium">kg</span>
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
