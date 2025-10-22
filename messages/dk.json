@@ -1222,10 +1222,55 @@
       "title": "Omfattende Plejeplaner til Kæledyr",
       "subtitle": "Vælg den perfekte abonnementsplan for dit kæledyrs sundhed og trivsel",
       "benefits": [
-        "Forebyggende pleje inkluderet",
+        "Booking samme dag mulig",
         "Spar op til 40% årligt med omfattende forebyggende pleje",
-        "Opsig når som helst"
+        "Vi taler engelsk og andre sprog"
+      ],
+      "empathetic": {
+        "heading": "Dit Kæledyrs Sundhed Skal Ikke Afhænge af Dit Budget",
+        "paragraph1": "Hos MyPeterinarian tror vi, at hvert kæledyr fortjener exceptionel pleje, uanset deres families økonomiske situation. Vi forstår, at uventede dyrlægeregninger kan være overvældende, og vi ønsker aldrig, at omkostninger skal stå mellem din elskede ledsager og den behandling, de har brug for. Derfor har vi skabt disse omfattende abonnementsplaner - for at gøre forebyggende pleje tilgængelig og overkommelig for alle kæledyrsfamilier i København.",
+        "paragraph2": "Regelmæssige sundhedstjek og tidlig opdagelse holder ikke kun dit kæledyr i god form, men hjælper dig også med at undgå dyre nødbehandlinger senere. Vores abonnementer er designet til at give dig ro i sindet, vel vidende at dit kæledyr modtager konsistent pleje af høj kvalitet uden stress over uforudsigelige udgifter. Fordi dit kæledyrs trivsel er vores prioritet, og ingen familie skal nogensinde vælge mellem deres budget og deres kæledyrs sundhed."
+      }
+    },
+    "location": {
+      "heading": "Placeret i København",
+      "description": "Vi betjener kæledyrsfamilier i hele København, Frederiksberg og omkringliggende områder. Vores erfarne dyrlæger yder omsorgsfuld pleje på vores moderne klinik eller i dit hjems tryghed. Med fleksible tider og engelsktalende personale har det aldrig været nemmere at passe på dit kæledyr.",
+      "features": [
+        "Ingen langvarig forpligtelse",
+        "Booking samme dag mulig",
+        "Engelsktalende dyrlæger",
+        "Hjemmebesøg mulige"
       ]
+    },
+    "calculator": {
+      "heading": "Beregn Dine Potentielle Besparelser"
+    },
+    "preventiveCare": {
+      "heading": "Kraften i Forebyggende Kæledyrspleje",
+      "intro": "Tidlig opdagelse redder liv - og penge. Regelmæssige sundhedstjek kan identificere potentielle problemer, før de bliver dyre nødsituationer. Vores abonnementsplaner er bygget omkring forebyggende plejeprincip, der hjælper dig med at:",
+      "benefits": [
+        {
+          "title": "Fang Sundhedsproblemer Tidligt",
+          "description": "Tidlig opdagelse når problemer er nemmere og billigere at behandle"
+        },
+        {
+          "title": "Undgå Nødregninger",
+          "description": "Forebyg dyre nøddyrlægebesøg, der kan koste tusindvis af DKK"
+        },
+        {
+          "title": "Hold Tidsplanen",
+          "description": "Hold vacciner og forebyggende behandlinger på sporet"
+        },
+        {
+          "title": "Byg Sundhedshistorie",
+          "description": "Omfattende journaler hjælper din dyrlæge med at yde bedre pleje"
+        },
+        {
+          "title": "Budgetter Forudsigeligt",
+          "description": "Faste månedlige betalinger for ro i sindet"
+        }
+      ],
+      "conclusion": "Studier viser, at forebyggende pleje kan reducere levetidsomkostninger til dyrlæge med 40-60%, samtidig med at dit kæledyr får et længere, sundere liv."
     },
     "weightSelector": {
       "title": "Vælg Din Hunds Vægtkategori",
@@ -1379,6 +1424,43 @@
       "title": "Klar Til At Komme I Gang?",
       "description": "Bliv en del af hundredvis af glade kæledyrsejere, der stoler på MyPeterinarian for deres kæledyrs sundhed",
       "button": "Abonner Nu"
+    },
+    "faq": {
+      "title": "Ofte Stillede Spørgsmål",
+      "questions": [
+        {
+          "question": "Kan jeg opsige mit abonnement når som helst?",
+          "answer": "Ja! Vi tilbyder fuld fleksibilitet uden langsigtet forpligtelse. Du kan opsige dit abonnement når som helst med 30 dages varsel, og vi tilbyder også en 14-dages fortrydelsesret fra det tidspunkt, du tilmelder dig."
+        },
+        {
+          "question": "Hvordan sparer abonnementet mig penge?",
+          "answer": "Vores abonnementer samler væsentlige forebyggende plejetjenester til betydeligt nedsatte priser. I stedet for at betale fuld pris for hver enkelt tjeneste, får du omfattende dækning for et fast månedligt gebyr, hvilket sparer op til 70% årligt sammenlignet med betal-som-du-bruger priser."
+        },
+        {
+          "question": "Hvilken abonnementsplan er rigtig for mit kæledyr?",
+          "answer": "Brug vores besparelsesberegner ovenfor til at bestemme den bedste plan baseret på dit kæledyrs typiske plejebehov. Essentiel er perfekt til sunde kæledyr, der har brug for grundlæggende forebyggende pleje, Avanceret tilbyder den bedste værdi for de fleste kæledyrsfamilier, og Professionel er ideel til kæledyr, der kræver hyppige besøg eller premium tjenester."
+        },
+        {
+          "question": "Dækker abonnementer nødbesøg?",
+          "answer": "Selvom abonnementer fokuserer på forebyggende pleje for at hjælpe med at undgå nødsituationer, inkluderer de rabatter på yderligere tjenester. Nødbesøg faktureres separat, men regelmæssige sundhedstjek inkluderet i din plan hjælper med at fange problemer tidligt, før de bliver til nødsituationer."
+        },
+        {
+          "question": "Kan jeg bruge abonnementet til flere kæledyr?",
+          "answer": "Hvert abonnement dækker ét kæledyr. Hvis du har flere kæledyr, skal du have et separat abonnement for hver. Kontakt os angående rabatter til flere kæledyr for familier med 3+ kæledyr."
+        },
+        {
+          "question": "Hvad sker der med ubrugte tjenester ved slutningen af måneden?",
+          "answer": "Årlige tjenester (som sundhedstjek og kernervaccinationer) kan planlægges når som helst i løbet af året. Månedlige tjenester overføres ikke, men vores planer er designet til at matche typiske kæledyrsplejebehov, hvilket sikrer, at du får god værdi hele året."
+        },
+        {
+          "question": "Tilbyder I hjemmebesøg med abonnementer?",
+          "answer": "Ja! Hjemmebesøg er tilgængelige for abonnementsmedlemmer. Nogle planer inkluderer hjemmebesøgsmuligheder, mens andre tilbyder dem til nedsatte priser. Tjek dine specifikke plandetaljer eller kontakt os for mere information."
+        },
+        {
+          "question": "Hvor hurtigt kan jeg begynde at bruge mit abonnement?",
+          "answer": "Du kan begynde at bruge dine abonnementsfordele straks efter tilmelding! Vi tilbyder booking samme dag, så du kan planlægge din første tid med det samme."
+        }
+      ]
     }
   },
   "blog": {

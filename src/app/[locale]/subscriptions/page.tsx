@@ -2,41 +2,14 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { Check, Weight, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
-import { useState } from 'react';
+import { Check, Heart, Shield, Clock, Star, ArrowRight } from 'lucide-react';
 import SavingsCalculator from '@/components/SavingsCalculator';
 
 export default function SubscriptionsPage() {
   const t = useTranslations('subscriptions');
-  const [selectedWeightCategory, setSelectedWeightCategory] = useState('10_24_9kg');
-  const [exactWeight, setExactWeight] = useState('');
+  const selectedWeightCategory = '10_24_9kg';
 
-  const weightCategories = [
-    { range: 'under_4_9kg', label: t('weightCategories.under_4_9kg'), example: t('weightDescriptions.under_4_9kg') },
-    { range: '5_9_9kg', label: t('weightCategories.5_9_9kg'), example: t('weightDescriptions.5_9_9kg') },
-    { range: '10_24_9kg', label: t('weightCategories.10_24_9kg'), example: t('weightDescriptions.10_24_9kg') },
-    { range: '25_39_9kg', label: t('weightCategories.25_39_9kg'), example: t('weightDescriptions.25_39_9kg') },
-    { range: 'over_40kg', label: t('weightCategories.over_40kg'), example: t('weightDescriptions.over_40kg') }
-  ];
-
-  const getWeightCategoryFromExact = (weight: number): string => {
-    if (weight < 4.9) return 'under_4_9kg';
-    if (weight < 10) return '5_9_9kg';
-    if (weight < 25) return '10_24_9kg';
-    if (weight < 40) return '25_39_9kg';
-    return 'over_40kg';
-  };
-
-  const handleExactWeightChange = (value: string) => {
-    setExactWeight(value);
-    const weight = parseFloat(value);
-    if (!isNaN(weight) && weight > 0) {
-      const category = getWeightCategoryFromExact(weight);
-      setSelectedWeightCategory(category);
-    }
-  };
-
-  const getPricing = (tier: string) => {
+  const getPricing = (tier: string): number => {
     const pricing: Record<string, Record<string, number>> = {
       'essential': {
         'under_4_9kg': 299,
@@ -143,6 +116,20 @@ export default function SubscriptionsPage() {
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 font-light">
               {t('hero.subtitle')}
             </p>
+
+            {/* Empathetic Paragraph */}
+            <div className="max-w-4xl mx-auto mb-8 text-left space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-light text-[#2C3E50] text-center mb-4">
+                {t('hero.empathetic.heading')}
+              </h2>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                {t('hero.empathetic.paragraph1')}
+              </p>
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                {t('hero.empathetic.paragraph2')}
+              </p>
+            </div>
+
             <div className="flex flex-wrap justify-center gap-4 text-sm sm:text-base text-gray-600 font-light">
               <div className="flex items-center gap-2">
                 <Check className="w-5 h-5 text-[#8FA998]" />
@@ -161,81 +148,125 @@ export default function SubscriptionsPage() {
         </div>
       </section>
 
-      {/* Weight Category Selector */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
-              {t('weightSelector.title')}
+      {/* Location & Service Area */}
+      <section className="py-12 px-4 bg-white border-b border-gray-200">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-gradient-to-r from-[#6B8FA9]/10 to-[#8FA998]/10 rounded-lg p-6 sm:p-8">
+            <h2 className="text-xl sm:text-2xl font-medium text-[#2C3E50] mb-4 text-center">
+              {t('location.heading')}
             </h2>
-            <p className="text-center text-gray-600 mb-8 font-light">
-              {t('weightSelector.description')}
+            <p className="text-gray-700 text-center mb-6 font-light max-w-3xl mx-auto">
+              {t('location.description')}
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-              {weightCategories.map((category, index) => (
-                <motion.button
-                  key={category.range}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                  className={`p-4 border rounded-lg transition-all text-center ${
-                    selectedWeightCategory === category.range
-                      ? 'border-[#6B8FA9] bg-[#F5F7F9] shadow-sm'
-                      : 'border-gray-200 hover:border-[#6B8FA9] hover:bg-[#F5F7F9] hover:shadow-sm'
-                  }`}
-                  onClick={() => {
-                    setSelectedWeightCategory(category.range);
-                    setExactWeight('');
-                  }}
-                >
-                  <Weight className="h-6 w-6 mx-auto mb-2 text-[#6B8FA9]" />
-                  <span className="block text-sm font-medium text-[#2C3E50] mb-1">
-                    {category.label}
-                  </span>
-                  <span className="block text-xs text-gray-600 font-light">
-                    {category.example}
-                  </span>
-                </motion.button>
-              ))}
-            </div>
-
-            {/* Exact Weight Calculator */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="mt-8 max-w-md mx-auto"
-            >
-              <div className="bg-[#F5F7F9] border border-gray-200 rounded-lg p-6">
-                <label className="block text-sm font-medium text-[#2C3E50] mb-3">
-                  {t('weightSelector.exactWeightLabel')}
-                </label>
-                <div className="flex items-center gap-3">
-                  <input
-                    type="number"
-                    min="0"
-                    step="0.1"
-                    value={exactWeight}
-                    onChange={(e) => handleExactWeightChange(e.target.value)}
-                    placeholder={t('weightSelector.exactWeightPlaceholder')}
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6B8FA9] focus:border-transparent outline-none transition-all"
-                  />
-                  <span className="text-gray-600 font-medium">kg</span>
-                </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+              <div className="flex items-center gap-2 justify-center">
+                <Check className="w-5 h-5 text-[#8FA998]" />
+                <span className="text-gray-700">{t('location.features.0')}</span>
               </div>
-            </motion.div>
-          </motion.div>
+              <div className="flex items-center gap-2 justify-center">
+                <Check className="w-5 h-5 text-[#8FA998]" />
+                <span className="text-gray-700">{t('location.features.1')}</span>
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Check className="w-5 h-5 text-[#8FA998]" />
+                <span className="text-gray-700">{t('location.features.2')}</span>
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Check className="w-5 h-5 text-[#8FA998]" />
+                <span className="text-gray-700">{t('location.features.3')}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Savings Calculator */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <SavingsCalculator selectedWeightCategory={selectedWeightCategory} />
+          <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-8 tracking-tight">
+            {t('calculator.heading')}
+          </h2>
+          <SavingsCalculator />
+        </div>
+      </section>
+
+      {/* Preventive Care Benefits */}
+      <section className="py-16 px-4 bg-[#F5F7F9] border-y border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-6 tracking-tight">
+              {t('preventiveCare.heading')}
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-10 max-w-3xl mx-auto font-light">
+              {t('preventiveCare.intro')}
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.0.title')}</h3>
+                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.0.description')}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.1.title')}</h3>
+                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.1.description')}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.2.title')}</h3>
+                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.2.description')}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.3.title')}</h3>
+                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.3.description')}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#8FA998]" />
+                  </div>
+                  <div>
+                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.4.title')}</h3>
+                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.4.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-center text-gray-700 italic font-light">
+              {t('preventiveCare.conclusion')}
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -405,6 +436,33 @@ export default function SubscriptionsPage() {
                 <Shield className="w-6 h-6 text-[#6B8FA9]" />
                 <span className="font-light">{t('trust.licensed')}</span>
               </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+          >
+            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-12 tracking-tight">
+              {t('faq.title')}
+            </h2>
+            <div className="space-y-6">
+              {[0, 1, 2, 3, 4, 5, 6, 7].map((index) => (
+                <div key={index} className="bg-[#F5F7F9] rounded-lg p-6 border border-gray-200">
+                  <h3 className="text-lg font-medium text-[#2C3E50] mb-3">
+                    {t(`faq.questions.${index}.question`)}
+                  </h3>
+                  <p className="text-gray-700 font-light leading-relaxed">
+                    {t(`faq.questions.${index}.answer`)}
+                  </p>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
