@@ -194,81 +194,113 @@ export default function SubscriptionsPage() {
       </section>
 
       {/* Preventive Care Benefits */}
-      <section className="py-16 px-4 bg-[#F5F7F9] border-y border-gray-200">
-        <div className="max-w-6xl mx-auto">
+      <section className="py-20 px-4 bg-gradient-to-b from-white to-[#F5F7F9]">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-6 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-light text-center text-[#2C3E50] mb-4 tracking-tight">
               {t('preventiveCare.heading')}
             </h2>
-            <p className="text-lg text-gray-700 text-center mb-10 max-w-3xl mx-auto font-light">
+            <p className="text-lg text-gray-700 text-center mb-12 max-w-4xl mx-auto font-light leading-relaxed">
               {t('preventiveCare.intro')}
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#8FA998]" />
+            {/* Benefits Grid - Equal sized cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 max-w-6xl mx-auto">
+              {/* Card 1 */}
+              <motion.div
+                className="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-[#8FA998]/30 transition-all duration-300 hover:shadow-lg h-full flex flex-col"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#8FA998]/20 to-[#8FA998]/5 flex items-center justify-center mb-4">
+                    <Check className="w-6 h-6 text-[#8FA998]" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.0.title')}</h3>
-                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.0.description')}</p>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2C3E50] mb-3">{t('preventiveCare.benefits.0.title')}</h3>
                 </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#8FA998]" />
+                <p className="text-gray-600 font-light leading-relaxed flex-grow">{t('preventiveCare.benefits.0.description')}</p>
+              </motion.div>
+
+              {/* Card 2 */}
+              <motion.div
+                className="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-[#6B8FA9]/30 transition-all duration-300 hover:shadow-lg h-full flex flex-col"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6B8FA9]/20 to-[#6B8FA9]/5 flex items-center justify-center mb-4">
+                    <Shield className="w-6 h-6 text-[#6B8FA9]" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.1.title')}</h3>
-                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.1.description')}</p>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2C3E50] mb-3">{t('preventiveCare.benefits.1.title')}</h3>
                 </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#8FA998]" />
+                <p className="text-gray-600 font-light leading-relaxed flex-grow">{t('preventiveCare.benefits.1.description')}</p>
+              </motion.div>
+
+              {/* Card 3 */}
+              <motion.div
+                className="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-[#8FA998]/30 transition-all duration-300 hover:shadow-lg h-full flex flex-col"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#8FA998]/20 to-[#8FA998]/5 flex items-center justify-center mb-4">
+                    <Clock className="w-6 h-6 text-[#8FA998]" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.2.title')}</h3>
-                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.2.description')}</p>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2C3E50] mb-3">{t('preventiveCare.benefits.2.title')}</h3>
                 </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#8FA998]" />
+                <p className="text-gray-600 font-light leading-relaxed flex-grow">{t('preventiveCare.benefits.2.description')}</p>
+              </motion.div>
+
+              {/* Card 4 */}
+              <motion.div
+                className="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-[#6B8FA9]/30 transition-all duration-300 hover:shadow-lg h-full flex flex-col md:col-span-2 lg:col-span-1"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6B8FA9]/20 to-[#6B8FA9]/5 flex items-center justify-center mb-4">
+                    <Heart className="w-6 h-6 text-[#6B8FA9]" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.3.title')}</h3>
-                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.3.description')}</p>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2C3E50] mb-3">{t('preventiveCare.benefits.3.title')}</h3>
                 </div>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#8FA998]/10 flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#8FA998]" />
+                <p className="text-gray-600 font-light leading-relaxed flex-grow">{t('preventiveCare.benefits.3.description')}</p>
+              </motion.div>
+
+              {/* Card 5 */}
+              <motion.div
+                className="bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-[#8FA998]/30 transition-all duration-300 hover:shadow-lg h-full flex flex-col md:col-span-2 lg:col-span-1"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+              >
+                <div className="mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#8FA998]/20 to-[#8FA998]/5 flex items-center justify-center mb-4">
+                    <Star className="w-6 h-6 text-[#8FA998]" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-[#2C3E50] mb-2">{t('preventiveCare.benefits.4.title')}</h3>
-                    <p className="text-sm text-gray-600 font-light">{t('preventiveCare.benefits.4.description')}</p>
-                  </div>
+                  <h3 className="text-xl font-medium text-[#2C3E50] mb-3">{t('preventiveCare.benefits.4.title')}</h3>
                 </div>
-              </div>
+                <p className="text-gray-600 font-light leading-relaxed flex-grow">{t('preventiveCare.benefits.4.description')}</p>
+              </motion.div>
             </div>
 
-            <p className="text-center text-gray-700 italic font-light">
-              {t('preventiveCare.conclusion')}
-            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="text-center"
+            >
+              <p className="text-base text-gray-700 italic font-light max-w-4xl mx-auto leading-relaxed">
+                {t('preventiveCare.conclusion')}
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
