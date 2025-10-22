@@ -112,15 +112,15 @@ export default function HomePage() {
               </p>
               <ul className="space-y-2 text-base text-gray-600 mb-8 flex-grow">
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.veterinary.items.exams')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.veterinary.items.vaccinations')}</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-[#8FA998] flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#6B8FA9] flex-shrink-0" />
                   <span className="font-light">{t('services.veterinary.items.emergency')}</span>
                 </li>
               </ul>
