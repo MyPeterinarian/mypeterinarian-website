@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { Calculator, TrendingDown, HelpCircle } from 'lucide-react'
+import { Calculator, TrendingDown, HelpCircle, Weight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 interface CalculatorInputs {
@@ -22,22 +22,20 @@ interface TierResult {
   savingsPercent: number
 }
 
-interface SavingsCalculatorProps {
-  selectedWeightCategory: string
-}
-
-// Standard pricing without subscription
+// Standard pricing without subscription (in DKK)
 const SERVICE_PRICES = {
-  vetVisit: 60,
-  vaccine: 45,
-  parasiteTreatment: 35,
-  nailClipping: 25,
-  virtualConsultation: 30,
-  daycare: 40
+  vetVisit: 600,
+  vaccine: 400,
+  parasiteTreatment: 250,
+  nailClipping: 200,
+  virtualConsultation: 300,
+  daycare: 350
 }
 
-export default function SavingsCalculator({ selectedWeightCategory }: SavingsCalculatorProps) {
+export default function SavingsCalculator() {
   const t = useTranslations('subscriptions')
+  const [selectedWeightCategory, setSelectedWeightCategory] = useState('10_24_9kg')
+  const [exactWeight, setExactWeight] = useState('')
   const [inputs, setInputs] = useState<CalculatorInputs>({
     vetVisits: 0,
     vaccines: 0,
@@ -47,6 +45,32 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
     daycareVisits: 0
   })
   const [showResults, setShowResults] = useState(false)
+
+  const weightCategories = [
+    { range: 'under_4_9kg', label: t('weightCategories.under_4_9kg'), example: t('weightDescriptions.under_4_9kg') },
+    { range: '5_9_9kg', label: t('weightCategories.5_9_9kg'), example: t('weightDescriptions.5_9_9kg') },
+    { range: '10_24_9kg', label: t('weightCategories.10_24_9kg'), example: t('weightDescriptions.10_24_9kg') },
+    { range: '25_39_9kg', label: t('weightCategories.25_39_9kg'), example: t('weightDescriptions.25_39_9kg') },
+    { range: 'over_40kg', label: t('weightCategories.over_40kg'), example: t('weightDescriptions.over_40kg') }
+  ]
+
+  const getWeightCategoryFromExact = (weight: number): string => {
+    if (weight < 4.9) return 'under_4_9kg'
+    if (weight < 10) return '5_9_9kg'
+    if (weight < 25) return '10_24_9kg'
+    if (weight < 40) return '25_39_9kg'
+    return 'over_40kg'
+  }
+
+  const handleExactWeightChange = (value: string) => {
+    setExactWeight(value)
+    const weight = parseFloat(value)
+    if (!isNaN(weight) && weight > 0) {
+      const category = getWeightCategoryFromExact(weight)
+      setSelectedWeightCategory(category)
+    }
+    setShowResults(false)
+  }
 
   const handleInputChange = (field: keyof CalculatorInputs, value: string) => {
     const numValue = parseInt(value) || 0
@@ -63,6 +87,7 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
       virtualConsultations: 0,
       daycareVisits: 0
     })
+    setExactWeight('')
     setShowResults(false)
   }
 
@@ -187,13 +212,67 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 text-white px-4 py-2 rounded-full mb-4" style={{ backgroundColor: '#1d6896' }}>
             <Calculator className="w-5 h-5" />
             <span className="font-semibold">{t('savingsCalculator.title')}</span>
           </div>
           <p className="text-gray-600 max-w-2xl mx-auto">
             {t('savingsCalculator.description')}
           </p>
+        </div>
+
+        {/* Weight Selector */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4 text-center flex items-center justify-center gap-2">
+            <Weight className="w-5 h-5" />
+            {t('weightSelector.title')}
+          </h3>
+
+          {/* Weight Category Buttons */}
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4">
+            {weightCategories.map((category) => (
+              <button
+                key={category.range}
+                onClick={() => {
+                  setSelectedWeightCategory(category.range)
+                  setExactWeight('')
+                  setShowResults(false)
+                }}
+                className={`p-4 rounded-lg border-2 transition-all ${
+                  selectedWeightCategory === category.range
+                    ? 'border-[#1d6896] shadow-md'
+                    : 'border-gray-200 hover:border-gray-300'
+                }`}
+                style={selectedWeightCategory === category.range ? { backgroundColor: '#1d689610' } : {}}
+              >
+                <Weight className={`w-6 h-6 mx-auto mb-2 ${
+                  selectedWeightCategory === category.range ? 'text-[#1d6896]' : 'text-gray-400'
+                }`} />
+                <div className="text-sm font-medium text-gray-900">{category.label}</div>
+                <div className="text-xs text-gray-500 mt-1">{category.example}</div>
+              </button>
+            ))}
+          </div>
+
+          {/* Exact Weight Input */}
+          <div className="bg-white rounded-lg p-4 max-w-md mx-auto">
+            <label className="block text-sm font-medium text-gray-700 mb-2 text-center">
+              {t('weightSelector.exactWeightLabel')}
+            </label>
+            <div className="flex items-center gap-2">
+              <input
+                type="number"
+                step="0.1"
+                min="0"
+                value={exactWeight}
+                onChange={(e) => handleExactWeightChange(e.target.value)}
+                placeholder={t('weightSelector.exactWeightPlaceholder')}
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+                style={{ outlineColor: '#1d6896' }}
+              />
+              <span className="text-gray-600 font-medium">kg</span>
+            </div>
+          </div>
         </div>
 
         {/* Input Form */}
@@ -217,7 +296,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.vetVisits || ''}
               onChange={(e) => handleInputChange('vetVisits', e.target.value)}
               placeholder={t('savingsCalculator.inputs.vetVisits.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
 
@@ -240,7 +320,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.vaccines || ''}
               onChange={(e) => handleInputChange('vaccines', e.target.value)}
               placeholder={t('savingsCalculator.inputs.vaccines.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
 
@@ -263,7 +344,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.parasiteTreatments || ''}
               onChange={(e) => handleInputChange('parasiteTreatments', e.target.value)}
               placeholder={t('savingsCalculator.inputs.parasiteTreatments.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
 
@@ -286,7 +368,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.nailClipping || ''}
               onChange={(e) => handleInputChange('nailClipping', e.target.value)}
               placeholder={t('savingsCalculator.inputs.nailClipping.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
 
@@ -309,7 +392,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.virtualConsultations || ''}
               onChange={(e) => handleInputChange('virtualConsultations', e.target.value)}
               placeholder={t('savingsCalculator.inputs.virtualConsultations.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
 
@@ -332,7 +416,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
               value={inputs.daycareVisits || ''}
               onChange={(e) => handleInputChange('daycareVisits', e.target.value)}
               placeholder={t('savingsCalculator.inputs.daycareVisits.placeholder')}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-[#1d6896]"
+              style={{ outlineColor: '#1d6896' }}
             />
           </div>
         </div>
@@ -341,7 +426,8 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
         <div className="flex gap-4 justify-center mb-6">
           <button
             onClick={handleCalculate}
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+            className="text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:opacity-90"
+            style={{ backgroundColor: '#1d6896' }}
           >
             {t('savingsCalculator.calculate')}
           </button>
@@ -373,7 +459,7 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
                     {t('savingsCalculator.results.withoutSubscription')}
                   </span>
                   <span className="text-2xl font-bold text-gray-900">
-                    €{results.withoutSubscription.toFixed(0)}
+                    {results.withoutSubscription.toFixed(0)} kr
                   </span>
                 </div>
               </div>
@@ -385,9 +471,10 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
                     key={tier.name}
                     className={`rounded-lg p-6 border-2 ${
                       tier.name === results.recommendedTier.name
-                        ? 'border-green-500 bg-green-50'
+                        ? 'border-[#22c0b6]'
                         : 'border-gray-200'
                     }`}
+                    style={tier.name === results.recommendedTier.name ? { backgroundColor: '#22c0b610' } : {}}
                   >
                     <div className="flex items-start justify-between mb-3">
                       <div>
@@ -395,9 +482,9 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
                           {t(`tiers.${tier.name}.name`)}
                         </h4>
                         {tier.name === results.recommendedTier.name && (
-                          <span className="inline-flex items-center gap-1 text-green-600 text-sm font-semibold mt-1">
+                          <span className="inline-flex items-center gap-1 font-semibold mt-1" style={{ color: '#22c0b6' }}>
                             <TrendingDown className="w-4 h-4" />
-                            {t('savingsCalculator.results.bestValue')}
+                            <span className="text-sm">{t('savingsCalculator.results.bestValue')}</span>
                           </span>
                         )}
                       </div>
@@ -406,7 +493,7 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
                           {t('savingsCalculator.results.monthlyCost')}
                         </div>
                         <div className="text-xl font-bold text-gray-900">
-                          €{tier.monthlyCost}/{t('tiers.perMonth')}
+                          {tier.monthlyCost} kr/{t('tiers.perMonth')}
                         </div>
                       </div>
                     </div>
@@ -417,17 +504,15 @@ export default function SavingsCalculator({ selectedWeightCategory }: SavingsCal
                           Total Annual Cost
                         </div>
                         <div className="text-lg font-semibold text-gray-900">
-                          €{tier.annualCost.toFixed(0)}
+                          {tier.annualCost.toFixed(0)} kr
                         </div>
                       </div>
                       <div>
                         <div className="text-sm text-gray-600 mb-1">
                           {t('savingsCalculator.results.annualSavings')}
                         </div>
-                        <div className={`text-lg font-semibold ${
-                          tier.savings > 0 ? 'text-green-600' : 'text-red-600'
-                        }`}>
-                          {tier.savings > 0 ? '+' : ''}€{tier.savings.toFixed(0)}
+                        <div className={`text-lg font-semibold`} style={{ color: tier.savings > 0 ? '#22c0b6' : '#ef4444' }}>
+                          {tier.savings > 0 ? '+' : ''}{tier.savings.toFixed(0)} kr
                           {tier.savings > 0 && (
                             <span className="text-sm ml-1">
                               ({tier.savingsPercent.toFixed(0)}%)
