@@ -67,12 +67,12 @@ export default function PetSittingPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h1>
             <p className="text-xl md:text-2xl mb-3 text-blue-100">{t('subtitle')}</p>
             <p className="text-lg mb-8 max-w-3xl mx-auto text-blue-50">{t('description')}</p>
-            <Link
-              href={`tel:${header('phone')}`}
+            <button
+              onClick={() => setIsContactModalOpen(true)}
               className="inline-block bg-white text-[#1d6896] px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors"
             >
               {t('hero.cta')}
-            </Link>
+            </button>
           </motion.div>
         </div>
       </section>
@@ -93,22 +93,25 @@ export default function PetSittingPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+                  className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col"
                 >
                   <div className="flex flex-col items-center text-center mb-4">
                     <div className="bg-blue-50 p-3 rounded-full mb-3">
                       <Icon className="w-8 h-8 text-[#22c0b6]" />
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
                       {t(`features.items.${service.key}.title`)}
                     </h3>
+                    <div className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-4 py-2 rounded-full text-sm font-semibold mb-3">
+                      {t(`features.items.${service.key}.pricing`)}
+                    </div>
                   </div>
 
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm text-gray-600 mb-4 text-center">
                     {t(`features.items.${service.key}.description`)}
                   </p>
                   {service.items && (
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-6">
                       {service.items.map((item, idx) => (
                         <li key={idx} className="text-xs text-gray-700 flex items-start">
                           <span className="text-[#22c0b6] mr-2">●</span>
@@ -117,10 +120,10 @@ export default function PetSittingPage() {
                       ))}
                     </ul>
                   )}
-                  <div className="mt-6 pt-4 border-t border-gray-100">
+                  <div className="mt-auto pt-4 border-t border-gray-100">
                     <button
                       onClick={() => setIsContactModalOpen(true)}
-                      className="w-full text-center text-sm text-[#1d6896] font-semibold hover:text-[#22c0b6] transition-colors"
+                      className="w-full bg-white border-2 border-[#1d6896] text-[#1d6896] px-6 py-2.5 rounded-full font-semibold hover:bg-[#1d6896] hover:text-white transition-colors text-sm"
                     >
                       {t(`features.items.${service.key}.cta`)}
                     </button>
@@ -146,69 +149,19 @@ export default function PetSittingPage() {
               {t('banner.additionalInfo')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href={`tel:${header('phone')}`}
+              <button
+                onClick={() => setIsContactModalOpen(true)}
                 className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
               >
                 {t('banner.cta1')}
-              </Link>
-              <Link
-                href={`mailto:${header('email')}`}
+              </button>
+              <button
+                onClick={() => setIsContactModalOpen(true)}
                 className="inline-block border-2 border-[#1d6896] text-[#1d6896] px-8 py-3 rounded-full font-semibold hover:bg-[#1d6896] hover:text-white transition-colors"
               >
                 {t('banner.cta2')}
-              </Link>
+              </button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">{t('pricing.title')}</h2>
-          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">{t('pricing.description')}</p>
-
-          {/* Pricing Table */}
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200 mb-8">
-            <table className="w-full">
-              <thead className="bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Service</th>
-                  <th className="px-6 py-4 text-right text-sm font-semibold uppercase tracking-wider">Price</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Introductory Meeting</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">405 DKK</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Pet Pick-up/Drop-off</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">270 DKK</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Key Handover</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">270 DKK</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 text-gray-900 font-medium">Last Minute Change</td>
-                  <td className="px-6 py-4 text-right text-gray-900 font-semibold">170 DKK</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="text-center">
-            <button
-              onClick={() => setIsContactModalOpen(true)}
-              className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-            >
-              {t('pricing.cta')}
-            </button>
-            <p className="mt-4 text-sm text-gray-600">
-              All prices in Danish Krone (DKK). Custom packages available for your specific needs.
-            </p>
           </div>
         </div>
       </section>

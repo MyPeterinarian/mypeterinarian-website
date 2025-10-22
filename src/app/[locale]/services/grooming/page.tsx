@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import { Scissors, Droplets, Sparkles, Footprints, Flower2, Smile, Star, Package } from 'lucide-react'
+import { Scissors, Droplets, Sparkles, Star, Package, PawPrint } from 'lucide-react'
 import Link from 'next/link'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ContactModal from '@/components/ContactModal'
@@ -17,12 +17,10 @@ export default function GroomingPage() {
   const sizeCategories = ['xs', 's', 'm', 'l', 'xl']
 
   const services = [
-    { key: 'full', icon: Sparkles },
-    { key: 'bath', icon: Droplets },
-    { key: 'haircut', icon: Scissors },
-    { key: 'nails', icon: Footprints },
-    { key: 'spa', icon: Flower2 },
-    { key: 'teeth', icon: Smile }
+    { key: 'standalone', icon: Scissors },
+    { key: 'dogGrooming', icon: Sparkles },
+    { key: 'catGrooming', icon: PawPrint },
+    { key: 'dogBathing', icon: Droplets }
   ]
 
   const packages = ['perfectCoat', 'tangleFree', 'essentialCare', 'catBrushing']
@@ -200,59 +198,6 @@ export default function GroomingPage() {
         </div>
       </section>
 
-      {/* Detailed Pricing */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-4">
-            {t('detailedPricing.title')}
-          </h2>
-          <p className="text-center text-gray-600 mb-12">{t('detailedPricing.description')}</p>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {['fullGrooming', 'handStripping', 'bathing', 'addOns'].map((category, catIndex) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: catIndex * 0.1 }}
-                className="bg-white rounded-lg p-6 shadow-md"
-              >
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 pb-2 border-b-2 border-[#22c0b6]">
-                  {t(`detailedPricing.categories.${category}.title`)}
-                </h3>
-                <div className="space-y-3">
-                  {category === 'fullGrooming' && [0, 1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="flex justify-between items-center">
-                      <span className="text-gray-700">{t(`detailedPricing.categories.${category}.items.${i}.name`)}</span>
-                      <span className="font-semibold text-[#1d6896]">{t(`detailedPricing.categories.${category}.items.${i}.price`)}</span>
-                    </div>
-                  ))}
-                  {category === 'handStripping' && [0, 1, 2].map((i) => (
-                    <div key={i} className="flex justify-between items-center">
-                      <span className="text-gray-700">{t(`detailedPricing.categories.${category}.items.${i}.name`)}</span>
-                      <span className="font-semibold text-[#1d6896]">{t(`detailedPricing.categories.${category}.items.${i}.price`)}</span>
-                    </div>
-                  ))}
-                  {category === 'bathing' && [0, 1, 2].map((i) => (
-                    <div key={i} className="flex justify-between items-center">
-                      <span className="text-gray-700">{t(`detailedPricing.categories.${category}.items.${i}.name`)}</span>
-                      <span className="font-semibold text-[#1d6896]">{t(`detailedPricing.categories.${category}.items.${i}.price`)}</span>
-                    </div>
-                  ))}
-                  {category === 'addOns' && [0, 1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="flex justify-between items-center">
-                      <span className="text-gray-700">{t(`detailedPricing.categories.${category}.items.${i}.name`)}</span>
-                      <span className="font-semibold text-[#1d6896]">{t(`detailedPricing.categories.${category}.items.${i}.price`)}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -383,20 +328,6 @@ export default function GroomingPage() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('pricing.title')}</h2>
-          <p className="text-lg text-gray-600 mb-8">{t('pricing.description')}</p>
-          <Link
-            href={`mailto:${header('email')}`}
-            className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-          >
-            {t('pricing.cta')}
-          </Link>
         </div>
       </section>
 

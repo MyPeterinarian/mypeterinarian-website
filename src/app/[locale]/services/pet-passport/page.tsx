@@ -137,20 +137,6 @@ export default function PetPassportPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('pricing.title')}</h2>
-          <p className="text-lg text-gray-600 mb-8">{t('pricing.description')}</p>
-          <Link
-            href={`mailto:${header('email')}`}
-            className="inline-block bg-gradient-to-r from-[#22c0b6] to-[#1d6896] text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
-          >
-            {t('pricing.cta')}
-          </Link>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
