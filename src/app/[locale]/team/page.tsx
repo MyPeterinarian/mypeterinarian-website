@@ -16,7 +16,7 @@ export default function TeamPage() {
       role: t('members.tarek.role'),
       bio: t('members.tarek.bio'),
       location: t('members.tarek.location'),
-      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Tarek.jpg'
+      image: 'https://ikzgesltuasxqzoysrii.supabase.co/storage/v1/object/public/profile-images/team/Tarek.jpeg?v=2'
     },
     {
       name: 'Dr. Irene',
