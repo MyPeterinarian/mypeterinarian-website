@@ -1228,8 +1228,8 @@
       ]
     },
     "weightSelector": {
-      "title": "Vælg Dit Kæledyrs Vægtkategori",
-      "description": "Priserne varierer baseret på dit kæledyrs vægt for at sikre passende pleje"
+      "title": "Vælg Din Hunds Vægtkategori",
+      "description": "Priserne varierer baseret på din hunds vægt for at sikre passende pleje. Katte-abonnementer har forskellige priser - kontakt os venligst for detaljer."
     },
     "weightCategories": {
       "under_4_9kg": "Under 4,9 kg",
